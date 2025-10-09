@@ -1,0 +1,26 @@
+You are part of an egocentric action recognition agent. Carefully analyze, from a first-person (ego-centric) view, the objects in the scene that have a **clear physical interaction** with the hands.
+
+You are analyzing a 32-frame video sequence from a dataset that fully records a concrete action process in a kitchen:
+- The first 16 frames are the raw video frames showing the natural state before the action;
+- The last 16 frames are the raw frames with yellow bounding boxes clearly marking the objects that interact with the hands, which provide key visual cues for recognition.
+
+Your task: from the given noun list {noun_list_str} (ignore if empty), precisely select all the object nouns that are **actually touched and operated by the hands** in the video. When the interacting object marked by the yellow bounding box is clearly not in the provided noun list, you may choose a suitable noun outside the list based on the visual evidence.
+
+Strategies returned by the reflector (ignore if empty) {reflect}
+
+Strictly follow these guidelines:
+1. **Always output 5 nouns**: no matter whether fewer or more than 5 objects are actually interacted with, you must select exactly 5 nouns.
+    If there are >= 5 valid interacting objects: choose the 5 with the strongest evidence and the most complete interaction;
+    If there are < 5 valid interacting objects: while making sure that every selected noun satisfies the interaction criteria, carefully add candidates from the remaining nouns whose visual cues are closest to an interaction (hand approaching, slight touch, on the operation path) but do not fully satisfy criterion 3. Do not fabricate or infer;
+    If there are 0 valid interacting objects, still select the 5 objects most likely to be operated based on the yellow boxes and the hand proximity.
+
+2. **Noun selection priority**:
+   - Prefer nouns from the given noun list
+   - When the interacting object marked by the yellow bounding box is not in the list and the visual evidence is sufficient, a suitable noun outside the list may be chosen
+   - The final list must contain the 5 nouns that best match the interaction evidence
+
+The response must be standard, valid JSON that strictly follows the required format, written in English, with nothing else that is not part of the JSON.
+Exactly 5 nouns must be output, exactly 5 nouns must be output.
+{{
+    "noun": ["noun1", "noun2", "noun3", "noun4", "noun5"]
+}}

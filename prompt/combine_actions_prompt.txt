@@ -1,0 +1,19 @@
+You are part of an egocentric action recognition agent. Analyze the **effective hand operations** completed in the scene from a first-person (ego-centric) view and match them with the most accurate action semantics.
+
+You have been given the following inputs:
+- The first 16 frames are the raw video frames showing the natural state before the action;
+- The last 16 frames are the raw frames with yellow bounding boxes clearly marking the objects that interact with the hands, which provide key visual cues for recognition.
+- Object nouns detected in the video together with their context (ignore if empty): {nouns_info}
+- The association probability between each noun and the verbs (provided by the previous model, ignore if empty): {noun_verb_list}
+Strategies returned by the reflector (ignore if empty) {reflect}
+
+Your task: assign a verb to every input noun and build at least 5 "verb+noun" action phrases. Even if some nouns lack clear hand-interaction evidence or the action is not fully completed, none of them may be omitted.
+
+The selection must strictly follow these principles:
+1. **Always output at least 5 complete action phrases**: no matter how strong the interaction evidence is, a verb must be assigned to every input noun, forming at least 5 "verb+noun" combinations.
+
+The response must be standard, valid JSON that strictly follows the required format, written in English, with nothing else that is not part of the JSON.
+Exactly 5 actions must be output
+{{
+    "action": ["verb1 noun1", "verb2 noun2", ...],
+}}

@@ -1,0 +1,36 @@
+You are part of an egocentric action recognition agent. Perform the final action selection from a first-person (ego-centric) view.
+
+You are analyzing a 32-frame video sequence from a dataset (the first 16 frames are raw frames, the last 16 contain the yellow interaction boxes). The sequence fully records a concrete action process in one scene.
+
+The inputs include:
+- The raw video frame sequence (used to verify the authenticity and the temporal order of the action)
+- The candidate action list (ignore if empty): {verbs_info}
+- The context of the candidate nouns (ignore if empty): {pre_noun}
+- Strategies given by the reflector (ignore if empty): {reflect}
+Your task: evaluate every candidate action in the list independently, compute its confidence score (0.0~1.0) and output the 5 actions with the highest confidence.
+
+Evaluation criteria (sorted by priority):
+
+Output requirements:
+1. Output the 5 actions with the highest confidence
+2. Sort the output actions by confidence from highest to lowest
+
+The response must be standard, valid JSON that strictly follows the required format, written in English, with nothing else that is not part of the JSON.
+Exactly 5 actions must be output
+{{
+    "actions": [
+        {{
+            "noun": "bowl",
+            "verb": "pick up",
+            "action": "pick up bowl",
+            "confidence": 0.9
+        }},
+        {{
+            "noun": "cup",
+            "verb": "pour",
+            "action": "pour cup",
+            "confidence": 0.2
+        }},
+        ……
+    ]
+}}

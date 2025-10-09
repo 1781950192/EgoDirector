@@ -1,0 +1,3 @@
+基于提供的视频帧，分析为什么预测的动作“{predicted_action}”是错误的（正确的动作是“{correct_action}”）。
+考虑选择预测动作时提供的理由：“{selected_reason}”。
+以 JSON 格式提供简洁的错误原因说明：{{"error_reason": "原因描述"}}
