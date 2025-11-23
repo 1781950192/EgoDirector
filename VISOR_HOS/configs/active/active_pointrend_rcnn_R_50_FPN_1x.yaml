@@ -1,0 +1,10 @@
+_BASE_: Base-PointRend-RCNN-FPN.yaml
+MODEL:
+  WEIGHTS: detectron2://ImageNetPretrained/MSRA/R-50.pkl
+  RESNETS:
+    DEPTH: 50
+DATASETS:
+DATASETS:
+  TRAIN: ("epick_visor_2022_train_active",)
+  TEST: ("epick_visor_2022_val_active", )
+
