@@ -18,6 +18,8 @@ def image_to_base64(file_path):
 def vis_hos(images):
     task = 'active'  # 或 'active'
     out_dir = 'output/box'  # 当前目录
+    if not os.path.exists(out_dir):
+        os.makedirs(out_dir)
     if task == 'hos':
         pointrend_cfg = "VISOR_HOS/configs/hos/hos_pointrend_rcnn_R_50_FPN_1x.yaml"
         epick_model = f'VISOR_HOS/checkpoints/model_final_hos.pth'
