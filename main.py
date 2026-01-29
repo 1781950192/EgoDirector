@@ -134,7 +134,6 @@ if __name__ == '__main__':
     csv_file_path = '/home/will/Mydata/EPIC-KITCHENS/EPIC_100_val_sampled_dataset_300.csv'
     noun_file_path = '/home/will/Mydata/EPIC-KITCHENS/EPIC_100_noun_classes.csv'
     verb_file_path = '/home/will/Mydata/EPIC-KITCHENS/EPIC_100_verb_classes.csv'
-    detections_root = Path('/home/will/Mycode/MCP_action/epic_det/hand-objects/hand-objects')
     output_txt_path = 'val_comparison_results_frames8_new_prompt5.txt'
 
     save_and_compare_results(csv_file_path, output_txt_path, noun_file_path, verb_file_path)
