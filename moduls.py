@@ -114,7 +114,7 @@ def conclusion_incorrect(wrong_set) :
     response = Generation.call(
         # 若没有配置环境变量，请用百炼API Key将下行替换为：api_key = "sk-xxx",
         api_key=DASHSCOPE_API_KEY,
-        model="qwen3-max",
+        model="qwen3-flash",
         messages=messages,
         result_format="message",
         timeout=(10, 600)
