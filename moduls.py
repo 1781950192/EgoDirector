@@ -14,13 +14,22 @@ from utils import image_to_base64, prepare_multimodal_message, compare_text_simi
 # 假设 DASHSCOPE_API_KEY 已设置在环境中
 DASHSCOPE_API_KEY = os.getenv('DASHSCOPE_API_KEY', 'sk-e0055b4ba5284edcb2a8e0341c3cb748')
 
+# prompt_dict = {
+#     'combine_actions_prompt.txt': 'prompt/prompt_5/combine_actions_prompt.txt',
+#     'Conclusion_on_incorrect.txt': 'prompt/Conclusion_on_incorrect.txt',
+#     'judge_error_reason_prompt.txt': 'prompt/judge_error_reason_prompt.txt',
+#     'optimize_prompt_template.txt': 'prompt/optimize_prompt_template.txt',
+#     'select_actions_prompt.txt': 'prompt/prompt_5/select_actions_prompt.txt',
+#     'select_noun_prompt.txt': 'prompt/prompt_5/select_noun_prompt.txt'
+# }
+
 prompt_dict = {
-    'combine_actions_prompt.txt': 'prompt/prompt_5/combine_actions_prompt.txt',
+    'combine_actions_prompt.txt': 'prompt/combine_actions_prompt.txt',
     'Conclusion_on_incorrect.txt': 'prompt/Conclusion_on_incorrect.txt',
     'judge_error_reason_prompt.txt': 'prompt/judge_error_reason_prompt.txt',
     'optimize_prompt_template.txt': 'prompt/optimize_prompt_template.txt',
-    'select_actions_prompt.txt': 'prompt/prompt_5/select_actions_prompt.txt',
-    'select_noun_prompt.txt': 'prompt/prompt_5/select_noun_prompt.txt'
+    'select_actions_prompt.txt': 'prompt/select_actions_prompt.txt',
+    'select_noun_prompt.txt': 'prompt/select_noun_prompt.txt'
 }
 
 # 从文件加载错题集
