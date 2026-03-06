@@ -162,7 +162,7 @@ def main():
     csv_file_path = '/home/will/Mydata/EPIC-KITCHENS/EPIC_100_val_sampled_dataset_300.csv'
     noun_file_path = '/home/will/Mydata/EPIC-KITCHENS/EPIC_100_noun_classes.csv'
     verb_file_path = '/home/will/Mydata/EPIC-KITCHENS/EPIC_100_verb_classes.csv'
-    output_txt_path = 'val_comparison_results_frames8_new_prompt5.txt'
+    output_txt_path = 'val_comparison_results_frames8.txt'
 
     # 根据命令行参数选择模式
     mode = "train" if args.train else "test"
