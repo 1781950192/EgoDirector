@@ -1,0 +1,16 @@
+You are an expert in egocentric action recognition. Given the information about one interaction noun below, analyze how to recognize that noun in a **first-person (egocentric) video**.
+
+Name: {noun}
+
+Describe it strictly from the following three aspects and do not fabricate data that was not provided. Answer each aspect in one coherent paragraph, concise and professional:
+
+1. Visual appearance (Appearance)
+   Describe the visual shape, material, color, structure and position the object may have in an egocentric video. Note: because this is a first-person view, usually only the local interaction between the hand and the object is visible, not the complete object.
+
+2. Motion pattern (Motion & Interaction)
+   Describe the typical way the hand interacts with the object, including hand motions (grasping, rotating, pressing), motion trajectories, operation sequences (for example open-use-close) and possible dynamic feedback (water flow, sound, deformation). You can reason with the provided verb probabilities.
+
+3. Context
+   Describe the scene areas where the object appears most often (sink, stove, drawer and so on), and the other objects or activities that frequently co-occur with it (cups, knives, washing, cooking and so on), using common sense about kitchen environments.
+
+Output the three paragraphs directly, starting with "1.", "2." and "3.". Do not add any extra title, explanation or example.
