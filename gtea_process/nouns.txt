@@ -1,0 +1,16 @@
+bread	0
+cheese	1
+chocolate	2
+coffee	3
+cup	4
+honey	5
+hotdog	6
+jam	7
+ketchup	8
+mayonnaise	9
+mustard	10
+peanut	11
+spoon	12
+sugar	13
+tea	14
+water	15
