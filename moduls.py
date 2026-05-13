@@ -1,6 +1,8 @@
 import base64
 import os
 import json
+import re
+
 import pandas as pd
 from http import HTTPStatus
 import dashscope
@@ -9,28 +11,38 @@ from typing import List, Dict
 
 from dashscope import Generation
 
-from utils import image_to_base64, prepare_multimodal_message, compare_text_similarity_v3, retry_api_call, read_txt_file,extract_noun_probabilities
+from utils import image_to_base64, prepare_multimodal_message, compare_text_similarity_v3, retry_api_call, \
+    read_txt_file, extract_noun_probabilities
 
 # 假设 DASHSCOPE_API_KEY 已设置在环境中
 DASHSCOPE_API_KEY = os.getenv('DASHSCOPE_API_KEY', 'sk-e0055b4ba5284edcb2a8e0341c3cb748')
 
-# prompt_dict = {
-#     'combine_actions_prompt.txt': 'prompt/prompt_5/combine_actions_prompt.txt',
-#     'Conclusion_on_incorrect.txt': 'prompt/Conclusion_on_incorrect.txt',
-#     'judge_error_reason_prompt.txt': 'prompt/judge_error_reason_prompt.txt',
-#     'optimize_prompt_template.txt': 'prompt/optimize_prompt_template.txt',
-#     'select_actions_prompt.txt': 'prompt/prompt_5/select_actions_prompt.txt',
-#     'select_noun_prompt.txt': 'prompt/prompt_5/select_noun_prompt.txt'
-# }
-
 prompt_dict = {
-    'combine_actions_prompt.txt': 'prompt/combine_actions_prompt.txt',
-    'Conclusion_on_incorrect.txt': 'prompt/Conclusion_on_incorrect.txt',
-    'judge_error_reason_prompt.txt': 'prompt/judge_error_reason_prompt.txt',
-    'optimize_prompt_template.txt': 'prompt/optimize_prompt_template.txt',
-    'select_actions_prompt.txt': 'prompt/select_actions_prompt.txt',
-    'select_noun_prompt.txt': 'prompt/select_noun_prompt.txt'
+    'combine_actions_prompt.txt': 'prompt/egtea_prompt/combine_actions_prompt.txt',
+    "reflector_prompt.txt": 'prompt/Reflector_prompt/Reflector_prompt.txt',
+    'select_actions_prompt.txt': 'prompt/egtea_prompt/select_actions_prompt.txt',
+    'select_noun_prompt.txt': 'prompt/egtea_prompt/select_noun_prompt.txt'
 }
+
+
+def load_keys_from_numbered_file(file_path):
+    """从 '文本 数字' 格式的文件中提取文本部分（支持文本含空格）"""
+    with open(file_path, 'r', encoding='utf-8') as f:
+        lines = f.readlines()
+
+    keys = []
+    for line in lines:
+        line = line.strip()
+        if not line:
+            continue
+        # 从行尾匹配一个数字，前面是任意非数字内容（至少一个字符）
+        match = re.match(r'^(.+?)\s+\d+$', line)
+        if match:
+            keys.append(match.group(1).strip())
+        else:
+            # 如果没有编号，就把整行当作 key（容错）
+            keys.append(line)
+    return keys
 
 # 从文件加载错题集
 def load_wrong_set(file_path: str = 'json_epic/wrong_set.json'):
@@ -41,16 +53,14 @@ def load_wrong_set(file_path: str = 'json_epic/wrong_set.json'):
         wrong_set = []
     return wrong_set
 
-# 判断动作识别错误的原因的函数
+# 反思器
 @retry_api_call(max_attempts=3, delay=0)
-def judge_error_reason(frames_urls: List[str], selected_reason: str, predicted_action: str, correct_action: str) -> str:
-    template = read_txt_file(prompt_dict["judge_error_reason_prompt.txt"])  # 假设你有一个提示模板文件
-    prompt = template.format(
-        selected_reason=selected_reason,
-        predicted_action=predicted_action,
-        correct_action=correct_action
-    )
-
+def reflector_action(frames_urls: List[str], noun_reason, action_reason, select_action_reason, noun_list, verb_list,
+                     noun_verb, pre_noun) -> List[str]:
+    template = read_txt_file(prompt_dict["reflector_prompt.txt"])
+    prompt = template.format(noun_reason=noun_reason, action_reason=action_reason,
+                             select_action_reason=select_action_reason, noun_list=noun_list, verb_list=verb_list,
+                             noun_verb=noun_verb, pre_noun=pre_noun)
     messages = prepare_multimodal_message(frames_urls, prompt)
     response = dashscope.MultiModalConversation.call(
         api_key=DASHSCOPE_API_KEY,
@@ -65,90 +75,19 @@ def judge_error_reason(frames_urls: List[str], selected_reason: str, predicted_a
             content = content[7:-3].strip()
         elif content.startswith("```") and content.endswith("```"):
             content = content[3:-3].strip()
-        try:
-            result = json.loads(content)
-            error_reason = result.get("error_reason", "未知错误原因")
-            return error_reason
-        except json.JSONDecodeError:
-            print(f"JSON 解析失败: {content}")
-            return "未知错误原因"
+        selected = json.loads(content)
+        return selected
     else:
-        print(f"判断错误原因失败: {response.code}, {response.message}")
-        return "未知错误原因"
-
-# 利用错题集优化提示的函数
-@retry_api_call(max_attempts=3, delay=0)
-def optimize_prompts_using_wrong_set(wrong_set):
-    template = read_txt_file(prompt_dict["optimize_prompt_template.txt"])
-    noun_prompt = read_txt_file(prompt_dict["select_noun_prompt.txt"])
-    combine_action_prompt = read_txt_file(prompt_dict["combine_actions_prompt.txt"])
-    select_action_prompt = read_txt_file(prompt_dict["select_actions_prompt.txt"])
-    prompt = template.format(error_log=wrong_set,noun_prompt=noun_prompt,combine_action_prompt=combine_action_prompt,select_action_prompt=select_action_prompt)
-
-    messages = [
-        {"role": "system", "content": "You are a helpful assistant."},
-        {"role": "user", "content": prompt},
-    ]
-    response = Generation.call(
-        # 若没有配置环境变量，请用百炼API Key将下行替换为：api_key = "sk-xxx",
-        api_key=DASHSCOPE_API_KEY,
-        model="qwen3-max",
-        messages=messages,
-        result_format="message",
-    )
-
-    if response.status_code == HTTPStatus.OK:
-        content = response.output["choices"][0]["message"]["content"]
-        content = content.strip()
-        if content.startswith("```json") and content.endswith("```"):
-            content = content[7:-3].strip()
-        elif content.startswith("```") and content.endswith("```"):
-            content = content[3:-3].strip()
-        conclusion = json.loads(content)
-        return conclusion
-    else:
-        print(f"总结错题失败: {response.code}, {response.message}")
-        return []
-
-# 总结错误
-@retry_api_call(max_attempts=3, delay=0)
-def conclusion_incorrect(wrong_set) :
-    template = read_txt_file(prompt_dict["Conclusion_on_incorrect.txt"])
-    prompt = template.format(wrong_set=wrong_set)
-
-    messages = [
-        {"role": "system", "content": "You are a helpful assistant."},
-        {"role": "user", "content": prompt},
-    ]
-    response = Generation.call(
-        # 若没有配置环境变量，请用百炼API Key将下行替换为：api_key = "sk-xxx",
-        api_key=DASHSCOPE_API_KEY,
-        model="qwen3-flash",
-        messages=messages,
-        result_format="message",
-        timeout=(10, 600)
-    )
-
-    if response.status_code == HTTPStatus.OK:
-        content = response.output["choices"][0]["message"]["content"]
-        content = content.strip()
-        if content.startswith("```json") and content.endswith("```"):
-            content = content[7:-3].strip()
-        elif content.startswith("```") and content.endswith("```"):
-            content = content[3:-3].strip()
-        conclusion = content
-        return conclusion
-    else:
-        print(f"总结错题失败: {response.code}, {response.message}")
+        print(f"反思动作失败: {response.code}, {response.message}")
         return []
 
 
 # 选择名词
 @retry_api_call(max_attempts=3, delay=0)
-def select_nouns(frames_urls: List[str], noun_keys: List[str]) -> List[str]:
+def select_nouns(frames_urls: List[str], noun_keys: List[str], expand_noun=None,reflect=None) -> List[str]:
     noun_list_str = ", ".join(noun_keys)
     template = read_txt_file(prompt_dict["select_noun_prompt.txt"])
-    prompt = template.format(noun_list_str=noun_list_str)
+    prompt = template.format(noun_list_str=noun_list_str, expand_noun=expand_noun,reflect=reflect)
 
     messages = prepare_multimodal_message(frames_urls, prompt)
     response = dashscope.MultiModalConversation.call(
@@ -172,14 +111,13 @@ def select_nouns(frames_urls: List[str], noun_keys: List[str]) -> List[str]:
 
 
 @retry_api_call(max_attempts=3, delay=0)
-def combine_actions(frames_urls: List[str], selected_nouns: List[Dict[str, str]], verb_keys: List[str],) -> List[str]:
-    nouns_info = json.dumps(selected_nouns)
+def combine_actions(frames_urls, selected_nouns, noun_verb, verb_keys, noun_reason, reflect):
+    nouns_info = selected_nouns
     verb_list_str = ", ".join(verb_keys)
-    keys = [item['key'] for item in selected_nouns]
-    n_v = extract_noun_probabilities(keys)
 
     template = read_txt_file(prompt_dict["combine_actions_prompt.txt"])
-    prompt = template.format(nouns_info=nouns_info, verb_list_str=verb_list_str,noun_verb_list=n_v)
+    prompt = template.format(nouns_info=nouns_info, verb_list_str=verb_list_str, noun_verb_list=noun_verb,
+                            reflect=reflect)
 
     frames_urls = frames_urls[0:8]
     messages = prepare_multimodal_message(frames_urls, prompt)
@@ -203,11 +141,12 @@ def combine_actions(frames_urls: List[str], selected_nouns: List[Dict[str, str]]
 
 
 @retry_api_call(max_attempts=3, delay=0)
-def select_actions(frames_urls: List[str], selected_verbs,) -> Dict[str, str]:
-    verbs_info = json.dumps(selected_verbs)
+def select_actions(frames_urls: List[str], selected_action, action_reason, noun_reason, pre_noun, reflect) -> Dict[
+    str, str]:
+    verbs_info = selected_action
     template = read_txt_file(prompt_dict["select_actions_prompt.txt"])
-    prompt = template.format(verbs_info=verbs_info)
-
+    prompt = template.format(verbs_info=verbs_info, action_reason=action_reason, noun_reason=noun_reason,
+                             pre_noun=pre_noun, reflect=reflect)
     messages = prepare_multimodal_message(frames_urls, prompt)
     response = dashscope.MultiModalConversation.call(
         api_key=DASHSCOPE_API_KEY,
@@ -223,79 +162,163 @@ def select_actions(frames_urls: List[str], selected_verbs,) -> Dict[str, str]:
             content = content[3:-3].strip()
         try:
             selected = json.loads(content)
-            if isinstance(selected, dict) and "action" in selected:
+            if isinstance(selected, dict) and "actions" in selected:
                 return selected
             else:
                 print(f"动作格式错误: {content}")
-                return {"action": ""}
+                return {"actions": ""}
         except json.JSONDecodeError as e:
             print(f"JSON 解析失败: {str(e)}, content: {content}")
-            return {"action": ""}
+            return {"actions": ""}
     else:
         print(f"筛选动作失败: {response.code}, {response.message}")
-        return {"action": ""}
+        return {"actions": ""}
 
 
 # 主动作识别函数
-@retry_api_call(max_attempts=3, delay=0)
-def action_recognition(frames_urls: List[str], nouns_csv_path: str, verbs_csv_path: str,
-                       max_iterations: int = 5) -> Dict[str, str]:
-    try:
-        nouns_df = pd.read_csv(nouns_csv_path)
-        verbs_df = pd.read_csv(verbs_csv_path)
-    except Exception as e:
-        print(f"读取 CSV 文件出错: {str(e)}")
-        return {"action": ""}
+def action_recognition(frames_urls: List[str], nouns_csv_path: str, verbs_csv_path: str, utils,
+                       max_iterations: int = 5):
+    name, extension = os.path.splitext(nouns_csv_path)
+    if extension == ".csv":
+        try:
+            nouns_df = pd.read_csv(nouns_csv_path)
+            verbs_df = pd.read_csv(verbs_csv_path)
+        except Exception as e:
+            print(f"读取 CSV 文件出错: {str(e)}")
+            return {"action": ""}
 
-    noun_keys = nouns_df['key'].tolist()
-    verb_keys = verbs_df['key'].tolist()
+        noun_keys = nouns_df['key'].tolist()
+        verb_keys = verbs_df['key'].tolist()
+        for iteration in range(max_iterations):
+            print(f"迭代 {iteration + 1}")
 
-    for iteration in range(max_iterations):
-        print(f"迭代 {iteration + 1}")
+            with open('json_epic/expand_noun.json', 'r', encoding='utf-8') as f:
+                expand_noun = json.load(f)
+            selected_noun = select_nouns(frames_urls, noun_keys, expand_noun, utils["one"])
+            selected_noun_keys = selected_noun["noun"]
 
-        selected_noun = select_nouns(frames_urls, noun_keys)
-        selected_noun_keys = selected_noun["noun"]
-        selected_noun_reason = selected_noun["reason"]
+            while True:
+                if len(selected_noun_keys) == 5:
+                    break
+                selected_noun = select_nouns(frames_urls, noun_keys, expand_noun, utils["one"])
 
-        if selected_noun_keys is None:
-            print("选择名词失败，跳过本次迭代")
-            continue
+            selected_noun_reason = selected_noun["reason"]
 
-        print(f"挑选出来的名词是：{selected_noun_keys}")
+            if selected_noun_keys is None:
+                print("选择名词失败，跳过本次迭代")
+                continue
 
-        selected_nouns = nouns_df[nouns_df['key'].isin(selected_noun_keys)][['key', 'instances']].to_dict('records')
+            print(f"挑选出来的名词是：{selected_noun_keys}")
 
-        selected_action_all = combine_actions(frames_urls, selected_nouns, verb_keys)
-        selected_action = selected_action_all["action"]
-        selected_action_reason = selected_action_all["reason"]
+            with open('json_epic/pre_noun.json', 'r', encoding='utf-8') as f:
+                pre_noun = json.load(f)  # 注意是 load（不是 loads）
+            pre_nouns = {}
+            # 一次性构建字典映射
+            key_to_text = {item["key"]: item["generated_text"] for item in pre_noun}
 
-        if selected_action is None:
-            print("选择动作失败，跳过本次迭代")
-            continue
-        print(f"挑选出来的动作是：{selected_action}")
+            # 后续查询 O(1) 时间复杂度
+            for noun in selected_noun_keys:
+                pre_nouns[noun] = key_to_text.get(noun)
 
-        action_dict = select_actions(frames_urls, selected_action)
-        if action_dict is None:
-            print("筛选动作失败，跳过本次迭代")
-            continue
-        action = action_dict.get("action", "")
-        print(f"输出的动作是：{action_dict}")
+            keys = [item for item in pre_nouns.keys()]
+            noun_verb = extract_noun_probabilities(keys)
 
-        if not action:
-            print("未生成有效动作，继续迭代")
-            continue
+            selected_action_all = combine_actions(frames_urls, pre_nouns, noun_verb, verb_keys, selected_noun_reason,
+                                                  utils["two"])
+            selected_action = selected_action_all["action"]
+            selected_action_reason = selected_action_all["reason"]
 
-        return action_dict,selected_noun_reason,selected_action_reason
+            if selected_action is None:
+                print("选择动作失败，跳过本次迭代")
+                continue
+            print(f"挑选出来的动作是：{selected_action}")
 
-    return action_dict if action_dict else {"action": ""}
+            action_dict = select_actions(frames_urls, selected_action, selected_action_reason, selected_noun_reason,
+                                         pre_nouns, utils["three"])
+            print("动作评分完成")
 
-if __name__ == '__main__':
-    with open("json_epic/wrong_set.json", 'r', encoding='utf-8') as json_wrong:
-        data = json.load(json_wrong)
-        out = conclusion_incorrect(data)
-        out = optimize_prompts_using_wrong_set(out)
-        print(out["select_noun_prompt"])
-        print(out["combine_actions_prompt"])
-        print(out["select_actions_prompt"])
+            # reflect_dict = reflector_action(frames_urls, selected_noun, selected_action_all, action_dict, noun_keys,
+            #                                 verb_keys, noun_verb, pre_nouns)
+            reflect_dict = None
+            print("动作反思完成")
 
+            if action_dict is None:
+                print("筛选动作失败，跳过本次迭代")
+                continue
+            actions = action_dict.get("actions", "")
+
+            if not actions:
+                print("未生成有效动作，继续迭代")
+                continue
+
+            return reflect_dict, action_dict, selected_noun_reason, selected_action_reason, selected_noun_keys
+
+        return action_dict if action_dict else {"actions": ""}
+    elif extension == ".txt":
+        # 读取文件，假设列之间用空格分隔
+        noun_keys = load_keys_from_numbered_file(nouns_csv_path)
+        verb_keys = load_keys_from_numbered_file(verbs_csv_path)
+        for iteration in range(max_iterations):
+            print(f"迭代 {iteration + 1}")
+
+            selected_noun = select_nouns(frames_urls, noun_keys, utils["one"])
+            selected_noun_keys = selected_noun["noun"]
+
+            while True:
+                if len(selected_noun_keys) == 5:
+                    break
+                selected_noun = select_nouns(frames_urls, noun_keys, utils["one"])
+
+            selected_noun_reason = selected_noun["reason"]
+
+            if selected_noun_keys is None:
+                print("选择名词失败，跳过本次迭代")
+                continue
+
+            print(f"挑选出来的名词是：{selected_noun_keys}")
+
+            with open('json_epic/pre_noun_egtea.json', 'r', encoding='utf-8') as f:
+                pre_noun = json.load(f)  # 注意是 load（不是 loads）
+            pre_nouns = {}
+            # 一次性构建字典映射
+            key_to_text = {item["key"]: item["generated_text"] for item in pre_noun}
+
+            # 后续查询 O(1) 时间复杂度
+            for noun in selected_noun_keys:
+                pre_nouns[noun] = key_to_text.get(noun)
+
+            keys = [item for item in pre_nouns.keys()]
+            noun_verb = extract_noun_probabilities(keys,json_file_path='json_epic/verb_noun_egtea.json')
+
+            selected_action_all = combine_actions(frames_urls, pre_nouns, noun_verb, verb_keys, selected_noun_reason,
+                                                  utils["two"])
+            selected_action = selected_action_all["action"]
+            selected_action_reason = selected_action_all["reason"]
+
+            if selected_action is None:
+                print("选择动作失败，跳过本次迭代")
+                continue
+            print(f"挑选出来的动作是：{selected_action}")
+
+            action_dict = select_actions(frames_urls, selected_action, selected_action_reason, selected_noun_reason,
+                                         pre_nouns, utils["three"])
+            print("动作评分完成")
+
+            # reflect_dict = reflector_action(frames_urls, selected_noun, selected_action_all, action_dict, noun_keys,
+            #                                 verb_keys, noun_verb, pre_nouns)
+            reflect_dict = None
+            print("动作反思完成")
+
+            if action_dict is None:
+                print("筛选动作失败，跳过本次迭代")
+                continue
+            actions = action_dict.get("actions", "")
+
+            if not actions:
+                print("未生成有效动作，继续迭代")
+                continue
+
+            return reflect_dict, action_dict, selected_noun_reason, selected_action_reason,selected_noun_keys
+
+        return action_dict if action_dict else {"actions": ""}
 
