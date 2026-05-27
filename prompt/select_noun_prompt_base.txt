@@ -1,0 +1,9 @@
+你正在做动作识别任务
+请为输入的视频输出交互的5个名词
+输出格式里的"unknown_noun"和"reason"都输出空，只需输出名词,用英文回答。
+输出的格式为：
+{{
+    "noun": ["noun1", "noun2", ...],必须输出5个名词,
+    "unknown_noun": ["noun"],直接输出noun,
+    "reason": "None",直接输出None
+}}

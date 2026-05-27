@@ -1,0 +1,650 @@
+video_frame_id,verbs,nouns,actions,confidences,selected_noun_keys
+S1_Cheese_C1_350_370,open;hold;pour;remove;spread,bottle;bottle;bottle;cap;bread,open bottle;hold bottle;pour bottle;remove cap;spread bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Cheese_C1_380_470,squeeze;hold;spread on;prepare;apply,mayonnaise;bottle;bread;sandwich;condiment,squeeze mayonnaise;hold bottle;spread on bread;prepare sandwich;apply condiment,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Cheese_C1_470_490,open;squeeze;close;spread;put down,mayonnaise bottle;mayonnaise;mayonnaise bottle;bread;mayonnaise bottle,open mayonnaise bottle;squeeze mayonnaise;close mayonnaise bottle;spread bread;put down mayonnaise bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Cheese_C1_491_515,pick up;close;put down;spread;place,mayonnaise bottle;mayonnaise bottle;mayonnaise bottle;mayonnaise;bottle,pick up mayonnaise bottle;close mayonnaise bottle;put down mayonnaise bottle;spread mayonnaise;place bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Cheese_C1_516_531,pick up;move;place;reach for;grab,mustard bottle;mustard bottle;mustard bottle;table;bottle,pick up mustard bottle;move mustard bottle;place mustard bottle;reach for table;grab bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Cheese_C1_537_584,squeeze;hold;spread;twist;place,mayonnaise;bottle;bread;cap;bottle,squeeze mayonnaise;hold bottle;spread bread;twist cap;place bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Cheese_C1_588_649,squeeze;hold;hold;apply;place,mayonnaise;bread;bottle;mayonnaise;bottle,squeeze mayonnaise;hold bread;hold bottle;apply mayonnaise;place bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Cheese_C1_660_680,hold;open;squeeze;close;put down,mustard bottle;mustard bottle;mustard;mustard bottle;mustard bottle,hold mustard bottle;open mustard bottle;squeeze mustard;close mustard bottle;put down mustard bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Cheese_C1_681_694,pick up;move;place;reach;scan,bottle;bottle;container;hand;table,pick up bottle;move bottle;place container;reach hand;scan table,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Cheese_C1_700_748,pick up;move;place;open;put down,plastic bag;plastic bag;plastic bag;plastic bag;plastic bag,pick up plastic bag;move plastic bag;place plastic bag;open plastic bag;put down plastic bag,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Cheese_C1_749_790,place;press;hold;cover;assemble,bread;sandwich;sandwich;bread;sandwich,place bread;press sandwich;hold sandwich;cover bread;assemble sandwich,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Cheese_C1_60_100,take out;hold;place;inspect;handle,bread;bread;bread;bread;bread,take out bread;hold bread;place bread;inspect bread;handle bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Cheese_C1_162_305,unwrap;place;discard;hold;position,cheese;cheese;wrapper;bread;cheese,unwrap cheese;place cheese;discard wrapper;hold bread;position cheese,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Cheese_C1_326_517,pick up;open;squeeze;close;put down,mayonnaise bottle;mayonnaise bottle;mayonnaise;mayonnaise bottle;mayonnaise bottle,pick up mayonnaise bottle;open mayonnaise bottle;squeeze mayonnaise;close mayonnaise bottle;put down mayonnaise bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Cheese_C1_527_689,pick up;squeeze;put down;spread;close,mustard bottle;mustard;mustard bottle;bread;mustard bottle,pick up mustard bottle;squeeze mustard;put down mustard bottle;spread bread;close mustard bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Cheese_C1_744_912,hold;press;assemble;place;squeeze,bread;bread;sandwich;bread;sandwich,hold bread;press bread;assemble sandwich;place bread;squeeze sandwich,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Cheese_C1_20_66,take out;open;place on plate;move;touch,bread;包装袋;bread;hand;table,take out bread;open packaging bag;place on plate bread;move hand;touch table,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Cheese_C1_85_120,take;unfold;place;hold;touch,cheese;cheese;cheese;bread;table,take cheese;unfold cheese;place cheese;hold bread;touch table,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Cheese_C1_124_247,unwrap;place;hold;remove;fold,cheese;cheese;bread;wrapper;cheese,unwrap cheese;place cheese;hold bread;remove wrapper;fold cheese,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Cheese_C1_252_276,place;hold;adjust;remove;prepare,cheese;bread;cheese;wrapper;sandwich,place cheese;hold bread;adjust cheese;remove wrapper;prepare sandwich,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Cheese_C1_316_349,pick up;open;spread;close;put down,mayonnaise bottle;mayonnaise bottle;mayonnaise;mayonnaise bottle;mayonnaise bottle,pick up mayonnaise bottle;open mayonnaise bottle;spread mayonnaise;close mayonnaise bottle;put down mayonnaise bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Cheese_C1_346_375,open;hold;prepare;close;place,bottle;bottle;sandwich;bottle;plate,open bottle;hold bottle;prepare sandwich;close bottle;place plate,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Cheese_C1_393_502,spread;hold;open;place;use,mayonnaise;bread;bottle;plate;spreader,spread mayonnaise;hold bread;open bottle;place plate;use spreader,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Cheese_C1_512_532,squeeze;open;close;spread;put down,mayonnaise;bottle;bottle;bread;bottle,squeeze mayonnaise;open bottle;close bottle;spread bread;put down bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Cheese_C1_533_553,squeeze;place;spread;pick up;put down,mayonnaise;bottle;bread;bottle;bottle,squeeze mayonnaise;place bottle;spread bread;pick up bottle;put down bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Cheese_C1_554_571,pick up;open;squeeze;close;put down,mustard bottle;mustard bottle;mustard;mustard bottle;mustard bottle,pick up mustard bottle;open mustard bottle;squeeze mustard;close mustard bottle;put down mustard bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Cheese_C1_573_596,open;squeeze;close;apply;hold,mustard bottle;mustard;mustard bottle;mustard;bread,open mustard bottle;squeeze mustard;close mustard bottle;apply mustard;hold bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Cheese_C1_624_721,squeeze;spread;hold;place;move,mustard;bread;bottle;plate;hand,squeeze mustard;spread bread;hold bottle;place plate;move hand,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Cheese_C1_722_740,open;squeeze;spread;close;put down,mustard bottle;mustard;bread;mustard bottle;mustard bottle,open mustard bottle;squeeze mustard;spread bread;close mustard bottle;put down mustard bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Cheese_C1_741_756,pick up;spread;put down;hold;move,mustard bottle;mustard;mustard bottle;bread;plate,pick up mustard bottle;spread mustard;put down mustard bottle;hold bread;move plate,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Cheese_C1_762_806,无动词,无名词,无动作,0.0,N/A
+S3_Cheese_C1_812_836,place;assemble;hold;press;complete,bread;sandwich;plate;bread;sandwich,place bread;assemble sandwich;hold plate;press bread;complete sandwich,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Hotdog_C1_21_58,take;place;read;open;move,bread;bread;paper;package;plate,take bread;place bread;read paper;open package;move plate,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Hotdog_C1_77_150,open;take out;place;hold;close,bacon;bacon;bacon;bread;package,open bacon;take out bacon;place bacon;hold bread;close package,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Hotdog_C1_150_183,无动词,无名词,无动作,0.0,N/A
+S3_Hotdog_C1_183_211,place;pick up;open;spread;put down,bread;mustard bottle;mustard bottle;mustard;mustard bottle,place bread;pick up mustard bottle;open mustard bottle;spread mustard;put down mustard bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Hotdog_C1_212_241,open;squeeze;close;put down;hold,mustard bottle;mustard;mustard bottle;mustard bottle;bread,open mustard bottle;squeeze mustard;close mustard bottle;put down mustard bottle;hold bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Hotdog_C1_247_475,squeeze;place;hold;stabilize;use,mustard;hot dog;bread;plate;bottle,squeeze mustard;place hot dog;hold bread;stabilize plate;use bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Hotdog_C1_477_492,pick up;squeeze;close;put down;spread,mustard bottle;mustard;mustard bottle;mustard bottle;bread,pick up mustard bottle;squeeze mustard;close mustard bottle;put down mustard bottle;spread bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Hotdog_C1_493_508,pick up;squeeze;put down;hold;move,mustard bottle;mustard;mustard bottle;sandwich;plate,pick up mustard bottle;squeeze mustard;put down mustard bottle;hold sandwich;move plate,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Hotdog_C1_509_533,move;pick up;place;open;squeeze,mustard bottle;ketchup bottle;ketchup bottle;ketchup bottle;ketchup bottle,move mustard bottle;pick up ketchup bottle;place ketchup bottle;open ketchup bottle;squeeze ketchup bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Hotdog_C1_534_566,open;hold;add sauce to;close;put down,bottle;bottle;hot dog;bottle;bottle,open bottle;hold bottle;add sauce to hot dog;close bottle;put down bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Hotdog_C1_580_711,squeeze;hold;steady;open;prepare,ketchup;bread;plate;bottle;sandwich,squeeze ketchup;hold bread;steady plate;open bottle;prepare sandwich,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Hotdog_C1_712_738,open;squeeze;close;place;spread,ketchup bottle;ketchup bottle;ketchup bottle;ketchup bottle;sandwich,open ketchup bottle;squeeze ketchup bottle;close ketchup bottle;place ketchup bottle;spread sandwich,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Hotdog_C1_739_760,pick up;open;squeeze;put down;close,ketchup bottle;ketchup bottle;ketchup;ketchup bottle;ketchup bottle,pick up ketchup bottle;open ketchup bottle;squeeze ketchup;put down ketchup bottle;close ketchup bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Hotdog_C1_774_832,press;hold;close;assemble;place,sandwich;sandwich;bread;sandwich;plate,press sandwich;hold sandwich;close bread;assemble sandwich;place plate,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Tea_C1_18_47,pick up;stack;place;unstack;hold,cup;cup;cup;cup;cup,pick up cup;stack cup;place cup;unstack cup;hold cup,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Tea_C1_72_99,pick up;move;place;look at;scan,bottle;bottle;paper;plate;table,pick up bottle;move bottle;place paper;look at plate;scan table,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Tea_C1_103_126,open;hold;remove;tilt;pour,bottle;bottle;cap;bottle;liquid,open bottle;hold bottle;remove cap;tilt bottle;pour liquid,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Tea_C1_147_384,hold;pour;pour;fill;drop,cup;ice cubes;glass;cup;ice cubes,hold cup;pour ice cubes;pour glass;fill cup;drop ice cubes,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Tea_C1_393_412,open;remove;hold;place;tighten,bottle;cap;bottle;cap;bottle,open bottle;remove cap;hold bottle;place cap;tighten bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Tea_C1_413_433,open;place;move;pick up;put down,bottle;bottle;hand;bottle;bottle,open bottle;place bottle;move hand;pick up bottle;put down bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Tea_C1_440_462,pick up;hold;move;position;inspect,box;box;box;cup;box,pick up box;hold box;move box;position cup;inspect box,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Tea_C1_529_546,open;take out;hold;tear;put in,box;packet;cup;packet;tea bag,open box;take out packet;hold cup;tear packet;put in tea bag,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Tea_C1_552_651,tear;open;pour;hold;dispose,packet;packet;packet;cup;packet,tear packet;open packet;pour packet;hold cup;dispose packet,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Tea_C1_690_878,put;hold;dip;shake;press,tea bag;cup;tea bag;cup;tea bag,put tea bag;hold cup;dip tea bag;shake cup;press tea bag,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Tea_C1_903_927,move;hold;view;look at;reposition,container;container;plate;table;container,move container;hold container;view plate;look at table;reposition container,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Tea_C1_931_961,open;hold;take;place;put down,lid;container;sugar;cup;lid,open lid;hold container;take sugar;place cup;put down lid,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Tea_C1_971_1026,pick up;take out;open;hold;put down,box;spoon;box;spoon;box,pick up box;take out spoon;open box;hold spoon;put down box,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Tea_C1_1060_1094,scoop;hold;open;use;transfer,sugar;cup;container;spoon;sugar,scoop sugar;hold cup;open container;use spoon;transfer sugar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Tea_C1_1098_1118,take;use;fill;open;put down,sugar;spoon;cup;sugar container;spoon,take sugar;use spoon;fill cup;open sugar container;put down spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Tea_C1_1120_1152,scoop;hold;use;open;add,sugar;cup;spoon;container;sugar,scoop sugar;hold cup;use spoon;open container;add sugar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Tea_C1_1153_1166,take;hold;fill;pour;put down,sugar;spoon;cup;sugar;spoon,take sugar;hold spoon;fill cup;pour sugar;put down spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Tea_C1_1178_1209,pick up;cover;place;seal;press,lid;container;lid;container;hands,pick up lid;cover container;place lid;seal container;press hands,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Tea_C1_1210_1241,hold;move;close;place;release,container;container;lid;container;hand,hold container;move container;close lid;place container;release hand,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Tea_C1_1251_1375,无动词,无名词,无动作,0.0,N/A
+S2_Tea_C1_34_68,pick up;place;move;hold;lift,cup;cup;cup;hand;cup,pick up cup;place cup;move cup;hold hand;lift cup,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Tea_C1_83_430,hold;pour;add;pour;place,cup;glass;ice;water;cup,hold cup;pour glass;add ice;pour water;place cup,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Tea_C1_136_393,hold;pour;add;pour;place,cup;pitcher;ice cube;water;cup,hold cup;pour pitcher;add ice cube;pour water;place cup,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Tea_C1_451_885,take out;open;put in;hold;place,tea bag;tea bag;tea bag;cup;tea bag,take out tea bag;open tea bag;put in tea bag;hold cup;place tea bag,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Tea_C1_723_885,put;hold;dip;stir;place,tea bag;cup;tea bag;tea bag;cup,put tea bag;hold cup;dip tea bag;stir tea bag;place cup,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Tea_C1_915_968,open;remove;hold;place;position,container;lid;container;lid;cup,open container;remove lid;hold container;place lid;position cup,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Tea_C1_990_1165,open;pick up;scoop;fill;close,sugar container;spoon;sugar;cup;sugar container,open sugar container;pick up spoon;scoop sugar;fill cup;close sugar container,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Tea_C1_1065_1143,scoop;put;hold;hold;open,sugar;sugar;spoon;cup;container,scoop sugar;put sugar;hold spoon;hold cup;open container,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Tea_C1_1180_1241,cover;place;move;press;hold,lid;container;container;lid;container,cover lid;place container;move container;press lid;hold container,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Tea_C1_1262_1383,hold;stir;mix;stir;prepare,cup;spoon;liquid;cup;drink,hold cup;stir spoon;mix liquid;stir cup;prepare drink,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Hotdog_C1_16_57,take out;place on plate;open;remove from bag;use,bread;bread;package;bread;plate,take out bread;place on plate bread;open package;remove from bag bread;use plate,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Hotdog_C1_93_187,open;remove;unwrap;place;prepare,package;bacon;bacon;bacon;bread,open package;remove bacon;unwrap bacon;place bacon;prepare bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Hotdog_C1_188_207,place;hold;adjust;open;remove,hot dog;bread;hot dog;package;hot dog,place hot dog;hold bread;adjust hot dog;open package;remove hot dog,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Hotdog_C1_260_283,pick up;move;place;hold;reach,mustard bottle;mustard bottle;bread;plate;hand,pick up mustard bottle;move mustard bottle;place bread;hold plate;reach hand,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Hotdog_C1_288_323,open;squeeze;hold;close;apply,mustard bottle;mustard;bread;mustard bottle;mustard,open mustard bottle;squeeze mustard;hold bread;close mustard bottle;apply mustard,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Hotdog_C1_327_407,hold;squeeze mustard on;move;position;place,mustard bottle;hot dog;mustard bottle;hand;plate,hold mustard bottle;squeeze mustard on hot dog;move mustard bottle;position hand;place plate,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Hotdog_C1_409_445,squeeze;close;spread;put on;apply,mustard bottle;mustard bottle;hot dog;bottle cap;mustard,squeeze mustard bottle;close mustard bottle;spread hot dog;put on bottle cap;apply mustard,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Hotdog_C1_446_464,pick up;place;hold;move;rest,mustard bottle;mustard bottle;bread;plate;hand,pick up mustard bottle;place mustard bottle;hold bread;move plate;rest hand,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Hotdog_C1_466_489,pick up;move;reach for;hold;look at,ketchup bottle;ketchup bottle;hand;plate;table,pick up ketchup bottle;move ketchup bottle;reach for hand;hold plate;look at table,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Hotdog_C1_534_556,hold;open;squeeze;add;close,ketchup bottle;ketchup bottle;ketchup;hot dog;ketchup bottle,hold ketchup bottle;open ketchup bottle;squeeze ketchup;add ketchup to hot dog;close ketchup bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Hotdog_C1_556_611,squeeze;add;hold;pick up;place,ketchup;hot dog;bread;bottle;plate,squeeze ketchup;add hot dog;hold bread;pick up bottle;place plate,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Hotdog_C1_612_638,hold;open;squeeze;close;place,ketchup bottle;ketchup bottle;ketchup;ketchup bottle;ketchup bottle,hold ketchup bottle;open ketchup bottle;squeeze ketchup;close ketchup bottle;place ketchup bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Hotdog_C1_641_669,close;put down;hold;assemble;move,ketchup bottle;ketchup bottle;bread;sandwich;plate,close ketchup bottle;put down ketchup bottle;hold bread;assemble sandwich;move plate,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Hotdog_C1_676_728,assemble;hold;spread;apply;press,sandwich;bread;ketchup;mustard;sandwich,assemble sandwich;hold bread;spread ketchup;apply mustard;press sandwich,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Hotdog_C1_54_61,pick up;place;use;move;interact with,bread;bread;plate;hand;table,pick up bread;place bread;use plate;move hand;interact with table,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Hotdog_C1_112_207,unwrap;place;hold;put on;open,sausage;sausage;bread;sausage;packet,unwrap sausage;place sausage;hold bread;put on sausage;open packet,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Hotdog_C1_243_257,unwrap;take;pick up;place;assemble,plastic wrap;bread;knife;plate;sandwich,unwrap plastic wrap;take bread;pick up knife;place plate;assemble sandwich,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Hotdog_C1_272_462,pick up;squeeze;put down;place;hold,mustard bottle;mustard;mustard bottle;hot dog;bread,pick up mustard bottle;squeeze mustard;put down mustard bottle;place hot dog;hold bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Hotdog_C1_475_665,pick up;open;squeeze;close;put down,ketchup bottle;ketchup bottle;ketchup;ketchup bottle;ketchup bottle,pick up ketchup bottle;open ketchup bottle;squeeze ketchup;close ketchup bottle;put down ketchup bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Hotdog_C1_685_806,fold;press;place;hold;move,sandwich;bread;plate;sandwich;hand,fold sandwich;press bread;place plate;hold sandwich;move hand,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_CofHoney_C1_21_53,pick up;take;stack;move;place,cup;cup;cup;plate;cup,pick up cup;take cup;stack cup;move plate;place cup,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_CofHoney_C1_61_95,take;open;pull;hold;arrange,napkin;box;napkin;napkin;table,take napkin;open box;pull napkin;hold napkin;arrange table,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_CofHoney_C1_96_115,pick up;open;hold;place;move,jar;lid;spoon;jar;container,pick up jar;open lid;hold spoon;place jar;move container,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_CofHoney_C1_114_144,open;remove;hold;place;tilt,jar;lid;jar;cup;jar,open jar;remove lid;hold jar;place cup;tilt jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_CofHoney_C1_186_220,hold;dip;scrape;add;place,jar;spoon;jam;cup;spoon,hold jar;dip spoon;scrape jam;add cup;place spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_CofHoney_C1_221_229,hold;use;add;fill;place,jar;spoon;powder;cup;jar,hold jar;use spoon;add powder;fill cup;place jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_CofHoney_C1_236_263,hold;dip;scrape;add to;remove,jar;spoon;jar;cup;spoon,hold jar;dip spoon;scrape jar;add to cup;remove spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_CofHoney_C1_264_280,hold;use;fill;open;dip,jar;spoon;cup;jar;spoon,hold jar;use spoon;fill cup;open jar;dip spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_CofHoney_C1_299_343,open;hold;move;place;put down,jar;jar;spoon;cup;lid,open jar;hold jar;move spoon;place cup;put down lid,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_CofHoney_C1_344_354,close;move;hold;rest;clear,jar;jar;cup;spoon;table,close jar;move jar;hold cup;rest spoon;clear table,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_CofHoney_C1_356_384,pick up;hold;move;reach;touch,bottle;bottle;bottle;hand;table,pick up bottle;hold bottle;move bottle;reach hand;touch table,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_CofHoney_C1_390_417,open;hold;remove;unscrew;place,bottle;bottle;cap;bottle;cap,open bottle;hold bottle;remove cap;unscrew bottle;place cap,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_CofHoney_C1_435_549,hold;pour;add;place;put down,cup;jug;liquid;spoon;jug,hold cup;pour jug;add liquid;place spoon;put down jug,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_CofHoney_C1_554_567,open;hold;remove;tilt;place,bottle;bottle;cap;bottle;cap,open bottle;hold bottle;remove cap;tilt bottle;place cap,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_CofHoney_C1_568_586,pick up;place;rub;move around;pass by,bottle;bottle;hand;table;phone,pick up bottle;place bottle;rub hand;move around table;pass by phone,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_CofHoney_C1_593_615,pick up;open;hold;pour;put down,bottle;bottle;cup;bottle;bottle,pick up bottle;open bottle;hold cup;pour bottle;put down bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_CofHoney_C1_623_647,open;remove;hold;pour into;close,bottle;lid;bottle;cup;bottle,open bottle;remove lid;hold bottle;pour into cup;close bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_CofHoney_C1_659_737,pick up;hold;pour;put down;move,bottle;cup;liquid;bottle;spoon,pick up bottle;hold cup;pour liquid;put down bottle;move spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_CofHoney_C1_738_757,open;pour;hold;close;place,bottle;bottle;cup;bottle;lid,open bottle;pour bottle;hold cup;close bottle;place lid,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_CofHoney_C1_758_776,pick up;hold;put down;move;grab,bottle;cup;bottle;cup;spoon,pick up bottle;hold cup;put down bottle;move cup;grab spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_CofHoney_C1_799_892,hold;stir;mix;stir;move,cup;spoon;liquid;cup;spoon,hold cup;stir spoon;mix liquid;stir cup;move spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Tea_C1_21_63,pick up;separate;hold;place;stack,cup;cup;cup;cup;cup,pick up cup;separate cup;hold cup;place cup;stack cup,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Tea_C1_65_86,pick up;hold;pour;place;move,bottle;cup;bottle;bottle;cup,pick up bottle;hold cup;pour bottle;place bottle;move cup,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Tea_C1_87_115,open;hold;pour;fill;close,bottle;bottle;bottle;cup;bottle,open bottle;hold bottle;pour bottle;fill cup;close bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Tea_C1_124_282,hold;pour;add;put down;place,cup;glass;liquid;glass;cup,hold cup;pour glass;add liquid;put down glass;place cup,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Tea_C1_283_295,hold;open;remove;squeeze;fill,bottle;bottle;cap;bottle;cup,hold bottle;open bottle;remove cap;squeeze bottle;fill cup,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Tea_C1_296_316,open;place;sanitize;close;pick up,bottle;bottle;hand;bottle;bottle,open bottle;place bottle;sanitize hand;close bottle;pick up bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Tea_C1_329_394,open;take out;hold;close;transfer,package;package;packet;box;packet,open package;take out package;hold packet;close box;transfer packet,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Tea_C1_402_490,open;tear;hold;pour into;dispose,packet;packet;packet;cup;packet,open packet;tear packet;hold packet;pour into cup;dispose packet,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Tea_C1_517_766,hold;open;pour;stir;discard,cup;packet;packet;cup;packet,hold cup;open packet;pour packet;stir cup;discard packet,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Tea_C1_840_867,open;move;hold;remove;place,container;cup;container;lid;container,open container;move cup;hold container;remove lid;place container,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Tea_C1_870_935,open;remove;hold;place;stabilize,container;lid;container;cup;container,open container;remove lid;hold container;place cup;stabilize container,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Tea_C1_946_1028,open;pour;pick up;hold;place,packet;packet;cup;packet;cup,open packet;pour packet;pick up cup;hold packet;place cup,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Tea_C1_1038_1068,scoop;hold;open;transfer;use,sugar;cup;container;sugar;spoon,scoop sugar;hold cup;open container;transfer sugar;use spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Tea_C1_1069_1082,add;hold;use;take from;transfer,sugar;cup;spoon;container;sugar,add sugar;hold cup;use spoon;take from container;transfer sugar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Tea_C1_1088_1110,open;take;hold;pour;close,container;sugar;cup;sugar;lid,open container;take sugar;hold cup;pour sugar;close lid,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Tea_C1_1111_1118,hold;use;add;open;put down,cup;spoon;powder;container;spoon,hold cup;use spoon;add powder;open container;put down spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Tea_C1_1150_1194,pick up;cover;place;press;secure,lid;container;lid;container;lid,pick up lid;cover container;place lid;press container;secure lid,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Tea_C1_1195_1219,move;hold;place;leave;clear,container;container;container;cup;table,move container;hold container;place container;leave cup;clear table,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Tea_C1_1271_1359,无动词,无名词,无动作,0.0,N/A
+S2_Pealate_C1_19_96,无动词,无名词,无动作,0.0,N/A
+S2_Pealate_C1_102_174,pick up;hold;move;place;reach for,packet;bread;plastic bag;plate;bottle,pick up packet;hold bread;move plastic bag;place plate;reach for bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Pealate_C1_181_205,pick up;move;touch;look at;extend,jar;jar;bottle;table;hand,pick up jar;move jar;touch bottle;look at table;extend hand,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Pealate_C1_215_232,open;remove;hold;place;spread,jar;lid;jar;spoon;bread,open jar;remove lid;hold jar;place spoon;spread bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Pealate_C1_261_290,hold;dip;scoop;spread;remove,jar;spoon;jam;bread;spoon,hold jar;dip spoon;scoop jam;spread bread;remove spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Pealate_C1_334_359,open;remove;hold;spread;place,jar;lid;spoon;jam;bread,open jar;remove lid;hold spoon;spread jam;place bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Pealate_C1_363_377,open;hold;place;apply;prepare,jar;spoon;jar;spread;bread,open jar;hold spoon;place jar;apply spread;prepare bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Pealate_C1_420_540,hold;use;spread;move;apply,bread;spoon;jam;spoon;bread,hold bread;use spoon;spread jam;move spoon;apply bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Pealate_C1_542_558,reach for;open;hold;apply;move,jar;jar;spoon;spread;bottle,reach for jar;open jar;hold spoon;apply spread;move bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Pealate_C1_560_597,open;spread;use;prepare;remove,jar;peanut butter;spoon;bread;lid,open jar;spread peanut butter;use spoon;prepare bread;remove lid,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Pealate_C1_625_653,scoop;hold;use;spread on;take,peanut butter;jar;spoon;bread;peanut butter,scoop peanut butter;hold jar;use spoon;spread on bread;take peanut butter,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Pealate_C1_669_715,pick up;close;put down;place;apply,jar;lid;jar;spoon;spread,pick up jar;close lid;put down jar;place spoon;apply spread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Pealate_C1_716_727,open;put down;hold;spread;apply,jar;jar;spoon;bread;condiment,open jar;put down jar;hold spoon;spread bread;apply condiment,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Pealate_C1_748_842,hold;use;apply;spread;move,bread;spoon;spread;bread;spoon,hold bread;use spoon;apply spread;spread bread;move spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Pealate_C1_856_879,pick up;hold;spread;open;place,bottle;spoon;bread;bottle;spoon,pick up bottle;hold spoon;spread bread;open bottle;place spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Pealate_C1_898_923,open;hold;spread;remove;squeeze,bottle;bottle;bread;cap;bottle,open bottle;hold bottle;spread bread;remove cap;squeeze bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Pealate_C1_928_976,hold;spread;pour;move;work on,bottle;bread;condiment;hand;table,hold bottle;spread bread;pour condiment;move hand;work on table,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Pealate_C1_985_997,hold;unscrew;pour;decorate;screw,bottle;cap;chocolate syrup;bread;cap,hold bottle;unscrew cap;pour chocolate syrup;decorate bread;screw cap,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Pealate_C1_998_1016,pick up;pour;put down;spread;apply,bottle;bottle;bottle;bread;condiment,pick up bottle;pour bottle;put down bottle;spread bread;apply condiment,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Pealate_C1_1024_1089,open;pour;hold;move;tear,bag;bag;bag;hand;package,open bag;pour bag;hold bag;move hand;tear package,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Pealate_C1_1101_1160,place;assemble;press;hold;adjust,bread;sandwich;sandwich;bread;sandwich,place bread;assemble sandwich;press sandwich;hold bread;adjust sandwich,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Pealate_C1_93_103,hold;flip;place;unwrap;inspect,bread;bread;bread;plastic wrap;bread,hold bread;flip bread;place bread;unwrap plastic wrap;inspect bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Pealate_C1_113_175,pick up;move;hold;arrange;position,box;plastic bag;bread;container;bottle,pick up box;move plastic bag;hold bread;arrange container;position bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Pealate_C1_196_377,open;pick up;spread;close;put down,jar;spoon;jam;jar;jar,open jar;pick up spoon;spread jam;close jar;put down jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Pealate_C1_254_549,open;take;hold;apply;put down,jar;spread;bread;spread;spoon,open jar;take spread;hold bread;apply spread;put down spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Pealate_C1_401_538,hold;use;spread;apply;put down,bread;spoon;jam;bread;spoon,hold bread;use spoon;spread jam;apply bread;put down spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Pealate_C1_556_726,open;pick up;scrape;close;put down,jar;spoon;peanut butter;jar;spoon,open jar;pick up spoon;scrape peanut butter;close jar;put down spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Pealate_C1_620_677,hold;dip;spread;place;pick up,jar;spoon;peanut butter;jar;lid,hold jar;dip spoon;spread peanut butter;place jar;pick up lid,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Pealate_C1_737_886,spread;use;pick up;apply;hold,bread;spoon;bottle;condiment;bread,spread bread;use spoon;pick up bottle;apply condiment;hold bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Pealate_C1_737_851,hold;use;apply;prepare;work on,bread;spoon;spread;sandwich;table,hold bread;use spoon;apply spread;prepare sandwich;work on table,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Pealate_C1_870_1016,pick up;open;spread;put down;move,bottle;bottle;bread;bottle;spoon,pick up bottle;open bottle;spread bread;put down bottle;move spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Pealate_C1_1089_1180,place;assemble;hold;press;complete,bread;sandwich;bread;sandwich;sandwich,place bread;assemble sandwich;hold bread;press sandwich;complete sandwich,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Hotdog_C1_23_54,take;open;remove;place;close,bread;plastic bag;bread;bread;plastic bag,take bread;open plastic bag;remove bread;place bread;close plastic bag,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Hotdog_C1_74_128,无动词,无名词,无动作,0.0,N/A
+S4_Hotdog_C1_129_149,place;hold;place;adjust;steady,bread;sausage;sausage;bread;plate,place bread;hold sausage;place sausage;adjust bread;steady plate,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Hotdog_C1_171_197,pick up;open;squeeze;close;put down,mustard bottle;mustard bottle;mustard;mustard bottle;mustard bottle,pick up mustard bottle;open mustard bottle;squeeze mustard;close mustard bottle;put down mustard bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Hotdog_C1_227_282,open;squeeze;spread;close;put down,mustard bottle;mustard bottle;bread;mustard bottle;mustard bottle,open mustard bottle;squeeze mustard bottle;spread bread;close mustard bottle;put down mustard bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Hotdog_C1_290_341,squeeze;hold;hold;place;position,mustard;bread;bottle;plate;hot dog,squeeze mustard;hold bread;hold bottle;place plate;position hot dog,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Hotdog_C1_347_352,squeeze;hold;open;close;place,mustard;bread;bottle;bottle;plate,squeeze mustard;hold bread;open bottle;close bottle;place plate,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Hotdog_C1_353_382,open;squeeze;close;put down;spread,mustard bottle;mustard;mustard bottle;mustard bottle;bread,open mustard bottle;squeeze mustard;close mustard bottle;put down mustard bottle;spread bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Hotdog_C1_384_396,pick up;open;hold;move;remove,bottle;bottle;bottle;bottle;cap,pick up bottle;open bottle;hold bottle;move bottle;remove cap,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Hotdog_C1_418_454,open;pour;close;hold;spread,ketchup bottle;ketchup;ketchup bottle;ketchup bottle;bread,open ketchup bottle;pour ketchup;close ketchup bottle;hold ketchup bottle;spread bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Hotdog_C1_458_511,squeeze;spread;hold;prepare;place,ketchup;bread;ketchup bottle;sandwich;plate,squeeze ketchup;spread bread;hold ketchup bottle;prepare sandwich;place plate,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Hotdog_C1_513_527,close;squeeze;spread;attach;hold,bottle;ketchup;bread;lid;bottle,close bottle;squeeze ketchup;spread bread;attach lid;hold bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Hotdog_C1_528_552,open;squeeze;close;put down;spread,ketchup bottle;ketchup bottle;ketchup bottle;ketchup bottle;bread,open ketchup bottle;squeeze ketchup bottle;close ketchup bottle;put down ketchup bottle;spread bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Hotdog_C1_559_644,hold;tear;split;press;use,sandwich;sandwich;sandwich;sandwich;plate,hold sandwich;tear sandwich;split sandwich;press sandwich;use plate,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Hotdog_C1_17_61,take out;place on plate;open;remove from bag;hold,bread;bread;package;bread;slice,take out bread;place on plate bread;open package;remove from bag bread;hold slice,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Hotdog_C1_83_123,open;place;move;hold;touch,packet;bread;hand;package;table,open packet;place bread;move hand;hold package;touch table,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Hotdog_C1_122_143,place;hold;open;use;prepare,hot dog;bread;package;plate;sandwich,place hot dog;hold bread;open package;use plate;prepare sandwich,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Hotdog_C1_154_171,pick up;open;hold;spread;put down,mustard bottle;mustard bottle;bread;mustard;mustard bottle,pick up mustard bottle;open mustard bottle;hold bread;spread mustard;put down mustard bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Hotdog_C1_171_195,open;squeeze;spread;close;look at,butter;butter;butter;container;table,open butter;squeeze butter;spread butter;close container;look at table,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Hotdog_C1_198_331,squeeze;hold;place;use;apply,mustard;hot dog;bun;plate;bottle,squeeze mustard;hold hot dog;place bun;use plate;apply bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Hotdog_C1_333_346,open;squeeze;spread;close;prepare,mustard bottle;mustard;bread;mustard bottle;sandwich,open mustard bottle;squeeze mustard;spread bread;close mustard bottle;prepare sandwich,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Hotdog_C1_347_366,pick up;put down;place;arrange;select,mustard bottle;mustard bottle;bread;table;condiment,pick up mustard bottle;put down mustard bottle;place bread;arrange table;select condiment,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Hotdog_C1_367_384,pick up;move;hold;place;reach for,ketchup bottle;ketchup bottle;plate;ketchup bottle;hand,pick up ketchup bottle;move ketchup bottle;hold plate;place ketchup bottle;reach for hand,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Hotdog_C1_394_425,open;squeeze;spread;close;put down,ketchup bottle;ketchup bottle;bread;ketchup bottle;ketchup bottle,open ketchup bottle;squeeze ketchup bottle;spread bread;close ketchup bottle;put down ketchup bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Hotdog_C1_437_473,squeeze;prepare;hold;place;apply,ketchup;hot dog;bun;plate;condiment,squeeze ketchup;prepare hot dog;hold bun;place plate;apply condiment,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Hotdog_C1_473_483,open;squeeze;add;close;put down,ketchup bottle;ketchup;hot dog;ketchup bottle;ketchup bottle,open ketchup bottle;squeeze ketchup;add ketchup to hot dog;close ketchup bottle;put down ketchup bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Hotdog_C1_484_513,open;squeeze;close;put down;prepare,ketchup bottle;ketchup;ketchup bottle;ketchup bottle;hot dog,open ketchup bottle;squeeze ketchup;close ketchup bottle;put down ketchup bottle;prepare hot dog,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Hotdog_C1_526_593,assemble;press;place;spread;hold,sandwich;bread;hot dog;ketchup;sandwich,assemble sandwich;press bread;place hot dog;spread ketchup;hold sandwich,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Hotdog_C1_58_77,take;place;pick up;place;hold,bread;bread;sausage;sausage;bread,take bread;place bread;pick up sausage;place sausage;hold bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Hotdog_C1_97_153,open;place;put;hold;move,packet;bread;sausage;plate;hand,open packet;place bread;put sausage;hold plate;move hand,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Hotdog_C1_165_360,squeeze;place;hold;open;use,mustard;hot dog;bun;bottle;plate,squeeze mustard;place hot dog;hold bun;open bottle;use plate,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Hotdog_C1_378_512,squeeze;hold;put down;place;adjust,ketchup;hot dog;bottle;bread;plate,squeeze ketchup;hold hot dog;put down bottle;place bread;adjust plate,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Hotdog_C1_531_674,assemble;hold;place;spread;compress,sandwich;bread;hot dog;ketchup;sandwich,assemble sandwich;hold bread;place hot dog;spread ketchup;compress sandwich,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Coffee_C1_14_40,pick up;move;stack;unstack;hold,cup;cup;cup;cup;cup,pick up cup;move cup;stack cup;unstack cup;hold cup,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Coffee_C1_66_88,place;pick up;open;pour;put down,cup;bottle;bottle;bottle;bottle,place cup;pick up bottle;open bottle;pour bottle;put down bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Coffee_C1_87_125,pick up;open;hold;pour into;put down,bottle;bottle;bottle;cup;bottle,pick up bottle;open bottle;hold bottle;pour into cup;put down bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Coffee_C1_146_205,open;take out;pick up;pour into;close,packet;spoon;jar;cup;packet,open packet;take out spoon;pick up jar;pour into cup;close packet,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Coffee_C1_237_276,open;pick up;take;fill;close,jar;spoon;jam;cup;jar,open jar;pick up spoon;take jam;fill cup;close jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Coffee_C1_279_292,hold;scoop;pour into;drop;place,jar;spoon;cup;spoon;jar,hold jar;scoop spoon;pour into cup;drop spoon;place jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Coffee_C1_297_323,hold;dip;scrape;add to;put down,jar;spoon;substance;cup;jar,hold jar;dip spoon;scrape substance;add to cup;put down jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Coffee_C1_324_341,hold;use;add;fill;close,jar;spoon;powder;cup;jar,hold jar;use spoon;add powder;fill cup;close jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Coffee_C1_370_413,open;remove;hold;place;twist,jar;lid;jar;lid;jar,open jar;remove lid;hold jar;place lid;twist jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Coffee_C1_414_434,pick up;place;stir;move;look at,bottle;bottle;cup;hand;table,pick up bottle;place bottle;stir cup;move hand;look at table,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Coffee_C1_438_460,open;remove;hold;reach;place,container;lid;container;table;cup,open container;remove lid;hold container;reach table;place cup,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Coffee_C1_460_487,open;remove;hold;place;lift,container;lid;container;cup;lid,open container;remove lid;hold container;place cup;lift lid,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Coffee_C1_520_562,scoop;hold;add;use;open,sugar;cup;sugar;spoon;container,scoop sugar;hold cup;add sugar;use spoon;open container,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Coffee_C1_563_577,add;use;hold;open;take,sugar;spoon;cup;container;sugar,add sugar;use spoon;hold cup;open container;take sugar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Coffee_C1_582_614,hold;scoop from;hold;transfer;move,spoon;container;cup;powder;spoon,hold spoon;scoop from container;hold cup;transfer powder;move spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_CofHoney_C1_997_1192,hold;stir;mix;shake;stir,cup;stirrer;drink;cup;liquid,hold cup;stir stirrer;mix drink;shake cup;stir liquid,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_CofHoney_C1_553_568,pick up;open;use;hold;add,jar;jar;spoon;bowl;condiment,pick up jar;open jar;use spoon;hold bowl;add condiment,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_CofHoney_C1_569_613,open;hold;add to;remove;pour,bottle;bottle;cup;lid;condiment,open bottle;hold bottle;add to cup;remove lid;pour condiment,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_CofHoney_C1_622_672,pour;hold;add;squeeze;stir,bottle;cup;liquid;bottle;straw,pour bottle;hold cup;add liquid;squeeze bottle;stir straw,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_CofHoney_C1_679_690,open;pour;close;hold;stir,bottle;bottle;bottle;cup;spoon,open bottle;pour bottle;close bottle;hold cup;stir spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_CofHoney_C1_691_703,pick up;place;hold;stir;move,bottle;bottle;cup;spoon;bottle,pick up bottle;place bottle;hold cup;stir spoon;move bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_CofHoney_C1_713_802,hold;stir;mix;stir;use,cup;spoon;mixture;cup;spoon,hold cup;stir spoon;mix mixture;stir cup;use spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_CofHoney_C1_27_39,pick up;place;stack;unstack;move,cup;cup;cup;cup;cup,pick up cup;place cup;stack cup;unstack cup;move cup,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_CofHoney_C1_60_68,pick up;shake;put down;hold;look at,bottle;bottle;bottle;cup;table,pick up bottle;shake bottle;put down bottle;hold cup;look at table,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_CofHoney_C1_90_244,open;pick up;scoop;fill;close,jar;spoon;jam;cup;jar,open jar;pick up spoon;scoop jam;fill cup;close jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_CofHoney_C1_129_299,open;pick up;scrape;fill;close,jar;spoon;jam;cup;jar,open jar;pick up spoon;scrape jam;fill cup;close jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_CofHoney_C1_311_548,pick up;pour;hold;put down;stir,bottle;liquid;cup;bottle;spoon,pick up bottle;pour liquid;hold cup;put down bottle;stir spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_CofHoney_C1_366_518,pour;hold;add;stir;place,bottle;cup;liquid;spoon;bottle,pour bottle;hold cup;add liquid;stir spoon;place bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_CofHoney_C1_559_702,pick up;open;pour;close;put down,bottle;bottle;bottle;bottle;bottle,pick up bottle;open bottle;pour bottle;close bottle;put down bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_CofHoney_C1_625_677,pour;hold;stir;add;close,bottle;cup;spoon;liquid;bottle,pour bottle;hold cup;stir spoon;add liquid;close bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_CofHoney_C1_708_804,hold;stir;mix;stir;combine,cup;spoon;mixture;cup;liquid,hold cup;stir spoon;mix mixture;stir cup;combine liquid,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Pealate_C1_16_60,take out;hold;open;place;close,bread;bread;packet;bread;包装袋,take out bread;hold bread;open packet;place bread;close packaging,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Pealate_C1_84_104,pick up;open;hold;take;reach for,jar;jar;jar;spice;container,pick up jar;open jar;hold jar;take spice;reach for container,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Pealate_C1_105_121,open;remove;hold;place;tilt,jar;lid;jar;lid;jar,open jar;remove lid;hold jar;place lid;tilt jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Pealate_C1_150_176,pick up;hold;transfer;use;place,spoon;spoon;spoon;spoon;spoon,pick up spoon;hold spoon;transfer spoon;use spoon;place spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Pealate_C1_201_271,open;take;scoop;hold;spread,jar;spoon;jam;bread;bread,open jar;take spoon;scoop jam;hold bread;spread bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Pealate_C1_274_300,hold;spread;use;take from;place on,bread;jam;spoon;jar;plate,hold bread;spread jam;use spoon;take from jar;place on plate,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Pealate_C1_335_357,hold;spread;dip;open;place,bread;jam;spoon;jar;plate,hold bread;spread jam;dip spoon;open jar;place plate,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Pealate_C1_360_435,hold;spread;use;open;place,bread;jam;spoon;jar;plate,hold bread;spread jam;use spoon;open jar;place plate,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Pealate_C1_466_491,open;remove;hold;spread;apply,jar;lid;spoon;jam;bread,open jar;remove lid;hold spoon;spread jam;apply bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Pealate_C1_492_505,pick up;place;open;hold;move,jar;jar;jar;plate;hand,pick up jar;place jar;open jar;hold plate;move hand,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Pealate_C1_506_520,pick up;move;reach for;hold;place,bottle;bottle;hand;bottle;bottle,pick up bottle;move bottle;reach for hand;hold bottle;place bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Pealate_C1_523_569,open;remove;hold;use;apply,jar;lid;jar;spoon;spread,open jar;remove lid;hold jar;use spoon;apply spread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Pealate_C1_589_794,open;take;hold;apply;use,jar;spread;bread;spread;spoon,open jar;take spread;hold bread;apply spread;use spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Pealate_C1_808_844,pick up;cover;tighten;spread;place,jar;lid;jar;bread;plate,pick up jar;cover lid;tighten jar;spread bread;place plate,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Pealate_C1_845_854,hold;move;twist;place;release,jar;jar;lid;jar;hand,hold jar;move jar;twist lid;place jar;release hand,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Pealate_C1_857_874,pick up;hold;move;reach for;place,bottle;bottle;bottle;hand;bottle,pick up bottle;hold bottle;move bottle;reach for hand;place bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Pealate_C1_881_903,hold;unscrew;open;tilt;pour,bottle;cap;bottle;bottle;bottle,hold bottle;unscrew cap;open bottle;tilt bottle;pour bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Pealate_C1_932_1040,hold;pour;squeeze;place;apply,bread;chocolate syrup;bottle;plate;spread,hold bread;pour chocolate syrup;squeeze bottle;place plate;apply spread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Pealate_C1_1041_1062,open;hold;remove;squeeze;close,bottle;bottle;cap;bottle;bottle,open bottle;hold bottle;remove cap;squeeze bottle;close bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Pealate_C1_1063_1087,open;place;move;remove;hold,bottle;bottle;hand;cap;bottle,open bottle;place bottle;move hand;remove cap;hold bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Pealate_C1_1090_1120,take out;hold;place;open;assemble,bread;bread;bread;packet;sandwich,take out bread;hold bread;place bread;open packet;assemble sandwich,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Pealate_C1_1123_1240,assemble;place;hold;press;lift,sandwich;bread;sandwich;sandwich;sandwich,assemble sandwich;place bread;hold sandwich;press sandwich;lift sandwich,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Cheese_C1_11_65,open;hold;fold;manipulate;adjust,plastic bag;plastic bag;plastic bag;plastic bag;plastic bag,open plastic bag;hold plastic bag;fold plastic bag;manipulate plastic bag;adjust plastic bag,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Cheese_C1_72_105,take;hold;unwrap;place;move,cheese;cheese;cheese;cheese;plastic bag,take cheese;hold cheese;unwrap cheese;place cheese;move plastic bag,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Cheese_C1_111_170,unwrap;place;remove;hold;prepare,cheese;cheese;plastic wrap;cheese;bread,unwrap cheese;place cheese;remove plastic wrap;hold cheese;prepare bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Cheese_C1_171_198,place;discard;align;hold;press,cheese;wrapper;cheese;bread;cheese,place cheese;discard wrapper;align cheese;hold bread;press cheese,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Cheese_C1_198_217,pick up;move;place;look at;reach for,mayonnaise bottle;mayonnaise bottle;bread;table;bottle,pick up mayonnaise bottle;move mayonnaise bottle;place bread;look at table;reach for bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Cheese_C1_218_237,open;hold;remove;tilt;pour into,bottle;bottle;lid;bottle;container,open bottle;hold bottle;remove lid;tilt bottle;pour into container,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Cheese_C1_253_330,hold;squeeze;spread on;open;apply,mayonnaise bottle;mayonnaise;bread;bottle cap;mayonnaise,hold mayonnaise bottle;squeeze mayonnaise;spread on bread;open bottle cap;apply mayonnaise,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Cheese_C1_333_345,open;hold;squeeze;close;spread,mayonnaise bottle;mayonnaise bottle;mayonnaise bottle;mayonnaise bottle;bread,open mayonnaise bottle;hold mayonnaise bottle;squeeze mayonnaise bottle;close mayonnaise bottle;spread bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Cheese_C1_346_361,pick up;place;tighten;move;arrange,mayonnaise bottle;mayonnaise bottle;mayonnaise bottle;bottle;table,pick up mayonnaise bottle;place mayonnaise bottle;tighten mayonnaise bottle;move bottle;arrange table,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Cheese_C1_362_372,pick up;move;reach for;look at;place,mustard bottle;mustard bottle;hand;table;bottle,pick up mustard bottle;move mustard bottle;reach for hand;look at table;place bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Cheese_C1_373_399,open;squeeze;close;spread;put down,mustard bottle;mustard;mustard bottle;bread;mustard bottle,open mustard bottle;squeeze mustard;close mustard bottle;spread bread;put down mustard bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Cheese_C1_400_443,squeeze;spread;hold;position;prepare,mayonnaise;bread;bottle;hand;sandwich,squeeze mayonnaise;spread bread;hold bottle;position hand;prepare sandwich,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Cheese_C1_445_459,squeeze;hold;spread;place;open,mustard;bottle;bread;cheese;cap,squeeze mustard;hold bottle;spread bread;place cheese;open cap,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Cheese_C1_460_475,open;squeeze;close;put down;prepare,mustard bottle;mustard;mustard bottle;mustard bottle;bread,open mustard bottle;squeeze mustard;close mustard bottle;put down mustard bottle;prepare bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Cheese_C1_483_529,open;unwrap;take out;move;clear,bread;package;bread;plastic bag;table,open bread;unwrap package;take out bread;move plastic bag;clear table,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Cheese_C1_535_580,place;hold;assemble;press;compress,bread;bread;sandwich;bread;sandwich,place bread;hold bread;assemble sandwich;press bread;compress sandwich,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Cheese_C1_66_71,hold;inspect;flip;place;prepare,bread;bread;bread;bread;sandwich,hold bread;inspect bread;flip bread;place bread;prepare sandwich,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Cheese_C1_98_199,take out;unwrap;place;hold;discard,cheese;cheese;cheese;bread;wrapper,take out cheese;unwrap cheese;place cheese;hold bread;discard wrapper,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Cheese_C1_212_360,pick up;open;squeeze;close;put down,mayonnaise bottle;mayonnaise bottle;mayonnaise;mayonnaise bottle;mayonnaise bottle,pick up mayonnaise bottle;open mayonnaise bottle;squeeze mayonnaise;close mayonnaise bottle;put down mayonnaise bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Cheese_C1_371_471,pick up;squeeze;put down;spread;apply,mustard bottle;mustard;mustard bottle;bread;mustard,pick up mustard bottle;squeeze mustard;put down mustard bottle;spread bread;apply mustard,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Cheese_C1_523_634,pick up;hold;place;press;adjust,bread;bread;bread;bread;bread,pick up bread;hold bread;place bread;press bread;adjust bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Coffee_C1_15_50,pick up;separate;place;stack;handle,cup;cup;cup;cup;cup,pick up cup;separate cup;place cup;stack cup;handle cup,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Coffee_C1_78_100,take;open;move;reach;grab,napkin;package;hand;table;item,take napkin;open package;move hand;reach table;grab item,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Coffee_C1_114_132,hold;pick up;open;put down;hold,spoon;jar;jar;spoon;jar,hold spoon;pick up jar;open jar;put down spoon;hold jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Coffee_C1_133_177,open;remove;hold;place;tilt,jar;lid;jar;lid;jar,open jar;remove lid;hold jar;place lid;tilt jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Coffee_C1_197_243,open;pick up;scoop;fill;put down,jar;spoon;jam;cup;spoon,open jar;pick up spoon;scoop jam;fill cup;put down spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Coffee_C1_244_251,hold;scoop;fill;place;close,jar;spoon;cup;spoon;jar,hold jar;scoop spoon;fill cup;place spoon;close jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Coffee_C1_256_277,hold;scoop;take;fill;put,jar;spoon;jam;cup;spoon,hold jar;scoop spoon;take jam;fill cup;put spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Coffee_C1_278_284,hold;use;scoop;fill;place,jar;spoon;powder;cup;jar,hold jar;use spoon;scoop powder;fill cup;place jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Coffee_C1_311_359,open;remove;hold;place;tilt,jar;lid;jar;cup;jar,open jar;remove lid;hold jar;place cup;tilt jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Coffee_C1_360_377,hold;twist;place;stir;move,jar;jar;jar;cup;jar,hold jar;twist jar;place jar;stir cup;move jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Coffee_C1_381_421,pick up;move;reach for;interact with;grab,container;container;hand;object;item,pick up container;move container;reach for hand;interact with object;grab item,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Coffee_C1_421_467,open;remove;hold;place;tilt,container;lid;container;lid;container,open container;remove lid;hold container;place lid;tilt container,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Coffee_C1_496_519,scoop;hold;add;open;use,sugar;cup;sugar;container;spoon,scoop sugar;hold cup;add sugar;open container;use spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Coffee_C1_520_525,add;hold;use;open;transfer,sugar;cup;spoon;container;sugar,add sugar;hold cup;use spoon;open container;transfer sugar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Coffee_C1_539_588,pick up;cover;place;press;secure,lid;container;lid;container;lid,pick up lid;cover container;place lid;press container;secure lid,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Coffee_C1_589_616,hold;move;press;place;position,container;container;lid;cup;container,hold container;move container;press lid;place cup;position container,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Coffee_C1_621_647,pick up;hold;move;place;look at,bottle;bottle;bottle;cup;table,pick up bottle;hold bottle;move bottle;place cup;look at table,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Coffee_C1_660_683,open;hold;remove;pour into;close,bottle;bottle;lid;cup;bottle,open bottle;hold bottle;remove lid;pour into cup;close bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Coffee_C1_699_835,pour;hold;hold;add;stir,water;cup;bottle;liquid;spoon,pour water;hold cup;hold bottle;add liquid;stir spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Coffee_C1_852_864,pick up;open;hold;pour;close,bottle;bottle;cup;bottle;bottle,pick up bottle;open bottle;hold cup;pour bottle;close bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Coffee_C1_865_883,pick up;place;hold;move;put down,bottle;bottle;bottle;bottle;bottle,pick up bottle;place bottle;hold bottle;move bottle;put down bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Coffee_C1_893_963,hold;stir;mix;stir;agitate,cup;spoon;drink;cup;liquid,hold cup;stir spoon;mix drink;stir cup;agitate liquid,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_CofHoney_C1_19_48,pick up;unstack;hold;move;lift,cup;cup;cup;cup;cup,pick up cup;unstack cup;hold cup;move cup;lift cup,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_CofHoney_C1_88_108,pick up;hold;move;reach;touch,jar;jar;jar;hand;table,pick up jar;hold jar;move jar;reach hand;touch table,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_CofHoney_C1_108_141,open;remove;hold;place;tilt,jar;lid;jar;lid;jar,open jar;remove lid;hold jar;place lid;tilt jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_CofHoney_C1_160_213,open;take out;hold;move;place,box;packet;cup;jar;lid,open box;take out packet;hold cup;move jar;place lid,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_CofHoney_C1_253_310,hold;insert;scrape;fill;remove,jar;spoon;jam;cup;spoon,hold jar;insert spoon;scrape jam;fill cup;remove spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_CofHoney_C1_314_335,hold;scoop;fill;put down;close,jar;spoon;cup;spoon;jar,hold jar;scoop spoon;fill cup;put down spoon;close jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_CofHoney_C1_341_375,hold;use;scrape;fill;place,jar;spoon;jam;cup;jar,hold jar;use spoon;scrape jam;fill cup;place jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_CofHoney_C1_377_393,hold;use;scoop;fill;place,jar;spoon;jam;cup;spoon,hold jar;use spoon;scoop jam;fill cup;place spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_CofHoney_C1_412_476,pick up;screw on;put down;hold;stir,jar;lid;jar;cup;spoon,pick up jar;screw on lid;put down jar;hold cup;stir spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_CofHoney_C1_477_503,pick up;put down;hold;stir;arrange,bottle;bottle;cup;spoon;table,pick up bottle;put down bottle;hold cup;stir spoon;arrange table,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_CofHoney_C1_512_534,pick up;hold;move;lift;grab,bottle;bottle;bottle;bottle;bottle,pick up bottle;hold bottle;move bottle;lift bottle;grab bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_CofHoney_C1_534_558,open;hold;remove;tilt;pour,bottle;bottle;cap;bottle;liquid,open bottle;hold bottle;remove cap;tilt bottle;pour liquid,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_CofHoney_C1_564_712,pour;fill;hold;place;empty,plastic bag;cup;plastic bag;cup;plastic bag,pour plastic bag;fill cup;hold plastic bag;place cup;empty plastic bag,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_CofHoney_C1_712_730,hold;pour into;cap;move;place,bottle;cup;bottle;hand;bottle,hold bottle;pour into cup;cap bottle;move hand;place bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_CofHoney_C1_731_757,open;put down;rub;hold;move,bottle;bottle;hand;bottle;hand,open bottle;put down bottle;rub hand;hold bottle;move hand,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_CofHoney_C1_785_802,pick up;open;hold;stir;place,jar;jar;spoon;bowl;jar,pick up jar;open jar;hold spoon;stir bowl;place jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_CofHoney_C1_804_829,open;remove;hold;stir;close,jar;lid;jar;spoon;jar,open jar;remove lid;hold jar;stir spoon;close jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_CofHoney_C1_834_927,hold;hold;pour;stir;put down,bottle;cup;liquid;spoon;bottle,hold bottle;hold cup;pour liquid;stir spoon;put down bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_CofHoney_C1_932_956,open;pour;close;hold;stir,bottle;bottle;bottle;cup;spoon,open bottle;pour bottle;close bottle;hold cup;stir spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_CofHoney_C1_957_977,无动词,无名词,无动作,0.0,N/A
+S1_CofHoney_C1_997_1197,hold;stir;mix;stir;blend,cup;spoon;mixture;cup;contents,hold cup;stir spoon;mix mixture;stir cup;blend contents,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_CofHoney_C1_37_75,pick up;place;hold;look at;move,cup;cup;cup;table;cup,pick up cup;place cup;hold cup;look at table;move cup,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_CofHoney_C1_105_157,open;remove;place;put down;hold,jar;lid;jar;lid;jar,open jar;remove lid;place jar;put down lid;hold jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_CofHoney_C1_175_406,pick up;take;scoop;add;put down,jar;spoon;jam;cup;jar,pick up jar;take spoon;scoop jam;add cup;put down jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_CofHoney_C1_247_495,pick up;take;scoop;put;close,jar;spoon;jam;cup;jar,pick up jar;take spoon;scoop jam;put cup;close jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_CofHoney_C1_525_749,pick up;pour;put down;close;hold,bottle;liquid;bottle;lid;cup,pick up bottle;pour liquid;put down bottle;close lid;hold cup,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_CofHoney_C1_798_977,pick up;hold;pour;put down;stir,bottle;cup;bottle;bottle;cup,pick up bottle;hold cup;pour bottle;put down bottle;stir cup,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_CofHoney_C1_997_1192,hold;stir;mix;shake;agitate,cup;stirrer;drink;cup;contents,hold cup;stir stirrer;mix drink;shake cup;agitate contents,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Peanut_C1_12_79,open;take out;hold;close;place,packet;bread;bread;packet;bread,open packet;take out bread;hold bread;close packet;place bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Peanut_C1_92_114,pick up;open;hold;move;access,jar;lid;jar;hand;container,pick up jar;open lid;hold jar;move hand;access container,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Peanut_C1_119_164,open;remove;hold;place;prepare,jar;lid;jar;lid;spread,open jar;remove lid;hold jar;place lid;prepare spread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Peanut_C1_178_203,take;pick up;open;tear;hold,packet;cup;packet;packet;cup,take packet;pick up cup;open packet;tear packet;hold cup,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Peanut_C1_218_247,hold;dip;scoop;place;spread,jar;spoon;peanut butter;jar;spoon,hold jar;dip spoon;scoop peanut butter;place jar;spread spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Peanut_C1_261_300,hold;apply;use;open;place,bread;spread;knife;jar;plate,hold bread;apply spread;use knife;open jar;place plate,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Peanut_C1_308_342,hold;dip;scoop;spread;place,jar;spoon;peanut butter;bread;lid,hold jar;dip spoon;scoop peanut butter;spread bread;place lid,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Peanut_C1_362_460,hold;apply;use;open;place,bread;spread;knife;jar;plate,hold bread;apply spread;use knife;open jar;place plate,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Peanut_C1_483_524,pick up;cover;close;place;spread,jar;lid;jar;jar;bread,pick up jar;cover lid;close jar;place jar;spread bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Peanut_C1_525_537,pick up;place;open;hold;select,jar;jar;jar;plate;condiment,pick up jar;place jar;open jar;hold plate;select condiment,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Peanut_C1_542_563,pick up;open;squeeze;put down;move,bottle;bottle;bottle;bottle;hand,pick up bottle;open bottle;squeeze bottle;put down bottle;move hand,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Peanut_C1_564_595,open;hold;remove;squeeze;spread,bottle;bottle;cap;bottle;bread,open bottle;hold bottle;remove cap;squeeze bottle;spread bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Peanut_C1_615_726,spread;squeeze;pour;hold;place,bread;mustard;ketchup;bottle;plate,spread bread;squeeze mustard;pour ketchup;hold bottle;place plate,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Peanut_C1_727_744,open;remove;hold;place;squeeze,bottle;bottle cap;bottle;bottle cap;bottle,open bottle;remove bottle cap;hold bottle;place bottle cap;squeeze bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Peanut_C1_727_766,open;put down;spread;close;pick up,bottle;bottle;bread;bottle;bottle,open bottle;put down bottle;spread bread;close bottle;pick up bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Peanut_C1_772_812,take out;place;open;hold;remove,bread;bread;loaf;package;bread,take out bread;place bread;open loaf;hold package;remove bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Peanut_C1_814_933,place;hold;press;lift;inspect,bread;bread;bread;bread;bread,place bread;hold bread;press bread;lift bread;inspect bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Coffee_C1_21_101,pick up;stack;move;adjust;open,cup;cup;plate;plastic wrap;box,pick up cup;stack cup;move plate;adjust plastic wrap;open box,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Coffee_C1_117_140,pick up;hold;move;add;reach for,bottle;bottle;hand;spice;container,pick up bottle;hold bottle;move hand;add spice;reach for container,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Coffee_C1_145_170,open;remove;hold;place;twist,jar;lid;jar;cup;jar,open jar;remove lid;hold jar;place cup;twist jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Coffee_C1_181_229,open;hold;pick up;reach for;look at,packet;cup;jar;container;paper,open packet;hold cup;pick up jar;reach for container;look at paper,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Coffee_C1_232_267,hold;scoop;take;pour into;place,jar;spoon;jam;cup;spoon,hold jar;scoop spoon;take jam;pour into cup;place spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Coffee_C1_268_276,hold;hold;scoop;pour into;place,spoon;jar;powder;cup;spoon,hold spoon;hold jar;scoop powder;pour into cup;place spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Coffee_C1_282_306,hold;scoop;transfer;fill;place,jar;spoon;powder;cup;spoon,hold jar;scoop spoon;transfer powder;fill cup;place spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Coffee_C1_307_321,hold;hold;scoop;fill;place,spoon;jar;coffee;cup;spoon,hold spoon;hold jar;scoop coffee;fill cup;place spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Coffee_C1_344_393,close;pick up;hold;hold;place,jar;lid;jar;spoon;cup,close jar;pick up lid;hold jar;hold spoon;place cup,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Coffee_C1_394_420,pick up;place;hold;move;read,bottle;bottle;spoon;plate;paper,pick up bottle;place bottle;hold spoon;move plate;read paper,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Coffee_C1_441_474,open;remove;pick up;hold;place,container;lid;spoon;cup;container,open container;remove lid;pick up spoon;hold cup;place container,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Coffee_C1_498_546,open;remove;hold;grab;place,container;lid;cup;spoon;container,open container;remove lid;hold cup;grab spoon;place container,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Coffee_C1_572_602,hold;scoop;add;use;open,cup;sugar;sugar;spoon;container,hold cup;scoop sugar;add sugar;use spoon;open container,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Coffee_C1_603_613,add;hold;use;open;transfer,sugar;cup;spoon;container;sugar,add sugar;hold cup;use spoon;open container;transfer sugar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Coffee_C1_618_639,scoop;hold;add;use;open,sugar;cup;sugar;spoon;container,scoop sugar;hold cup;add sugar;use spoon;open container,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Coffee_C1_640_648,add;use;hold;take from;transfer,sugar;spoon;cup;container;sugar,add sugar;use spoon;hold cup;take from container;transfer sugar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Coffee_C1_678_711,pick up;cover;place;press;secure,lid;container;lid;container;lid,pick up lid;cover container;place lid;press container;secure lid,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Coffee_C1_712_737,close;move;press;touch;secure,container;container;hand;table;lid,close container;move container;press hand;touch table;secure lid,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Coffee_C1_743_763,无动词,无名词,无动作,0.0,N/A
+S3_Coffee_C1_770_795,open;pour;close;hold;move,bottle;liquid;bottle;cup;spoon,open bottle;pour liquid;close bottle;hold cup;move spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Coffee_C1_808_1014,hold;pour;add;fill;place,cup;bottle;liquid;cup;bottle,hold cup;pour bottle;add liquid;fill cup;place bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Coffee_C1_1022_1037,open;hold;pour;place;close,bottle;bottle;bottle;cup;bottle,open bottle;hold bottle;pour bottle;place cup;close bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Coffee_C1_1038_1059,pick up;move;place;reach;hold,bottle;bottle;bottle;hand;bottle,pick up bottle;move bottle;place bottle;reach hand;hold bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Coffee_C1_1084_1089,hold;stir;move;stir;place,cup;spoon;spoon;cup;spoon,hold cup;stir spoon;move spoon;stir cup;place spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Peanut_C1_24_76,take out;open;pull;move;reach,bread;bag;bread;table;hand,take out bread;open bag;pull bread;move table;reach hand,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Peanut_C1_97_126,pick up;open;place;move;interact with,jar;lid;jar;hand;table,pick up jar;open lid;place jar;move hand;interact with table,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Peanut_C1_130_185,open;remove;hold;place;twist,jar;lid;jar;lid;jar,open jar;remove lid;hold jar;place lid;twist jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Peanut_C1_225_266,pick up;open;take out;pick up;spread,cup;jar;bread;spoon;peanut butter,pick up cup;open jar;take out bread;pick up spoon;spread peanut butter,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Peanut_C1_280_360,无动词,无名词,无动作,0.0,N/A
+S1_Peanut_C1_381_774,hold;spread;use;open;prepare,bread;peanut butter;spoon;jar;bread,hold bread;spread peanut butter;use spoon;open jar;prepare bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Peanut_C1_851_878,pick up;put down;open;hold;cap,bottle;bottle;jar;bread;bottle,pick up bottle;put down bottle;open jar;hold bread;cap bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Peanut_C1_907_997,pick up;open;hold;twist;place,jar;lid;jar;lid;jar,pick up jar;open lid;hold jar;twist lid;place jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Peanut_C1_998_1035,pick up;place;move;reach;arrange,mustard bottle;mustard bottle;bottle;hand;condiment,pick up mustard bottle;place mustard bottle;move bottle;reach hand;arrange condiment,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Peanut_C1_1048_1056,pick up;hold;move;extend;touch,bottle;bottle;bottle;hand;table,pick up bottle;hold bottle;move bottle;extend hand;touch table,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Peanut_C1_1057_1078,open;remove;hold;place;squeeze,bottle;lid;bottle;lid;bottle,open bottle;remove lid;hold bottle;place lid;squeeze bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Peanut_C1_1111_1361,hold;squeeze;spread;open;apply,bread;ketchup;bread;bottle;ketchup,hold bread;squeeze ketchup;spread bread;open bottle;apply ketchup,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Peanut_C1_1377_1400,hold;pick up;open;squeeze;put down,bread;ketchup bottle;ketchup bottle;ketchup;ketchup bottle,hold bread;pick up ketchup bottle;open ketchup bottle;squeeze ketchup;put down ketchup bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Peanut_C1_1401_1423,hold;put down;pick up;spread;place on,bread;ketchup bottle;ketchup bottle;ketchup;table,hold bread;put down ketchup bottle;pick up ketchup bottle;spread ketchup;place on table,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Peanut_C1_1434_1476,take;hold;pick up;place;spread,bread;bread;bread;bread;bread,take bread;hold bread;pick up bread;place bread;spread bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Peanut_C1_1475_1550,hold;inspect;rotate;place;touch,bread;bread;bread;bread;bread,hold bread;inspect bread;rotate bread;place bread;touch bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Peanut_C1_69_90,take;hold;inspect;look at;move,bread;bread;bread;table;hand,take bread;hold bread;inspect bread;look at table;move hand,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Peanut_C1_117_222,open;pick up;put down;take out;pick up,peanut butter;peanut butter;lid;bread;spoon,open peanut butter;pick up peanut butter;put down lid;take out bread;pick up spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Peanut_C1_265_805,spread;use;hold;open;dip,peanut butter;spoon;bread;jar;spoon,spread peanut butter;use spoon;hold bread;open jar;dip spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Peanut_C1_276_360,无动词,无名词,无动作,0.0,N/A
+S1_Peanut_C1_372_844,pick up;spread;hold;open;put down,spoon;peanut butter;bread;jar;spoon,pick up spoon;spread peanut butter;hold bread;open jar;put down spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Peanut_C1_861_895,open;put down;pick up;hold;place,bottle;bottle;jar;bread;lid,open bottle;put down bottle;pick up jar;hold bread;place lid,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Peanut_C1_908_1025,open;pick up;place;remove;hold,jar;jar;jar;lid;jar,open jar;pick up jar;place jar;remove lid;hold jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Peanut_C1_1050_1423,open;hold;spread;put down;place,bottle;bread;ketchup;bottle;bread,open bottle;hold bread;spread ketchup;put down bottle;place bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Peanut_C1_1102_1634,hold;squeeze;spread;put down;flip,bread;condiment bottle;bread;condiment bottle;bread,hold bread;squeeze condiment bottle;spread bread;put down condiment bottle;flip bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Pealate_C1_18_77,open;pour;pick up;tear;move,packet;packet;plate;paper;hand,open packet;pour packet;pick up plate;tear paper;move hand,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Pealate_C1_84_108,pick up;open;hold;place;remove,bottle;bottle;bread;bottle;cap,pick up bottle;open bottle;hold bread;place bottle;remove cap,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Pealate_C1_109_137,open;remove;hold;place;rest hands on,jar;lid;jar;bread;table,open jar;remove lid;hold jar;place bread;rest hands on table,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Pealate_C1_142_185,take;open;dip;spread;put down,spoon;jar;spoon;bread;spoon,take spoon;open jar;dip spoon;spread bread;put down spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Pealate_C1_202_253,take;spread;use;hold;place,jam;bread;spoon;jar;plate,take jam;spread bread;use spoon;hold jar;place plate,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Pealate_C1_279_369,spread;hold;use;open;place,jam;bread;spoon;jar;plate,spread jam;hold bread;use spoon;open jar;place plate,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Pealate_C1_384_415,open;place;spread;use;prepare,jar;lid;jam;spoon;bread,open jar;place lid;spread jam;use spoon;prepare bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Pealate_C1_416_427,open;place;move;hold;touch,jar;jar;hand;plate;table,open jar;place jar;move hand;hold plate;touch table,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Pealate_C1_428_446,open;hold;use;place;spread,jar;jar;spoon;plate;condiment,open jar;hold jar;use spoon;place plate;spread condiment,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Pealate_C1_447_481,open;remove;apply;spread;hold,jar;lid;spread;bread;jar,open jar;remove lid;apply spread;spread bread;hold jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Pealate_C1_519_558,hold;dip;spread;top;scrape,jar;spoon;jam;bread;spoon,hold jar;dip spoon;spread jam;top bread;scrape spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Pealate_C1_580_725,spread;apply;use;hold;open,bread;jam;knife;plate;jar,spread bread;apply jam;use knife;hold plate;open jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Pealate_C1_741_802,open;remove;apply;spread;hold,jar;lid;spread;bread;jar,open jar;remove lid;apply spread;spread bread;hold jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Pealate_C1_803_814,close;place;move;rest;look at,jar;jar;plate;hand;table,close jar;place jar;move plate;rest hand;look at table,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Pealate_C1_815_834,pick up;open;pour;put down;hold,bottle;bottle;bottle;bottle;plate,pick up bottle;open bottle;pour bottle;put down bottle;hold plate,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Pealate_C1_837_881,open;remove;hold;place;tilt,bottle;bottle cap;bottle;bottle cap;bottle,open bottle;remove bottle cap;hold bottle;place bottle cap;tilt bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Pealate_C1_899_946,spread;squeeze;hold;place;move,bread;ketchup;bottle;plate;hand,spread bread;squeeze ketchup;hold bottle;place plate;move hand,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Pealate_C1_956_976,hold;pour;apply;squeez;top,bottle;bottle;chocolate;bottle;bread,hold bottle;pour bottle;apply chocolate;squeeze bottle;top bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Pealate_C1_977_996,put down;hold;move;eat;use,bottle;bottle;plate;food;spoon,put down bottle;hold bottle;move plate;eat food;use spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Pealate_C1_1001_1049,take out;assemble;place;open;put on,bread;sandwich;plate;package;bread,take out bread;assemble sandwich;place plate;open package;put on bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Pealate_C1_1050_1114,place;press;hold;align;assemble,bread;sandwich;sandwich;bread;sandwich,place bread;press sandwich;hold sandwich;align bread;assemble sandwich,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Cheese_C1_21_73,take out;open;remove;close;hold,bread;包装袋;bread;包装袋;bread,take out bread;open packaging;remove bread;close packaging;hold bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Cheese_C1_84_108,pick up;hold;place;put on;reach for,cheese;cheese;bread;cheese;table,pick up cheese;hold cheese;place bread;put on cheese;reach for table,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Cheese_C1_110_239,unwrap;place;remove;hold;position,cheese;cheese;wrapper;cheese;bread,unwrap cheese;place cheese;remove wrapper;hold cheese;position bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Cheese_C1_238_259,place;hold;position;adjust;fold,cheese;wrapper;bread;cheese;wrapper,place cheese;hold wrapper;position bread;adjust cheese;fold wrapper,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Cheese_C1_260_283,无动词,无名词,无动作,0.0,N/A
+S4_Cheese_C1_300_323,open;squeeze;spread;hold;remove,bottle;mayonnaise;bread;bottle;cap,open bottle;squeeze mayonnaise;spread bread;hold bottle;remove cap,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Cheese_C1_327_434,pick up;squeeze;spread;close;put down,mayonnaise bottle;mayonnaise;bread;mayonnaise bottle;mayonnaise bottle,pick up mayonnaise bottle;squeeze mayonnaise;spread bread;close mayonnaise bottle;put down mayonnaise bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Cheese_C1_436_451,open;squeeze;close;spread;put down,mayonnaise bottle;mayonnaise;mayonnaise bottle;bread;mayonnaise bottle,open mayonnaise bottle;squeeze mayonnaise;close mayonnaise bottle;spread bread;put down mayonnaise bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Cheese_C1_452_478,squeeze;place;apply;close;spread,bottle;bottle;mayonnaise;lid;bread,squeeze bottle;place bottle;apply mayonnaise;close lid;spread bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Cheese_C1_479_505,pick up;hold;move;reach for;place,mustard bottle;mustard bottle;mustard bottle;hand;bottle,pick up mustard bottle;hold mustard bottle;move mustard bottle;reach for hand;place bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Cheese_C1_521_555,pick up;squeeze;spread;put down;apply,mustard bottle;mustard;bread;mustard bottle;mustard,pick up mustard bottle;squeeze mustard;spread bread;put down mustard bottle;apply mustard,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Cheese_C1_558_606,squeeze;spread;place;hold;hold,mayonnaise;bread;cheese;bottle;plastic wrap,squeeze mayonnaise;spread bread;place cheese;hold bottle;hold plastic wrap,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Cheese_C1_612_627,hold;squeeze;spread;apply;close,mustard bottle;mustard bottle;bread;mustard;mustard bottle,hold mustard bottle;squeeze mustard bottle;spread bread;apply mustard;close mustard bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Cheese_C1_628_653,open;squeeze;close;place;spread,mustard bottle;mustard bottle;mustard bottle;mustard bottle;bread,open mustard bottle;squeeze mustard bottle;close mustard bottle;place mustard bottle;spread bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Cheese_C1_657_684,open;hold;take out;unseal;remove,bread;bag;bread;package;bread,open bread;hold bag;take out bread;unseal package;remove bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Cheese_C1_687_740,hold;press;align;place;assemble,bread;bread;bread;bread;sandwich,hold bread;press bread;align bread;place bread;assemble sandwich,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Cheese_C1_13_71,take out;open;hold;remove;close,bread;package;bread;bread;package,take out bread;open package;hold bread;remove bread;close package,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Cheese_C1_100_172,open;tear;hold;fold;manipulate,packet;packet;packet;packet;packet,open packet;tear packet;hold packet;fold packet;manipulate packet,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Cheese_C1_172_270,unwrap;hold;remove;place;prepare,cheese;cheese;plastic wrap;cheese;bread,unwrap cheese;hold cheese;remove plastic wrap;place cheese;prepare bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Cheese_C1_269_303,place;remove;put on;hold;press,cheese;wrapper;cheese;bread;cheese,place cheese;remove wrapper;put on cheese;hold bread;press cheese,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Cheese_C1_306_328,pick up;move;grab;reach;interact with,bottle;bottle;container;hand;table,pick up bottle;move bottle;grab container;reach hand;interact with table,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Tea_C1_1711_1743,pick up;cover;place;seal;press,lid;container;lid;container;hands,pick up lid;cover container;place lid;seal container;press hands,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Tea_C1_1744_1782,pick up;move;place;hold;look at,container;container;container;cup;table,pick up container;move container;place container;hold cup;look at table,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Tea_C1_1797_1930,hold;stir;mix;shake;agitate,cup;stirrer;drink;cup;liquid,hold cup;stir stirrer;mix drink;shake cup;agitate liquid,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Tea_C1_31_70,pick up;place;look at;hold;move,cup;cup;table;cup;hand,pick up cup;place cup;look at table;hold cup;move hand,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Tea_C1_83_356,pick up;pour;place;put down;move,bottle;liquid;cup;bottle;hand,pick up bottle;pour liquid;place cup;put down bottle;move hand,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Tea_C1_376_800,take out;open;put in;hold;dip,tea bag;tea bag;tea bag;cup;tea bag,take out tea bag;open tea bag;put in tea bag;hold cup;dip tea bag,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Tea_C1_1035_1086,hold;move;place;touch;stir,cup;cup;cup;cup;cup,hold cup;move cup;place cup;touch cup;stir cup,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Tea_C1_1380_1410,dip;remove;stir;place;hold,teabag;teabag;cup;teabag;cup,dip teabag;remove teabag;stir cup;place teabag;hold cup,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Tea_C1_1439_1540,open;place;take;hold;move,container;lid;sugar;cup;container,open container;place lid;take sugar;hold cup;move container,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Tea_C1_1562_1701,无动词,无名词,无动作,0.0,N/A
+S1_Tea_C1_1712_1784,cover;move;place;adjust;push,lid;container;cup;plate;container,cover lid;move container;place cup;adjust plate;push container,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Tea_C1_1795_1953,hold;insert;stir;place;remove,cup;stirrer;liquid;cup;stirrer,hold cup;insert stirrer;stir liquid;place cup;remove stirrer,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Tea_C1_19_55,pick up;unstack;move;touch;arrange,cup;cup;cup;plate;table,pick up cup;unstack cup;move cup;touch plate;arrange table,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Tea_C1_66_89,pick up;hold;move;transfer;place,bottle;bottle;bottle;bottle;bottle,pick up bottle;hold bottle;move bottle;transfer bottle;place bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Tea_C1_93_111,open;hold;place;unscrew;remove,bottle;bottle;cup;bottle;lid,open bottle;hold bottle;place cup;unscrew bottle;remove lid,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Tea_C1_129_231,hold;pour;add;pour;put down,cup;measuring cup;ice;liquid;measuring cup,hold cup;pour measuring cup;add ice;pour liquid;put down measuring cup,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Tea_C1_247_256,pick up;open;hold;pour into;place down,bottle;bottle;bottle;cup;bottle,pick up bottle;open bottle;hold bottle;pour into cup;place down bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Tea_C1_257_272,pick up;move;place;hold;look at,bottle;bottle;bottle;cup;table,pick up bottle;move bottle;place bottle;hold cup;look at table,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Tea_C1_277_304,move;reach for;grab;place;rest,tea box;hand;tea box;tea box;hand,move tea box;reach for hand;grab tea box;place tea box;rest hand,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Tea_C1_381_468,hold;tear;pour;place;discard,packet;packet;powder;bowl;packet,hold packet;tear packet;pour powder;place bowl;discard packet,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Tea_C1_506_678,put;hold;dip;stir;remove,teabag;cup;teabag;teabag;teabag,put teabag;hold cup;dip teabag;stir teabag;remove teabag,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Tea_C1_707_744,grab;lift;move;reach;hold,container;container;container;hand;container,grab container;lift container;move container;reach hand;hold container,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Tea_C1_753_787,open;pull out;hold;pick up;insert,box;straw;straw;cup;straw,open box;pull out straw;hold straw;pick up cup;insert straw,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Tea_C1_808_842,open;remove;hold;place;tilt,container;lid;container;lid;container,open container;remove lid;hold container;place lid;tilt container,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Tea_C1_862_886,hold;scoop;put;move;use,cup;sugar;sugar;cup;spoon,hold cup;scoop sugar;put sugar;move cup;use spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Tea_C1_887_893,add;hold;use;open;measure,sugar;cup;spoon;container;sugar,add sugar;hold cup;use spoon;open container;measure sugar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Tea_C1_896_916,take;hold;use;add;open,sugar;cup;spoon;sugar;container,take sugar;hold cup;use spoon;add sugar;open container,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Tea_C1_917_923,add;use;hold;open;transfer,sugar;spoon;cup;container;sugar,add sugar;use spoon;hold cup;open container;transfer sugar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Tea_C1_931_975,stir;use;mix;hold;stir,cup;spoon;drink;container;liquid,stir cup;use spoon;mix drink;hold container;stir liquid,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Tea_C1_989_1016,pick up;cover;place;seal;press,lid;container;lid;container;hands,pick up lid;cover container;place lid;seal container;press hands,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Tea_C1_1017_1036,open;move;remove;place;hold,container;container;lid;container;hand,open container;move container;remove lid;place container;hold hand,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_Tea_C1_1051_1127,hold;stir;stir;remove;place,cup;tea bag;cup;tea bag;cup,hold cup;stir tea bag;stir cup;remove tea bag;place cup,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Pealate_C1_22_55,tear;open;pour;pick up;move,packet;packet;packet;cup;plate,tear packet;open packet;pour packet;pick up cup;move plate,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Pealate_C1_72_87,pick up;move;reach for;hold;touch,bottle;bottle;hand;bottle;table,pick up bottle;move bottle;reach for hand;hold bottle;touch table,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Pealate_C1_88_105,open;hold;place;unscrew;remove,bottle;bottle;bread;bottle;cap,open bottle;hold bottle;place bread;unscrew bottle;remove cap,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Pealate_C1_121_210,take out;hold;use;open;put down,spoon;jar;spoon;jar;spoon,take out spoon;hold jar;use spoon;open jar;put down spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Pealate_C1_234_289,open;dip;spread;hold;place,jar;spoon;jam;bread;jar,open jar;dip spoon;spread jam;hold bread;place jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Pealate_C1_306_455,hold;spread;use;open;place,bread;jam;spoon;jar;plate,hold bread;spread jam;use spoon;open jar;place plate,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Pealate_C1_472_504,hold;remove;spread;place;close,jar;lid;jam;bread;jar,hold jar;remove lid;spread jam;place bread;close jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Pealate_C1_505_531,open;put down;pick up;put down;spread,jar;jar;bottle;bottle;bread,open jar;put down jar;pick up bottle;put down bottle;spread bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Pealate_C1_532_542,pick up;open;pour;put down;close,bottle;bottle;bottle;bottle;lid,pick up bottle;open bottle;pour bottle;put down bottle;close lid,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Pealate_C1_544_574,open;remove;hold;spread;apply,jar;lid;jar;bread;jam,open jar;remove lid;hold jar;spread bread;apply jam,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Pealate_C1_606_636,hold;dip;scrape;spread;place,jar;spoon;jam;bread;spoon,hold jar;dip spoon;scrape jam;spread bread;place spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Pealate_C1_663_817,hold;use;spread;turn;place,bread;spoon;jam;bread;spoon,hold bread;use spoon;spread jam;turn bread;place spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Pealate_C1_843_911,pick up;open;twist;spread;put down,peanut butter jar;peanut butter jar;peanut butter jar;peanut butter;peanut butter jar,pick up peanut butter jar;open peanut butter jar;twist peanut butter jar;spread peanut butter;put down peanut butter jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Pealate_C1_912_926,put down;open;squeeze;close;pick up,ketchup bottle;ketchup bottle;ketchup bottle;ketchup bottle;ketchup bottle,put down ketchup bottle;open ketchup bottle;squeeze ketchup bottle;close ketchup bottle;pick up ketchup bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Pealate_C1_927_938,pick up;hold;place;move;position,bottle;bottle;plate;hand;bottle,pick up bottle;hold bottle;place plate;move hand;position bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Pealate_C1_938_975,open;hold;squeeze;spread;close,bottle;bottle;bottle;bread;bottle,open bottle;hold bottle;squeeze bottle;spread bread;close bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Pealate_C1_1014_1076,pour;hold;pick up;place;decorate,chocolate syrup;sandwich;bottle;plate;sandwich,pour chocolate syrup;hold sandwich;pick up bottle;place plate;decorate sandwich,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Pealate_C1_1111_1127,pick up;open;hold;put down;prepare,bottle;bottle;bread;bottle;sandwich,pick up bottle;open bottle;hold bread;put down bottle;prepare sandwich,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Pealate_C1_1128_1140,pick up;put down;hold;apply;place on,bottle;bottle;sandwich;condiment;plate,pick up bottle;put down bottle;hold sandwich;apply condiment;place on plate,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Pealate_C1_1162_1217,pick up;move;place;reach;touch,glass;glass;glass;hand;table,pick up glass;move glass;place glass;reach hand;touch table,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Pealate_C1_1220_1327,hold;press;assemble;place;flip,bread;bread;sandwich;plate;bread,hold bread;press bread;assemble sandwich;place plate;flip bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Pealate_C1_50_59,take;place;put;hold;move,bread;plate;bread;packet;hand,take bread;place plate;put bread;hold packet;move hand,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Pealate_C1_85_129,open;put down;put down;hold;pick up,bottle;bottle;lid;jar;spoon,open bottle;put down bottle;put down lid;hold jar;pick up spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Pealate_C1_144_449,pick up;spread;hold;open;put down,spoon;jam;bread;jar;spoon,pick up spoon;spread jam;hold bread;open jar;put down spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Pealate_C1_229_296,open;dip;take;spread;put down,jar;spoon;spread;bread;jar,open jar;dip spoon;take spread;spread bread;put down jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Pealate_C1_306_460,hold;spread;use;open;place,bread;jam;spoon;jar;plate,hold bread;spread jam;use spoon;open jar;place plate,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Pealate_C1_468_529,open;put down;apply;use;prepare,jar;jar;spread;spoon;bread,open jar;put down jar;apply spread;use spoon;prepare bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Pealate_C1_538_827,open;pick up;spread;hold;put down,jar;spoon;peanut butter;bread;jar,open jar;pick up spoon;spread peanut butter;hold bread;put down jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Pealate_C1_595_643,hold;dip;scoop;spread;place,jar;spoon;jam;bread;jar,hold jar;dip spoon;scoop jam;spread bread;place jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Pealate_C1_657_827,hold;use;spread;place;open,bread;spoon;peanut butter;bread;jar,hold bread;use spoon;spread peanut butter;place bread;open jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Pealate_C1_839_926,pick up;open;put down;spread;hold,peanut butter jar;peanut butter jar;peanut butter jar;peanut butter;bread,pick up peanut butter jar;open peanut butter jar;put down peanut butter jar;spread peanut butter;hold bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Pealate_C1_932_1141,pick up;hold;open;pour;put down,bottle;bread;bottle;condiment;bottle,pick up bottle;hold bread;open bottle;pour condiment;put down bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Pealate_C1_990_1157,hold;pick up;pour;put down;eat,bread;sauce bottle;sauce;sauce bottle;bread,hold bread;pick up sauce bottle;pour sauce;put down sauce bottle;eat bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Pealate_C1_1216_1332,hold;place;assemble;put on;move,sandwich;bread;sandwich;plate;hand,hold sandwich;place bread;assemble sandwich;put on plate;move hand,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Peanut_C1_18_56,take out;hold;pull;open;remove,bread;bread;bread;bag;bread,take out bread;hold bread;pull bread;open bag;remove bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Peanut_C1_59_171,take;open;hold;reach for;remove,bread;box;bread;container;packet,take bread;open box;hold bread;reach for container;remove packet,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Peanut_C1_185_221,hold;pick up;open;put down;place,bread;honey;honey;honey;bread,hold bread;pick up honey;open honey;put down honey;place bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Peanut_C1_231_300,open;remove;hold;twist;unscrew,jar;lid;jar;lid;jar,open jar;remove lid;hold jar;twist lid;unscrew jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Peanut_C1_340_395,pick up;dip into;spread;open;take,bread;spoon;peanut butter;jar;spoon,pick up bread;dip spoon into;spread peanut butter;open jar;take spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Peanut_C1_400_530,hold;spread;use;open;dip,bread;peanut butter;spoon;jar;spoon,hold bread;spread peanut butter;use spoon;open jar;dip spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Peanut_C1_535_593,hold;spread;dip;open;scrape,bread;peanut butter;spoon;jar;spoon,hold bread;spread peanut butter;dip spoon;open jar;scrape spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Peanut_C1_594_755,hold;spread;use;open;prepare,bread;peanut butter;spoon;jar;bread,hold bread;spread peanut butter;use spoon;open jar;prepare bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Peanut_C1_784_915,spread;open;hold;remove;close,peanut butter;jar;bread;lid;jar,spread peanut butter;open jar;hold bread;remove lid;close jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Peanut_C1_916_938,hold;move;pick up;place;spread,bread;peanut butter jar;peanut butter jar;peanut butter jar;bread,hold bread;move peanut butter jar;pick up peanut butter jar;place peanut butter jar;spread bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Peanut_C1_942_962,hold;pick up;move;spread;place,bread;honey bottle;honey bottle;bread;honey bottle,hold bread;pick up honey bottle;move honey bottle;spread bread;place honey bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Peanut_C1_1010_1048,open;remove;hold;twist;prepare,bottle;lid;bottle;cap;container,open bottle;remove lid;hold bottle;twist cap;prepare container,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Peanut_C1_1102_1207,hold;pour;squeeze;spread;put down,bread;honey;bottle;bread;bottle,hold bread;pour honey;squeeze bottle;spread bread;put down bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Peanut_C1_1238_1259,hold;open;squeeze;spread;close,bread;bottle;bottle;bread;bottle,hold bread;open bottle;squeeze bottle;spread bread;close bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Peanut_C1_1260_1272,无动词,无名词,无动作,0.0,N/A
+S2_Peanut_C1_1274_1309,hold;take;spread;place;reach for,bread;bread;bread;bread;bottle,hold bread;take bread;spread bread;place bread;reach for bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Peanut_C1_1310_1360,hold;stack;align;inspect;place,bread;bread;bread;bread;bread,hold bread;stack bread;align bread;inspect bread;place bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Peanut_C1_52_226,take;open;pick up;grab;hold,bread;box;jar;knife;bread,take bread;open box;pick up jar;grab knife;hold bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Peanut_C1_90_177,take;spread;pick up;open;place,bread;butter;knife;jar;plate,take bread;spread butter;pick up knife;open jar;place plate,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Peanut_C1_212_320,pick up;open;hold;place;remove,jar;lid;spoon;jar;lid,pick up jar;open lid;hold spoon;place jar;remove lid,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Peanut_C1_253_762,open;hold;pick up;spread;put down,jar;bread;spoon;peanut butter;spoon,open jar;hold bread;pick up spoon;spread peanut butter;put down spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Peanut_C1_346_1004,hold;spread;use;close;put down,bread;peanut butter;spoon;jar;bread,hold bread;spread peanut butter;use spoon;close jar;put down bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Peanut_C1_357_420,hold;scoop;spread;dip;open,bread;peanut butter;bread;spoon;jar,hold bread;scoop peanut butter;spread bread;dip spoon;open jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Peanut_C1_533_605,hold;scoop;spread;dip;open,bread;peanut butter;bread;spoon;jar,hold bread;scoop peanut butter;spread bread;dip spoon;open jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Peanut_C1_793_936,hold;open;pick up;place;twist,bread;peanut butter jar;peanut butter jar;peanut butter jar;peanut butter jar,hold bread;open peanut butter jar;pick up peanut butter jar;place peanut butter jar;twist peanut butter jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Peanut_C1_948_1272,hold;pick up;open;spread;put down,bread;ketchup bottle;ketchup bottle;ketchup;ketchup bottle,hold bread;pick up ketchup bottle;open ketchup bottle;spread ketchup;put down ketchup bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Peanut_C1_1085_1375,hold;pour;place;spread;assemble,bread;mustard;bottle;bread;sandwich,hold bread;pour mustard;place bottle;spread bread;assemble sandwich,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_CofHoney_C1_8_39,pick up;place;stack;move;arrange,cup;cup;cup;plastic bag;container,pick up cup;place cup;stack cup;move plastic bag;arrange container,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_CofHoney_C1_49_67,无动词,无名词,无动作,0.0,N/A
+S2_CofHoney_C1_70_122,open;hold;move;place;look at,box;box;hand;cup;table,open box;hold box;move hand;place cup;look at table,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_CofHoney_C1_132_151,open;remove;hold;insert;tilt,jar;lid;jar;spoon;jar,open jar;remove lid;hold jar;insert spoon;tilt jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_CofHoney_C1_179_199,take;hold;scoop;fill;put down,spoon;jar;spice;cup;spoon,take spoon;hold jar;scoop spice;fill cup;put down spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_CofHoney_C1_200_212,hold;hold;scoop;fill;place,spoon;jar;spoon;cup;jar,hold spoon;hold jar;scoop spoon;fill cup;place jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_CofHoney_C1_213_228,hold;scrape;scoop;add;transfer,jar;spoon;spice;cup;spoon,hold jar;scrape spoon;scoop spice;add cup;transfer spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_CofHoney_C1_230_240,hold;hold;pour;fill;place,spoon;jar;spoon;cup;spoon,hold spoon;hold jar;pour spoon;fill cup;place spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_CofHoney_C1_258_279,pick up;cover;close;stir;hold,jar;lid;jar;spoon;cup,pick up jar;cover lid;close jar;stir spoon;hold cup,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_CofHoney_C1_280_299,open;place;hold;stir;tighten,bottle;bottle;cup;spoon;bottle,open bottle;place bottle;hold cup;stir spoon;tighten bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_CofHoney_C1_304_321,pick up;move;hold;look at;arrange,bottle;bottle;bottle;table;items,pick up bottle;move bottle;hold bottle;look at table;arrange items,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_CofHoney_C1_325_345,open;pour;fill;close;stir,bottle;liquid;cup;bottle;spoon,open bottle;pour liquid;fill cup;close bottle;stir spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_CofHoney_C1_351_520,pick up;pour;hold;stir;put down,bottle;liquid;cup;spoon;bottle,pick up bottle;pour liquid;hold cup;stir spoon;put down bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_CofHoney_C1_524_533,hold;remove;pour;hold;replace,bottle;cap;liquid;cup;cap,hold bottle;remove cap;pour liquid;hold cup;replace cap,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_CofHoney_C1_534_550,pick up;place;move;extend;hold,bottle;bottle;bottle;hand;bottle,pick up bottle;place bottle;move bottle;extend hand;hold bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Coffee_C1_615_625,add;use;hold;open;pour,sugar;spoon;cup;container;sugar,add sugar;use spoon;hold cup;open container;pour sugar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Coffee_C1_656_699,pick up;cover;place;press;secure,lid;container;lid;container;lid,pick up lid;cover container;place lid;press container;secure lid,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Coffee_C1_700_718,close;move;place;press;clear,container;container;hand;lid;table,close container;move container;place hand;press lid;clear table,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Coffee_C1_721_737,pick up;hold;move;place;reach,bottle;bottle;bottle;bottle;hand,pick up bottle;hold bottle;move bottle;place bottle;reach hand,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Coffee_C1_739_765,open;remove;hold;place;pour,bottle;cap;bottle;cup;liquid,open bottle;remove cap;hold bottle;place cup;pour liquid,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Coffee_C1_773_915,hold;pour;hold;steep;stir,cup;water;glass;tea bag;spoon,hold cup;pour water;hold glass;steep tea bag;stir spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Coffee_C1_920_939,pick up;move;hold;look at;place,bottle;bottle;cup;table;bottle,pick up bottle;move bottle;hold cup;look at table;place bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Coffee_C1_940_961,hold;open;close;place;squeeze,bottle;bottle;bottle;bottle;bottle,hold bottle;open bottle;close bottle;place bottle;squeeze bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Coffee_C1_980_1087,hold;stir;mix;move;remove,cup;stirrer;liquid;cup;stirrer,hold cup;stir stirrer;mix liquid;move cup;remove stirrer,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Coffee_C1_30_64,pick up;hold;place;touch;inspect,cup;cup;cup;cup;cup,pick up cup;hold cup;place cup;touch cup;inspect cup,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Coffee_C1_81_146,open;place;put down;move;pour,bottle;bottle;lid;cup;bottle,open bottle;place bottle;put down lid;move cup;pour bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Coffee_C1_201_209,hold;move;open;place;position,teabag;spoon;box;jar;cup,hold teabag;move spoon;open box;place jar;position cup,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Coffee_C1_230_340,open;pick up;scoop;add;put down,jar;spoon;jam;cup;spoon,open jar;pick up spoon;scoop jam;add cup;put down spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Coffee_C1_381_428,open;pick up;pour into;put down;reach for,jar;jar;cup;jar;table,open jar;pick up jar;pour into cup;put down jar;reach for table,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Coffee_C1_450_502,open;remove;take;hold;place,container;lid;sugar;cup;container,open container;remove lid;take sugar;hold cup;place container,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Coffee_C1_504_637,pick up;take;hold;put;place,spoon;sugar;cup;sugar;spoon,pick up spoon;take sugar;hold cup;put sugar;place spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Coffee_C1_657_720,place;close;move;press;lift,lid;container;container;lid;container,place lid;close container;move container;press lid;lift container,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Coffee_C1_731_969,hold;pour;put down;stir;use,cup;liquid;bottle;cup;spoon,hold cup;pour liquid;put down bottle;stir cup;use spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Coffee_C1_989_1110,hold;stir;mix;stir;agitate,cup;spoon;drink;cup;liquid,hold cup;stir spoon;mix drink;stir cup;agitate liquid,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Peanut_C1_22_63,take out;hold;place;read;look at,bread;bread;bread;paper;table,take out bread;hold bread;place bread;read paper;look at table,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Peanut_C1_66_92,pick up;move;hold;reach;place,jar;jar;jar;table;hand,pick up jar;move jar;hold jar;reach table;place hand,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Peanut_C1_93_142,open;remove;hold;place;tilt,jar;lid;jar;bread;jar,open jar;remove lid;hold jar;place bread;tilt jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Peanut_C1_149_194,pick up;open;take;hold;use,spoon;jar;spread;bread;spoon,pick up spoon;open jar;take spread;hold bread;use spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Peanut_C1_196_234,scoop;hold;use;place;spread,peanut butter;jar;spoon;bread;peanut butter,scoop peanut butter;hold jar;use spoon;place bread;spread peanut butter,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Peanut_C1_245_385,hold;spread;use;open;place,bread;peanut butter;spoon;jar;lid,hold bread;spread peanut butter;use spoon;open jar;place lid,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Peanut_C1_413_466,open;place;apply;hold;use,jar;lid;spread;bread;knife,open jar;place lid;apply spread;hold bread;use knife,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Peanut_C1_467_485,pick up;place;close;move;reach,jar;jar;lid;jar;hand,pick up jar;place jar;close lid;move jar;reach hand,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Peanut_C1_525_547,pick up;move;hold;spread;place,ketchup bottle;ketchup bottle;spoon;bread;ketchup bottle,pick up ketchup bottle;move ketchup bottle;hold spoon;spread bread;place ketchup bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Peanut_C1_555_596,open;remove;hold;place;twist,jar;lid;jar;lid;jar,open jar;remove lid;hold jar;place lid;twist jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Peanut_C1_688_754,hold;squeeze;assemble;place;work on,bread;ketchup;sandwich;bottle;table,hold bread;squeeze ketchup;assemble sandwich;place bottle;work on table,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Peanut_C1_771_790,hold;open;squeeze;close;apply,bread;ketchup bottle;ketchup bottle;ketchup bottle;ketchup,hold bread;open ketchup bottle;squeeze ketchup bottle;close ketchup bottle;apply ketchup,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Peanut_C1_791_818,无动词,无名词,无动作,0.0,N/A
+S3_Peanut_C1_829_880,take out;hold;open;remove;place,bread;bread;plastic bag;bread;plate,take out bread;hold bread;open plastic bag;remove bread;place plate,1.0;0.9;0.8;0.7;0.6,无选择名词
+S3_Peanut_C1_881_919,place;hold;press;align;stack,bread;bread;bread;bread;bread,place bread;hold bread;press bread;align bread;stack bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Coffee_C1_24_76,pick up;open;take out;hold;place,cup;box;cup;cup;cup,pick up cup;open box;take out cup;hold cup;place cup,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Coffee_C1_93_130,pick up;move;place;put down;reach,jar;jar;bowl;jar;hand,pick up jar;move jar;place bowl;put down jar;reach hand,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Coffee_C1_144_224,open;take;place;move;hold,packet;bread;plate;jar;cup,open packet;take bread;place plate;move jar;hold cup,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Coffee_C1_238_285,open;remove;hold;stir;insert,jar;lid;spoon;jar;spoon,open jar;remove lid;hold spoon;stir jar;insert spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Coffee_C1_310_396,dip into;scoop from;hold;hold;transfer,spoon;jar;spoon;cup;spice,dip into spoon;scoop from jar;hold spoon;hold cup;transfer spice,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Coffee_C1_398_418,hold;scoop;pour into;drop;place,spoon;spice;cup;spoon;jar,hold spoon;scoop spice;pour into cup;drop spoon;place jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Coffee_C1_425_448,hold;scoop from;add to;move;dip into,spoon;jar;cup;spoon;jar,hold spoon;scoop from jar;add to cup;move spoon;dip into jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Coffee_C1_441_465,hold;open;scoop;add;place,spoon;jar;spice;cup;spoon,hold spoon;open jar;scoop spice;add to cup;place spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Coffee_C1_472_540,open;hold;twist;remove;insert,jar;spoon;jar;lid;spoon,open jar;hold spoon;twist jar;remove lid;insert spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Coffee_C1_541_574,place;hold;pick up;clean;use,jar;cup;jar;table;spoon,place jar;hold cup;pick up jar;clean table;use spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Coffee_C1_613_660,pick up;move;hold;look at;extend,bottle;bottle;cup;table;hand,pick up bottle;move bottle;hold cup;look at table;extend hand,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Coffee_C1_661_709,open;hold;remove;tilt;place,bottle;bottle;cap;bottle;cap,open bottle;hold bottle;remove cap;tilt bottle;place cap,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Coffee_C1_738_940,pour;hold;add;stir;place,bottle;cup;liquid;spoon;bottle,pour bottle;hold cup;add liquid;stir spoon;place bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Coffee_C1_950_974,open;hold;remove;pour;fill,bottle;bottle;cap;bottle;cup,open bottle;hold bottle;remove cap;pour bottle;fill cup,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Coffee_C1_975_997,pick up;place;put on;hold;clean,bottle;bottle;lid;cup;table,pick up bottle;place bottle;put on lid;hold cup;clean table,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Coffee_C1_1001_1041,move;hold;look at;push;extend,container;cup;table;container;hand,move container;hold cup;look at table;push container;extend hand,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Coffee_C1_1059_1262,open;remove;hold;place;shake,container;lid;container;lid;container,open container;remove lid;hold container;place lid;shake container,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Coffee_C1_1358_1392,scoop;take;hold;add;put down,spoon;sugar;cup;sugar;spoon,scoop spoon;take sugar;hold cup;add sugar;put down spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Coffee_C1_1393_1414,add;use;hold;place;stir,sugar;spoon;cup;lid;mixture,add sugar;use spoon;hold cup;place lid;stir mixture,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Coffee_C1_1446_1483,scoop;hold;add;use;open,sugar;cup;sugar;spoon;container,scoop sugar;hold cup;add sugar;use spoon;open container,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Coffee_C1_1484_1505,add;use;hold;open;measure,sugar;spoon;cup;container;sugar,add sugar;use spoon;hold cup;open container;measure sugar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Coffee_C1_1530_1601,stir;hold;place;open;mix,cup;spoon;lid;container;substance,stir cup;hold spoon;place lid;open container;mix substance,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Coffee_C1_1617_1646,pick up;cover;place;seal;press,lid;container;lid;container;hands,pick up lid;cover container;place lid;seal container;press hands,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Coffee_C1_1647_1682,move;hold;stir;place;reach,container;cup;spoon;container;hand,move container;hold cup;stir spoon;place container;reach hand,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Coffee_C1_1696_1785,hold;stir;mix;stir;move,cup;spoon;liquid;cup;spoon,hold cup;stir spoon;mix liquid;stir cup;move spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Coffee_C1_63_94,pick up;place;move;look at;hold,cup;cup;hand;table;cup,pick up cup;place cup;move hand;look at table;hold cup,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Coffee_C1_113_137,pick up;move;place;hold;look at,jar;jar;jar;cup;table,pick up jar;move jar;place jar;hold cup;look at table,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Coffee_C1_174_612,无动词,无名词,无动作,0.0,N/A
+S2_Coffee_C1_238_284,open;remove;hold;tilt;insert,jar;lid;spoon;jar;spoon,open jar;remove lid;hold spoon;tilt jar;insert spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Coffee_C1_481_576,open;hold;place;put;use,jar;spoon;jar;spoon;cup,open jar;hold spoon;place jar;put spoon;use cup,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Coffee_C1_646_998,pick up;pour;put down;hold;stir,bottle;liquid;bottle;cup;spoon,pick up bottle;pour liquid;put down bottle;hold cup;stir spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Coffee_C1_1020_1273,open;take;fill;close;put down,container;sugar;cup;container;lid,open container;take sugar;fill cup;close container;put down lid,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Coffee_C1_1309_1540,无动词,无名词,无动作,0.0,N/A
+S2_Coffee_C1_1540_1603,stir;hold;place;open;mix,cup;spoon;lid;container;liquid,stir cup;hold spoon;place lid;open container;mix liquid,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Coffee_C1_1615_1681,cover;move;hold;stir;clean,lid;container;cup;spoon;table,cover lid;move container;hold cup;stir spoon;clean table,1.0;0.9;0.8;0.7;0.6,无选择名词
+S2_Coffee_C1_1688_1793,hold;stir;mix;move;stir,cup;spoon;liquid;spoon;cup,hold cup;stir spoon;mix liquid;move spoon;stir cup,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_CofHoney_C1_19_59,pick up;stack;place;move;arrange,cup;cup;cup;hand;table,pick up cup;stack cup;place cup;move hand;arrange table,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_CofHoney_C1_74_122,take out;open;hold;look at;place,fork;box;fork;table;plate,take out fork;open box;hold fork;look at table;place plate,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_CofHoney_C1_130_143,pick up;hold;open;insert;place,jar;spoon;jar;spoon;jar,pick up jar;hold spoon;open jar;insert spoon;place jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_CofHoney_C1_143_175,open;remove;hold;place;tilt,jar;lid;jar;cup;jar,open jar;remove lid;hold jar;place cup;tilt jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_CofHoney_C1_192_217,hold;dip;scrape;fill;remove,jar;spoon;spread;cup;spoon,hold jar;dip spoon;scrape spread;fill cup;remove spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_CofHoney_C1_220_228,hold;use;scoop;fill;place,jar;spoon;coffee;cup;spoon,hold jar;use spoon;scoop coffee;fill cup;place spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_CofHoney_C1_233_255,hold;use;scoop;fill;open,jar;spoon;jam;cup;jar,hold jar;use spoon;scoop jam;fill cup;open jar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_CofHoney_C1_256_263,hold;use;add;fill;place,jar;spoon;powder;cup;spoon,hold jar;use spoon;add powder;fill cup;place spoon,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_CofHoney_C1_273_316,pick up;remove;open;pour;place,jar;lid;jar;jar;lid,pick up jar;remove lid;open jar;pour jar;place lid,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_CofHoney_C1_317_331,hold;place;move;twist;remove,jar;jar;cup;jar;lid,hold jar;place jar;move cup;twist jar;remove lid,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_CofHoney_C1_336_366,pick up;hold;move;place;transfer,bottle;bottle;bottle;cup;bottle,pick up bottle;hold bottle;move bottle;place cup;transfer bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_CofHoney_C1_371_392,open;hold;remove;tilt;pour,bottle;bottle;cap;bottle;liquid,open bottle;hold bottle;remove cap;tilt bottle;pour liquid,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_CofHoney_C1_414_524,pour;hold;use;tilt;mix,liquid;cup;measuring cup;container;beverage,pour liquid;hold cup;use measuring cup;tilt container;mix beverage,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_CofHoney_C1_541_550,hold;open;pour;place;close,bottle;bottle;bottle;cup;bottle,hold bottle;open bottle;pour bottle;place cup;close bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_CofHoney_C1_551_566,pick up;move;place;reach;hold,bottle;bottle;bottle;hand;bottle,pick up bottle;move bottle;place bottle;reach hand;hold bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_CofHoney_C1_570_586,pick up;open;hold;pour;place,bottle;bottle;cup;bottle;bottle,pick up bottle;open bottle;hold cup;pour bottle;place bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_CofHoney_C1_590_630,open;hold;remove;place;tilt,bottle;bottle;lid;cup;bottle,open bottle;hold bottle;remove lid;place cup;tilt bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_CofHoney_C1_645_726,pick up;pour;hold;put down;place,bottle;liquid;cup;bottle;cup,pick up bottle;pour liquid;hold cup;put down bottle;place cup,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_CofHoney_C1_742_757,open;hold;remove;place;squeeze,bottle;bottle;lid;cup;bottle,open bottle;hold bottle;remove lid;place cup;squeeze bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_CofHoney_C1_758_772,pick up;place;hold;move;reposition,bottle;bottle;cup;bottle;spice container,pick up bottle;place bottle;hold cup;move bottle;reposition spice container,1.0;0.9;0.8;0.7;0.6,无选择名词
+S4_CofHoney_C1_781_870,hold;stir;mix;rotate;blend,cup;stirrer;liquid;cup;contents,hold cup;stir stirrer;mix liquid;rotate cup;blend contents,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Tea_C1_12_52,pick up;place;put down;move;take,cup;cup;knife;plate;bread,pick up cup;place cup;put down knife;move plate;take bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Tea_C1_70_90,pick up;open;pour;put down;hold,bottle;bottle;bottle;bottle;cup,pick up bottle;open bottle;pour bottle;put down bottle;hold cup,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Tea_C1_91_122,open;remove;hold;tilt;place,bottle;bottle cap;bottle;bottle;cap,open bottle;remove bottle cap;hold bottle;tilt bottle;place cap,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Tea_C1_122_305,pick up;pour;fill;put down;move,bottle;liquid;cup;bottle;hand,pick up bottle;pour liquid;fill cup;put down bottle;move hand,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Tea_C1_320_337,open;remove;hold;place;twist,bottle;cap;bottle;cap;bottle,open bottle;remove cap;hold bottle;place cap;twist bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Tea_C1_338_352,open;put down;move;hold;place,bottle;bottle;hand;bottle;bottle,open bottle;put down bottle;move hand;hold bottle;place bottle,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Tea_C1_358_387,pick up;hold;move;extend;grab,box;box;table;hand;package,pick up box;hold box;move table;extend hand;grab package,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Tea_C1_464_487,hold;move;place;reach;push,tea box;tea box;tea box;hand;tea box,hold tea box;move tea box;place tea box;reach hand;push tea box,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Tea_C1_498_712,open;tear;hold;place;insert,tea bag;tea bag;tea bag;cup;tea bag,open tea bag;tear tea bag;hold tea bag;place cup;insert tea bag,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Tea_C1_755_1400,put;stir;remove;hold;dip,teabag;cup;teabag;cup;teabag,put teabag;stir cup;remove teabag;hold cup;dip teabag,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Tea_C1_1421_1447,pick up;move;hold;look at;scan,container;container;cup;plate;table,pick up container;move container;hold cup;look at plate;scan table,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Tea_C1_1458_1492,open;remove;access;hold;lift,container;lid;sugar;container;lid,open container;remove lid;access sugar;hold container;lift lid,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Tea_C1_1539_1564,open;pick up;hold;open;take,box;bowl;cup;container;bread,open box;pick up bowl;hold cup;open container;take bread,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Tea_C1_1581_1620,take;use;hold;fill;transfer,sugar;spoon;container;cup;sugar,take sugar;use spoon;hold container;fill cup;transfer sugar,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Tea_C1_1621_1640,hold;use;take;add to;place,container;spoon;sugar;cup;lid,hold container;use spoon;take sugar;add to cup;place lid,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Tea_C1_1642_1670,scoop;hold;use;fill;place,sugar;container;spoon;cup;lid,scoop sugar;hold container;use spoon;fill cup;place lid,1.0;0.9;0.8;0.7;0.6,无选择名词
+S1_Tea_C1_1671_1682,add;use;hold;hold;transfer,sugar;spoon;cup;container;sugar,add sugar;use spoon;hold cup;hold container;transfer sugar,1.0;0.9;0.8;0.7;0.6,无选择名词

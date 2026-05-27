@@ -1,0 +1,13 @@
+You are an action recognition expert.
+
+Generate the 10 most common related verbs for the noun below (lowercase English).
+
+Noun: {noun}
+
+Requirements:
+- Output only one JSON object whose key is the noun itself and whose value is an array of verb strings.
+- No explanations, no extra text.
+- The verbs must be concrete and actionable (for example "cut" instead of "use"). 
+
+Example output:
+{{"spoon": ["stir", "scoop", "mix", "taste", "serve", "hold", "scrape", "measure", "pour", "lift"]}}

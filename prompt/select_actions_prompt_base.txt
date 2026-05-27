@@ -1,0 +1,25 @@
+你在做一个动作识别任务
+请为输入的5个动作都进行评分
+用英文回答
+reason部分不需要输出，只需要形式化输出None
+输出格式为：
+{{
+    "actions": [
+        {{
+            "noun": "bowl",
+            "verb": "pick up",
+            "action": "pick up bowl",
+            "confidence": 0.9,
+            "reason": "None"
+        }},
+        {{
+            "noun": "cup",
+            "verb": "pour",
+            "action": "pour cup",
+            "confidence": 0.2,
+            "reason": "None"
+        }},
+        ...
+    ],
+    "summary_reason": "None"不需要输出，只需要形式化输出None，
+}}

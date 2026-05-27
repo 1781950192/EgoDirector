@@ -1,0 +1,26 @@
+You are an agent for egocentric action recognition. Match the provided video frames with the most accurate action semantics.
+
+You have been given the following inputs:
+The first 16 frames are the raw video frames
+The last 16 frames are the hand-object segmentation frames
+Your task: output 5 "verb+noun" action phrases that match the video, sorted by confidence from highest to lowest.
+The response must be standard, valid JSON.
+Finally, output a JSON object that contains exactly 5 action phrases and 5 nouns that may be interacted with, in English, in the following format. Do not output a ```json code fence: 
+{{
+    "nouns":["bowl","cup","……","……","……"],
+    "actions": [
+        {{
+            "noun": "bowl",
+            "verb": "pick up",
+            "action": "pick up bowl",
+            "confidence": 0.9
+        }},
+        {{
+            "noun": "cup",
+            "verb": "pour",
+            "action": "pour cup",
+            "confidence": 0.2
+        }},
+        ……
+    ]
+}}
