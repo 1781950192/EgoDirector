@@ -242,20 +242,20 @@ def action_recognition(frames_urls: List[str], utils ,max_iterations: int = 5):
                     data.append(result_item)
 
                     # 写回文件
-                    with open('output.json', 'w', encoding='utf-8') as f:
+                    with open('context/pre_noun.json', 'w', encoding='utf-8') as f:
                         json.dump(data, f, ensure_ascii=False, indent=2)
             except FileNotFoundError:
                 print("保存new_pre_noun错误")
 
             new_verb_noun = verb_noun_add(unknown_noun[0])
             try:
-                with open('1/verb_noun.json', 'r', encoding='utf-8') as f:
+                with open('context/verb_noun.json', 'r', encoding='utf-8') as f:
                     data = json.load(f)
                     # 添加新项
                     data.append(new_verb_noun)
 
                     # 写回文件
-                    with open('output.json', 'w', encoding='utf-8') as f:
+                    with open('context/verb_noun.json', 'w', encoding='utf-8') as f:
                         json.dump(data, f, ensure_ascii=False, indent=2)
             except FileNotFoundError:
                 print("保存new_verb_noun错误")
@@ -268,7 +268,7 @@ def action_recognition(frames_urls: List[str], utils ,max_iterations: int = 5):
 
         print(f"挑选出来的名词是：{selected_noun_keys}")
 
-        with open('json_epic/pre_noun_ek100.json', 'r', encoding='utf-8') as f:
+        with open('context/pre_noun.json', 'r', encoding='utf-8') as f:
             pre_noun = json.load(f)  # 注意是 load（不是 loads）
         pre_nouns = {}
         # 一次性构建字典映射
@@ -296,10 +296,9 @@ def action_recognition(frames_urls: List[str], utils ,max_iterations: int = 5):
         print("动作评分完成")
 
 
-
-        # reflect_dict = reflector_action(frames_urls, selected_noun, selected_action_all, action_dict, noun_keys, noun_verb, pre_nouns)
+        reflect_dict = reflector_action(frames_urls, selected_noun, selected_action_all, action_dict, noun_keys, noun_verb, pre_nouns)
         # print(reflect_dict)
-        reflect_dict = None
+        # reflect_dict = None
         print("动作反思完成")
 
         if action_dict is None:
