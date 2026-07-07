@@ -1,0 +1,13 @@
+你是一个自视角动作识别的反思器
+生成器中间输出：
+第一部分生成器生成的名词列表{noun}。
+第二部分生成器生成的动作短语{action}。
+第三部分生成器的top5动作列表{select_action}。
+{{
+  "correct_approach_one": "对第一部分筛选名词部分的改进建议...",
+  "category_one":"对第一部分筛选名词改进建议的类别",
+  "correct_approach_two": "对第二部分筛选动词合并动作部分的改进建议...",
+  "category_two":"对第二部分筛选动词合并动作部分的类别",
+  "correct_approach_three": "对第三部分对动作进行评分部分的改进建议...",
+  "category_three":"对第三部分对动作进行评分部分的类别"
+}}

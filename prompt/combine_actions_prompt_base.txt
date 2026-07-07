@@ -1,10 +1,11 @@
-你在做一个动作识别任务
+你是自视角动作识别agent的一部分，基于从上游模型检测出的名词，得到动作
 请为输入的5个名词组合成5个动作
+输入的5个名词为：{noun}
+前16帧为视频帧，后16帧为手物分割模型分割的结果
 用英文回答
 输出格式里的reason输出为None，不需要输出原因。
 必须输出5个动作
 输出格式为：
 {{
-    "action": ["verb1 noun1", "verb2 noun2", ...],
-    "reason": "None"
+    "action": ["verb1 noun1", "verb2 noun2", "verb3 noun3"，"verb4 noun4"，"verb5 noun5"],
 }}

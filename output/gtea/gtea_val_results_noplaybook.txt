@@ -1,0 +1,529 @@
+narration_id,verbs,nouns,actions,confidences,selected_noun_keys
+S2_CofHoney_C1_8_39,take;put;take;put;take,cup;cup;bottle;bottle;plate,Take cup;Put cup;Take bottle;Put bottle;Take plate,0.95;0.9;0.85;0.8;0.75,cup;bottle;oil_container;condiment_container;plate
+S2_CofHoney_C1_49_67,take;open;take;pour;take,jar;jar;bottle;cup;hand,take jar;open jar;take bottle;pour cup;take hand,0.95;0.9;0.85;0.7;0.6,hand;condiment_container;jar;bottle;cup
+S2_CofHoney_C1_70_122,take;take;take;take;take,box;cup;bottle;jar;box,take box;take cup;take bottle;take jar;take box,0.95;0.85;0.75;0.65;0.6,hand;cup;bottle;jar;box
+S2_CofHoney_C1_132_151,open;put;take;take;hold,jar;lid;spoon;cup;jar,open jar;put lid;take spoon;take cup;hold jar,0.95;0.9;0.85;0.7;0.65,hand;jar;cup;lid;spoon
+S2_CofHoney_C1_179_199,scoop;pour;take;open;hold,spoon;spoon;cup;jar;jar,Scoop with spoon;Pour with spoon;Take cup;Open jar;Hold jar,0.98;0.97;0.95;0.93;0.92,spoon;cup;jar;lid;hand
+S2_CofHoney_C1_200_212,mix;hold;scoop;add;take,cup;spoon;seasoning_container;seasoning_container;cup,mix cup;hold spoon;scoop seasoning_container;add seasoning_container;take cup,0.95;0.9;0.85;0.8;0.7,hand;spoon;cup;seasoning_container;lid
+S2_CofHoney_C1_213_228,take;take;fill;put;mix,spoon;seasoning_container;cup;lid;seasoning_container,take spoon;take seasoning_container;fill cup;put lid;mix seasoning_container,0.95;0.9;0.85;0.7;0.6,hand;spoon;seasoning_container;cup;lid
+S2_CofHoney_C1_230_240,add;scoop;mix;hold;pour,seasoning;spoon;spoon;jar;spoon,add seasoning;scoop seasoning;mix seasoning;hold jar;pour seasoning,0.98;0.95;0.92;0.85;0.78,hand;spoon;cup;jar;seasoning
+S2_CofHoney_C1_258_279,open;pour;mix;take;take,jar;jar;cup;spoon;jar,open jar;pour jar;mix cup;take spoon;take jar,0.95;0.9;0.85;0.7;0.6,hand;cup;jar;spoon;lid
+S2_CofHoney_C1_280_299,open;put;take;take;pour,condiment_container;lid;cup;spoon;condiment_container,open condiment_container;put lid;take cup;take spoon;pour condiment_container,0.95;0.9;0.85;0.7;0.6,hand;cup;lid;condiment_container;spoon
+S2_CofHoney_C1_304_321,take;hold;pour;put;move,bottle;bottle;bottle;bottle;bottle,take bottle;hold bottle;pour water;put bottle;move bottle,0.95;0.9;0.85;0.7;0.6,bottle;water;condiment;condiment_container;bowl
+S2_CofHoney_C1_325_345,pour;hold;hold;put;fill,bottle;cup;bottle;spoon;cup,pour bottle;hold cup;hold bottle;put spoon;fill cup,0.98;0.95;0.92;0.85;0.78,bottle;cup;spoon;liquid;hand
+S2_CofHoney_C1_351_520,pour;hold;pour;take;mix,bottle;cup;cup;spoon;cup,pour bottle;hold cup;pour liquid;take spoon;mix liquid,0.95;0.9;0.85;0.7;0.65,hand;cup;bottle;spoon;liquid
+S2_CofHoney_C1_524_533,pour;hold;hold;pour;hold,bottle;cup;bottle;liquid;hand,pour bottle;hold cup;hold bottle;pour liquid;hold hand,0.95;0.9;0.85;0.8;0.7,bottle;cup;hand;liquid;spatula
+S2_CofHoney_C1_534_550,put;hold;take;move;look,bottle;bottle;bottle;bottle;bottle,put bottle;hold bottle;take bottle;move bottle;look bottle,0.98;0.95;0.92;0.85;0.78,bottle;water;phone;condiment_container;counter
+S2_CofHoney_C1_553_568,pour;take;hold;put;clean/wipe,condiment;bottle;hand;cup;counter,Pour condiment;Take bottle;Hold hand;Put cup;Clean/Wipe counter,0.95;0.9;0.85;0.7;0.6,condiment;bottle;cup;counter;hand
+S2_CofHoney_C1_569_613,open;pour;put;hold;take,bottle;bottle;lid;cup;bottle,open bottle;pour condiment;put lid;hold cup;take bottle,0.95;0.92;0.88;0.75;0.7,hand;bottle;cup;lid;condiment
+S2_CofHoney_C1_622_672,pour;hold;hold;add;put,condiment_container;cup;hand;cup;spoon,pour condiment_container;hold cup;hold cup;add condiment_container;put spoon,0.95;0.9;0.85;0.8;0.1,hand;cup;condiment_container;spoon;table
+S2_CofHoney_C1_679_690,pour;hold;open;put;take,bottle;bottle;lid;bottle;cup,pour condiment;hold bottle;open lid;put lid;take cup,0.95;0.85;0.75;0.65;0.45,hand;cup;bottle;lid;condiment
+S2_CofHoney_C1_691_703,put;put;move;put;take,bottle;cup;counter;condiment;bottle,put bottle;put cup;move counter;put condiment;take bottle,0.95;0.05;0.02;0.01;0.01,hand;bottle;cup;counter;condiment
+S2_CofHoney_C1_713_802,stir;mix;take;hold;wash,cup;mixture;spoon;hand;hand,Stir cup;Mix mixture;Take spoon;Hold cup;Wash hand,0.98;0.97;0.95;0.93;0.05,cup;spoon;hand;mixture;counter
+S3_Pealate_C1_18_77,take;put;take;put;open,bread;bread;plate;plate;jar,Take bread;Put bread;Take plate;Put plate;Open jar,0.95;0.92;0.88;0.85;0.75,bread;plate;condiment_container;bottle;jar
+S3_Pealate_C1_84_108,take;pour;hold;take;put,condiment_container;condiment_container;bottle;bread;plate,take condiment_container;pour condiment_container on bread;hold bottle;take bread;put bread on plate,0.95;0.9;0.85;0.7;0.65,hand;plate;bread;condiment_container;bottle
+S3_Pealate_C1_109_137,open;take;take;take;put,jar;lid;jar;bread;lid,open jar;take lid;take jar;take bread;put lid,0.95;0.9;0.85;0.7;0.6,hand;jar;lid;plate;bread
+S3_Pealate_C1_142_185,take;take;take;take;put,jar;bread;spoon;plate;jar,take jar;take bread;take spoon;take plate;put jar,0.95;0.9;0.85;0.75;0.7,spoon;bread;jar;plate;bowl
+S3_Pealate_C1_202_253,scoop;apply;take;hold;put,jam;jam;spoon;bread;jam,Scoop jam;Apply jam;Take spoon;Hold bread;Put jam,0.95;0.92;0.88;0.85;0.8,hand;bread;plate;jam;spoon
+S3_Pealate_C1_279_369,Spread;Use;Hold;Open;Take,bread;spoon;hand;jar;hand,Spread bread;Use spoon;Hold plate;Open jar;Take hand,0.98;0.97;0.95;0.85;0.75,bread;plate;spoon;jar;hand
+S3_Pealate_C1_384_415,open;take;hold;apply jam;put,jar;lid;jar;jar;lid,open jar;take lid;hold jar;apply jam;put lid,0.95;0.9;0.85;0.8;0.75,hand;jar;lid;plate;bread
+S3_Pealate_C1_416_427,put;take;open;pour;take,jar;jar;jar;jar;bread,Put jar;Take jar;Open jar;Pour jam;Take bread,0.95;0.9;0.85;0.7;0.1,condiment_container;bread;bottle;jar;hand
+S3_Pealate_C1_428_446,open;pour;take;take;put,condiment_container;condiment_container;plate;condiment_container;condiment_container,Open bottle;Pour bottle;Take plate;Take bottle;Put bottle,0.95;0.9;0.85;0.7;0.6,condiment_container;plate;hand;bottle;spoon
+S3_Pealate_C1_447_481,open;take;put;hold;spread,jar;lid;lid;plate;bread,open jar;take lid;put lid;hold plate;spread bread,0.95;0.9;0.85;0.7;0.65,hand;jar;lid;plate;bread
+S3_Pealate_C1_519_558,scoop;apply;take;hold;put,spoon;spoon;jar;hand;plate,scoop jam;apply jam;take jar;hold spoon;put bread,0.95;0.93;0.88;0.85;0.82,hand;spoon;jar;plate;bread
+S3_Pealate_C1_580_725,Spread;Take;Put;Take;Open,bread;spoon;spoon;jar;jar,Spread bread;Take spoon;Put spoon;Take jar;Open jar,0.95;0.9;0.85;0.7;0.65,hand;plate;bread;spoon;jar
+S3_Pealate_C1_741_802,close;put;hold;put;take,jar;lid;hand;bread;jar,close jar;put lid;hold plate;put bread;take jar,0.95;0.93;0.88;0.85;0.78,hand;jar;lid;plate;bread
+S3_Pealate_C1_803_814,put;hold;apply;take;take,jar;plate;condiment_container;bread;jar,put jar;hold plate;apply condiment_container;take bread;take jar,0.95;0.9;0.85;0.7;0.6,hand;plate;condiment_container;bread;jar
+S3_Pealate_C1_815_834,pour;take;put;hold;mix,condiment;bottle;bottle;hand;sauce,Pour condiment;Take bottle;Put bottle;Hold hand;Mix sauce,0.95;0.9;0.85;0.7;0.6,condiment;plate;bottle;hand;sauce
+S3_Pealate_C1_837_881,open;hold;shake;take;put,bottle;bottle;bottle;spoon;spoon,open bottle;hold bottle;shake bottle;take spoon;put spoon,0.95;0.85;0.75;0.65;0.55,hand;bottle;plate;bread;spoon
+S3_Pealate_C1_899_946,pour;hold;take;put;spread,condiment;bread;bottle;plate;condiment,pour condiment;hold bread;take bottle;put plate;spread condiment,0.98;0.95;0.92;0.88;0.85,hand;bread;condiment;plate;bottle
+S3_Pealate_C1_956_976,hold;pour;take;put;apply,bottle;bottle;bread;plate;chocolate,hold bottle;pour chocolate;take bread;put plate;apply chocolate,0.95;0.92;0.85;0.78;0.75,hand;bottle;plate;chocolate;bread
+S3_Pealate_C1_977_996,put;take;pour;put;take,bottle;bottle;condiment;spoon;spoon,put bottle;take bottle;pour condiment;put spoon;take spoon,0.95;0.9;0.85;0.7;0.65,hand;bottle;plate;spoon;condiment
+S3_Pealate_C1_1001_1049,take;put;take;put;open,bread;bread;plate;plate;jar,Take bread;Put bread;Take plate;Put plate;Open jar,0.95;0.92;0.85;0.8;0.75,bread;plate;condiment_container;bottle;jar
+S3_Pealate_C1_1050_1114,put;put;put;take;take,sandwich;bread;plate;sandwich;bread,Put sandwich;Put bread;Put plate;Take sandwich;Take bread,0.98;0.97;0.95;0.92;0.88,bread;plate;hand;sandwich;bottle
+S1_Tea_C1_12_52,Take;Put;Take;Put;Take,cup;cup;plate;plate;bread,Take cup;Put cup;Take plate;Put plate;Take bread,0.98;0.97;0.95;0.94;0.92,cup;plate;bread;sausage;butter
+S1_Tea_C1_70_90,take;hold;move;put;drink water,bottle;bottle;bottle;bottle;bottle,take bottle;hold bottle;move bottle;put bottle;drink water,0.95;0.9;0.85;0.75;0.6,bottle;hand;water;plate;cup
+S1_Tea_C1_91_122,unscrew;pour;take;hold;put,bottle;bottle;cap;bottle;cap,unscrew bottle;pour water;take cap;hold bottle;put cap,0.95;0.9;0.85;0.8;0.75,bottle;hand;cap;water;plate
+S1_Tea_C1_122_305,pour;fill;insert;put;take,bottle;cup;ice;cup;bottle,pour water;fill cup;insert ice;put cup;take bottle,0.95;0.9;0.85;0.7;0.6,hand;cup;bottle;water;ice
+S1_Tea_C1_320_337,open;take;pour;hold;put,bottle;bottle;bottle;cup;bottle,open bottle;take bottle;pour bottle;hold cup;put bottle,0.95;0.85;0.75;0.65;0.55,bottle;cup;lid;counter;hand
+S1_Tea_C1_338_352,put;take;take;put;take,bottle;bottle;phone;phone;bread,put bottle;take bottle;take phone;put phone;take bread,0.95;0.9;0.1;0.1;0.05,bottle;phone;plate;bread;cup
+S1_Tea_C1_358_387,take;take;take;take;put,box;butter;tea;plate;plate,take box;take butter;take tea;take plate;put plate,0.95;0.85;0.75;0.65;0.55,hand;box;butter;tea;plate
+S1_Tea_C1_464_487,put;move;hold;take;put,box;box;hand;box;cup,put box;move box;hold box;take box;put cup,0.98;0.95;0.92;0.85;0.1,box;hand;cup;counter;bread
+S1_Tea_C1_498_712,rip;put;hold;take;take,tea_bag;tea_bag;cup;tea_bag;cup,rip tea bag;put tea bag;hold cup;take tea bag;take cup,0.95;0.9;0.85;0.8;0.7,tea_bag;cup;hand;paper;bottle
+S1_Tea_C1_755_1400,Stir;Take;Put;Discard;Clean/Wipe,cup;cup;cup;tea_bag;counter,Stir cup;Take cup;Put cup;Discard tea_bag;Clean/Wipe counter,0.95;0.85;0.75;0.65;0.4,cup;tea_bag;hand;counter;bottle
+S1_Tea_C1_1421_1447,move;take;put,container;container;container,move container;take container;put container,0.95;0.85;0.75,hand;cup;plate;container;lid
+S1_Tea_C1_1458_1492,take;open;hold;pour;put,sugar;lid;container;sugar;sugar,take sugar;open lid;hold container;pour sugar;put sugar,0.95;0.92;0.88;0.85;0.75,hand;sugar;lid;container;cup
+S1_Tea_C1_1539_1564,take;put;take;wash;put,cup;lid;bowl;spoon;cup,take cup;put lid;take bowl;wash spoon;put cup,0.95;0.9;0.85;0.7;0.6,hand;cup;bowl;lid;spoon
+S1_Tea_C1_1581_1620,mix;take;take;take;take,condiment_container;spoon;cup;lid;condiment_container,mix condiment_container;take spoon;take cup;take lid;take condiment_container,0.95;0.9;0.85;0.7;0.6,hand;spoon;cup;condiment_container;lid
+S1_Tea_C1_1621_1640,put;put;put;put;take,cup;spoon;condiment_container;lid;cup,put cup;put spoon;put condiment_container;put lid;take cup,0.95;0.9;0.85;0.8;0.75,hand;cup;spoon;condiment_container;lid
+S1_Tea_C1_1642_1670,mix;hold;take;remove;put,spoon;hand;cup;lid;lid,mix spoon;hold condiment_container;take cup;remove lid;put lid,0.95;0.9;0.85;0.7;0.6,hand;spoon;cup;condiment_container;lid
+S1_Tea_C1_1671_1682,take;take;pour;take;take,condiment_container;spoon;cup;lid;cup,take condiment_container;take spoon;pour cup;take lid;take cup,0.95;0.9;0.85;0.7;0.6,hand;cup;condiment_container;spoon;lid
+S1_Tea_C1_1711_1743,put;close;wash;take;put,lid;lid;hand;cup;cup,put lid container;close lid container;wash hand;take cup;put cup top,0.95;0.93;0.05;0.02;0.01,lid;container;hand;cup;top
+S1_Tea_C1_1744_1782,take;take;put;put;take,container;lid;container;lid;cup,take container;take lid;put container;put lid;take cup,0.95;0.9;0.85;0.8;0.7,hand;lid;container;cup;plate
+S1_Tea_C1_1797_1930,stir;hold;take;put;wash,cup;cup;spoon;spoon;hand,Stir cup;Hold cup;Take spoon;Put spoon;Wash hand,0.95;0.85;0.75;0.65;0.3,cup;spoon;hand;counter;bottle
+S4_Tea_C1_19_55,take;put;take;put;take,cup;cup;bread;bread;bottle,Take cup;Put cup;Take bread;Put bread;Take bottle,0.95;0.9;0.85;0.8;0.75,cup;plate;bread;condiment_container;bottle
+S4_Tea_C1_66_89,take;put;take;put;take,bottle;bottle;phone;phone;napkin,take bottle;put bottle;take phone;put phone;take napkin,0.95;0.9;0.1;0.1;0.05,bottle;phone;cup;paper_towel;napkin
+S4_Tea_C1_93_111,open;pour;hold;take;put,bottle;bottle;bottle;bottle;bottle,open bottle;pour bottle;hold bottle;take bottle;put bottle,0.95;0.85;0.75;0.65;0.55,bottle;cup;hand;lid;top
+S4_Tea_C1_129_231,pour;hold;insert;take;pour,bottle;cup;ice;bottle;bottle,pour water;hold cup;insert ice;take bottle;pour water,0.95;0.9;0.85;0.7;0.65,hand;cup;bottle;ice;water
+S4_Tea_C1_247_256,pour;hold;open;take;fill,bottle;cup;bottle;bottle;cup,pour bottle;hold cup;open bottle;take bottle;fill cup,0.95;0.9;0.85;0.75;0.6,bottle;cup;hand;oil;lid
+S4_Tea_C1_257_272,put;hold;take;pour;wash,bottle;cup;bottle;oil;hand,put bottle;hold cup;take bottle;pour oil;wash hand,0.95;0.85;0.75;0.65;0.45,cup;bottle;hand;oil;water
+S4_Tea_C1_277_304,take;take;take;take;put,tea;honey;bottle;cup;bottle,take tea;take honey;take bottle;take cup;put bottle,0.95;0.9;0.85;0.7;0.6,hand;bottle;honey;tea;cup
+S4_Tea_C1_381_468,pour;hold;take;put;put,tea_bag;cup;tea_bag;cup;tea_bag,pour tea_bag;hold cup;take tea_bag;put cup;put tea_bag,0.95;0.9;0.85;0.7;0.65,cup;tea_bag;hand;bowl;condiment
+S4_Tea_C1_506_678,Steep;Hold;Take;Put;Wash,tea_bag;cup;tea_bag;tea_bag;hand,Steep tea_bag;Hold cup;Take tea_bag;Put tea_bag;Wash hand,0.98;0.95;0.92;0.88;0.05,cup;tea_bag;hand;counter;bottle
+S4_Tea_C1_707_744,take;open;put;wash;pour,container;container;lid;top;bottle,take container;open container;put lid;wash top;pour bottle,0.95;0.85;0.75;0.2;0.1,hand;container;lid;top;bottle
+S4_Tea_C1_753_787,take;put;take;put;take,spoon;spoon;cup;cup;box,take spoon;put spoon;take cup;put cup;take box,0.95;0.9;0.85;0.8;0.75,spoon;cup;box;plate;bread
+S4_Tea_C1_808_842,remove;open;take;pour;put,lid;container;sugar;sugar;sugar,remove lid;open container;take sugar;pour sugar;put sugar,0.95;0.93;0.88;0.85;0.82,hand;lid;container;cup;sugar
+S4_Tea_C1_862_886,take;take;scoop;put;mix,cup;spoon;sugar;sugar;sugar,Take cup;Take spoon;Scoop sugar;Put sugar;Mix sugar,0.95;0.9;0.9;0.85;0.7,cup;spoon;sugar;hand;lid
+S4_Tea_C1_887_893,take;take;take;wash;clean,cup;spoon;butter;hand;counter,Take cup;Take spoon;Take butter;Wash hand;Clean counter,0.95;0.92;0.88;0.15;0.05,cup;spoon;butter;hand;counter
+S4_Tea_C1_896_916,take;take;open;scoop;put,cup;spoon;container;spoon;lid,Take cup;Take spoon;Open container;Scoop with spoon;Put lid,0.95;0.9;0.85;0.8;0.75,cup;spoon;lid;container;hand
+S4_Tea_C1_917_923,stir;hold;put;take;mix,sugar;cup;spoon;cup;sugar,Stir sugar;Hold cup;Put spoon;Take cup;Mix sugar,0.95;0.9;0.85;0.7;0.65,cup;spoon;hand;bowl;sugar
+S4_Tea_C1_931_975,stir;hold;mix;wash;clean,cup;cup;mixture;hand;counter,Stir cup;Hold cup;Mix mixture;Wash hand;Clean counter,0.98;0.95;0.92;0.05;0.02,cup;spoon;mixture;hand;counter
+S4_Tea_C1_989_1016,put;take;close,lid;lid;container,put lid;take lid;close container,0.95;0.92;0.88,hand;lid;container;cup;sugar
+S4_Tea_C1_1017_1036,take;put;open;take;pour,container;lid;container;cup;cup,take container;put lid;open container;take cup;pour cup,0.95;0.9;0.85;0.7;0.6,hand;lid;container;cup;bottle
+S4_Tea_C1_1051_1127,stir;hold;mix;take;wash,cup;cup;mixture;spoon;hand,Stir cup;Hold cup;Mix mixture;Take spoon;Wash hand,0.95;0.85;0.8;0.7;0.1,cup;spoon;hand;mixture;counter
+S1_Cheese_C1_13_71,take;put;wash;open;clean,bread;plate;hand;bag;counter,Take bread;Put plate;Wash hand;Open bag;Clean counter,0.98;0.95;0.85;0.75;0.6,bread;plate;hand;bag;counter
+S1_Cheese_C1_100_172,take;put;take;put;take,cheese;cheese;bread;plate;cup,Take cheese;Put cheese;Take bread;Put plate;Take cup,0.95;0.9;0.85;0.7;0.6,cheese;bread;plate;cup;hand
+S1_Cheese_C1_172_270,put;take;wrap;take;put,cheese;cheese;cheese;bread;bread,Put cheese;Take cheese;Wrap cheese;Take bread;Put bread,0.95;0.9;0.85;0.7;0.6,cheese;bread;plastic_wrap;hand;cheese_container
+S1_Cheese_C1_269_303,put;put;take;put;take,cheese;bread;cheese;cheese;bread,Put cheese;Put bread;Take cheese;Put cheese;Take bread,0.98;0.95;0.92;0.88;0.85,cheese;bread;hand;sandwich;counter
+S1_Cheese_C1_306_328,take;open;pour;close;put,mayonnaise;mayonnaise;mayonnaise;mayonnaise;mayonnaise,Take mayonnaise;Open mayonnaise;Pour mayonnaise;Close mayonnaise;Put mayonnaise,0.95;0.85;0.75;0.65;0.55,mayonnaise;hand;bottle;condiment_container;cheese
+S1_Cheese_C1_350_370,pour;hold;apply;open;remove,condiment;bottle;bread;bottle;lid,Pour condiment;Hold bottle;Apply condiment;Hold bottle;Hold bottle,0.95;0.9;0.85;0.7;0.6,condiment;bread;hand;bottle;lid
+S1_Cheese_C1_380_470,apply mayonnaise;pour;hold;put;take,bread;mayonnaise;hand;cheese;bread,Apply mayonnaise;Pour mayonnaise;Hold mayonnaise;Put cheese;Take bread,0.98;0.97;0.95;0.85;0.75,condiment_container;bread;hand;cheese;mayonnaise
+S1_Cheese_C1_470_490,pour;open;hold;take;apply,mayonnaise;mayonnaise;bread;mayonnaise;mayonnaise,Pour mayonnaise;Open mayonnaise;Hold bread;Take mayonnaise;Apply mayonnaise,0.95;0.85;0.75;0.65;0.6,condiment_container;bread;hand;mayonnaise;bottle
+S1_Cheese_C1_491_515,put;take;take;pour;put,mayonnaise;bread;mayonnaise;mayonnaise;bread,Put mayonnaise;Take bread;Take mayonnaise;Pour mayonnaise;Put bread,0.98;0.95;0.92;0.88;0.85,mayonnaise;bread;condiment_container;bottle;phone
+S1_Cheese_C1_516_531,pour;take;open;close;put,condiment;condiment;condiment;condiment;condiment,pour condiment;take condiment;open condiment;close condiment;put condiment,0.95;0.85;0.7;0.6;0.5,condiment;hand;bread;mustard;honey
+S1_Cheese_C1_537_584,pour;hold;spread;take;put,condiment;bottle;condiment;bread;bread,Pour condiment;Hold bottle;Spread condiment;Take bread;Put bread,0.98;0.95;0.92;0.85;0.78,condiment;bread;hand;bottle;counter
+S1_Cheese_C1_588_649,apply spreads;hold condiment_container;hold bread;place bread on table;pour spreads,condiment_container;hand;hand;bread;condiment_container,apply spreads;hold condiment_container;hold bread;place bread on table;pour spreads,0.98;0.95;0.93;0.85;0.82,hand;condiment_container;bread;table;spreads
+S1_Cheese_C1_660_680,Apply condiment;Hold condiment;Pour condiment;Put bread;Take condiment,condiment;condiment;condiment;bread;condiment,Apply condiment;Hold condiment;Pour condiment;Put bread;Take condiment,0.95;0.85;0.75;0.6;0.5,condiment;hand;bread;table;condiment_container
+S1_Cheese_C1_681_694,put;hold;take;apply;pour,condiment;hand;condiment;bread;condiment,Put condiment;Hold hand;Take condiment;Apply bread;Pour condiment,0.95;0.85;0.75;0.65;0.55,condiment;hand;bread;condiment_container;table
+S1_Cheese_C1_700_748,take;open;take;put;take,bread;bag;cheese;cheese;cup,Take bread;Open bag;Take cheese;Put cheese;Take cup,0.98;0.95;0.92;0.88;0.75,bread;bag;cheese;condiment_container;cup
+S1_Cheese_C1_749_790,hold;put;place;hold;take,bread;bread;sandwich;hand;hand,Hold bread;Put bread;Place sandwich;Hold bread;Take bread,0.95;0.9;0.85;0.8;0.75,bread;hand;sandwich;counter;table
+S3_Coffee_C1_21_101,take;put;take;put;take,cup;cup;plate;plate;paper,Take cup;Put cup;Take plate;Put plate;Take paper,0.95;0.9;0.85;0.8;0.7,cup;plate;paper;bottle;box
+S3_Coffee_C1_117_140,take;put;take;put;clean,bottle;cup;plate;plate;counter,take bottle;put cup;take plate;put plate;clean counter,0.95;0.85;0.75;0.7;0.6,hand;bottle;cup;plate;counter
+S3_Coffee_C1_145_170,open;take;hold;put;hold,jar;lid;jar;lid;cup,open jar;take lid;hold jar;put lid;hold cup,0.95;0.9;0.85;0.75;0.6,hand;jar;lid;cup;table
+S3_Coffee_C1_181_229,take;take;take;take;take,spoon;hand;cup;plate;paper,take spoon;take hand;take cup;take plate;take paper,0.95;0.9;0.85;0.75;0.6,hand;spoon;plate;paper;cup
+S3_Coffee_C1_232_267,scoop;put;hold;take;stir,spoon;spoon;jar;spoon;spoon,Scoop jar;Put lid;Hold jar;Take spoon;Stir spoon,0.95;0.85;0.8;0.75;0.7,hand;spoon;jar;cup;lid
+S3_Coffee_C1_268_276,add;scoop;put;take;hold,cup;jar;spoon;lid;cup,add cup;scoop jar;put spoon;take lid;hold cup,0.95;0.92;0.88;0.85;0.8,hand;cup;spoon;jar;lid
+S3_Coffee_C1_282_306,open;take;scoop with;take;take,jar;spoon;spoon;cup;jar,open jar;take spoon;scoop with spoon;take cup;take jar,0.95;0.9;0.9;0.85;0.8,hand;spoon;cup;jar;bottle
+S3_Coffee_C1_307_321,add;mix;hold;take;open,spoon;cup;jar;spoon;lid,add spoon;mix cup;hold jar;take spoon;open lid,0.95;0.9;0.85;0.7;0.6,hand;spoon;cup;jar;lid
+S3_Coffee_C1_344_393,open;remove;hold;take;pour,jar;lid;jar;spoon;cup,open jar;remove lid;hold jar;take spoon;pour cup,0.95;0.93;0.88;0.75;0.65,hand;jar;lid;cup;spoon
+S3_Coffee_C1_394_420,put;put;take;take;take,jar;spoon;paper;jar;spoon,put jar;put spoon;take paper;take jar;take spoon,0.95;0.9;0.85;0.7;0.6,hand;plate;jar;spoon;paper
+S3_Coffee_C1_441_474,take;take;take;take;take,sugar;cup;plate;bottle;hand,take sugar;take cup;take plate;take bottle;take hand,0.95;0.85;0.75;0.65;0.5,hand;cup;plate;sugar;bottle
+S3_Coffee_C1_498_546,take;take;take;take;take,container;lid;hand;cup;spoon,take container;take lid;take hand;take cup;take spoon,0.95;0.9;0.85;0.7;0.6,cup;lid;hand;spoon;container
+S3_Coffee_C1_572_602,take;take;scoop;put;mix,cup;spoon;sugar;sugar;sugar,Take cup;Take spoon;Scoop sugar;Put sugar;Mix sugar,0.95;0.92;0.9;0.88;0.85,cup;spoon;sugar;lid;hand
+S3_Coffee_C1_603_613,hold;put;stir;take;take,cup;sugar;spoon;sugar;spoon,hold cup;put sugar in cup;stir sugar in cup;take sugar;take spoon,0.95;0.92;0.88;0.75;0.65,cup;spoon;sugar;hand;counter
+S3_Coffee_C1_618_639,scoop;put;take;take;stir,sugar;sugar;spoon;cup;sugar,Scoop sugar;Put sugar;Take spoon;Take cup;Stir sugar,0.95;0.9;0.85;0.7;0.6,cup;spoon;sugar;lid;hand
+S3_Coffee_C1_640_648,stir;put;take;take;mix,cup;spoon;cup;spoon;mixture,Stir cup;Put spoon;Take cup;Take spoon;Mix mixture,0.95;0.85;0.7;0.65;0.6,cup;spoon;hand;container;mixture
+S3_Coffee_C1_678_711,close lid container;put lid container;wash hand,container;lid;hand,close lid container;put lid container;wash hand,0.98;0.97;0.01,cup;lid;container;hand;top
+S3_Coffee_C1_712_737,put;close;take;wash;open,container;lid;hand;cup;lid,put container;close lid;take container;wash cup;open lid,0.95;0.9;0.85;0.1;0.05,hand;container;lid;top;cup
+S3_Coffee_C1_743_763,take;put;take;put;take,bottle;bottle;phone;phone;paper,take bottle;put bottle;take phone;put phone;take paper,0.95;0.9;0.85;0.8;0.7,bottle;phone;cup;plate;paper
+S3_Coffee_C1_770_795,pour;hold;hold;take;put,bottle;bottle;cup;spoon;spoon,pour bottle;hold bottle;hold cup;take spoon;put spoon,0.95;0.85;0.7;0.3;0.2,hand;bottle;cup;spoon;lid
+S3_Coffee_C1_808_1014,pour;pour;hold;take;fill,cup;bottle;cup;bottle;cup,pour water;pour bottle;hold cup;take bottle;fill cup,0.95;0.92;0.88;0.85;0.8,hand;cup;bottle;water;mixture
+S3_Coffee_C1_1022_1037,press;hold;open cap;pour liquid;take,bottle;bottle;bottle;bottle;cup,press bottle;hold bottle;open cap;pour liquid;take cup,0.95;0.9;0.85;0.7;0.6,bottle;cup;hand;liquid;cap
+S3_Coffee_C1_1038_1059,put;take;take;take;put,bottle;bottle;paper;cup;cup,put bottle;take bottle;take paper;take cup;put cup,0.98;0.97;0.95;0.92;0.88,bottle;cup;plate;phone;paper
+S3_Coffee_C1_1084_1089,stir;hold;take;put;mix,mixture;cup;spoon;spoon;mixture,Stir mixture;Hold cup;Take spoon;Put spoon;Mix mixture,0.95;0.85;0.75;0.65;0.6,cup;spoon;hand;mixture;counter
+S3_Peanut_C1_22_63,take;take;put;put;wash,bread;hand;hand;bread;hand,Take bread;Take hand;Put hand;Put bread;Wash hand,0.95;0.85;0.75;0.7;0.6,bread;hand;paper;plate;counter
+S3_Peanut_C1_66_92,open;take;put;close;wash,jar;jar;jar;jar;jar,open jar;take jar;put jar;close jar;wash jar,0.95;0.85;0.75;0.65;0.3,hand;bread;jar;lid;top
+S3_Peanut_C1_93_142,open;remove;apply;take;put,jar;lid;condiment;bread;bread,open jar;remove lid;apply condiment;take bread;put bread,0.95;0.93;0.88;0.75;0.7,hand;bread;jar;lid;condiment
+S3_Peanut_C1_149_194,open;take;take;take;take,jar;spoon;bread;paper;jar,open jar;take spoon;take bread;take paper;take jar,0.95;0.9;0.85;0.7;0.65,spoon;bread;jar;plate;paper
+S3_Peanut_C1_196_234,scoop;apply;hold;take;spread,spoon;bread;jar;spoon;bread,Scoop condiment;Apply condiment;Hold jar;Take spoon;Spread bread,0.95;0.92;0.88;0.85;0.75,hand;spoon;bread;jar;condiment
+S3_Peanut_C1_245_385,Spread;Take;Put;Open;Take,bread;spoon;spoon;jar;lid,Spread bread;Take spoon;Put spoon;Open jar;Take lid,0.98;0.95;0.92;0.88;0.85,bread;spoon;jar;lid;hand
+S3_Peanut_C1_413_466,open;put;take;close;take,jar;lid;hand;jar;bread,open jar;put lid;take lid;close jar;take bread,0.95;0.9;0.85;0.7;0.6,hand;jar;lid;bread;spoon
+S3_Peanut_C1_467_485,put;take;open;close;put,jar;jar;jar;jar;bread,Put jar;Take jar;Open jar;Close jar;Put bread,0.95;0.9;0.85;0.8;0.7,condiment_container;bread;hand;jar;lid
+S3_Peanut_C1_525_547,take;pour;take;take;take,honey;honey;spoon;bread;condiment,Take honey;Pour honey;Take spoon;Take bread;Take condiment,0.95;0.9;0.85;0.7;0.6,hand;bread;condiment;spoon;honey
+S3_Peanut_C1_555_596,pour;open;hold;close;take,condiment;lid;bottle;lid;bread,pour condiment;open lid;hold bottle;close lid;take bread,0.95;0.92;0.88;0.85;0.75,hand;bread;condiment;lid;bottle
+S3_Peanut_C1_688_754,Pour;Hold;Take;Put;Pour,condiment;bread;bottle;bread;condiment,Pour condiment;Hold bread;Take bottle;Put bread;Pour condiment,0.95;0.92;0.88;0.85;0.83,bread;condiment;hand;bottle;table
+S3_Peanut_C1_771_790,hold;hold;open;apply;pour,bread;bottle;lid;condiment;condiment,hold bread;hold bottle;open lid;apply condiment;pour condiment,0.95;0.92;0.88;0.85;0.8,hand;bread;condiment;bottle;lid
+S3_Peanut_C1_791_818,put;take;open;pour;take,honey;honey;honey;honey;bread,Put honey;Take honey;Open honey;Pour honey;Take bread,0.95;0.9;0.85;0.8;0.7,hand;bread;honey;condiment_container;bottle
+S3_Peanut_C1_829_880,take;put;take;take;put,bread;bread;paper;plate;plate,Take bread;Put bread;Take paper;Take plate;Put plate,0.95;0.9;0.85;0.7;0.65,bread;plate;paper;sandwich;hand
+S3_Peanut_C1_881_919,put;put;check;take;take,bread;sandwich;watch;bread;sandwich,Put bread;Put sandwich;Check watch;Take bread;Take sandwich,0.98;0.97;0.95;0.92;0.88,bread;hand;sandwich;table;watch
+S1_Hotdog_C1_17_61,take;put;take;put;take,bread;bread;plate;plate;bottle,Take bread;Put bread;Take plate;Put plate;Take bottle,0.95;0.9;0.85;0.8;0.7,bread;plate;hand;condiment_container;bottle
+S1_Hotdog_C1_83_123,take;put;open;take;put,bacon;bacon;package;bread;bread,take bacon;put bacon;open package;take bread;put bread,0.95;0.9;0.85;0.7;0.65,hand;bacon;plate;bread;package
+S1_Hotdog_C1_122_143,Put;Apply;Take;Take;Put,hotdog;bread;hotdog;bread;bread,Put hotdog;Apply bread;Take hotdog;Take bread;Put bread,0.95;0.85;0.7;0.6;0.5,hand;bread;hotdog;plate;condiment_container
+S1_Hotdog_C1_154_171,take;take;take;put;put,mustard;hotdog;bread;plate;plate,Take mustard;Take hotdog;Take bread;Put plate;Put plate,0.95;0.85;0.75;0.65;0.65,hand;mustard;bread;hotdog;plate
+S1_Hotdog_C1_171_195,pour;take;put;take;pour,condiment_container;bread;plate;bottle;bottle,pour condiment_container;take bread;put plate;take bottle;pour bottle,0.95;0.85;0.75;0.65;0.55,hand;condiment_container;bread;plate;bottle
+S1_Hotdog_C1_198_331,pour;pour;put;take;put,mustard;hotdog;bread;hand;plate,Pour mustard;Pour hotdog;Put bread;Take hand;Put plate,0.98;0.02;0.01;0.01;0.01,hand;mustard;hotdog;plate;bread
+S1_Hotdog_C1_333_346,pour;pour;take;hold;put,mustard;hotdog;hand;plate;bread,Pour mustard;Pour hotdog;Take hand;Hold plate;Put bread,0.95;0.15;0.05;0.03;0.02,hand;mustard;hotdog;plate;bread
+S1_Hotdog_C1_347_366,put;take;take;put;take,condiment;condiment;bread;bread;plate,put condiment;take condiment;take bread;put bread;take plate,0.98;0.97;0.95;0.93;0.85,condiment;hand;bread;plate;bottle
+S1_Hotdog_C1_367_384,take;put;take;put;take,condiment;condiment;bread;bread;plate,Take condiment;Put condiment;Take bread;Put bread;Take plate,0.95;0.93;0.85;0.8;0.75,condiment;bread;plate;bottle;hand
+S1_Hotdog_C1_394_425,pour;open;hold;put;take,ketchup;bottle;hand;hotdog;bottle,pour ketchup;open bottle;hold plate;put hotdog;take bottle,0.95;0.9;0.85;0.7;0.65,hand;bottle;ketchup;plate;hotdog
+S1_Hotdog_C1_437_473,pour;pour;take;put;hold,hotdog;ketchup;hotdog;hotdog;plate,Pour ketchup;Pour ketchup;Take hotdog;Put hotdog;Hold plate,0.95;0.9;0.1;0.1;0.05,hand;ketchup;plate;hotdog;bottle
+S1_Hotdog_C1_473_483,pour;take;put;take;put,ketchup;hotdog;hotdog;plate;plate,Pour ketchup;Take hotdog;Put hotdog;Take plate;Put plate,0.95;0.85;0.8;0.7;0.65,hand;ketchup;hotdog;plate;bottle
+S1_Hotdog_C1_484_513,put;take;put;pour;take,ketchup;ketchup;hotdog;ketchup;hotdog,Put ketchup;Take ketchup;Put hotdog;Pour ketchup;Take hotdog,0.95;0.9;0.85;0.8;0.7,hand;ketchup;plate;hotdog;bread
+S1_Hotdog_C1_526_593,press;hold;take;apply;put,sandwich;bread;sandwich;condiment;sandwich,press sandwich;hold bread;take sandwich;apply condiment;put sandwich on plate,0.95;0.9;0.85;0.7;0.65,hand;sandwich;bread;plate;condiment
+S3_Hotdog_C1_21_58,take;put;take;take;put,bread;bread;paper;plate;plate,Take bread;Put bread;Take paper;Take plate;Put plate,0.95;0.9;0.85;0.7;0.65,bread;plate;paper;condiment_container;hand
+S3_Hotdog_C1_77_150,take;put;take;put;take,bacon;bacon;bread;bread;plate,Take bacon;Put bacon;Take bread;Put bread;Take plate,0.95;0.93;0.88;0.85;0.75,bread;bacon;plate;condiment_container;hand
+S3_Hotdog_C1_150_183,put;hold;take;put;put,hotdog;hotdog;hotdog;hotdog;hotdog,Put hotdog;Hold hotdog;Take hotdog;Put hotdog on bread;Put hotdog,0.95;0.9;0.85;0.8;0.75,hand;bread;hotdog;plate;condiment_container
+S3_Hotdog_C1_183_211,put;take;pour;put;take,hotdog;condiment_container;condiment_container;condiment_container;hotdog,Put hotdog;Take condiment_container;Pour condiment_container;Put condiment_container;Take hotdog,0.95;0.9;0.85;0.7;0.6,hand;condiment_container;bread;hotdog;plate
+S3_Hotdog_C1_212_241,pour;pour;take;put;put,mustard;hotdog;mustard;hotdog;bread,Pour mustard;Pour hotdog;Take mustard;Put hotdog;Put bread,0.95;0.85;0.75;0.65;0.55,hand;mustard;hotdog;plate;bread
+S3_Hotdog_C1_247_475,Pour;Take;Hold;Put;Put,hotdog;condiment_container;plate;hotdog;bread,Pour condiment_container;Take condiment_container;Hold plate;Put hotdog;Put bread,0.95;0.85;0.75;0.65;0.55,hand;condiment_container;plate;hotdog;bread
+S3_Hotdog_C1_477_492,pour;apply;take;hold;put,mustard;mustard;mustard;hand;bread,Pour mustard;Apply mustard;Take mustard;Hold bread;Put bread on plate,0.95;0.92;0.88;0.75;0.65,hand;mustard;bread;plate;condiment
+S3_Hotdog_C1_493_508,pour;put;take;put;put,mustard;mustard;mustard;plate;bread,Pour mustard;Put mustard;Take mustard;Put plate;Put bread,0.95;0.9;0.85;0.7;0.6,hand;mustard;plate;bread;hotdog
+S3_Hotdog_C1_509_533,put;take;put;take;put,condiment;condiment;bread;bread;plate,put condiment;take condiment;put bread;take bread;put plate,0.95;0.9;0.85;0.8;0.75,condiment;bread;plate;hand;bottle
+S3_Hotdog_C1_534_566,Open;Pour;Take;Put;Hold,ketchup;ketchup;hotdog;hotdog;plate,Open ketchup;Pour ketchup;Take hotdog;Put hotdog;Hold plate,0.98;0.95;0.1;0.1;0.05,hand;ketchup;plate;bread;hotdog
+S3_Hotdog_C1_580_711,pour;hold;insert;apply;take,ketchup;plate;ketchup;ketchup;bread,Pour ketchup;Hold plate;Insert ketchup;Apply ketchup;Take bread,0.98;0.95;0.92;0.88;0.75,hand;ketchup;plate;bread;condiment
+S3_Hotdog_C1_712_738,pour;open;take;put;hold,ketchup;lid;ketchup;ketchup;sandwich,pour ketchup;open lid;take ketchup;put ketchup;hold sandwich,0.95;0.92;0.88;0.85;0.75,hand;ketchup;bottle;lid;sandwich
+S3_Hotdog_C1_739_760,Pour;Put;Take;Open;Apply,ketchup;ketchup;ketchup;ketchup;ketchup,Pour ketchup;Put ketchup;Take ketchup;Open ketchup;Apply ketchup,0.95;0.9;0.85;0.75;0.7,hand;ketchup;plate;bread;condiment_container
+S3_Hotdog_C1_774_832,Compress;Adjust;Press;Take;Put,sandwich;sandwich;sandwich;sandwich;sandwich,Compress sandwich;Adjust sandwich;Press sandwich;Take sandwich;Put sandwich,0.95;0.88;0.85;0.75;0.65,sandwich;plate;hand;bread;condiment
+S2_Hotdog_C1_16_57,take;put;put;spread;take,bread;bread;plate;condiment;plate,Take bread;Put bread;Put plate;Spread condiment;Take plate,0.95;0.93;0.88;0.75;0.65,bread;plate;hand;bag;condiment
+S2_Hotdog_C1_93_187,take;hold;put;take;open,sausage;sausage;sausage;bread;sausage,take sausage;hold sausage;put sausage;take bread;open sausage,0.95;0.9;0.85;0.7;0.65,hand;sausage;bread;plate;condiment_container
+S2_Hotdog_C1_188_207,put;put;take;take;take,hotdog;bread;hotdog;bread;plate,Put hotdog;Put bread;Take hotdog;Take bread;Take plate,0.95;0.9;0.85;0.8;0.7,hand;hotdog;bread;plate;condiment_container
+S2_Hotdog_C1_260_283,take;put;take;put;take,condiment;condiment;bread;bread;sausage,take condiment;put condiment;take bread;put bread;take sausage,0.95;0.9;0.85;0.8;0.75,hand;condiment;plate;bread;sausage
+S2_Hotdog_C1_288_323,Pour;Insert;Hold;Apply;Put,condiment_container;hotdog;bread;condiment_container;plate,Pour condiment_container;Insert hotdog;Hold bread;Apply condiment_container;Put plate,0.95;0.85;0.75;0.7;0.6,hand;condiment_container;bread;hotdog;plate
+S2_Hotdog_C1_327_407,Pour;Hold;Hold;Put;Put,condiment_container;hand;plate;hotdog;bread,Pour condiment_container;Hold hand;Hold plate;Put hotdog;Put bread,0.95;0.85;0.75;0.65;0.6,hand;condiment_container;plate;hotdog;bread
+S2_Hotdog_C1_409_445,hold;pour;take;put;place,hotdog;condiment_container;condiment_container;condiment_container;bread,Hold hotdog;Pour condiment_container;Take condiment_container;Put hotdog;Place bread,0.95;0.92;0.88;0.85;0.75,hand;condiment_container;plate;hotdog;bread
+S2_Hotdog_C1_446_464,put;put;take;take;put,condiment;bottle;bottle;plate;bread,Put condiment;Put bottle;Take bottle;Take plate;Put bread,0.95;0.9;0.85;0.7;0.6,condiment;plate;hand;bread;bottle
+S2_Hotdog_C1_466_489,take;hold;pour;take;put,condiment;condiment;condiment;bread;plate,take condiment;hold bottle;pour condiment;take bread;put plate,0.95;0.9;0.85;0.7;0.6,condiment;hand;bottle;plate;bread
+S2_Hotdog_C1_534_556,pour;apply;hold;put;take,hotdog;ketchup;hand;hotdog;hotdog,Pour ketchup;Apply ketchup;Hold plate;Put hotdog;Take hotdog,0.95;0.93;0.88;0.75;0.65,hand;ketchup;hotdog;plate;bread
+S2_Hotdog_C1_556_611,pour;hold;place;put;take,ketchup;hotdog;plate;ketchup;plate,Pour ketchup;Hold hotdog;Place bread;Put ketchup;Take plate,0.95;0.85;0.75;0.7;0.6,hand;ketchup;hotdog;plate;bread
+S2_Hotdog_C1_612_638,pour;open;hold;take;put,ketchup;ketchup;hand;ketchup;ketchup,Pour ketchup;Open ketchup;Hold plate;Take ketchup;Put ketchup,0.95;0.85;0.75;0.65;0.55,hand;ketchup;plate;bread;hotdog
+S2_Hotdog_C1_641_669,pour;take;put;take;put,condiment;hotdog;hotdog;bread;bread,Pour condiment;Take hotdog;Put hotdog;Take bread;Put bread,0.95;0.1;0.1;0.1;0.1,hand;condiment;plate;bread;hotdog
+S2_Hotdog_C1_676_728,press;adjust;hold;take;put,sandwich;sandwich;sandwich;sandwich;sandwich,press sandwich;adjust sandwich;hold sandwich;take sandwich;put sandwich,0.95;0.85;0.75;0.65;0.55,hand;sandwich;plate;bread;condiment
+S4_Coffee_C1_15_50,Take;Put;Take;Take;Put,cup;cup;bread;jar;bread,Take cup;Put cup;Take bread;Take jar;Put bread,0.95;0.9;0.8;0.7;0.6,cup;plate;bread;bottle;jar
+S4_Coffee_C1_78_100,take;take;take;take;take,cup;bread;bottle;jar;box,Take cup;Take bread;Take bottle;Take jar;Take box,0.95;0.85;0.75;0.65;0.55,cup;bread;bottle;jar;box
+S4_Coffee_C1_114_132,take;pour;put;take;take,seasoning_container;seasoning_container;spoon;bottle;spoon,Take seasoning_container;Pour seasoning_container;Put spoon;Take bottle;Take spoon,0.95;0.9;0.85;0.7;0.6,spoon;seasoning_container;bottle;cup;counter
+S4_Coffee_C1_133_177,open;remove;pour;hold;take,jar;lid;bottle;cup;bottle,open jar;remove lid;pour bottle;hold cup;take bottle,0.95;0.93;0.88;0.75;0.65,jar;lid;cup;hand;bottle
+S4_Coffee_C1_197_243,open;take;scoop with;pour into;take,jar;spoon;spoon;cup;jar,open jar;take spoon;scoop with spoon;pour into cup;take jar,0.95;0.9;0.9;0.85;0.7,hand;spoon;jar;cup;lid
+S4_Coffee_C1_244_251,add;scoop;mix;hold;take,cup;jar;cup;jar;spoon,add cup;scoop jar;mix cup;hold jar;take spoon,0.95;0.92;0.88;0.85;0.8,hand;cup;spoon;jar;lid
+S4_Coffee_C1_256_277,scoop with spoon;take spoon;pour into cup;open jar;take jar,jar;spoon;cup;jar;jar,scoop with spoon;take spoon;pour into cup;open jar;take jar,0.95;0.9;0.85;0.8;0.75,hand;spoon;jar;cup;lid
+S4_Coffee_C1_278_284,add;stir;hold;take;put,jar;cup;spoon;jar;lid,add jar;stir cup;hold spoon;take jar;put lid,0.95;0.9;0.85;0.7;0.6,hand;cup;spoon;jar;lid
+S4_Coffee_C1_311_359,close;put;hold;take;take,jar;lid;hand;cup;spoon,close jar;put lid;hold jar;take cup;take spoon,0.95;0.92;0.88;0.75;0.65,hand;cup;lid;jar;spoon
+S4_Coffee_C1_360_377,mix;take;put;take;hold,cup;seasoning_container;lid;spoon;cup,mix cup;take seasoning_container;put lid;take spoon;hold cup,0.95;0.9;0.85;0.7;0.6,hand;cup;seasoning_container;lid;spoon
+S4_Coffee_C1_381_421,open;close;take;wash;use,container;lid;hand;top;phone,open container;close lid;take hand;wash top;use phone,0.95;0.85;0.7;0.6;0.4,hand;container;lid;top;phone
+S4_Coffee_C1_421_467,open;take;pour;wash;put,container;lid;cup;hand;bowl,open container;take lid;pour cup;wash hand;put bowl,0.95;0.9;0.1;0.05;0.05,hand;lid;container;cup;bowl
+S4_Coffee_C1_496_519,take;take;take;take;take,sugar;spoon;cup;lid;container,Take sugar;Take spoon;Take cup;Take lid;Take container,0.95;0.9;0.85;0.7;0.6,cup;sugar;spoon;lid;container
+S4_Coffee_C1_520_525,pour;put;open;take;take,sugar;lid;container;spoon;cup,Pour sugar;Put lid;Open container;Take spoon;Take cup,0.95;0.85;0.75;0.65;0.55,cup;spoon;sugar;lid;container
+S4_Coffee_C1_539_588,take;close;take;pour;take,lid;lid;container;sugar;cup,take lid;close lid;take sugar;pour sugar;take cup,0.95;0.92;0.88;0.85;0.75,cup;lid;container;hand;sugar
+S4_Coffee_C1_589_616,put;take;open;close;wash,container;container;container;container;cup,put container;take container;open container;close container;wash cup,0.95;0.9;0.85;0.8;0.1,hand;container;lid;top;cup
+S4_Coffee_C1_621_647,take;pour;take;put;use,bottle;bottle;cup;bottle;phone,take bottle;pour water;take cup;put bottle;use phone,0.98;0.95;0.92;0.85;0.1,bottle;cup;phone;paper_towel;water
+S4_Coffee_C1_660_683,open;unscrew;take;hold;pour oil,bottle;bottle;bottle;bottle;bottle,open bottle;unscrew bottle;take bottle;hold bottle;pour oil,0.95;0.93;0.88;0.85;0.78,bottle;cup;lid;hand;oil
+S4_Coffee_C1_699_835,pour;hold;mix;pour;take,bottle;cup;spoon;cup;spoon,pour bottle;hold cup;mix liquid;pour liquid;take spoon,0.98;0.95;0.92;0.88;0.75,hand;cup;bottle;spoon;liquid
+S4_Coffee_C1_852_864,open;take;pour;hold;take,bottle;bottle;bottle;cup;cup,open bottle;take bottle;pour water;hold cup;take cup,0.95;0.9;0.85;0.7;0.6,cup;bottle;hand;oil;water
+S4_Coffee_C1_865_883,put;move;take;hold;look,bottle;bottle;bottle;bottle;bottle,put bottle;move bottle;take bottle;hold bottle;look bottle,0.95;0.85;0.75;0.65;0.45,bottle;cup;paper_towel;phone;condiment_container
+S4_Coffee_C1_893_963,stir;hold;take;mix;wash,mixture;cup;spoon;mixture;hand,Stir mixture;Hold cup;Take spoon;Mix mixture;Wash hand,0.95;0.85;0.75;0.7;0.1,cup;spoon;mixture;hand;counter
+S3_Tea_C1_21_63,take;put;take;put;take,cup;cup;paper;paper;plate,Take cup;Put cup;Take paper;Put paper;Take plate,0.95;0.9;0.85;0.7;0.6,cup;plate;paper;bread;condiment_container
+S3_Tea_C1_65_86,take;hold;put;pour;use,bottle;cup;bottle;bottle;phone,Take bottle;Take cup;Put bottle;Pour bottle;Use phone,0.95;0.85;0.75;0.65;0.3,cup;bottle;phone;counter;water
+S3_Tea_C1_87_115,pour;open cap;hold;put;take,bottle;bottle;bottle;cap;cup,pour bottle;open cap;hold bottle;put cap;take cup,0.95;0.9;0.85;0.7;0.6,cup;bottle;hand;liquid;cap
+S3_Tea_C1_124_282,pour;hold;put;take;pour,bottle;cup;bottle;bottle;liquid,Pour bottle;Hold cup;Put bottle;Take bottle;Pour liquid,0.95;0.9;0.85;0.8;0.75,cup;bottle;hand;liquid;counter
+S3_Tea_C1_283_295,squeeze;pour;hold;take;wash,bottle;bottle;bottle;bottle;counter,squeeze bottle;pour liquid:washing;hold bottle;take bottle;wash counter,0.95;0.92;0.88;0.75;0.1,hand;bottle;cup;liquid:washing;counter
+S3_Tea_C1_296_316,put;put;take;take;take,bottle;cup;paper;bottle;cup,put bottle;put cup;take paper;take bottle;take cup,0.95;0.85;0.7;0.6;0.5,bottle;cup;phone;paper;watch
+S3_Tea_C1_329_394,put;take;open;take;pour,tea_bag;tea_bag;box;box;tea_bag,put tea_bag;take tea_bag;open box;take box;pour tea_bag,0.95;0.93;0.88;0.85;0.78,tea_bag;cup;box;bottle;condiment_container
+S3_Tea_C1_402_490,take;take;take;take;take,cup;paper;hand;bottle;phone,take cup;take paper;take hand;take bottle;take phone,0.95;0.9;0.85;0.7;0.3,cup;hand;paper;bottle;phone
+S3_Tea_C1_517_766,steep;hold;stir;check;wash,tea_bag;cup;cup;watch;hand,Steep tea_bag;Hold cup;Stir cup;Check watch;Wash hand,0.95;0.85;0.75;0.1;0.05,cup;tea_bag;hand;watch;counter
+S3_Tea_C1_840_867,open;take;put;put;wash,container;cup;lid;container;hand,open container;take cup;put lid;put container;wash hand,0.95;0.85;0.8;0.7;0.6,cup;lid;container;hand;top
+S3_Tea_C1_870_935,open;put;take;wash;hold,container;lid;cup;hand;bowl,open container;put lid;take cup;wash hand;hold bowl,0.95;0.9;0.85;0.1;0.05,cup;lid;container;hand;bowl
+S3_Tea_C1_946_1028,open;take;put;take;take,box;spoon;spoon;paper;box,open box;take spoon;put spoon;take paper;take box,0.95;0.9;0.85;0.7;0.65,hand;cup;box;spoon;paper
+S3_Tea_C1_1038_1068,take;put;close;put;take,cup;spoon;container;cup;spoon,Take cup;Put spoon;Close container;Put cup;Take spoon,0.95;0.9;0.85;0.75;0.7,cup;container;lid;spoon;hand
+S3_Tea_C1_1069_1082,fill;take;put;take;wash,cup;spoon;spoon;cup;hand,fill cup;take spoon;put spoon;take cup;wash hand,0.95;0.85;0.7;0.6;0.3,cup;spoon;hand;container;lid
+S3_Tea_C1_1088_1110,scoop;pour;take;take;put,sugar;sugar;cup;spoon;lid,Scoop sugar;Pour sugar;Take cup;Take spoon;Put cup,0.95;0.9;0.85;0.8;0.75,cup;spoon;lid;container;hand
+S3_Tea_C1_1111_1118,Stir;Put;Hold;Take;Scoop yogurt,cup;spoon;cup;spoon;cup,Stir cup;Put spoon;Hold cup;Take spoon;Scoop yogurt,0.95;0.85;0.75;0.65;0.55,cup;spoon;hand;counter;yogurt
+S3_Tea_C1_1150_1194,take;hold;put;close;put,lid;lid;lid;lid;lid,take lid lid;hold lid lid;put lid container;close lid container;put lid container,0.95;0.93;0.92;0.91;0.89,hand;lid;container;cup;table
+S3_Tea_C1_1195_1219,move;put;take;open;close,container;container;container;container;container,move container;put container;take container;open container;close container,0.95;0.92;0.88;0.15;0.12,container;lid;hand;cup;table
+S3_Tea_C1_1271_1359,stir;take;hold;mix;wash,cup;spoon;cup;mixture;hand,Stir cup;Take spoon;Hold cup;Mix mixture;Wash hand,0.98;0.95;0.92;0.88;0.05,cup;spoon;hand;mixture;counter
+S1_Pealate_C1_22_55,Take;Put;Put;Take;Take,bread;plate;bread;bottle;plate,Take bread;Put plate;Put bread;Take bottle;Take plate,0.98;0.95;0.92;0.85;0.78,bread;plate;condiment_container;bottle;box
+S1_Pealate_C1_72_87,pour condiment;hold;take;open;put,bottle;hand;bottle;bottle;bottle,pour condiment;hold hand;take bottle;open bottle;put bottle,0.95;0.9;0.85;0.75;0.6,bottle;condiment;hand;counter;plate
+S1_Pealate_C1_88_105,open;take;put;hold;hold,jar;jar;jar;bread;plate,open jar;take jar;put jar;hold bread;hold plate,0.95;0.9;0.85;0.8;0.75,hand;bread;jar;lid;plate
+S1_Pealate_C1_121_210,open;take;insert;mix;take,jar;spoon;spoon;jar;jar,open jar;take spoon;insert spoon;mix jar;take jar,0.95;0.9;0.85;0.8;0.7,hand;jar;spoon;box;bottle
+S1_Pealate_C1_234_289,take;take;put;put;apply jam,jar;spoon;jar;spoon;jar,take jar;take spoon;put jar;put spoon;apply jam,0.95;0.92;0.88;0.85;0.8,hand;bread;jar;spoon;plate
+S1_Pealate_C1_306_455,Spread;Take;Take;Put;Hold,bread;spoon;jar;plate;hand,Spread bread;Take spoon;Take jar;Put plate;Hold hand,0.98;0.95;0.92;0.88;0.85,bread;spoon;jar;plate;hand
+S1_Pealate_C1_472_504,open;hold;take;spread;put,jar;hand;spoon;bread;spoon,open jar;hold jar;take spoon;spread bread;put spoon,0.95;0.9;0.85;0.8;0.75,hand;jar;bread;plate;spoon
+S1_Pealate_C1_505_531,put;hold;spread;take;take,jar;hand;condiment;plate;jar,put jar;hold bread;spread condiment;take plate;take jar,0.95;0.9;0.85;0.7;0.6,hand;bread;jar;plate;condiment
+S1_Pealate_C1_532_542,pour;take;put;hold;wash,condiment;bottle;bottle;hand;counter,Pour condiment;Take bottle;Put bottle;Hold hand;Wash counter,0.95;0.85;0.75;0.65;0.3,condiment;plate;hand;bottle;counter
+S1_Pealate_C1_544_574,open;take;put;hold;spread,jar;lid;jar;bread;condiment,open jar;take lid;put lid;hold bread;spread condiment,0.95;0.92;0.88;0.75;0.7,hand;jar;lid;bread;condiment
+S1_Pealate_C1_606_636,scoop;apply;hold;hold;take,spoon;spoon;jar;hand;hand,scoop jam;apply jam;hold jar;hold jar;take jar,0.95;0.93;0.88;0.85;0.75,hand;spoon;jar;bread;plate
+S1_Pealate_C1_663_817,spread;take;put;take;pour,bread;spoon;spoon;jar;condiment,Spread bread;Take spoon;Put spoon;Take jar;Pour condiment,0.98;0.95;0.92;0.85;0.78,bread;spoon;plate;jar;condiment
+S1_Pealate_C1_843_911,open;hold;take;hold;put,jar;jar;lid;hand;jar,open jar;hold jar;take lid;hold jar;put jar on table,0.95;0.9;0.85;0.8;0.75,hand;jar;lid;bread;plate
+S1_Pealate_C1_912_926,put;open;take;put;put,bottle;bottle;bottle;plate;bread,Put bottle;Open bottle;Take bottle;Put plate;Put bread,0.95;0.9;0.85;0.7;0.6,condiment_container;plate;bread;hand;bottle
+S1_Pealate_C1_927_938,take;hold;put;move;take,bottle;bottle;bottle;bottle;plate,take bottle;hold bottle;put bottle;move bottle;take plate,0.95;0.9;0.85;0.75;0.2,bottle;plate;condiment_container;jar;hand
+S1_Pealate_C1_938_975,pour;hold;apply;take;put,bottle;bottle;condiment;bottle;bottle,pour bottle;hold bottle;apply condiment;take bottle;put bottle,0.95;0.85;0.8;0.7;0.6,bottle;hand;plate;condiment;bread
+S1_Pealate_C1_1014_1076,hold;pour;take;put;pour,bread;bottle;bottle;bottle;bottle,hold bread;pour condiment;take bottle;put plate;pour condiment,0.95;0.93;0.88;0.15;0.12,hand;bread;condiment;bottle;plate
+S1_Pealate_C1_1111_1127,put;hold;pour;hold;take,bottle;bread;condiment;plate;bottle,put bottle;hold bread;pour condiment;hold plate;take bottle,0.95;0.92;0.88;0.85;0.75,hand;bottle;bread;plate;condiment
+S1_Pealate_C1_1128_1140,put;hold;take;move;hold,bottle;sandwich;bottle;bottle;plate,put bottle;hold sandwich;take bottle;move bottle;hold plate,0.95;0.92;0.88;0.85;0.75,hand;bottle;sandwich;plate;condiment
+S1_Pealate_C1_1162_1217,take;put;take;put;take,bread;bread;bottle;bottle;plate,Take bread;Put bread;Take bottle;Put bottle;Take plate,0.95;0.9;0.85;0.8;0.75,bread;condiment_container;bottle;plate;hand
+S1_Pealate_C1_1220_1327,put;hold;put;take;take,bread;bread;plate;bread;plate,put bread;hold bread;put plate;take bread;take plate,0.95;0.9;0.85;0.7;0.6,bread;plate;hand;condiment_container;bottle
+S4_Cheese_C1_21_73,take;take;take;take;take,bread;cheese;mustard;mayonnaise;honey,Take bread;Take cheese;Take mustard;Take mayonnaise;Take honey,0.95;0.85;0.75;0.7;0.65,bread;cheese;mustard;mayonnaise;honey
+S4_Cheese_C1_84_108,take;put;hold;take;put,cheese;cheese;hand;bread;bread,Take cheese;Put cheese;Hold hand;Take bread;Put bread,0.95;0.85;0.75;0.65;0.55,cheese;bread;hand;counter;cup
+S4_Cheese_C1_110_239,put;take;hold;put;take,cheese;cheese;cheese;bread;bread,Put cheese;Take cheese;Hold cheese;Put bread;Take bread,0.95;0.92;0.88;0.75;0.65,cheese;bread;hand;plastic_wrap;counter
+S4_Cheese_C1_238_259,put;take;take;put;wrap,cheese;plastic_wrap;cheese;bread;cheese,put cheese;take plastic_wrap;take cheese;put bread;wrap cheese,0.98;0.95;0.92;0.85;0.78,hand;cheese;bread;plastic_wrap;cheese_container
+S4_Cheese_C1_260_283,take;open;pour;close;put,mayonnaise;mayonnaise;mayonnaise;mayonnaise;mayonnaise,Take mayonnaise;Open mayonnaise;Pour mayonnaise;Close mayonnaise;Put mayonnaise,0.98;0.95;0.92;0.88;0.85,mayonnaise;bread;cheese;bottle;condiment
+S4_Cheese_C1_300_323,pour;open;hold;put;take,condiment;bottle;bottle;bread;bread,Pour condiment;Open lid;Hold bottle;Put bread;Take bread,0.95;0.92;0.88;0.75;0.65,condiment;bread;hand;bottle;lid
+S4_Cheese_C1_327_434,pour;apply;hold;take;put,condiment;condiment;bottle;bread;bread,Pour condiment;Apply condiment;Hold bottle;Take bread;Put bread,0.95;0.9;0.85;0.7;0.6,condiment;bread;hand;bottle;counter
+S4_Cheese_C1_436_451,apply;close;take;open;put,butter;lid;butter;lid;butter,apply butter;close lid;take butter;open lid;put butter,0.95;0.9;0.85;0.8;0.75,hand;lid;butter;bread;container
+S4_Cheese_C1_452_478,put;apply;take;take;put,bottle;cheese;bread;bottle;bread,put bottle;apply cheese;take bread;take bottle;put bread,0.95;0.92;0.88;0.85;0.75,bottle;bread;cheese;condiment_container;hand
+S4_Cheese_C1_479_505,pour;take;open;put;take,mustard;mustard;mustard;mustard;bread,Pour mustard;Take mustard;Open mustard;Put mustard;Take bread,0.95;0.85;0.75;0.65;0.4,condiment;mustard;bread;bottle;hand
+S4_Cheese_C1_521_555,pour;hold;take;put;spread,condiment;bottle;hand;hand;condiment,Pour condiment;Hold bottle;Take hand;Put hand;Spread condiment,0.95;0.85;0.75;0.65;0.55,hand;condiment;bread;counter;bottle
+S4_Cheese_C1_558_606,apply;hold;check;pour;put,condiment_container;hand;watch;condiment_container;bread,apply condiment_container;hold bread;check watch;pour condiment_container;put bread,0.98;0.95;0.15;0.12;0.05,hand;condiment_container;bread;table;watch
+S4_Cheese_C1_612_627,apply;pour;hold;hold;take,condiment;condiment;bottle;bread;bottle,Apply condiment;Pour condiment;Hold bottle;Hold bread;Take bottle,0.95;0.92;0.88;0.75;0.65,condiment;bread;hand;counter;bottle
+S4_Cheese_C1_628_653,pour;take;put;wash;spread,condiment;hand;condiment;hand;condiment,Pour condiment;Take hand;Put bread;Wash hand;Spread condiment,0.95;0.85;0.75;0.2;0.1,condiment;bread;hand;counter;bottle
+S4_Cheese_C1_657_684,take;take;open;take;open,bread;mustard;mustard;cheese;bread_container,Take bread;Take mustard;Open condiment_container;Take cheese;Open bread_container,0.95;0.85;0.75;0.65;0.55,bread;cheese;mustard;bread_container;condiment_container
+S4_Cheese_C1_687_740,hold;press;apply;take;put,bread;bread;bread;bread;bread,Hold bread;Press bread;Apply bread;Take bread;Put bread,0.95;0.85;0.7;0.6;0.5,bread;hand;counter;condiment_container;bread_container
+S3_CofHoney_C1_21_53,take;put;wash;dry;clean,cup;cup;hand;hand;counter,Take cup;Put cup;Wash hand;Dry hand;Clean counter,0.95;0.9;0.1;0.05;0.01,cup;plate;hand;counter;box
+S3_CofHoney_C1_61_95,take;take;put;wash;take,spoon;plate;cup;hand;box,take spoon;take plate;put cup;wash hand;take box,0.95;0.85;0.75;0.65;0.55,hand;cup;plate;box;spoon
+S3_CofHoney_C1_96_115,take;take;take;take;take,bottle;bowl;spoon;cup;condiment_container,take bottle;take bowl;take spoon;take cup;take condiment_container,0.95;0.85;0.75;0.65;0.55,bottle;cup;spoon;condiment_container;bowl
+S3_CofHoney_C1_114_144,open;shake;hold;take;pour,jar;jar;cup;jar;jar,open jar;shake jar;hold cup;take bottle;pour bottle,0.95;0.85;0.7;0.6;0.4,hand;jar;lid;cup;bottle
+S3_CofHoney_C1_186_220,scoop;take;pour;take;open,jar;spoon;cup;jar;jar,scoop jar;take spoon;pour cup;take jar;open jar,0.95;0.9;0.85;0.75;0.7,hand;spoon;jar;cup;lid
+S3_CofHoney_C1_221_229,stir;scoop;add;hold;mix,cup;jar;cup;jar;cup,stir cup;scoop jar;add cup;hold jar;mix cup,0.95;0.9;0.85;0.8;0.75,hand;cup;spoon;jar;lid
+S3_CofHoney_C1_236_263,add;stir;hold;open;take,jar;spoon;cup;jar;spoon,add jar;stir spoon;hold cup;open jar;take spoon,0.95;0.9;0.85;0.75;0.7,hand;spoon;jar;cup;lid
+S3_CofHoney_C1_264_280,mix;scoop;take;hold;add,cup;jar;spoon;jar;cup,mix cup;scoop jar;take spoon;hold jar;add cup,0.95;0.9;0.85;0.8;0.7,hand;cup;spoon;jar;lid
+S3_CofHoney_C1_299_343,open;take;take;take;take,jar;jar;lid;cup;spoon,Open jar;Take jar;Take lid;Take cup;Take spoon,0.95;0.85;0.8;0.7;0.6,cup;spoon;jar;lid;hand
+S3_CofHoney_C1_344_354,move;take;put;hold;take,jar;jar;jar;cup;bottle,move jar;take jar;put jar;hold cup;take bottle,0.95;0.85;0.75;0.6;0.4,hand;cup;condiment_container;bottle;jar
+S3_CofHoney_C1_356_384,take;put;take;put;take,bottle;bottle;spoon;spoon;cup,take bottle;put bottle;take spoon;put spoon;take cup,0.95;0.9;0.85;0.8;0.75,bottle;cup;spoon;phone;water
+S3_CofHoney_C1_390_417,shake;open;pour;take;hold,bottle;bottle;bottle;spoon;cup,shake bottle;open bottle;pour liquid;take spoon;hold cup,0.95;0.9;0.85;0.7;0.6,hand;bottle;cup;spoon;liquid
+S3_CofHoney_C1_435_549,pour;hold;take;wash;clean,bottle;cup;spoon;hand;counter,Pour bottle;Hold cup;Take spoon;Wash hand;Clean counter,0.95;0.9;0.85;0.1;0.05,cup;bottle;spoon;hand;counter
+S3_CofHoney_C1_554_567,pour oil;take bottle;put bottle;take spoon;hold cup,bottle;bottle;bottle;spoon;cup,pour oil;take bottle;put bottle;take spoon;hold cup,0.95;0.85;0.75;0.6;0.5,bottle;cup;spoon;hand;oil
+S3_CofHoney_C1_568_586,put;take;put;take;put,bottle;spoon;spoon;cup;cup,put bottle;take spoon;put spoon;take cup;put cup,0.95;0.85;0.75;0.65;0.55,bottle;cup;spoon;paper_towel;phone
+S3_CofHoney_C1_593_615,pour;hold;put;take;hold,condiment;cup;bottle;spoon;hand,Pour condiment;Hold hand;Put bottle;Take spoon;Hold hand,0.95;0.85;0.75;0.65;0.6,condiment;cup;bottle;spoon;hand
+S3_CofHoney_C1_623_647,pour;open;pour;open;pour,condiment;bottle;condiment;bottle;condiment,Pour condiment;Open bottle;Pour condiment;Open bottle;Pour condiment,0.95;0.92;0.88;0.85;0.82,hand;cup;condiment;spoon;bottle
+S3_CofHoney_C1_659_737,pour;hold;hold;pour;take,condiment;cup;bottle;bottle;spoon,pour condiment;hold cup;hold bottle;pour bottle;take spoon,0.98;0.95;0.92;0.88;0.15,hand;cup;condiment;spoon;bottle
+S3_CofHoney_C1_738_757,pour;hold;hold;hold;take,condiment;bottle;cup;bottle;spoon,pour condiment;hold bottle;hold cup;hold bottle;take spoon,0.95;0.9;0.85;0.8;0.7,hand;cup;condiment;bottle;spoon
+S3_CofHoney_C1_758_776,pour;hold;take;put;pour,condiment;cup;cup;spoon;condiment,Pour condiment;Hold cup;Take cup;Put spoon;Pour condiment,0.95;0.9;0.85;0.7;0.65,hand;cup;condiment;spoon;bottle
+S3_CofHoney_C1_799_892,stir;hold;hold;take;put,cup;spoon;hand;spoon;spoon,Stir cup;Hold cup;Hold cup;Take spoon;Put spoon,0.98;0.95;0.93;0.85;0.78,cup;spoon;hand;counter;bowl
+S1_Coffee_C1_14_40,Take;Put;Take;Put;Take,cup;cup;paper;paper;bread,Take cup;Put cup;Take paper;Put paper;Take bread,0.98;0.97;0.01;0.01;0.01,cup;paper;plate;butter;bread
+S1_Coffee_C1_66_88,take;put;take;put;wash,seasoning_container;seasoning_container;cup;cup;plate,Take seasoning_container;Put seasoning_container;Take cup;Put cup;Wash plate,0.98;0.97;0.95;0.93;0.01,cup;seasoning_container;plate;hand;counter
+S1_Coffee_C1_87_125,open lid;pour condiment;take cup;hold jar;shake jar,jar;jar;cup;jar;jar,open lid;pour condiment;take cup;hold jar;shake jar,0.95;0.85;0.7;0.65;0.5,hand;cup;jar;lid;condiment
+S1_Coffee_C1_146_205,open;take;take;put;take,box;spoon;jar;cup;box,open box;take spoon;take jar;put cup;take box,0.95;0.9;0.85;0.7;0.65,hand;box;spoon;jar;cup
+S1_Coffee_C1_237_276,scoop;pour;take;take;open,jar;jar;spoon;jar;jar,scoop jar;pour jar;take spoon;take jar;open jar,0.95;0.9;0.85;0.8;0.75,hand;spoon;jar;cup;plate
+S1_Coffee_C1_279_292,add;hold;hold;scoop;pour,condiment;jar;cup;spoon;spoon,add condiment;hold jar;hold cup;scoop condiment;pour condiment,0.95;0.85;0.75;0.7;0.65,hand;cup;spoon;jar;condiment
+S1_Coffee_C1_297_323,use spoon;open jar;hold cup;take jar;pour cup,jar;jar;cup;jar;cup,use spoon;open jar;hold cup;take jar;pour cup,0.95;0.9;0.85;0.8;0.7,hand;cup;spoon;jar;lid
+S1_Coffee_C1_324_341,add;pour;fill;open;take,spoon;spoon;cup;jar;spoon,add spoon;pour spoon;fill cup;open jar;take spoon,0.95;0.92;0.88;0.85;0.8,hand;spoon;cup;jar;condiment
+S1_Coffee_C1_370_413,open;take;put;hold;take,jar;lid;lid;cup;spoon,open jar;take lid;put lid;hold cup;take spoon,0.95;0.9;0.85;0.7;0.6,hand;jar;lid;cup;spoon
+S1_Coffee_C1_414_434,put;take;pour;take;put,bottle;bottle;bottle;cup;plate,Put bottle;Take bottle;Pour bottle;Take cup;Put plate,0.95;0.9;0.85;0.7;0.6,hand;cup;seasoning_container;plate;bottle
+S1_Coffee_C1_438_460,open;remove;take;take;put,container;lid;hand;cup;plate,open container;remove lid;take hand;take cup;put plate,0.95;0.93;0.88;0.75;0.65,hand;cup;lid;container;plate
+S1_Coffee_C1_460_487,take;open;hold;put;move,lid;container;hand;cup;lid,take lid;open container;hold container;put cup;move lid,0.95;0.92;0.88;0.75;0.65,hand;lid;cup;container;bowl
+S1_Coffee_C1_520_562,take;stir;open;take;remove,cup;spoon;container;spoon;lid,Take cup;Stir spoon;Open container;Take spoon;Remove lid,0.95;0.9;0.85;0.7;0.65,cup;spoon;container;lid;hand
+S1_Coffee_C1_563_577,put;take;take;take;open,sugar;spoon;cup;sugar;container,Put sugar in cup;Take spoon;Take cup;Take sugar;Open container,0.98;0.95;0.92;0.88;0.85,cup;spoon;hand;sugar;container
+S1_Coffee_C1_582_614,fill;stir;hold;take;pour,cup;spoon;hand;cup;cup,fill cup;Stir spoon;Hold cup;Take cup;Pour cup,0.95;0.92;0.88;0.75;0.2,cup;spoon;container;hand;table
+S1_Coffee_C1_615_625,put;take;take;take;open,sugar;spoon;cup;sugar;container,Put sugar in cup;Take spoon;Take cup;Take sugar;Open container,0.95;0.9;0.85;0.8;0.75,cup;spoon;hand;sugar;container
+S1_Coffee_C1_656_699,put;take;open;hold;put,lid;lid;container;cup;cup,put lid container;take lid container;open container;hold cup;put cup top,0.95;0.9;0.85;0.7;0.6,hand;lid;container;cup;top
+S1_Coffee_C1_700_718,put;put;put;put;put,container;lid;hand;cup;plate,put container;put lid;put hand;put cup;put plate,0.95;0.9;0.85;0.7;0.6,hand;cup;plate;container;lid
+S1_Coffee_C1_721_737,take;hold;move;put;take,bottle;bottle;bottle;bottle;plate,take bottle;hold bottle;move bottle;put bottle;take plate,0.95;0.92;0.88;0.85;0.15,bottle;plate;sugar;phone;water
+S1_Coffee_C1_739_765,pour;take;put;take;wash,bottle;cup;spoon;plate;hand,Pour bottle;Take cup;Put spoon;Take plate;Wash hand,0.95;0.85;0.75;0.65;0.55,bottle;cup;spoon;plate;hand
+S1_Coffee_C1_773_915,pour;hold;take;take;hold,bottle;cup;bottle;spoon;counter,pour bottle;hold cup;take bottle;take spoon;hold counter,0.98;0.95;0.92;0.85;0.78,hand;cup;bottle;spoon;counter
+S1_Coffee_C1_920_939,put;take;put;hold;take,bottle;bottle;cup;bottle;cup,put bottle;take bottle;put cup;hold bottle;take cup,0.95;0.9;0.85;0.75;0.7,cup;bottle;hand;counter;paper
+S1_Coffee_C1_940_961,hold;put;put;take;move,bottle;bottle;paper;bottle;bottle,hold bottle;put bottle;put paper;take bottle;move bottle,0.98;0.95;0.85;0.75;0.65,bottle;paper;phone;plate;sugar
+S1_Coffee_C1_980_1087,stir;take;mix;hold;wash,cup;spoon;mixture;hand;hand,Stir cup;Take spoon;Mix mixture;Hold cup;Wash hand,0.98;0.95;0.92;0.85;0.1,cup;spoon;hand;mixture;counter
+S2_Peanut_C1_18_56,take;open;hold;wipe;put,bread;bag;hand;counter;plate,Take bread;Open bag;Hold hand;Wipe counter;Put plate,0.98;0.95;0.85;0.15;0.1,bread;bag;hand;counter;plate
+S2_Peanut_C1_59_171,open;take;take;take;take,box;spoon;bread;bottle;jar,Open box;Take spoon;Take bread;Take bottle;Take jar,0.95;0.9;0.85;0.7;0.6,bread;box;spoon;bottle;jar
+S2_Peanut_C1_185_221,hold;open;take;pour;take,bread;condiment_container;bottle;bottle;bread,Hold hand;Open condiment_container;Take bottle;Pour bottle;Take bread,0.95;0.9;0.85;0.7;0.6,bread;condiment_container;hand;spoon;bottle
+S2_Peanut_C1_231_300,open;remove;take;hold;put,jar;lid;lid;jar;lid,open jar;remove lid;take lid;hold jar;put lid,0.95;0.93;0.88;0.85;0.75,hand;lid;jar;condiment;counter
+S2_Peanut_C1_340_395,take;take;take;spread;open,bread;spoon;jar;condiment;jar,Take bread;Take spoon;Take jar;Spread condiment;Open jar,0.95;0.92;0.88;0.85;0.8,bread;spoon;jar;hand;condiment
+S2_Peanut_C1_400_530,Spread;Scoop;Take;Take;Put,bread;condiment;spoon;jar;bread,Spread bread;Scoop condiment;Take spoon;Take jar;Put bread,0.95;0.92;0.88;0.85;0.8,bread;spoon;jar;hand;condiment
+S2_Peanut_C1_535_593,spread;apply;take;hold;scoop,bread;condiment;spoon;jar;condiment,Spread bread;Apply condiment;Take spoon;Hold jar;Scoop condiment,0.95;0.93;0.88;0.85;0.82,hand;bread;spoon;jar;condiment
+S2_Peanut_C1_594_755,spread;scoop;spread;hold;take,bread;spoon;condiment;hand;jar,Spread bread;Scoop spoon;Spread condiment;Hold hand;Take jar,0.98;0.95;0.93;0.85;0.78,bread;spoon;jar;hand;condiment
+S2_Peanut_C1_784_915,Close;Put;Take;Open;Take,condiment_container;bread;lid;condiment_container;bread,Close condiment_container;Put bread;Take lid;Open condiment_container;Take bread,0.95;0.9;0.85;0.8;0.75,bread;condiment_container;hand;lid;top
+S2_Peanut_C1_916_938,hold;take;put;open;close,bread;jar;jar;jar;jar,hold bread;take jar;put jar;open jar;close jar,0.95;0.9;0.85;0.7;0.6,bread;condiment_container;hand;jar;lid
+S2_Peanut_C1_942_962,take;hold;pour;put;take,honey;bread;honey;honey;bread,Take honey;Hold bread;Pour honey;Put honey;Take bread,0.95;0.9;0.85;0.7;0.6,bread;honey;hand;condiment_container;bottle
+S2_Peanut_C1_1010_1048,open;hold;pour condiment;take;put,bottle;bottle;bottle;bottle;bottle,open bottle;hold bottle;pour condiment;take bottle;put bottle,0.95;0.85;0.75;0.65;0.55,hand;bottle;condiment;counter;bread
+S2_Peanut_C1_1102_1207,hold;pour;take;apply;put,bread;honey;bottle;honey;bottle,hold bread;pour honey;take bottle;apply honey;put bottle,0.95;0.93;0.88;0.85;0.75,hand;bread;honey;bottle;counter
+S2_Peanut_C1_1238_1259,pour;hold;take;open;apply,honey;bread;bottle;bottle;honey,Pour honey;Hold bread;Take bottle;Open bottle;Apply honey,0.95;0.92;0.88;0.85;0.8,hand;bread;honey;bottle;condiment
+S2_Peanut_C1_1260_1272,Open;Pour;Close;Put;Take,honey;honey;honey;honey;bread,Open honey;Pour honey;Close honey;Put honey;Take bread,0.95;0.93;0.88;0.85;0.75,bread;honey;condiment_container;hand;bottle
+S2_Peanut_C1_1274_1309,take;put;take;put;open,bread;bread;condiment_container;condiment_container;jar,Take bread;Put bread;Take condiment_container;Put condiment_container;Open jar,0.95;0.9;0.85;0.8;0.75,bread;hand;condiment_container;bottle;jar
+S2_Peanut_C1_1310_1360,hold;take;put;open;take,bread;bread;bread;jar;jar,Hold bread;Take bread;Put bread;Open jar;Take jar,0.95;0.9;0.85;0.7;0.6,bread;condiment_container;bottle;jar;plate
+S2_Coffee_C1_24_76,take;take;take;take;put,cup;plate;bottle;jar;bread_container,Take cup;Take plate;Take bottle;Take jar;Put bread_container,0.95;0.85;0.75;0.65;0.55,cup;bread_container;plate;bottle;jar
+S2_Coffee_C1_93_130,take;put;put;take;take,jar;bowl;jar;bowl;plate,take jar;put bowl;put jar;take bowl;take plate,0.95;0.9;0.85;0.7;0.3,hand;bowl;jar;plate;cup
+S2_Coffee_C1_144_224,take;take;take;take;take,cutlery;hand;bottle;jar;cup,take cutlery;take hand;take bottle;take jar;take cup,0.95;0.9;0.85;0.8;0.75,hand;cutlery;bottle;jar;cup
+S2_Coffee_C1_238_285,open;take;hold;put;mix,jar;lid;spoon;lid;jar,open jar;take lid;hold spoon;put lid;mix jar,0.95;0.9;0.85;0.8;0.7,hand;spoon;jar;lid;cup
+S2_Coffee_C1_310_396,scoop;put;open;take;hold,spoon;spoon;jar;spoon;cup,scoop seasoning;put seasoning in cup;open jar;take spoon;hold cup,0.95;0.93;0.88;0.85;0.82,hand;spoon;jar;cup;seasoning_container
+S2_Coffee_C1_398_418,hold;scoop;pour;take;take,cup;spoon;spoon;spoon;cup,Hold cup;Scoop seasoning;Pour seasoning;Take spoon;Take cup,0.95;0.92;0.88;0.85;0.75,cup;spoon;hand;seasoning_container;counter
+S2_Coffee_C1_425_448,scoop;hold;put;take;take,spoon;hand;spoon;jar;spoon,scoop seasoning;hold cup;put spoon;take jar;take spoon,0.95;0.9;0.85;0.7;0.65,hand;spoon;cup;jar;seasoning
+S2_Coffee_C1_441_465,scoop;pour;hold;open;take,coffee;coffee;spoon;jar;cup,scoop coffee;pour coffee;hold spoon;open jar;take cup,0.95;0.9;0.85;0.7;0.6,hand;cup;spoon;jar;coffee
+S2_Coffee_C1_472_540,open;hold;take;put;mix,jar;spoon;lid;lid;cup,open jar;hold spoon;take lid;put lid;mix cup,0.95;0.9;0.85;0.8;0.75,hand;spoon;jar;lid;cup
+S2_Coffee_C1_541_574,put;put;take;take;take,jar;spoon;cup;jar;spoon,put jar;put spoon;take cup;take jar;take spoon,0.95;0.9;0.85;0.7;0.6,hand;cup;seasoning_container;spoon;jar
+S2_Coffee_C1_613_660,take;put;take;put;take,bottle;bottle;cup;cup;plate,take bottle;put bottle;take cup;put cup;take plate,0.98;0.97;0.95;0.93;0.85,bottle;cup;plate;phone;water
+S2_Coffee_C1_661_709,unscrew lid;open;pour;take;hold,bottle;bottle;bottle;cup;bottle,unscrew lid;open bottle;pour bottle;take cup;hold bottle,0.95;0.93;0.88;0.75;0.7,bottle;cup;hand;lid;counter
+S2_Coffee_C1_738_940,pour;hold;take;pour;mix,bottle;cup;spoon;liquid;cup,pour bottle;hold cup;take spoon;pour liquid;mix liquid,0.98;0.95;0.92;0.9;0.85,hand;cup;bottle;spoon;liquid
+S2_Coffee_C1_950_974,open;pour;hold;mix;take,bottle;bottle;cup;cup;bottle,open bottle;pour oil;hold cup;mix cup;take bottle,0.95;0.9;0.85;0.7;0.6,hand;bottle;cup;counter;oil
+S2_Coffee_C1_975_997,put;move;take;take;put,bottle;bottle;bottle;cup;cup,put bottle;move bottle;take bottle;take cup;put cup,0.98;0.97;0.95;0.05;0.03,bottle;cup;condiment_container;seasoning_container;phone
+S2_Coffee_C1_1001_1041,take;put;open;take;put,container;container;lid;cup;cup,take container;put container;open lid;take cup;put cup,0.95;0.9;0.85;0.7;0.6,hand;cup;container;lid;top
+S2_Coffee_C1_1059_1262,take;take;hold;put;put,lid;sugar;cup;lid;sugar,take lid;take sugar;hold cup;put lid;put sugar,0.95;0.85;0.75;0.65;0.55,hand;lid;sugar;cup;counter
+S2_Coffee_C1_1358_1392,scoop;put;take;take;mix,sugar;sugar;spoon;sugar;sugar,scoop sugar;put sugar;take spoon;take sugar;mix sugar,0.95;0.9;0.85;0.75;0.6,hand;cup;sugar;spoon;lid
+S2_Coffee_C1_1393_1414,put;stir;mix;take;scoop,sugar;sugar;sugar;sugar;sugar,Put sugar;Stir sugar;Mix sugar;Take sugar;Scoop sugar,0.95;0.9;0.85;0.7;0.65,cup;spoon;sugar;lid;hand
+S2_Coffee_C1_1446_1483,put;take;scoop;put;take,sugar;spoon;sugar;spoon;sugar,Put sugar;Take spoon;Scoop sugar;Put spoon;Take sugar,0.95;0.9;0.85;0.7;0.6,cup;sugar;spoon;hand;lid
+S2_Coffee_C1_1484_1505,put;put;put;scoop;take,cup;sugar;spoon;sugar;cup,put cup;put sugar;put spoon;scoop sugar;take cup,0.95;0.93;0.88;0.85;0.82,cup;spoon;sugar;hand;lid
+S2_Coffee_C1_1530_1601,stir;take;put;mix;wash,cup;spoon;cup;mixture;hand,Stir cup;Take spoon;Put lid;Mix mixture;Wash hand,0.98;0.95;0.92;0.88;0.15,cup;spoon;lid;mixture;hand
+S2_Coffee_C1_1617_1646,close;put;take;pour;put,lid;lid;sugar;sugar;sugar,close lid;put lid;take sugar;pour sugar;put sugar,0.98;0.97;0.95;0.93;0.92,hand;lid;sugar;cup;counter
+S2_Coffee_C1_1647_1682,take;take;take;put;put,container;cup;lid;cup;lid,take container;take cup;take lid;put cup;put lid,0.95;0.85;0.75;0.65;0.55,hand;cup;lid;container;seasoning_container
+S2_Coffee_C1_1696_1785,stir;use;mix;hold;wash,cup;spoon;mixture;hand;hand,Stir cup;Take spoon;Mix mixture;Hold cup;Wash hand,0.98;0.95;0.92;0.85;0.1,cup;spoon;hand;mixture;counter
+S1_CofHoney_C1_19_48,Take;Put;Take;Put;Take,cup;cup;plate;plate;bottle,Take cup;Put cup;Take plate;Put plate;Take bottle,0.98;0.97;0.95;0.94;0.92,cup;plate;condiment_container;bottle;box
+S1_CofHoney_C1_88_108,take;pour;put;take;take,jar;jar;jar;bottle;cup,take jar;pour condiment;put jar;take bottle;take cup,0.95;0.85;0.75;0.2;0.1,hand;jar;condiment;bottle;cup
+S1_CofHoney_C1_108_141,open;pour condiment;put;take;hold,jar;jar;lid;jar;jar,open jar;pour condiment;put lid;take jar;hold jar,0.95;0.9;0.85;0.75;0.7,hand;jar;lid;cup;condiment
+S1_CofHoney_C1_160_213,take;take;take;take;take,box;cup;bottle;jar;spoon,take box;take cup;take bottle;take jar;take spoon,0.95;0.85;0.75;0.65;0.55,box;cup;bottle;jar;spoon
+S1_CofHoney_C1_253_310,scoop;take;hold;take;pour,jar;spoon;cup;jar;jar,scoop condiment;take spoon;hold cup;take jar;pour condiment,0.95;0.9;0.85;0.8;0.75,hand;spoon;jar;cup;condiment
+S1_CofHoney_C1_314_335,add;add;add;hold;hold,jar;spoon;cup;hand;hand,add jar;add spoon;add cup;hold jar;hold spoon,0.95;0.9;0.85;0.8;0.75,hand;cup;spoon;jar;condiment
+S1_CofHoney_C1_341_375,scoop;take;hold;take;pour,spoon;jar;cup;spoon;condiment,scoop condiment;take jar;hold cup;take spoon;pour condiment,0.95;0.9;0.85;0.8;0.75,hand;spoon;jar;cup;condiment
+S1_CofHoney_C1_377_393,add;scoop;hold;take;pour,condiment;spoon;cup;jar;condiment,add condiment;scoop condiment;hold cup;take jar;pour condiment,0.95;0.92;0.88;0.85;0.78,hand;cup;spoon;jar;condiment
+S1_CofHoney_C1_412_476,close;put;take;take;open,jar;lid;jar;cup;jar,close jar;put lid;take jar;take cup;open jar,0.95;0.93;0.88;0.75;0.65,hand;jar;lid;cup;spoon
+S1_CofHoney_C1_477_503,put;close;open;take;put,lid;condiment_container;condiment_container;cup;cup,put lid;close condiment_container;open condiment_container;take cup;put cup,0.95;0.93;0.88;0.75;0.65,hand;cup;condiment_container;lid;top
+S1_CofHoney_C1_512_534,take;hold;move;put;take,bottle;bottle;bottle;bottle;phone,take bottle;hold bottle;move bottle;put bottle;take phone,0.98;0.97;0.95;0.93;0.05,bottle;phone;paper;cup;counter
+S1_CofHoney_C1_534_558,pour;hold;hold;take;pour,bottle;bottle;cup;cup;liquid,pour bottle;hold bottle;hold cup;take cup;pour liquid,0.95;0.85;0.7;0.6;0.5,bottle;cup;hand;liquid;counter
+S1_CofHoney_C1_564_712,pour;pour;hold;take;take,bottle;cup;bottle;bottle;cup,pour bottle;pour cup;hold bottle;take bottle;take cup,0.98;0.95;0.92;0.85;0.78,hand;cup;bottle;spoon;table
+S1_CofHoney_C1_712_730,pour;hold;hold;mix;take,bottle;cup;bottle;cup;spoon,pour bottle;hold cup;hold bottle;mix liquid;take spoon,0.95;0.85;0.75;0.65;0.55,hand;cup;bottle;spoon;liquid
+S1_CofHoney_C1_731_757,shake;put;take;hold;move,bottle;bottle;bottle;bottle;bottle,shake bottle;put bottle;take bottle;hold bottle;move bottle,0.95;0.85;0.75;0.65;0.55,bottle;hand;counter;cup;phone
+S1_CofHoney_C1_785_802,take;put;put;take;take,honey;bowl;honey;bowl;cup,Take honey;Put bowl;Put honey;Take bowl;Take cup,0.95;0.85;0.75;0.65;0.3,hand;bowl;honey;condiment_container;cup
+S1_CofHoney_C1_804_829,open;pour;hold;take;put,honey;honey;cup;honey;honey,Open honey;Pour honey;Hold cup;Take cup;Put honey,0.95;0.9;0.85;0.7;0.6,hand;honey;cup;bottle;lid
+S1_CofHoney_C1_834_927,pour;hold;take;hold;pour,condiment;cup;bottle;spoon;condiment,pour condiment;hold cup;take bottle;hold spoon;pour condiment,0.95;0.9;0.85;0.7;0.65,hand;cup;condiment;spoon;bottle
+S1_CofHoney_C1_932_956,pour;take;open;hold;put,honey;bottle;lid;cup;honey,pour honey;take bottle;open lid;hold cup;put honey,0.98;0.95;0.92;0.85;0.8,hand;cup;honey;bottle;lid
+S1_CofHoney_C1_957_977,put;put;take;take;pour,honey;cup;honey;cup;honey,Put honey;Put cup;Take honey;Take cup;Pour honey,0.95;0.9;0.85;0.8;0.7,hand;cup;honey;condiment_container;bottle
+S1_CofHoney_C1_997_1197,stir;hold;take;put;mix,mixture;cup;spoon;spoon;mixture,Stir mixture;Hold cup;Take spoon;Put spoon;Mix mixture,0.95;0.9;0.85;0.8;0.75,cup;spoon;hand;mixture;counter
+S2_Tea_C1_18_47,take;put;take;put;take,cup;cup;cup;cup;cup,Take cup;Put cup;Take cup;Put cup;Take cup,0.95;0.93;0.92;0.91;0.89,cup;condiment_container;hand;bottle;cup
+S2_Tea_C1_72_99,take;put;take;put;take,bottle;bottle;paper;paper;plate,take bottle;put bottle;take paper;put paper;take plate,0.98;0.97;0.95;0.93;0.91,bottle;paper;plate;phone;water
+S2_Tea_C1_103_126,shake;hold;wash;take;put,bottle;bottle;hand;bottle;bottle,shake bottle;hold bottle;wash hand;take bottle;put bottle,0.95;0.85;0.75;0.65;0.55,hand;bottle;cup;plate;condiment_container
+S2_Tea_C1_147_384,pour;hold;hold;take;pour,bottle;cup;hand;bottle;liquid,pour bottle;hold cup;hold hand;take bottle;pour liquid,0.95;0.9;0.85;0.7;0.65,cup;bottle;hand;liquid;counter
+S2_Tea_C1_393_412,open;pour;hold;put;take,bottle;bottle;cup;plate;bread,open bottle;pour bottle;hold cup;put plate;take bread,0.95;0.9;0.85;0.7;0.6,bottle;cup;plate;bread;condiment_container
+S2_Tea_C1_413_433,put;move;wash;take;hold,bottle;bottle;hand;bottle;bottle,put bottle;move bottle;wash hand;take bottle;hold bottle,0.95;0.85;0.7;0.6;0.5,bottle;hand;water;plate;cup
+S2_Tea_C1_440_462,take;open;put;move;wash,box;box;box;box;hand,Take box;Open box;Put box;Move box;Wash hand,0.95;0.85;0.75;0.65;0.1,cup;box;bowl;plate;hand
+S2_Tea_C1_529_546,Take;Put;Hold;Wash;Clean,Lipton;Lipton;cup;Lipton;counter,Take Lipton;Put Lipton;Hold cup;Wash hand;Clean counter,0.95;0.9;0.85;0.1;0.05,cup;Lipton;hand;tea_bag;counter
+S2_Tea_C1_552_651,put;take;rip;hold;put,tea_bag;tea_bag;tea_bag;cup;tea_bag,put tea_bag;take tea_bag;rip tea_bag;hold cup;put tea_bag,0.95;0.9;0.85;0.7;0.65,tea_bag;cup;hand;paper;bottle
+S2_Tea_C1_690_878,Steep;Hold;Put;Fill;Stir,tea_bag;cup;tea_bag;cup;tea_bag,Steep tea_bag;Hold cup;Put tea_bag;Fill cup;Stir tea_bag,0.95;0.9;0.85;0.7;0.6,tea_bag;cup;hand;water;table
+S2_Tea_C1_903_927,take;put;take;put;take,sugar;sugar;plate;plate;bottle,take sugar;put sugar;take plate;put plate;take bottle,0.95;0.9;0.85;0.8;0.7,hand;sugar;plate;cup;bottle
+S2_Tea_C1_931_961,take;open;pour;take;put,sugar;lid;cup;cup;sugar,take sugar;open lid;pour sugar;take cup;put sugar,0.95;0.92;0.88;0.75;0.7,sugar;lid;cup;hand;container
+S2_Tea_C1_971_1026,take;put;scoop;take;put,box;box;sugar;bread;hotdog,take box;put box;scoop sugar;take bread;put hotdog,0.95;0.9;0.85;0.7;0.6,box;spoon;sugar;bread;hotdog
+S2_Tea_C1_1060_1094,scoop;put;take;hold;open,sugar;sugar;spoon;cup;lid,scoop sugar;put sugar;take spoon;hold cup;open lid,0.98;0.95;0.92;0.88;0.85,sugar;spoon;cup;lid;hand
+S2_Tea_C1_1098_1118,scoop;pour;take;put;take,sugar;sugar;spoon;spoon;cup,scoop sugar;pour sugar;take spoon;put spoon;take cup,0.98;0.95;0.92;0.88;0.85,hand;spoon;cup;sugar;lid
+S2_Tea_C1_1120_1152,scoop;put;take;hold;open,sugar;sugar;spoon;cup;lid,scoop sugar;put sugar;take spoon;hold cup;open lid,0.98;0.95;0.92;0.88;0.75,sugar;spoon;cup;lid;hand
+S2_Tea_C1_1153_1166,put;scoop;take;hold;mix,sugar;sugar;spoon;cup;sugar,put sugar;scoop sugar;take spoon;hold cup;mix sugar,0.95;0.92;0.88;0.85;0.78,sugar;spoon;cup;hand;lid
+S2_Tea_C1_1178_1209,put;close;hold;take;put,lid;lid;hand;cup;cup,put lid sugar;close lid sugar;hold lid sugar;take cup sugar;put cup sugar,0.98;0.97;0.95;0.1;0.05,hand;lid;sugar;cup;counter
+S2_Tea_C1_1210_1241,take;put;open;close;move,sugar;sugar;lid;lid;container,take sugar;put sugar;open lid;close lid;move container,0.95;0.9;0.85;0.8;0.75,hand;cup;sugar;lid;container
+S2_Tea_C1_1251_1375,stir;hold;mix;take;wash,cup;cup;mixture;spoon;hand,Stir cup;Hold cup;Mix mixture;Take spoon;Wash hand,0.98;0.95;0.92;0.85;0.1,cup;spoon;hand;mixture;counter
+S3_Cheese_C1_20_66,take;put;put;take;take,bread;plate;bread;plate;condiment_container,Take bread;Put plate;Put bread;Take plate;Take condiment_container,0.95;0.9;0.85;0.7;0.3,bread;plate;condiment_container;bottle;hand
+S3_Cheese_C1_85_120,take;put;take;put;take,cheese;cheese;bread;bread;plate,Take cheese;Put cheese;Take bread;Put bread;Take plate,0.95;0.92;0.85;0.8;0.75,cheese;bread;plate;hand;condiment
+S3_Cheese_C1_124_247,put;take;put;take;put,cheese;cheese;bread;bread;plate,Put cheese;Take cheese;Put bread;Take bread;Put plate,0.95;0.92;0.88;0.85;0.75,cheese;bread;plate;hand;watch
+S3_Cheese_C1_252_276,put;put;put;take;take,cheese;bread;plate;cheese;bread,Put cheese;Put bread;Put plate;Take cheese;Take bread,0.98;0.95;0.92;0.85;0.78,hand;cheese;bread;plate;cheese_container
+S3_Cheese_C1_316_349,open;pour;take;hold;put,bottle;bottle;hand;hand;hand,Open bottle;Pour bottle;Take bottle;Take bread;Put bread,0.95;0.9;0.85;0.7;0.6,condiment_container;plate;bread;hand;bottle
+S3_Cheese_C1_346_375,hold;apply;put;put;take,condiment_container;condiment_container;cheese;bread;cheese,hold condiment_container;apply cheese;put cheese;put bread;take cheese,0.95;0.92;0.88;0.85;0.75,hand;condiment_container;plate;bread;cheese
+S3_Cheese_C1_393_502,apply;hold;put;take;spread,butter;bread;plate;butter;butter,apply butter;hold bread;put plate;take butter;spread butter,0.98;0.95;0.92;0.88;0.85,hand;butter;plate;bread;condiment_container
+S3_Cheese_C1_512_532,pour;hold;close;take;hold,condiment;bottle;bottle;bottle;hand,pour condiment;hold bottle;close bottle;take bottle;hold bottle,0.95;0.9;0.85;0.7;0.65,hand;bottle;condiment;plate;bread
+S3_Cheese_C1_533_553,Put;Apply;Take;Pour;Put,condiment_container;condiment;condiment_container;condiment;condiment_container,Put condiment_container;Apply condiment;Take condiment_container;Pour condiment;Put condiment_container,0.95;0.9;0.85;0.7;0.65,condiment_container;bread;plate;condiment;hand
+S3_Cheese_C1_554_571,pour;take;put;open;spread,condiment;hand;hand;bottle;bread,pour condiment;take hand;put hand;open bottle;spread condiment on bread,0.95;0.85;0.8;0.75;0.7,hand;condiment;plate;bread;bottle
+S3_Cheese_C1_573_596,pour;open;put;hold;take,mustard;mustard;mustard;bread;plate,pour mustard;open condiment_container;put mustard;hold bread;take plate,0.95;0.9;0.85;0.7;0.1,hand;condiment_container;plate;bread;mustard
+S3_Cheese_C1_624_721,apply;pour;take;put;spread,condiment;condiment;condiment_container;bread;condiment,Apply condiment;Pour condiment;Take condiment_container;Put bread;Spread condiment,0.98;0.95;0.92;0.85;0.78,hand;condiment;plate;bread;condiment_container
+S3_Cheese_C1_722_740,pour;apply;hold;take;put,mustard;mustard;mustard;bread;bread,Pour mustard;Apply mustard;Hold mustard;Take bread;Put bread,0.98;0.97;0.95;0.05;0.03,hand;mustard;plate;bread;condiment
+S3_Cheese_C1_741_756,Put;Put;Take;Take;Put,condiment;condiment_container;hand;bread;plate,Put condiment;Put condiment_container;Take hand;Take bread;Put plate,0.95;0.9;0.85;0.7;0.6,condiment;plate;hand;bread;condiment_container
+S3_Cheese_C1_762_806,take;put;take;put;take,bread;bread;plate;plate;bottle,Take bread;Put bread;Take plate;Put plate;Take bottle,0.95;0.9;0.85;0.8;0.7,bread;plate;hand;condiment_container;bottle
+S3_Cheese_C1_812_836,press;put;hold;take;put,bread;sandwich;bread;sandwich;bread,press sandwich;put sandwich;hold bread;take sandwich;put bread,0.95;0.92;0.88;0.85;0.75,bread;plate;hand;sandwich;condiment_container
+S4_CofHoney_C1_19_59,Take;Put;Take;Take;Put,cup;cup;bread;jar;jar,Take cup;Put cup;Take bread;Take jar;Put jar,0.95;0.9;0.1;0.1;0.1,cup;plate;bread;bottle;jar
+S4_CofHoney_C1_74_122,take;take;take;take;take,spoon;cup;plate;bread;box,Take spoon;Take cup;Take plate;Take bread;Take box,0.98;0.95;0.92;0.85;0.78,cup;plate;spoon;bread;box
+S4_CofHoney_C1_130_143,open;take;take;pour;put,jar;jar;spoon;jar;spoon,open jar;take jar;take spoon;pour jar;put spoon,0.95;0.85;0.75;0.65;0.55,spoon;jar;lid;condiment_container;bottle
+S4_CofHoney_C1_143_175,open;put;pour;hold;take,jar;lid;jar;cup;jar,open jar;put lid;pour jar;hold cup;take jar,0.95;0.92;0.88;0.75;0.65,hand;cup;jar;lid;bottle
+S4_CofHoney_C1_192_217,scoop;take;take;take;open,jar;spoon;cup;jar;jar,scoop condiment;take spoon;take cup;take jar;open jar,0.95;0.9;0.85;0.8;0.75,hand;cup;jar;spoon;condiment
+S4_CofHoney_C1_220_228,add;stir;scoop;hold;put,cup;spoon;jar;jar;lid,add cup;stir cup;scoop jar;hold jar;put lid,0.95;0.9;0.85;0.8;0.7,hand;cup;spoon;jar;lid
+S4_CofHoney_C1_233_255,take;take;open;pour;hold,spoon;jar;jar;spoon;cup,take spoon;take jar;open jar;pour spoon;hold cup,0.95;0.9;0.85;0.8;0.75,hand;spoon;jar;cup;lid
+S4_CofHoney_C1_256_263,add;scoop;hold;put;take,cup;jar;jar;spoon;spoon,add cup;scoop jar;hold jar;put spoon;take spoon,0.95;0.92;0.88;0.85;0.82,hand;cup;jar;spoon;lid
+S4_CofHoney_C1_273_316,close;take;hold;put lid;pour,jar;jar;cup;jar;condiment,close jar;take jar;hold cup;put lid;pour condiment,0.95;0.9;0.85;0.8;0.75,hand;cup;jar;lid;condiment
+S4_CofHoney_C1_317_331,put;hold;take;take;pour,jar;cup;jar;cup;cup,put jar;hold cup;take jar;take cup;pour cup,0.95;0.9;0.85;0.7;0.6,hand;cup;jar;condiment_container;bottle
+S4_CofHoney_C1_336_366,take;put;take;put;clean,bottle;bottle;phone;phone;counter,take bottle;put bottle;take phone;put phone;clean counter,0.95;0.9;0.85;0.8;0.7,bottle;phone;cup;paper_towel;counter
+S4_CofHoney_C1_371_392,open;pour;wash;hold;remove,bottle;bottle;hand;cup;lid,open bottle;pour bottle;wash hand;hold cup;remove lid,0.95;0.85;0.75;0.65;0.55,bottle;cup;hand;lid;top
+S4_CofHoney_C1_414_524,pour;hold;take;put;fill,bottle;cup;bottle;cup;cup,pour liquid;hold cup;take bottle;put liquid in cup;fill cup,0.95;0.9;0.85;0.8;0.75,hand;cup;bottle;liquid;counter
+S4_CofHoney_C1_541_550,open;hold;take;put;wash,bottle;bottle;bottle;bottle;hand,open bottle;hold bottle;take bottle;put bottle;wash hand,0.95;0.85;0.75;0.65;0.3,bottle;cup;hand;lid;top
+S4_CofHoney_C1_551_566,pour oil;take bottle;put bottle;move bottle;hold bottle,bottle;bottle;bottle;bottle;bottle,pour oil;take bottle;put bottle;move bottle;hold bottle,0.95;0.85;0.75;0.65;0.55,bottle;cup;hand;oil;counter
+S4_CofHoney_C1_570_586,take;take;take;take;clean/wipe,honey;cup;condiment_container;bottle;counter,Take honey;Take cup;Take condiment_container;Take bottle;Clean/Wipe counter,0.95;0.85;0.7;0.6;0.4,honey;cup;condiment_container;bottle;counter
+S4_CofHoney_C1_590_630,pour;open;take;hold;put,condiment_container;lid;hand;cup;lid,pour condiment_container;open lid;take hand;hold cup;put lid,0.95;0.92;0.88;0.85;0.75,hand;cup;condiment_container;lid;top
+S4_CofHoney_C1_645_726,pour;hold;take;open lid;put honey,honey;cup;honey;honey;honey,pour honey;hold cup;take honey;open lid;put honey,0.95;0.9;0.85;0.8;0.75,hand;cup;honey;bottle;lid
+S4_CofHoney_C1_742_757,open;remove;take;put;take,condiment_container;lid;condiment_container;lid;cup,open condiment_container;remove lid;take condiment_container;put lid;take cup,0.95;0.92;0.88;0.75;0.65,hand;cup;condiment_container;lid;top
+S4_CofHoney_C1_758_772,put;move;take;take;put,condiment_container;bottle;cup;condiment_container;cup,put condiment_container;move bottle;take cup;take condiment_container;put cup,0.95;0.9;0.85;0.7;0.6,hand;cup;condiment_container;bottle;counter
+S4_CofHoney_C1_781_870,Stir mixture;Take spoon;Put spoon;Mix mixture;Hold cup,cup;spoon;spoon;mixture;cup,Stir mixture;Take spoon;Put spoon;Mix mixture;Hold cup,0.95;0.9;0.85;0.8;0.75,cup;spoon;hand;mixture;counter
+S1_Peanut_C1_24_76,take;put;take;put;open,bread;bread;knife;knife;jar,Take bread;Put bread;Take knife;Put knife;Open jar,0.98;0.97;0.95;0.94;0.92,bread;condiment_container;bottle;jar;knife
+S1_Peanut_C1_97_126,open;pour;take;put;take,mayonnaise;mayonnaise;mayonnaise;mayonnaise;bread,Open bottle;Pour ketchup;Take bottle;Put mayonnaise;Take bread,0.95;0.85;0.75;0.65;0.3,condiment_container;bread;bottle;ketchup;mayonnaise
+S1_Peanut_C1_130_185,open;take;spread;take;put,jar;lid;condiment;bread;lid,open jar;take lid;spread condiment;take bread;put lid,0.98;0.95;0.92;0.85;0.8,hand;jar;lid;bread;condiment
+S1_Peanut_C1_225_266,open;take;take;take;pour,jar;jar;spoon;bread;jar,Open jar;Take jar;Take spoon;Take bread;Pour jar,0.95;0.85;0.75;0.65;0.55,bread;jar;spoon;condiment_container;bread_container
+S1_Peanut_C1_280_360,scoop;open;take;take;spread,spoon;jar;hand;hand;bread,scoop condiment;open jar;take spoon;take jar;spread condiment,0.95;0.9;0.85;0.8;0.7,hand;spoon;jar;bread;condiment
+S1_Peanut_C1_381_774,Spread;Take;Hold;Scoop;Put,bread;spoon;hand;peanut;jar,Spread bread;Take spoon;Hold hand;Scoop peanut;Put jar,0.98;0.95;0.92;0.85;0.78,bread;spoon;hand;peanut;jar
+S1_Peanut_C1_851_878,take;take;take;take;take,hand;condiment_container;bread;jar;lid,take hand;take condiment_container;take bread;take jar;take lid,0.95;0.9;0.85;0.8;0.75,hand;condiment_container;bread;jar;lid
+S1_Peanut_C1_907_997,open;remove;hold;put;take,jar;lid;jar;lid;jar,open jar;remove lid;hold jar;put lid;take jar,0.95;0.93;0.88;0.75;0.65,hand;lid;jar;condiment;bread
+S1_Peanut_C1_998_1035,take;pour;put;take;pour,jar;jar;jar;bottle;bottle,Take jar;Pour bottle;Put jar;Take bottle;Pour bottle,0.95;0.9;0.85;0.7;0.65,condiment_container;bread;bottle;jar;spoon
+S1_Peanut_C1_1048_1056,take;take;take;take;take,honey;bottle;condiment;hand;bread,Take honey;Take bottle;Take condiment;Take hand;Take bread,0.95;0.85;0.75;0.65;0.55,honey;bread;condiment;bottle;hand
+S1_Peanut_C1_1057_1078,open;pour;take;hold;close,honey;honey;lid;bottle;lid,Open honey;Pour honey;Take honey;Hold bottle;Close lid,0.95;0.9;0.85;0.8;0.75,hand;honey;lid;bottle;condiment
+S1_Peanut_C1_1111_1361,hold;pour;take;put;pour,bread;condiment;bottle;bread;condiment,hold bread;pour condiment;take bottle;put bread;pour condiment,0.95;0.93;0.88;0.75;0.72,hand;bread;condiment;bottle;table
+S1_Peanut_C1_1377_1400,hold;open;pour;take;take,bread;honey;honey;honey;bread,Hold bread;Open honey;Pour honey;Take honey;Take bread,0.95;0.9;0.85;0.7;0.6,bread;honey;hand;condiment;bottle
+S1_Peanut_C1_1401_1423,put;hold;take;apply;pour,honey;bread;honey;honey;honey,put honey;hold bread;take honey;apply honey;pour honey,0.95;0.92;0.88;0.75;0.65,hand;bread;honey;condiment;bottle
+S1_Peanut_C1_1434_1476,take;put;take;put;take,bread;bread;bottle;bottle;knife,Take bread;Put bread;Take bottle;Put bottle;Take knife,0.95;0.9;0.85;0.8;0.75,bread;hand;condiment_container;bottle;knife
+S1_Peanut_C1_1475_1550,hold;press;take;put;take,bread;bread;bread;bread;bread,Hold bread;Press bread;Take bread;Put bread;Take bread,0.95;0.85;0.75;0.65;0.6,bread;hand;condiment_container;bottle;knife
+S4_Peanut_C1_12_79,take;open;pour;put;take,bread;mustard;mustard;plate;plate,Take bread;Open mustard;Pour mustard;Put plate;Take plate,0.95;0.9;0.85;0.7;0.6,bread;mustard;plate;condiment_container;hand
+S4_Peanut_C1_92_114,open;take;take;pour;put,jar;jar;lid;jar;jar,open jar;take jar;take lid;pour jar;put jar,0.95;0.85;0.75;0.65;0.6,condiment_container;lid;top;hand;jar
+S4_Peanut_C1_119_164,open;remove;take;hold;put,jar;lid;condiment;jar;plate,open jar;remove lid;take condiment;hold jar;put plate,0.95;0.93;0.88;0.85;0.75,hand;jar;lid;condiment;plate
+S4_Peanut_C1_178_203,take;put;take;put;take,cup;cup;plate;plate;bottle,Take cup;Put cup;Take plate;Put plate;Take bottle,0.95;0.9;0.85;0.8;0.75,cup;plate;condiment_container;bottle;spoon
+S4_Peanut_C1_218_247,scoop;take;hold;put;put,jar;spoon;jar;spoon;jar,Scoop jar;Take spoon;Hold jar;Put spoon;Put jar,0.95;0.92;0.88;0.85;0.75,spoon;jar;plate;bread;hand
+S4_Peanut_C1_261_300,Spread;Hold;Hold;Take;Open,bread;spoon;plate;hand;jar,Spread bread;Hold spoon;Hold plate;Take hand;Open jar,0.98;0.95;0.92;0.85;0.78,bread;spoon;plate;jar;hand
+S4_Peanut_C1_308_342,scoop with spoon;apply to bread;hold plate;take jar;stir jar,jar;jar;hand;hand;jar,Scoop with spoon;Apply to bread;Hold plate;Take jar;Stir jar,0.95;0.9;0.85;0.75;0.6,hand;spoon;jar;plate;bread
+S4_Peanut_C1_362_460,Spread;Take;Put;Take;Hold,bread;spoon;spoon;jar;plate,Spread bread;Take spoon;Put spoon;Take jar;Hold plate,0.98;0.95;0.92;0.85;0.8,bread;spoon;plate;jar;hand
+S4_Peanut_C1_483_524,take;hold;put;open;take,lid;jar;lid;jar;bread,take lid;hold jar;put lid;open jar;take bread,0.95;0.9;0.85;0.8;0.7,hand;lid;jar;condiment_container;bread
+S4_Peanut_C1_525_537,Put;Move;Take;Put;Wash,jar;jar;hand;hand;hand,Put jar;Move jar;Take jar;Put lid;Wash hand,0.95;0.85;0.75;0.65;0.3,condiment_container;jar;lid;hand;counter
+S4_Peanut_C1_542_563,pour;take;put;open;close,honey;bottle;bottle;bottle;bottle,Pour honey;Take bottle;Put bottle;Open bottle;Close bottle,0.95;0.9;0.85;0.8;0.75,condiment;bottle;hand;counter;honey
+S4_Peanut_C1_564_595,Open;Pour;Close;Take;Put,honey;honey;honey;bread;bread,Open honey;Pour honey;Close honey;Take bread;Put bread,0.95;0.9;0.85;0.7;0.65,hand;honey;lid;bottle;bread
+S4_Peanut_C1_615_726,pour;hold;take;place;apply,honey;hand;hand;bread;honey,Pour honey;Hold bread;Take honey;Place bread;Apply honey,0.95;0.85;0.75;0.65;0.6,hand;bread;plate;honey;condiment_container
+S4_Peanut_C1_727_744,hold;open;pour;put;take,condiment_container;lid;condiment_container;bread;plate,hold condiment_container;open lid;pour condiment_container;put bread;take plate,0.95;0.92;0.88;0.85;0.75,hand;condiment_container;bread;plate;lid
+S4_Peanut_C1_727_766,Open;Close;Put;Take;Hold,condiment_container;condiment_container;condiment_container;condiment_container;bread,Open condiment_container;Close condiment_container;Put condiment_container;Take condiment_container;Hold bread,0.95;0.92;0.88;0.85;0.75,hand;condiment_container;bread;plate;bottle
+S4_Peanut_C1_772_812,take;take;put;take;put,bread;bottle;bottle;condiment_container;condiment_container,Take bread;Take bottle;Put bottle;Take condiment_container;Put condiment_container,0.95;0.9;0.85;0.7;0.65,bread;condiment_container;bottle;bread_container;hand
+S4_Peanut_C1_814_933,press;take;put;take;put,bread;sandwich;sandwich;bread;bread,Press bread;Take sandwich;Put sandwich;Take bread;Put bread,0.95;0.85;0.8;0.75;0.7,bread;plate;hand;sandwich;condiment_container
+S4_Pealate_C1_16_60,take;unroll;take;put;put,bread;wrap:plastic;wrap:plastic;bread;wrap:plastic,take bread;unroll wrap:plastic;take wrap:plastic;put bread;put wrap:plastic,0.95;0.9;0.85;0.8;0.75,bread;bread_container;condiment_container;bottle;wrap:plastic
+S4_Pealate_C1_84_104,take;take;take;take;put,jar;spice;bottle;condiment_container;spice,take jar;take spice;take bottle;take condiment_container;put spice,0.95;0.9;0.85;0.7;0.6,condiment_container;bottle;jar;spice;hand
+S4_Pealate_C1_105_121,open;hold;take;hold;put,jar;jar;bread;plate;bread,open jar;hold jar;take bread;hold plate;put bread on plate,0.95;0.85;0.7;0.65;0.6,hand;jar;lid;bread;plate
+S4_Pealate_C1_150_176,take;take;take;take;take,spoon;plate;bread;cup;bottle,Take spoon;Take plate;Take bread;Take cup;Take bottle,0.98;0.95;0.92;0.85;0.78,spoon;plate;bread;cup;bottle
+S4_Pealate_C1_201_271,spread;scoop;put;open;take,bread;jam;spoon;jar;bread,Spread jam;Scoop jam;Put spoon;Open jar;Take bread,0.95;0.92;0.88;0.85;0.75,bread;jam;spoon;plate;jar
+S4_Pealate_C1_274_300,Spread;Take;Take;Hold;Put,bread;spoon;jar;hand;plate,Spread bread;Take spoon;Take jar;Hold hand;Put plate,0.98;0.95;0.92;0.85;0.78,bread;spoon;jar;hand;plate
+S4_Pealate_C1_335_357,scoop;spread;take;hold;put,jam;bread;spoon;hand;jam,Scoop jam with spoon;Spread jam on bread;Take jam;Hold bread;Put spoon in jam,0.95;0.92;0.88;0.85;0.8,bread;jam;spoon;plate;hand
+S4_Pealate_C1_360_435,apply;use;scoop;put;take,bread;spoon;jam;jam;bread,Apply jam;Spread jam;Scoop jam;Put jam;Take bread,0.98;0.97;0.95;0.93;0.85,bread;spoon;jam;plate;hand
+S4_Pealate_C1_466_491,open;take;put;hold;take,jar;lid;lid;bread;plate,open jar;take lid;put lid;hold bread;take plate,0.95;0.9;0.85;0.7;0.6,hand;jar;lid;bread;plate
+S4_Pealate_C1_492_505,put;move;hold;take;put,jar;jar;hand;jar;bread,put jar;move jar;hold jar;take jar;put bread,0.95;0.85;0.75;0.65;0.3,hand;jar;bread;plate;condiment
+S4_Pealate_C1_506_520,take;pour;hold;put;wash,bottle;bottle;hand;jar;counter,Take bottle;Pour condiment;Hold hand;Put jar;Wash counter,0.95;0.85;0.75;0.65;0.3,condiment;bottle;hand;counter;jar
+S4_Pealate_C1_523_569,open;take;put;hold;take,jar;lid;lid;bread;spoon,open jar;take lid;put lid;hold bread;take spoon,0.95;0.9;0.85;0.7;0.6,hand;jar;lid;bread;spoon
+S4_Pealate_C1_589_794,hold;put;take;scoop peanut butter;apply peanut butter,spoon;spoon;jar;jar;bread,hold spoon;put spoon;take jar;scoop peanut butter;apply peanut butter,0.95;0.9;0.85;0.8;0.75,hand;spoon;bread;plate;jar
+S4_Pealate_C1_808_844,open;put;hold;take;take,jar;lid;jar;lid;jar,open jar;put lid;hold jar;take lid;take jar,0.95;0.9;0.85;0.75;0.6,hand;lid;jar;bread;plate
+S4_Pealate_C1_845_854,put;put;put;take;wash,jar;lid;top;hand;hand,put jar;put lid;put top;take hand;wash hand,0.95;0.85;0.75;0.65;0.55,condiment_container;jar;lid;top;hand
+S4_Pealate_C1_857_874,take;hold;move;adjust;put,bottle;bottle;bottle;bottle;bottle,take bottle;hold bottle;move bottle;adjust bottle;put bottle,0.95;0.9;0.85;0.75;0.7,bottle;hand;counter;condiment;sauce
+S4_Pealate_C1_881_903,pour;open;unscrew;hold;take,bottle;bottle;cap;bottle;bottle,pour chocolate;open bottle;unscrew cap;hold bottle;take bottle,0.95;0.92;0.88;0.85;0.75,hand;bottle;chocolate;lid;cap
+S4_Pealate_C1_932_1040,apply;hold;hold;hold;pour,condiment;bottle;plate;bread;condiment,apply condiment;hold bottle;hold plate;hold bread;pour condiment,0.95;0.92;0.88;0.85;0.8,hand;plate;bread;condiment;bottle
+S4_Pealate_C1_1041_1062,pour;hold;hold;hold;hold,condiment;bottle;hand;bread;plate,pour condiment;hold bottle;hold bread;hold bread;hold plate,0.95;0.9;0.85;0.85;0.7,hand;condiment;plate;bread;bottle
+S4_Pealate_C1_1063_1087,put;open;pour;spread;take,bottle;bottle;condiment;bread;bottle,put bottle;open bottle;pour condiment;spread condiment on bread;take bottle,0.95;0.85;0.75;0.65;0.55,bottle;bread;plate;condiment;hand
+S4_Pealate_C1_1090_1120,take;put;take;take;put,bread;bread;plate;condiment_container;condiment_container,Take bread;Put bread;Take plate;Take condiment_container;Put condiment_container,0.95;0.9;0.85;0.7;0.6,bread;condiment_container;plate;bottle;spoon
+S4_Pealate_C1_1123_1240,press;take;put;take;put,sandwich;sandwich;sandwich;bread;bread,press sandwich;take sandwich;put sandwich;take bread;put bread,0.95;0.85;0.8;0.75;0.7,bread;plate;hand;sandwich;spoon
+S2_Pealate_C1_19_96,take;open;put;take;put,bread;bag;bread;bag;bag,Take bread;Open bag;Put bread;Take bag;Put bag,0.95;0.9;0.85;0.7;0.6,bread;plate;bag;hand;condiment_container
+S2_Pealate_C1_102_174,take;take;put;put;take,box;bread;box;bread;bottle,Take box;Take bread;Put box;Put bread;Take bottle,0.95;0.9;0.85;0.8;0.7,bread;box;cup;bottle;condiment_container
+S2_Pealate_C1_181_205,take;hold;take;hold;pour,jar;jar;condiment;hand;condiment,take jar;hold jar;take condiment;hold hand;pour condiment,0.95;0.9;0.85;0.7;0.6,condiment_container;jar;bottle;condiment;hand
+S2_Pealate_C1_215_232,open;take;put;hold;take,jar;lid;spoon;bread;jar,open jar;take lid;put spoon;hold bread;take jar,0.95;0.9;0.85;0.8;0.75,hand;jar;lid;bread;spoon
+S2_Pealate_C1_261_290,scoop;apply;take;hold;insert,spoon;condiment;jar;bread;spoon,Scoop with spoon;Spread condiment;Take jar;Hold bread;Insert spoon,0.98;0.95;0.92;0.88;0.85,hand;spoon;jar;bread;condiment
+S2_Pealate_C1_334_359,open;take;apply;spread;put,jar;spoon;condiment;bread;spoon,open jar;take spoon;apply condiment;spread condiment on bread;put spoon,0.95;0.9;0.85;0.8;0.75,hand;jar;spoon;bread;condiment
+S2_Pealate_C1_363_377,open;put;spread;take;take,jar;spoon;bread;jar;bread,Open jar;Put spoon;Spread jam;Take jar;Take bread,0.95;0.9;0.85;0.7;0.6,condiment_container;bread;jar;spoon;hand
+S2_Pealate_C1_420_540,spread;apply;hold;put;take,bread;spoon;hand;spoon;spoon,Spread bread;Apply condiment;Hold hand;Put spoon;Take spoon,0.98;0.97;0.95;0.92;0.88,bread;spoon;hand;condiment;counter
+S2_Pealate_C1_542_558,open;take;put;put;take,jar;jar;jar;spoon;bread,Open jar;Take jar;Put jar;Put spoon;Take bread,0.95;0.9;0.85;0.7;0.6,condiment_container;bread;spoon;jar;lid
+S2_Pealate_C1_560_597,Open;Take;Spread;Put;Pour,condiment_container;spoon;bread;spoon;condiment_container,Open condiment_container;Take spoon;Spread bread;Put spoon;Pour condiment_container,0.95;0.85;0.75;0.65;0.55,hand;condiment_container;spoon;bread;lid
+S2_Pealate_C1_625_653,scoop;take;hold;insert;spread,spoon;jar;spoon;jar;bread,Scoop with spoon;Take jar;Hold spoon;Insert spoon into jar;Spread on bread,0.95;0.85;0.8;0.75;0.6,hand;spoon;jar;bread;condiment
+S2_Pealate_C1_669_715,close;put lid;open;take;take,jar;jar;jar;spoon;jar,close jar;put lid;open jar;take spoon;take jar,0.95;0.93;0.88;0.75;0.65,hand;bread;spoon;jar;lid
+S2_Pealate_C1_716_727,put;hold;take;hold;put,jar;hand;jar;hand;jar,Put jar;Hold jar;Take jar;Hold jar;Put jar,0.95;0.92;0.88;0.85;0.82,condiment_container;bread;spoon;jar;hand
+S2_Pealate_C1_748_842,spread;hold;apply;take;put,bread;spoon;condiment;spoon;spoon,Spread bread;Hold bread;Apply condiment;Take spoon;Put spoon,0.98;0.95;0.92;0.85;0.78,bread;spoon;hand;condiment;counter
+S2_Pealate_C1_856_879,take;put;spread;take;take,bottle;spoon;condiment;bread;spoon,take bottle;put spoon;spread condiment;take bread;take spoon,0.95;0.9;0.85;0.7;0.6,hand;spoon;bottle;bread;condiment
+S2_Pealate_C1_898_923,pour;hold;hold;put;spread,condiment;bottle;hand;bread;condiment,pour condiment;hold bottle;hold bottle;put bread;spread condiment,0.95;0.9;0.85;0.7;0.6,hand;bottle;bread;condiment;spoon
+S2_Pealate_C1_928_976,pour;hold;hold;take;pour,condiment;bottle;bread;spoon;condiment,pour condiment;hold bottle;hold bread;take spoon;pour condiment,0.98;0.95;0.92;0.15;0.12,hand;bread;condiment;bottle;spoon
+S2_Pealate_C1_985_997,pour;hold;take;put;insert,chocolate;bottle;chocolate;chocolate;chocolate,pour chocolate;hold bottle;take chocolate;put chocolate;insert chocolate,0.95;0.9;0.85;0.8;0.75,hand;chocolate;bread;bottle;counter
+S2_Pealate_C1_998_1016,Pour;Hold;Put;Spread;Take,condiment;bottle;bread;condiment;bread,Pour condiment;Hold bottle;Put bread;Spread condiment;Take bread,0.95;0.9;0.85;0.7;0.6,condiment;bread;spoon;bottle;hand
+S2_Pealate_C1_1024_1089,open;take;put;take;pour,bag;bread;bread;bag;condiment_container,Open bag;Take bread;Put bread;Take bag;Pour condiment_container,0.95;0.9;0.85;0.7;0.3,bread;bag;condiment_container;bottle;cup
+S2_Pealate_C1_1101_1160,hold;press;take;take;put,bread;bread;bread;spoon;bread,Hold bread;Press bread;Take bread;Take spoon;Put bread,0.95;0.85;0.75;0.6;0.5,bread;hand;spoon;counter;condiment_container
+S4_Hotdog_C1_23_54,take;apply;put;take;open,bread;butter;bread;cup;condiment_container,take bread;apply butter;put bread;take cup;open condiment_container,0.95;0.92;0.88;0.75;0.65,bread;butter;condiment_container;bread_container;cup
+S4_Hotdog_C1_74_128,take;put;take;put;take,bacon;bacon;bread;bread;plate,take bacon;put bacon;take bread;put bread;take plate,0.95;0.93;0.88;0.85;0.75,bacon;bread;plate;carrot;hand
+S4_Hotdog_C1_129_149,put;hold;take;put;take,hotdog;plate;hotdog;bread;bread,Put hotdog;Hold plate;Take hotdog;Put bread;Take bread,0.95;0.9;0.85;0.75;0.7,hand;bread;hotdog;plate;condiment_container
+S4_Hotdog_C1_171_197,Take;Put;Take;Put;Take,mustard;mustard;bottle;mustard;mustard,Take mustard;Put mustard;Take bottle;Put mustard;Take mustard,0.95;0.9;0.85;0.8;0.75,mustard;plate;hand;condiment_container;bottle
+S4_Hotdog_C1_227_282,pour;pour;take;put;take,mustard;hotdog;mustard;bread;plate,Pour mustard;Pour mustard;Take hotdog;Put bread;Take plate,0.98;0.95;0.05;0.03;0.02,hand;mustard;hotdog;bread;plate
+S4_Hotdog_C1_290_341,Pour;Hold;Hold;Pour;Place,hotdog;hand;hand;condiment_container;bread,Pour condiment_container;Hold hotdog;Hold plate;Pour condiment_container;Place bread,0.95;0.9;0.85;0.8;0.7,hand;condiment_container;bread;hotdog;plate
+S4_Hotdog_C1_347_352,pour;hold;take;open;put,mustard;hand;mustard;mustard;bread,pour mustard;hold bread;take mustard;open mustard;put bread on plate,0.95;0.85;0.75;0.7;0.6,hand;condiment_container;bread;plate;mustard
+S4_Hotdog_C1_353_382,apply;hold;take;put;pour,condiment;condiment_container;condiment_container;condiment_container;condiment,Apply condiment to bread;Hold condiment_container;Take condiment_container;Put bread on plate;Pour condiment,0.95;0.9;0.85;0.7;0.6,condiment;hand;bread;plate;condiment_container
+S4_Hotdog_C1_384_396,pour;take;put;hold;spread,condiment;bottle;bottle;hand;bread,Pour condiment;Take bottle;Put bottle;Hold hand;Spread bread,0.95;0.9;0.85;0.7;0.65,condiment;bottle;hand;bread;plate
+S4_Hotdog_C1_418_454,pour;hold;put;hold;take,condiment;bottle;bread;plate;bread,pour condiment;hold bottle;put bread;hold plate;take bread,0.95;0.9;0.85;0.75;0.6,hand;bread;condiment;plate;bottle
+S4_Hotdog_C1_458_511,pour;hold;hold;hold;hold,ketchup;ketchup;plate;hotdog;bread,Pour ketchup;Hold ketchup;Hold plate;Hold hotdog;Hold bread,0.95;0.85;0.75;0.65;0.55,hand;ketchup;plate;bread;hotdog
+S4_Hotdog_C1_513_527,pour;open;hold;take;apply,condiment_container;lid;hand;condiment_container;bread,pour condiment_container;open lid;hold plate;take condiment_container;apply bread,0.95;0.9;0.85;0.8;0.7,hand;bread;condiment_container;plate;lid
+S4_Hotdog_C1_528_552,put;hold;open;apply;put,jar;hand;condiment_container;condiment_container;bread,put jar;hold jar;open jar;apply condiment;put bread on plate,0.95;0.9;0.85;0.8;0.75,hand;bread;condiment_container;plate;jar
+S4_Hotdog_C1_559_644,take;hold;press;adjust;put,sandwich;sandwich;sandwich;sandwich;sandwich,take sandwich;hold sandwich;press sandwich;adjust sandwich;put sandwich,0.95;0.92;0.88;0.85;0.8,sandwich;plate;hand;bread;condiment
+S2_Cheese_C1_11_65,take;open;hold;clean;pour,bread;bag;hand;counter;bottle,take bread;open bag;hold hand;clean counter;pour bottle,0.95;0.9;0.85;0.7;0.6,bread;bag;hand;counter;bottle
+S2_Cheese_C1_72_105,take;put;take;put;take,cheese;bread;cup;bottle;jar,Take cheese;Put bread;Take cup;Put bottle;Take jar,0.95;0.9;0.85;0.7;0.6,cheese;bread;cup;bottle;jar
+S2_Cheese_C1_111_170,put;take;hold;put;take,cheese;cheese;cheese;bread;bread,put cheese;take cheese;hold cheese;put bread;take bread,0.95;0.85;0.75;0.65;0.55,cheese;bread;hand;counter;cheese_container
+S2_Cheese_C1_171_198,put;hold;take;put;take,cheese;cheese;cheese;bread;bread,Put cheese;Hold cheese;Take cheese;Put bread;Take bread,0.98;0.95;0.92;0.85;0.78,cheese;bread;hand;counter;cheese_container
+S2_Cheese_C1_198_217,Take;Open;Pour;Take;Put,mayonnaise;mayonnaise;mayonnaise;bread;mayonnaise,Take mayonnaise;Open mayonnaise;Pour mayonnaise;Take bread;Put mayonnaise,0.95;0.9;0.85;0.7;0.6,hand;mayonnaise;bread;condiment_container;bottle
+S2_Cheese_C1_218_237,open lid;pour;hold;take;take,bottle;bottle;hand;bottle;bread,Open lid;Pour bottle;Hold hand;Take bottle;Take bread,0.95;0.9;0.85;0.7;0.6,condiment_container;bread;lid;hand;bottle
+S2_Cheese_C1_253_330,pour;apply;hold;hold;take,mayonnaise;mayonnaise;mayonnaise;bread;mayonnaise,Pour mayonnaise;Apply mayonnaise;Hold mayonnaise;Hold bread;Take mayonnaise,0.98;0.97;0.95;0.93;0.92,condiment_container;bread;hand;counter;mayonnaise
+S2_Cheese_C1_333_345,pour;hold;pour;take;apply,condiment_container;hand;bottle;hand;bread,Pour condiment_container;Hold hand;Pour bottle;Take bottle;Apply bread,0.95;0.9;0.85;0.7;0.6,condiment_container;bread;hand;bottle;counter
+S2_Cheese_C1_346_361,Put;Take;Open;Close;Pour,condiment_container;condiment_container;condiment_container;condiment_container;condiment_container,Put condiment_container;Take condiment_container;Open condiment_container;Close condiment_container;Pour condiment_container,0.98;0.97;0.95;0.93;0.91,condiment_container;bread;bottle;condiment;hand
+S2_Cheese_C1_362_372,take;open;pour;close;put,mustard;mustard;mustard;mustard;mustard,Take condiment;Open condiment;Pour condiment;Close condiment;Put condiment,0.95;0.85;0.75;0.65;0.55,condiment;bread;bottle;mustard;honey
+S2_Cheese_C1_373_399,pour;spread;take;put;spread,condiment;bread;condiment;bread;bread,Pour condiment;Spread condiment;Take bread;Put bread;Spread bread,0.95;0.9;0.1;0.1;0.05,condiment;bread;hand;bottle;counter
+S2_Cheese_C1_400_443,pour;apply;hold;take;put,condiment_container;spread;hand;condiment_container;spread,pour condiment_container;apply spread;hold bread;take condiment_container;put spread,0.95;0.93;0.88;0.85;0.82,hand;condiment_container;bread;counter;spread
+S2_Cheese_C1_445_459,pour;apply;hold;take;put,condiment;condiment;hand;condiment_container;condiment_container,Pour condiment;Apply condiment;Hold bread;Take condiment_container;Put condiment_container,0.95;0.93;0.88;0.85;0.78,hand;condiment;bread;condiment_container;table
+S2_Cheese_C1_460_475,pour;hold;take;put;wash,condiment;hand;hand;hand;hand,Pour condiment;Hold hand;Take bread;Put bread;Wash hand,0.95;0.85;0.7;0.65;0.3,condiment;bread;hand;counter;bottle
+S2_Cheese_C1_483_529,take;open;put;pour;take,bread;bag;bread;bottle;cup,Take bread;Open bag;Put bread;Pour bottle;Take cup,0.95;0.9;0.85;0.1;0.05,bread;bag;bottle;condiment_container;cup
+S2_Cheese_C1_535_580,hold;put;take;put;take,bread;bread;bread;cheese;cheese,Hold bread;Put bread;Take bread;Put cheese;Take cheese,0.95;0.92;0.88;0.75;0.65,bread;hand;counter;condiment_container;cheese

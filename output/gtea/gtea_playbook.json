@@ -1,0 +1,2850 @@
+{
+  "one": {
+    "id-S2_CofHoney_C1_351_520": {
+      "category": "名词筛选准确性",
+      "content": "1.名词列表应仅包含视频中实际出现的物体，如'hand', 'cup', 'bottle', 'spoon', 'liquid'。2.应剔除与当前场景无关的名词，如'box', 'jar', 'butter', 'oil_container'等虽在背景中出现但非当前动作核心的物体。",
+      "frequency": "301"
+    },
+    "id-S2_CofHoney_C1_622_672": {
+      "category": "名词筛选准确性",
+      "content": "1.名词筛选应严格基于视频帧中实际出现的物体，而非依赖先验知识中的泛化类别。例如，'condiment_container'在帧中明确为一个带有黄色盖子的瓶子，应保留；'spoon'在杯中可见，应保留；'table'作为背景平面，应保留。2.应避免引入视频中未出现的名词，如'cup'虽在帧中出现，但其作为容器被'hand'持有，应与'hand'关联，而非单独列出。3.应剔除与当前动作无关的名词，如'plate'虽在背景中出现，但未参与当前动作，应剔除。",
+      "frequency": "47"
+    },
+    "id-S2_CofHoney_C1_679_690": {
+      "category": "名词筛选",
+      "content": "1.名词列表应仅包含视频中实际出现的物体，如'cup'、'honey'、'lid'、'bottle'。2.应排除与当前动作无关的名词，如'hand'虽为操作主体，但其本身不是被操作的物体，不应作为'object'列出。",
+      "frequency": "8"
+    },
+    "id-S1_Cheese_C1_749_790": {
+      "category": "名词筛选准确性",
+      "content": "1.名词筛选应严格基于视频中实际出现的物体，而非生成器的先验知识。例如，'counter'在视频中是背景，未被手部操作，不应被选为交互名词。'condiment_container'和'bottle'虽在背景中出现，但未被手部操作，也不应被选为交互名词。",
+      "frequency": "3"
+    },
+    "id-S3_Hotdog_C1_183_211": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词筛选应更精确，避免包含与当前场景无关的名词。例如，'recipe'、'fridge'、'stove'、'cabinet'、'drawer'、'cabinet'、'shelf'、'bin'、'trash_can'、'recycling_bin'、'washing_machine'、'dryer'、'vacuum_cleaner'、'mop'、'broom'、'dustpan'、'coffee_maker'、'tea_bag'、'jam'、'bread_loaf'、'yogurt'、'ice_cream'、'cookie'、'candy'、'pill'、'bandage'、'first_aid_kit'、'fire_extinguisher'、'smoke_detector'、'thermostat'、'remote_control'、'television'、'radio'、'speaker'、'headphones'、'game_controller'、'console'、'laptop'、'charger'、'extension_cord'、'power_strip'、'lamp'、'match'、'umbrella'、'raincoat'、'boots'、'suitcase'、'passport'、'ticket'、'map'、'compass'、'binoculars'、'tripod'、'paintbrush'、'canvas'、'piano'、'guitar'、'drum'、'microphone'、'sheet_music'、'stage'、'audience'、'microscope'、'test_tube'、'beaker'、'petri_dish'、'graduated_cylinder'、'pipette'、'ruler'、'calculator'、'notebook'、'sticky_note'、'paperclip'、'stapler'、'tape'、'glue'、'marker'、'highlighter'、'eraser'、'pencil'、'sharpener'、'desk'、'whiteboard'、'projector'、'screen'、'printer'、'scanner'、'router'、'modem'、'server'、'hard_drive'、'usb_drive'、'bulb'、'fuse'、'socket'、'switch'、'outlet'、'circuit_breaker'、'pipe'、'hose'、'lawnmower'、'rake'、'shovel'、'hoe'、'watering_can'、'garden_hose'、'flower_pot'、'fertilizer'、'pesticide'、'hammer'、'nail'、'screw'、'screwdriver'、'wrench'、'pliers'、'saw'、'drill'、'level'、'measuring_tape'、'paint'、'roller'、'safety_goggles'、'gloves'、'mask'、'helmet'、'seatbelt'、'airbag'、'steering_wheel'、'pedal'、'gear_shift'、'dashboard'、'windshield'、'wiper'、'tire'、'jack'、'spare_tire'、'fuel_pump'、'gas_cap'、'trunk'、'hood'、'engine'、'battery_terminal'、'radiator'、'oil_dipstick'、'air_filter'、'spark_plug'、'brake_pad'、'tire_pressure_gauge'、'jump_starter'、'tow_rope'、'honey'、'hotdog'、'ketchup'、'mayonnaise'、'mustard'、'peanut'、'burrito'、'blackboard'、'blue_container'、'rack'、'plastic_wrap'、'chopping_board'、'spray_bottle'、'corn_flakes'、'rice_cooker'、'oven_knob'、'mouse'、'keyboard'、'herb'、'egg_container'、'sweet_potato'、'asparagus'、'coffee_filter'、'ham'、'turmeric_powder'等名词在当前场景中均无直接视觉证据支持，应予以剔除。保留与当前场景直接相关的名词，如'hand'、'bottle'、'plate'、'condiment'、'counter'。",
+      "frequency": "2"
+    },
+    "id-S2_Hotdog_C1_641_669": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词筛选应更严格，仅保留与当前场景直接相关的物体。例如，'condiment' 虽然在场景中存在，但其具体形态（如瓶装）在视觉上更明确，应优先选择 'bottle' 作为更精确的名词。同时，'plate' 和 'counter' 是场景背景，非核心交互对象，应排除或仅在必要时保留。",
+      "frequency": "4"
+    },
+    "id-S1_Cheese_C1_172_270": {
+      "category": "名词识别准确性",
+      "content": "1.名词筛选应严格基于视频帧中实际出现的物体，而非预设列表。例如，'plastic_wrap'在原始帧中是可见的，但生成器未将其作为关键名词列出，导致后续动作描述缺失。应确保所有在视频中出现的物体都被识别并纳入名词列表。",
+      "frequency": "3"
+    },
+    "id-S3_Tea_C1_402_490": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词筛选应严格基于视频帧中实际出现的物体，而非预设列表。应仅保留'hand'、'cup'、'paper'等在帧中清晰可见的实体，剔除如'bottle'、'counter'等未被手部操作或未在关键帧中出现的物体。",
+      "frequency": "5"
+    },
+    "id-S4_Cheese_C1_21_73": {
+      "category": "名词筛选",
+      "content": "第一部分应仅保留与当前动作直接相关的名词。视频中手部操作的是面包，因此应仅保留'bread'。其他名词如'cheese', 'mustard', 'honey', 'mayonnaise'虽在桌上，但未被手部操作，不应被选中。",
+      "frequency": "1"
+    },
+    "id-S3_CofHoney_C1_61_95": {
+      "category": "名词筛选准确性",
+      "content": "第一部分应仅保留与视频内容直接相关的名词。视频中明确出现的物体是'hand'、'spoon'、'cup'、'bottle'、'lid'，这些名词在先验知识中均有匹配的上下文，符合厨房操作场景。生成器应严格依据视觉证据筛选，避免引入如'fridge'、'stove'等未在画面中出现的物体。",
+      "frequency": "1"
+    },
+    "id-S2_Peanut_C1_535_593": {
+      "category": "名词筛选准确性",
+      "content": "1.名词列表应仅包含视频中实际出现的物体，如'hand', 'spoon', 'bread', 'jar', 'condiment'。2.应剔除与当前动作无关的物体，如'phone', 'oil_container', 'bottle'等，这些物体虽在背景中出现，但未参与当前'涂抹花生酱'的动作。",
+      "frequency": "1"
+    },
+    "id-S2_Coffee_C1_975_997": {
+      "category": "名词识别准确性",
+      "content": "第一部分名词筛选应严格基于视频中实际出现的物体，而非生成器的预设列表。应从原始帧中识别出'hand', 'bottle', 'cup', 'table'等明确存在的实体，避免引入如'liquid'等未在视觉中直接呈现的抽象概念。",
+      "frequency": "1"
+    },
+    "id-S1_CofHoney_C1_88_108": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词筛选应严格基于视频中实际出现的物体。'honey'、'lid'、'bottle'、'table' 均在原始帧中可见，符合要求。但 'hand' 虽为操作主体，却非被操作对象，应仅在动作描述中作为执行者出现，而非作为被操作的名词。因此，应移除 'hand' 作为被操作名词，仅保留 'honey'、'lid'、'bottle'、'table'。",
+      "frequency": "1"
+    },
+    "id-S2_Tea_C1_903_927": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词筛选应仅保留与手部直接交互的物体。视频中手部明确接触并移动的是黄色糖罐（sugar），其他如cup、bottle、plate在视频中未被手部操作，不应被选入。因此，名词列表应仅包含'sugar'。",
+      "frequency": "1"
+    },
+    "id-S3_Cheese_C1_124_247": {
+      "category": "名词筛选准确性",
+      "content": "1.名词列表应严格基于视频中实际出现的物体，而非预设列表。应剔除未在视频中出现的名词，如'banana'、'recipe'、'fridge'等。2.名词应与先验知识中的上下文环境匹配，例如'cheese'和'bread'出现在厨房操作台面，与'plate'、'watch'等共现，符合'cooking'或'assembling food'场景。",
+      "frequency": "1"
+    },
+    "id-S4_CofHoney_C1_551_566": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词列表应仅包含视频中实际出现的物体，如 'hand', 'bottle', 'cup'。应剔除 'liquid' 和 'lid'，因为它们是抽象概念或非直接可见的物体，且在视频中未作为独立实体被操作或识别。",
+      "frequency": "1"
+    },
+    "id-S4_CofHoney_C1_570_586": {
+      "category": "名词筛选准确性",
+      "content": "1. 在第一部分名词筛选中，应严格依据视频帧中的直接视觉证据，仅保留与手部交互或被手部操作的物体。例如，'lid'在原始帧中未出现，且在后续带框帧中未被手部操作，应被排除。'bottle'在原始帧中虽出现，但其在带框帧中被标注为'cup'，存在语义冲突，应根据视觉证据优先选择'cup'。'table'作为背景物体，不应被纳入名词列表。",
+      "frequency": "1"
+    },
+    "id-S4_CofHoney_C1_590_630": {
+      "category": "名词筛选准确性",
+      "content": "1.名词列表应仅包含视频中实际出现的物体，如'hand', 'cup', 'bottle', 'lid', 'honey'。2.应剔除与当前场景无关的名词，如'phone', 'water', 'bread'等，这些虽在背景中出现，但未被手部操作。3.应确保名词与先验知识中的上下文语境匹配，例如'cup'和'bottle'均出现在厨房操作台面，符合当前场景。",
+      "frequency": "1"
+    },
+    "id-S4_CofHoney_C1_645_726": {
+      "category": "名词筛选准确性",
+      "content": "1.名词列表应仅包含视频中实际出现的物体，如'hand', 'cup', 'bottle', 'honey'。'lid'虽在视频中出现，但其状态为'open'，且未被手部直接操作，应排除。2.名词列表应与先验知识中的上下文语境匹配，'honey'作为液体调味品，其出现场景与厨房操作台面相符，符合先验知识描述。",
+      "frequency": "1"
+    },
+    "id-S4_CofHoney_C1_742_757": {
+      "category": "名词筛选准确性",
+      "content": "1.名词列表应仅包含视频中实际出现的物体，如 'hand', 'bottle', 'lid', 'cup'。'honey' 虽然在视频中被操作，但其本身是瓶内液体，不应作为独立名词列出，而应与 'bottle' 关联。2.应严格依据视频帧中的视觉证据筛选名词，避免引入与场景无关的物体（如 'recipe', 'fridge' 等）。3.名词应与先验知识中的上下文语境匹配，例如 'bottle' 出现在厨房台面，'cup' 与 'honey' 共现于操作台，符合其功能分区。",
+      "frequency": "1"
+    },
+    "id-S4_CofHoney_C1_758_772": {
+      "category": "名词筛选准确性",
+      "content": "1.名词列表应仅包含视频中实际出现的物体，如'hand', 'cup', 'bottle', 'table'。2.应剔除与当前场景无关的名词，如'lid'虽在视频中出现，但其交互未被明确捕捉，且在先验知识中未被列为高概率交互对象。",
+      "frequency": "1"
+    },
+    "id-S4_CofHoney_C1_781_870": {
+      "category": "名词筛选准确性",
+      "content": "1.名词列表应仅包含视频中实际出现的物体，如'cup'、'spoon'、'honey'、'bottle'、'table'。2.应剔除与当前场景无关的名词，如'phone'、'watch'等，这些在视频中未被手部操作或与动作无直接关联。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_24_76": {
+      "category": "名词筛选准确性",
+      "content": "1. 第一部分名词筛选应严格基于视频帧中实际出现的物体，而非生成器的先验知识。例如，'condiment_container' 和 'bottle' 在原始帧中虽存在，但未被手部直接操作，应仅保留与手部交互直接相关的名词如 'bread' 和 'hand'。2. 应剔除与当前场景无关的名词，如 'knife'、'bottle' 等虽在桌上但未被手部操作的物体，避免引入噪声。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_97_126": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词筛选应更严格，仅保留与手部直接交互且在视觉上可识别的物体。例如，'bottle'和'lid'是明确的交互对象，但'hand'和'table'是场景元素而非被操作物。应剔除'hand'和'table'，仅保留'bottle'和'lid'。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_130_185": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词列表应仅包含视频中实际出现的物体，如 'hand', 'bottle', 'lid', 'table'。应剔除与当前场景无关的名词，如 'honey'（虽然瓶内装有蜂蜜，但作为容器的 'bottle' 已被正确识别），以及 'recipe', 'fridge' 等未在画面中出现的物体。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_225_266": {
+      "category": "名词筛选",
+      "content": "1.名词列表应仅包含视频中实际出现的物体，如'hand', 'spoon', 'jar', 'lid', 'bottle'。2.应剔除与当前场景无关的名词，如'bread', 'bottle'虽出现但未被交互，'bottle'在视频中未被交互，应剔除。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_280_360": {
+      "category": "名词筛选准确性",
+      "content": "1.名词列表应仅包含视频中实际出现的物体，如'hand', 'spoon', 'jar', 'bread'。'honey'未在原始帧中出现，应被移除。2.名词列表应与先验知识中的上下文语境匹配，例如'hand'出现在厨房操作台面，'spoon'与'jar'常共现，符合视频场景。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_381_774": {
+      "category": "名词筛选准确性",
+      "content": "1.名词列表应仅包含视频中实际出现的物体，如'hand', 'spoon', 'bread', 'peanut', 'jar'。2.应剔除与当前动作无关的名词，如'paper'、'plate'、'bottle'等虽在背景中出现但未被手部操作的物体。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_851_878": {
+      "category": "名词识别准确性",
+      "content": "第一部分名词筛选应严格基于视频中实际出现的物体，而非生成器的预设列表。应从视频帧中识别出'hand'、'table'、'honey bottle'、'lid'等直接可见的实体，避免引入如'jar'或'bottle'等未在帧中明确出现的泛化名词。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_907_997": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词筛选应严格基于视频中实际出现的物体，而非生成器的预设列表。例如，视频中出现的是'jar'（罐子）而非'bottle'（瓶子），'lid'（盖子）是其组成部分，'honey'（蜂蜜）是内容物。应直接从视觉证据中提取这些名词，避免引入与场景无关的名词如'bread'（面包）或'phone'（电话）。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_998_1035": {
+      "category": "名词筛选准确性",
+      "content": "1.名词列表应仅包含视频中实际出现的物体，如 'hand', 'honey', 'bottle', 'lid', 'table'。2.应剔除与当前动作无关的名词，如 'recipe', 'fridge', 'cabinet' 等，这些名词在视频中未被操作或未出现。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_1048_1056": {
+      "category": "名词筛选准确性",
+      "content": "1. 在第一部分名词筛选中，应严格依据视频帧中的直接视觉证据，仅保留与当前场景中实际出现的物体完全匹配的名词。例如，视频中出现的是一个蜂蜜瓶，而非‘bottle’这一泛指名词，应直接使用‘honey’或‘bottle’，并确保其与后续动词的关联性。2. 需要结合名词对应的先验知识中的‘上下文语境’部分，验证名词是否与场景环境匹配。例如，‘honey’在厨房台面与面包、调料瓶共现，符合其典型上下文，而‘table’虽在场景中出现，但其与‘hand’的交互概率极低，且无直接操作行为，应排除。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_1057_1078": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词筛选应更严格，仅保留与动作直接相关的物体。例如，'honey' 是被操作的液体，'bottle' 是容器，'lid' 是其部件，'hand' 是执行者，'table' 是背景。应剔除与当前动作无关的物体如 'phone'、'bacon'、'bread' 等，以提高后续动作识别的准确性。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_1111_1361": {
+      "category": "名词筛选准确性",
+      "content": "1.名词筛选应严格基于视频中实际出现的物体，而非预设列表。例如，视频中出现的是'bread'和'honey bottle'，而非'bread_loaf'或'honey'（液体本身）。应优先选择与视觉证据直接匹配的名词，如'bread'和'bottle'，并排除与场景无关的名词如'paper'或'cup'。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_1377_1400": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词筛选应严格基于视频帧中实际出现的物体，而非生成器的先验知识。应仅保留'hand', 'bread', 'honey', 'bottle'，并排除'lid'，因为视频中未显示任何瓶盖操作。'lid'在先验知识中虽有'open'和'close'等动词，但视频帧中无任何相关动作或物体，故不应包含。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_1475_1550": {
+      "category": "名词筛选准确性",
+      "content": "1. 第一部分名词筛选应严格基于视频中实际出现的物体，而非依赖先验知识中的泛化类别。例如，'bottle' 和 'honey' 虽然在先验知识中被提及，但视频中未出现任何瓶装蜂蜜，因此不应包含在名词列表中。应仅保留视频中明确可见的物体，如 'bread', 'hand', 'table'。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_12_79": {
+      "category": "名词筛选准确性",
+      "content": "1.名词列表应仅包含视频中实际出现的物体，如'bread'、'honey'、'bottle'、'plate'。2.应排除与当前动作无关的名词，如'hand'虽为操作主体，但不应作为被操作的'object'。3.名词应与先验知识中的上下文语境匹配，如'honey'和'bottle'出现在厨房台面，符合'bread'的上下文。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_92_114": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词筛选应更严格，仅保留与手部直接交互且在视觉上可识别的物体。例如，'bottle'和'lid'是明确的交互对象，但'hand'和'table'是场景元素而非被操作的物体。应剔除'hand'和'table'，仅保留'bottle'和'lid'。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_119_164": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词列表应仅包含视频中实际出现的物体，如'hand', 'jar', 'lid', 'plate'。应剔除如'bottle'等未在视频中出现的物体，以确保名词与视觉证据完全匹配。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_178_203": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词筛选应严格基于视频帧中实际出现的物体，而非生成器的预设列表。例如，视频中明确出现的'cup'、'bottle'、'lid'、'honey'等名词应被保留，而'hand'虽为操作主体，但其作为动作执行者而非被操作对象，不应被纳入名词列表。同时，应剔除与场景无关的名词如'fridge'、'stove'等。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_218_247": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词筛选应更严格，仅保留与当前动作直接相关的物体。例如，'jar'和'spoon'是核心操作对象，'hand'是执行者，'table'是背景环境，但'lid'在当前帧中未被操作，不应被纳入关键名词列表。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_261_300": {
+      "category": "名词筛选准确性",
+      "content": "1.名词列表应仅包含视频中实际出现的物体，如'hand', 'spoon', 'bread', 'jar', 'lid'。2.应剔除与当前动作无关的物体，如'phone', 'cup', 'bottle'等，这些物体虽在背景中出现，但未参与当前'涂抹面包'的动作。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_308_342": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词列表应仅包含视频中实际出现的物体，如 'hand', 'spoon', 'jar', 'lid', 'table'。应剔除与当前场景无关的名词，如 'recipe', 'fridge', 'cabinet' 等，以提高后续动作识别的准确性。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_362_460": {
+      "category": "名词筛选准确性",
+      "content": "1.名词列表应仅包含视频中实际出现的物体，如'hand', 'bread', 'spoon', 'plate', 'jar'。2.应剔除与当前动作无关的物体，如'cup', 'phone', 'bottle'等，这些物体虽在背景中出现，但未参与当前'涂面包'的动作。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_483_524": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词列表应仅包含视频中实际出现的物体，如 'hand', 'lid', 'jar', 'table'。应剔除 'bottle'，因为视频中未出现任何瓶子，且 'bottle' 与当前场景无关。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_525_537": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词列表应仅包含视频中实际出现的物体，如 'hand', 'condiment_container', 'table'。应剔除如 'bottle' 等虽在背景中出现但未被手部直接操作的物体，以提高后续动作识别的准确性。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_542_563": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词筛选应严格基于视频中实际出现的物体。'honey'、'hand'、'bottle'、'lid'、'table' 均在原始帧中可见，符合要求。但'lid'在原始帧中未被操作，且其先验知识中'lid'的上下文与'hand'、'bottle'等物体的交互更紧密，而'lid'本身在视频中未被直接操作，因此应优先保留与核心动作直接相关的名词，如'honey'、'hand'、'bottle'。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_564_595": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词筛选应严格基于视频中实际出现的物体，而非生成器的先验知识。视频中明确出现的名词包括 'hand', 'bottle', 'lid', 'honey', 'table'，这些名词与先验知识中的上下文语境匹配。生成器应直接从视频帧中提取这些名词，避免引入如 'recipe'、'fridge' 等未在视频中出现的名词。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_615_726": {
+      "category": "名词筛选准确性",
+      "content": "1.名词列表应仅包含视频中实际出现的物体，如'hand', 'honey', 'bottle', 'plate', 'bread'。2.应剔除与当前场景无关的名词，如'phone', 'cup', 'box'等，这些虽在背景中出现，但未参与核心动作。3.名词应与先验知识中的上下文语境匹配，例如'bread'出现在厨房操作台面，与'plate'共现，符合'bread'的典型上下文。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_727_744": {
+      "category": "名词筛选准确性",
+      "content": "1.名词列表应仅包含视频中实际出现的物体，如'hand', 'bottle', 'lid', 'honey', 'plate'。2.应排除与当前场景无关的名词，如'bread'虽在盘中但未被操作，'condiment_container'等背景物品不构成直接交互对象。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_727_766": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词列表应仅包含视频中实际出现的物体，如 'hand', 'bottle', 'lid', 'honey', 'plate'。生成器应严格依据视觉证据筛选，避免引入如 'recipe', 'fridge' 等未在画面中出现的名词。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_772_812": {
+      "category": "名词筛选准确性",
+      "content": "1.名词列表应仅包含视频中实际出现的物体，如'bread'、'honey'、'bottle'、'plate'、'hand'。2.应剔除与当前场景无关的名词，如'recipe'、'fridge'、'cabinet'等，这些名词在视频中未被操作或未出现。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_814_933": {
+      "category": "名词筛选准确性",
+      "content": "1.名词筛选应严格基于视频帧中实际出现的物体，而非生成器的先验知识。例如，'bottle'在视频中未被手部操作，不应出现在名词列表中。2.应剔除与当前场景无关的名词，如'phone'、'glass'等，仅保留与手部动作直接相关的物体，如'bread'、'plate'、'hand'。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_16_60": {
+      "category": "名词筛选准确性",
+      "content": "1.名词筛选应严格基于视频中实际出现的物体，而非生成器的预设列表。例如，'bread_container'在视频中未出现，应被排除。2.名词必须与先验知识中的上下文语境匹配，如'condiment'在视频中未被操作，不应被选入动作列表。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_84_104": {
+      "category": "名词筛选准确性",
+      "content": "1.名词列表应仅包含视频中实际出现的物体，如'hand', 'bottle', 'jar'。'lid'虽在视频中出现，但其交互动作（如'open'）通常与'jar'或'bottle'绑定，单独列出'lid'作为核心名词不准确。'honey'是内容物，应归类于'bottle'或'jar'，不应独立列出。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_492_505": {
+      "category": "名词筛选准确性",
+      "content": "1.名词筛选应严格基于视频中实际出现的物体，而非生成器的先验知识。例如，'jam'在视频中是作为容器出现的，其动作应与容器相关，而非直接与果酱内容物相关。2.应剔除与当前场景无关的名词，如'counter'在视频中未被操作，不应被选中。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_506_520": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词筛选应更严格，仅保留与视觉证据直接相关的物体。例如，'honey'虽在名词列表中，但视频中操作的是一个棕色瓶装的酱料，而非蜂蜜。应仅保留'hand'、'bottle'、'lid'、'counter'等在视频中明确出现且与手部交互相关的物体。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_523_569": {
+      "category": "名词筛选准确性",
+      "content": "1.名词列表应仅包含视频中实际出现的物体，如'jar'、'lid'、'spoon'、'bread'、'hand'。2.应剔除与当前场景无关的名词，如'phone'、'bottle'、'box'等，这些物体虽在背景中出现，但未参与当前动作。3.名词列表应与先验知识中的上下文语境匹配，例如'hand'出现在厨房操作台，'jar'和'lid'出现在调味品区，符合'hand'在厨房操作台的上下文。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_589_794": {
+      "category": "名词筛选准确性",
+      "content": "1.名词列表应仅包含视频中实际出现的物体，如'hand', 'spoon', 'bread', 'jar', 'plate'。2.应排除与当前动作无关的物体，如'phone', 'bottle', 'jar'等虽在背景中出现但未被交互的物体。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_808_844": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词筛选应更严格，仅保留与当前场景直接相关的物体。例如，'bottle'在当前场景中并非操作对象，应被排除。'table'虽在场景中，但其动词'Place'、'Lean on'与当前手部动作无关，不应作为核心名词。应仅保留'hand'、'lid'、'jar'。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_845_854": {
+      "category": "名词筛选准确性",
+      "content": "1. 在第一部分名词筛选中，应严格依据视频帧中的直接视觉证据，仅保留明确可见的物体，如 'hand', 'bottle', 'lid', 'counter'。应剔除如 'honey' 这类虽在语义上相关但未在帧中直接呈现的名词，避免引入歧义。2. 应利用名词与动词的关联概率表，对筛选出的名词进行交叉验证，确保其与可能的动词组合在概率上合理，例如 'bottle' 与 'take'、'put'、'move' 的高关联性支持其保留。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_857_874": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词筛选应更严格，仅保留与视觉证据直接相关的物体。例如，'liquid'和'label'在原始帧中未被手部直接操作，且在黄色框中未被标记为交互对象，应排除。'counter'虽在场景中，但未被手部直接操作，也应排除。应仅保留'hand'和'bottle'。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_881_903": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词列表应仅包含视频中实际出现的物体，如 'hand', 'bottle', 'lid', 'cup'。'chocolate' 虽然在标签中出现，但视频中未显示任何巧克力实体，仅有一个巧克力酱瓶，因此不应包含在名词列表中。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_932_1040": {
+      "category": "名词筛选准确性",
+      "content": "1.名词列表应仅包含视频中实际出现的物体，如'hand', 'bottle', 'plate', 'bread', 'spoon'。2.应剔除与当前场景无关的名词，如'phone', 'cup', 'box'等，这些虽在背景中出现，但未被手部直接操作。3.名词列表应与先验知识中的上下文语境匹配，例如'plate'出现在厨房台面，'bread'出现在操作台，符合实际场景。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_1041_1062": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词筛选应更严格，仅保留与当前场景直接相关的物体。例如，'recipe'、'fridge'、'cabinet' 等与当前动作无关的名词应被剔除。应优先选择在视频中明确出现且与手部操作直接相关的名词，如 'hand'、'bottle'、'bread'、'plate'、'condiment'。同时，应根据先验知识中的上下文语境，确保所选名词与当前厨房操作台面场景匹配。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_1063_1087": {
+      "category": "名词筛选准确性",
+      "content": "1.名词列表应仅包含视频中实际出现的物体，如'hand', 'bottle', 'spoon', 'bread', 'plate'。2.应剔除与当前场景无关的名词，如'phone', 'jar', 'box'等，这些物体虽在背景中出现，但未被手部操作，不应纳入核心名词列表。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_1090_1120": {
+      "category": "名词筛选准确性",
+      "content": "1.名词筛选应严格基于视频帧中实际出现的物体，而非依赖先验知识中的泛化类别。例如，'bread'在帧中明确出现，但'condiment'是泛指，应具体化为'jam'或'honey'等实际存在的调味品容器。2.必须排除与视频内容无关的名词，如'plate'虽出现，但其动作'Put plate'在当前场景中无依据，应仅保留与手部直接交互的物体，如'bread'和'jam'。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_1123_1240": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词筛选应严格基于视频帧中实际出现的物体，而非依赖先验知识中的泛化类别。例如，'counter'在视频中虽为背景，但其'Clean/Wipe'动作与当前场景无关，应排除。应仅保留'hand', 'bread', 'plate', 'spoon'等直接参与交互的物体。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_19_96": {
+      "category": "名词筛选准确性",
+      "content": "1.名词列表应仅包含视频中实际出现的物体，如'bag'、'bread'、'plate'、'honey'。2.应排除与当前动作无关的名词，如'hand'虽为操作主体，但不应作为被操作的名词列出。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_102_174": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词筛选应严格基于视频帧中实际出现的物体，而非生成器的预设列表。例如，视频中出现的'bread'、'cup'、'bottle'、'spoon'等名词应被保留，而'box'、'bag'等未在帧中出现的名词应被剔除。同时，应结合名词的先验知识中的'上下文语境'部分，确保筛选出的名词与视频场景（如厨房台面、餐具）匹配。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_181_205": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词筛选应严格基于视频中实际出现的物体，而非生成器的先验知识。例如，视频中出现的'jar'（罐子）和'bottle'（瓶子）是明确的，但'hand'（手）作为自视角主体，其存在是默认的，不应被列为待筛选名词。应剔除与场景无关或非操作对象的名词，如'spoon'（勺子）在视频中未被手部操作，'table'（桌子）是背景环境，不应作为交互主体。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_215_232": {
+      "category": "名词筛选准确性",
+      "content": "1.名词列表应仅包含视频中实际出现的物体，如'jar'、'spoon'、'bread'、'hand'、'lid'。2.应剔除与当前场景无关的名词，如'phone'、'bottle'、'box'等，这些虽在背景中出现，但未被手部操作。3.应确保名词与先验知识中的上下文语境匹配，例如'bread'出现在厨房台面，与'jar'、'spoon'共现，符合'food preparation'场景。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_261_290": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词筛选应更严格，仅保留与当前场景直接相关的物体。例如，'condiment' 是一个过于宽泛的类别，应具体化为 'jam'。'bread' 和 'jar' 是核心操作对象，应保留。'spoon' 是工具，也应保留。'hand' 是执行者，必须保留。应剔除与当前动作无关的物体，如 'recipe', 'fridge', 'cabinet' 等。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_334_359": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词筛选应更严格，仅保留与当前场景直接相关的物体。例如，'bread'和'jar'是核心操作对象，'spoon'是工具，'hand'是执行者，'table'是背景。应剔除如'plate'、'bottle'等虽在画面中但非当前动作直接交互对象的名词。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_363_377": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词筛选应更严格，仅保留与当前场景直接相关的物体。例如，'bottle'和'condiment'是核心操作对象，但'bread'虽在画面中，但未被手部操作，不应被选入。'spoon'虽在手中，但其作用是辅助工具，非主要交互对象，应排除。应仅保留'hand'、'bottle'、'condiment'。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_420_540": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词列表应仅包含视频中实际出现的物体，如'bread', 'spoon', 'hand', 'condiment', 'table'。但'condiment'过于宽泛，应具体化为'jam'（果酱），因为视频中明确显示的是果酱。'table'虽在场景中，但非直接交互对象，应移除。最终名词列表应为['bread', 'spoon', 'hand', 'jam']。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_542_558": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词筛选应更严格，仅保留与视觉证据直接相关的物体。例如，'bottle'在原始帧中是被手部操作的，但其具体类型（如蜂蜜瓶）未被明确识别，应保留为通用名词。'spoon'在原始帧中被手部握持，是直接交互对象，应保留。'honey'和'lid'虽在后16帧被标注，但原始帧中未出现，应排除。'hand'是主体，必须保留。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_560_597": {
+      "category": "名词筛选准确性",
+      "content": "1.名词列表应仅包含视频中实际出现的物体，如'hand', 'honey', 'lid', 'bottle', 'spoon'。2.应剔除与当前动作无关的名词，如'jar'（虽然与'bottle'相关，但视频中未出现）和'bread'（虽在画面中，但未被手部操作）。3.名词应与先验知识中的上下文语境匹配，如'honey'出现在厨房操作台面，与'hand'共现，符合'food preparation'场景。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_625_653": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词列表应仅包含视频中实际出现的物体，如'hand', 'spoon', 'jar', 'bread', 'table'。应剔除与当前场景无关的名词，如'recipe', 'fridge', 'cabinet'等，以提高后续动作识别的准确性。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_669_715": {
+      "category": "名词筛选准确性",
+      "content": "1.名词列表应仅包含视频中实际出现的物体，如'hand', 'spoon', 'bread', 'jar', 'lid'。2.应剔除与当前场景无关的名词，如'recipe', 'fridge', 'cabinet'等，这些名词在视频中未被操作或未出现。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_716_727": {
+      "category": "名词筛选准确性",
+      "content": "1.名词列表应仅包含视频中实际出现的物体，如'condiment_container'、'bread'、'spoon'、'lid'。2.应排除与当前场景无关的名词，如'hand'虽在画面中，但其本身是执行动作的主体而非被操作对象，不应作为独立名词列出。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_748_842": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词列表应仅包含视频中实际出现的物体，如'bread', 'spoon', 'hand'，并剔除如'condiment'等泛指类别。'condiment'在视频中未作为独立物体出现，而是指代涂抹在面包上的酱料，应被具体化为'jam'或'peanut butter'。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_856_879": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词筛选应更严格，仅保留与当前场景直接相关的物体。例如，'bread'和'condiment'是核心操作对象，但'hand'作为执行者不应被列为独立名词，而应作为动作的执行主体。'bottle'虽被选中，但其在当前场景中未被使用，应被排除。'spoon'虽被选中，但其在当前场景中未被使用，应被排除。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_898_923": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词列表应仅包含视频中实际出现的物体，如'hand', 'bottle', 'bread', 'condiment', 'spoon'。应剔除与当前场景无关的名词，如'phone'、'table'等，以提高后续动作识别的准确性。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_928_976": {
+      "category": "名词筛选准确性",
+      "content": "1.名词列表应仅包含在视频中实际出现的物体，如'hand', 'bread', 'bottle', 'spoon', 'table'。2.应剔除与当前动作无关的物体，如'plate'虽在背景中出现，但未被手部操作，不应纳入核心名词列表。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_985_997": {
+      "category": "名词筛选准确性",
+      "content": "1.名词列表应仅包含视频中实际出现的物体，如'hand', 'chocolate', 'bread', 'bottle', 'counter'。2.应剔除与当前动作无关的名词，如'bread'在动作'pour chocolate'中并非直接交互对象，应仅保留'chocolate'和'bottle'作为核心交互名词。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_998_1016": {
+      "category": "名词筛选准确性",
+      "content": "1.名词列表应仅包含视频中实际出现的物体，如'hand', 'bottle', 'bread', 'spoon', 'condiment'。2.应剔除与当前场景无关的名词，如'banana'、'potato'等，这些在原始帧中未出现，且与当前动作无关。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_1024_1089": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词筛选应严格基于视频帧中实际出现的物体，而非生成器的先验知识。例如，'honey'和'bottle'在原始帧中未被手部操作，且'plastic_wrap'在后16帧的黄色框中未被标注，因此不应包含在名词列表中。应仅保留'hand'和'bread'，因为它们是视频中明确可见且被操作的核心物体。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_1101_1160": {
+      "category": "名词筛选准确性",
+      "content": "1. 第一部分名词筛选应严格基于视频帧中实际出现的物体，而非生成器的先验知识。例如，'bread'和'hand'是明确可见的，但'condiment'在帧中未被手部操作，不应被选为交互名词。'spoon'虽在帧中出现，但其状态为静止，未被手部操作，也不应被选为交互名词。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_23_54": {
+      "category": "名词筛选准确性",
+      "content": "1.名词筛选应严格基于视频中实际出现的物体，而非生成器的先验知识。例如，'condiment_container'和'bread_container'在视频中未被手部操作，不应被选入名词列表。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_74_128": {
+      "category": "名词筛选准确性",
+      "content": "1.名词筛选应严格基于视频帧中实际出现的物体，而非生成器的先验知识。例如，视频中出现的是'bread'和'carrot'，而非'banana'或'plate'（虽然plate在帧中出现，但其交互未被标注）。应剔除与当前场景无关的名词，如'banana'，并确保保留的名词在帧中可见。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_129_149": {
+      "category": "名词筛选准确性",
+      "content": "1.名词列表应仅包含视频中实际出现的物体，如'hotdog'、'bread'、'plate'、'hand'、'counter'。应剔除与当前场景无关的名词，如'phone'、'cup'等，以提高后续动作识别的准确性。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_171_197": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词筛选应更严格，仅保留与手部直接交互且在视频中明确出现的物体。例如，'bottle' 虽然出现，但视频中手部操作的是 'mustard'，'bottle' 作为泛指名词不准确。应仅保留 'hand', 'mustard' 作为核心交互名词。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_227_282": {
+      "category": "名词筛选准确性",
+      "content": "1.名词列表应仅包含视频中实际出现的物体，如'hand', 'mustard', 'hotdog', 'bread', 'plate'。2.应剔除与当前场景无关的名词，如'phone', 'cup', 'bottle'等虽在背景中出现但非当前动作核心的物体。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_290_341": {
+      "category": "名词筛选准确性",
+      "content": "1.名词列表应仅包含视频中实际出现的物体，如'hand', 'hotdog', 'bread', 'condiment', 'plate'。2.应剔除与当前场景无关的名词，如'watch'（虽在图中出现，但非核心动作对象）和'banana'（与当前动作无关）。3.名词应与先验知识中的上下文语境匹配，如'hotdog'出现在厨房准备区，'condiment'与食物调味相关，符合当前场景。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_347_352": {
+      "category": "名词筛选准确性",
+      "content": "1.名词筛选应严格基于视频帧中实际出现的物体，而非预设列表。例如，'recipe'、'fridge'、'cabinet'等未在帧中出现的物体不应被纳入。2.必须确保筛选出的名词与先验知识中的上下文语境匹配。例如，'hand'出现在厨房操作台面，符合其'hand'的上下文语境；'mustard'出现在操作台面，符合其'kitchen'的上下文语境。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_353_382": {
+      "category": "名词筛选准确性",
+      "content": "1. 在第一部分名词筛选中，应严格依据视频帧中实际出现的物体进行选择，避免引入如'counter'等虽在场景中但未被手部直接交互的物体。应仅保留'hand', 'mustard', 'bread', 'plate'等与手部动作直接相关的物体。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_384_396": {
+      "category": "名词筛选准确性",
+      "content": "1.名词列表应仅包含视频中实际出现的物体，如'hand', 'bottle', 'lid', 'honey', 'plate'。2.应剔除与当前场景无关的名词，如'cup', 'bread', 'box'等虽在背景中出现但未被手部操作的物体。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_418_454": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词列表应仅包含视频中实际出现的物体，如'hand', 'bottle', 'bread', 'plate', 'condiment'。应剔除与当前场景无关的名词，如'phone', 'cup', 'bowl'等，以提高后续动作识别的准确性。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_458_511": {
+      "category": "名词筛选准确性",
+      "content": "1.名词列表应仅包含视频中实际出现的物体，如'hand', 'ketchup', 'bread', 'plate', 'hotdog'。2.应剔除与当前场景无关的名词，如'recipe', 'fridge', 'stove'等，这些名词在视频中未出现或与当前动作无关。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_513_527": {
+      "category": "名词筛选准确性",
+      "content": "1.名词列表应仅包含视频中实际出现的物体，如'hand', 'bottle', 'lid', 'bread', 'plate'。2.应剔除与当前场景无关的名词，如'jar', 'jam', 'sauce'等，尽管它们在名词列表中出现，但视频中未显示相关物体或动作。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_528_552": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词筛选应更严格，仅保留与当前场景直接相关的物体。例如，'recipe'、'fridge'、'cabinet' 等与当前动作无关的名词应被剔除。应优先选择在视频中明确出现且与手部交互相关的名词，如 'hand'、'bottle'、'sandwich'、'plate'、'condiment'。同时，应根据先验知识中的上下文语境，确保名词与场景匹配，如 'condiment' 与 'bottle' 的共现关系。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_559_644": {
+      "category": "名词筛选准确性",
+      "content": "1.名词列表应仅包含在视频中实际出现的物体，如'hand', 'sandwich', 'plate'。'bottle'和'bread'虽在背景中可见，但未被手部直接操作，不应纳入核心名词列表。2.应严格依据视频帧中的视觉证据筛选名词，避免引入与当前动作无关的物体。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_11_65": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词筛选应严格基于视频帧中实际出现的物体，而非依赖先验知识中的泛化类别。例如，'bread_container'在原始帧中未出现，应排除。应仅保留'bread', 'hand', 'bag', 'bottle', 'honey'等在帧中明确可见的名词。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_72_105": {
+      "category": "名词筛选准确性",
+      "content": "1.名词筛选应严格基于视频中实际出现的物体，而非生成器的预设列表。例如，视频中出现的'cheese'、'bread'、'hand'、'cup'、'bottle'均在名词列表中，但'cup'在视频中是堆叠的红色塑料杯，其形态与'cup'的先验知识描述一致，应保留。2.应剔除与视频内容无关的名词，如'fridge'、'stove'、'cabinet'等，这些在视频中未出现或未被操作。3.名词应与先验知识中的上下文语境匹配，如'cheese'出现在厨房台面，与'bread'共现，符合先验知识描述。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_111_170": {
+      "category": "名词筛选准确性",
+      "content": "1.名词筛选应严格基于视频帧中实际出现的物体，而非预设列表。例如，'plastic_wrap'在原始帧中是作为包裹cheese的透明薄膜出现，其本身是独立物体，应被保留。2.应剔除与当前场景无关的名词，如'counter'虽在背景中出现，但并非手部直接交互对象，不应作为核心名词。3.应确保名词与先验知识中的上下文语境匹配，例如'bread'在视频中是作为操作台上的独立物体出现，符合其'出现在厨房操作台面'的语境。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_171_198": {
+      "category": "名词筛选准确性",
+      "content": "1.名词筛选应严格基于视频帧中实际出现的物体，而非生成器的先验知识列表。例如，'plastic_wrap'在前16帧中虽出现，但其在后16帧中未被手部交互，应被排除。2.名词必须与后16帧中黄色边界框内的物体匹配，确保交互对象在视觉上可识别。3.名词列表应仅包含在动作发生时被手部直接操作的物体，如'cheese'和'bread'，排除无关物体如'counter'。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_198_217": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词列表应仅包含视频中实际出现的物体，如'hand', 'mayonnaise', 'bread', 'bottle', 'table'。生成器应严格依据视觉证据筛选，避免添加未出现的名词如'recipe'或'fridge'。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_218_237": {
+      "category": "名词筛选准确性",
+      "content": "1.名词列表应仅包含视频中实际出现的物体，如'hand', 'bottle', 'lid', 'bread'。'honey'虽在先验知识中被提及，但视频中未出现蜂蜜瓶或蜂蜜本身，应剔除。2.名词列表应与先验知识中的上下文语境匹配，'hand'、'bottle'、'lid'、'bread'均符合厨房操作场景。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_253_330": {
+      "category": "名词筛选准确性",
+      "content": "1.名词列表应仅包含视频中实际出现的物体，如'hand', 'condiment', 'bread', 'bottle', 'counter'。2.应剔除与当前场景无关的名词，如'fridge', 'stove', 'cabinet'等，这些在视频中未被手部操作或未在交互区域出现。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_333_345": {
+      "category": "名词筛选准确性",
+      "content": "1.名词列表应仅包含视频中实际出现的物体，如'condiment_container'、'bread'、'hand'、'lid'。应移除如'bottle'等虽在背景中出现但未被手部直接操作的物体，以提高准确性。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_346_361": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词列表应仅包含视频中实际出现的物体，如 'hand', 'bottle', 'table'。应剔除 'honey' 和 'lid'，因为它们在原始帧中未被直接操作或作为独立物体呈现，而是作为 'bottle' 的内容物或部件。这符合先验知识中 'bottle' 与 'honey' 的上下文关联，但 'honey' 本身未被手部直接操作。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_362_372": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词筛选应严格基于视频中实际出现的物体，而非生成器的预设列表。应从原始帧中识别出所有可见的、与手部交互相关的物体，如'hand', 'honey', 'mustard', 'mayonnaise', 'bread'，并确保这些名词在先验知识中具有明确的上下文匹配。例如，'honey'、'mustard'、'mayonnaise'均属于厨房调味品，与'bread'共同出现在操作台上，符合'hand'的交互上下文。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_373_399": {
+      "category": "名词筛选准确性",
+      "content": "1. 在第一部分名词筛选中，应严格依据视频帧中的直接视觉证据，仅保留明确可见的物体，如'hand', 'condiment', 'bread', 'bottle', 'counter'。应剔除如'recipe', 'fridge', 'cabinet'等未在帧中出现的物体，避免引入无依据的名词。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_400_443": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词筛选应更严格，仅保留与当前动作直接相关的名词。例如，'hand'、'condiment'、'bread'、'bottle'、'counter' 均为直接参与或承载动作的物体，符合上下文。但'hold hand'这一名词组合在语义上不成立，应剔除。同时，'put bread'在当前帧中未发生，应仅保留'apply condiment'等与当前动作直接相关的动词-名词组合。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_445_459": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词列表应仅包含视频中实际出现的物体，如'hand', 'condiment', 'bread', 'bottle', 'table'。应剔除与当前场景无关的名词，如'fridge', 'stove', 'cabinet'等，以提高后续动作识别的准确性。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_460_475": {
+      "category": "名词筛选准确性",
+      "content": "第一部分名词列表应仅包含视频中实际出现的物体，如'hand', 'condiment', 'bread', 'table', 'bottle'。应剔除与场景无关的名词，如'phone'虽在背景中出现，但未被手部操作，不应作为核心名词。同时，应确保名词与后续动词有直接关联，如'condiment'与'apply'或'pour'等动词匹配。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_483_529": {
+      "category": "名词筛选准确性",
+      "content": "1. 第一部分名词筛选应严格基于视频帧中实际出现的物体，而非生成器的先验知识。例如，'hand'虽在帧中出现，但其作为操作主体而非被操作对象，不应被列为独立名词。2. 应剔除与当前场景无关的名词，如'bag'在帧中虽出现，但其状态为被打开的包装袋，而非独立可操作对象。3. 应保留与核心动作直接相关的名词，如'bread'和'bag'，因其是手部操作的直接对象。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_535_580": {
+      "category": "名词筛选准确性",
+      "content": "1.名词筛选应严格基于视频帧中实际出现的物体，而非生成器的先验知识。例如，'condiment'在原始帧中未被手部操作，且其容器未被交互，应排除。2.名词必须与先验知识中的上下文语境匹配，如'bread'出现在厨房台面，与'counter'共现，符合上下文。3.应剔除与当前动作无关的名词，如'cheese'在原始帧中未被手部操作，且其容器未被交互，应排除。",
+      "frequency": "1"
+    }
+  },
+  "two": {
+    "id-S2_CofHoney_C1_524_533": {
+      "category": "动词与名词组合合理性",
+      "content": "1.动词与名词的组合必须符合先验知识中的动作模式。例如，'pour bottle'和'pour liquid'是合理的，但'hold hand'是冗余且无意义的。2.动作短语应避免重复，如'pour bottle'和'pour liquid'可合并为一个动作。3.动作应基于视频帧中的直接视觉证据，如手部抓握瓶身、倾倒液体等。",
+      "frequency": "50"
+    },
+    "id-S2_CofHoney_C1_534_550": {
+      "category": "动词-名词组合合理性",
+      "content": "1.动词与名词的组合必须符合先验知识中的动作模式。例如，'take bottle'和'put bottle'是合理的，但'look bottle'在视频中无视觉证据支持，应剔除。2.应避免将多个动作合并为一个，如'hold bottle'和'move bottle'应拆分为独立动作，以提高描述精度。",
+      "frequency": "45"
+    },
+    "id-S2_CofHoney_C1_569_613": {
+      "category": "动词-名词组合合理性",
+      "content": "1.动词与名词的组合必须符合先验知识中的关联概率。例如，'open bottle' 是合理的，但 'put lid' 在当前场景中不适用，因为 lid 未被取下或放置。2.应根据手部动作和物体状态变化（如瓶盖被打开、液体被倾倒）来验证动作的合理性，而非仅依赖置信度。",
+      "frequency": "24"
+    },
+    "id-S3_Pealate_C1_803_814": {
+      "category": "动词与名词关联合理性",
+      "content": "第二部分动作短语应基于视频中手部与物体的实际交互。例如，手部在视频中并未执行'put bottle'或'take bottle'，而是'hold bottle'和'put bottle'。应根据手部姿态和物体状态变化（如瓶盖被拧开）来精确描述动作。",
+      "frequency": "20"
+    },
+    "id-S1_Tea_C1_91_122": {
+      "category": "动词与名词关联合理性",
+      "content": "1.动词与名词的组合必须符合先验知识中的关联概率，例如'hand'与'pour'的关联概率为0.85，但'hand'与'hold'的关联概率为0.9，因此'hold hand'应被优先选择。2.动作短语应基于视频帧中的直接视觉证据，如'open bottle'是基于手部拧开瓶盖的动作，而非推断。3.应避免生成无意义的动作，如'hold hand'，因为'hold'是手部动作，'hand'是执行者，组合不成立。",
+      "frequency": "20"
+    },
+    "id-S3_Pealate_C1_1050_1114": {
+      "category": "动词-名词组合合理性",
+      "content": "1.动词与名词的组合必须符合先验知识中的上下文语境。例如，'hand'与'press'组合合理，但'hand'与'hold hand'不合理。2.动作短语应反映实际发生的交互，如'press sandwich'和'put bread'是正确的，而'hold hand'和'take bread'在当前语境下不准确。",
+      "frequency": "12"
+    },
+    "id-S2_CofHoney_C1_622_672": {
+      "category": "动词与名词关联合理性",
+      "content": "1.动词与名词的关联必须基于视频帧中的直接视觉证据。例如，'hand'正在'pour'液体，'cup'被'hold'，'condiment_container'正在'pour'，这些动词与名词的组合在帧中均有直接证据支持。2.应避免添加视频中未发生的动作，如'put spoon'在帧中未发生，应剔除。3.应避免添加与当前动作无关的动词，如'add condiment_container'在帧中未发生，应剔除。",
+      "frequency": "9"
+    },
+    "id-S3_Pealate_C1_109_137": {
+      "category": "动作短语生成准确性",
+      "content": "动作短语应基于视频中手部与物体的实际交互进行生成。例如，'take jar'和'open jar'是正确的，但'put lid'在视频中未发生，应删除。'take bread'在视频中未发生，应删除。",
+      "frequency": "9"
+    },
+    "id-S3_Pealate_C1_899_946": {
+      "category": "动词与名词关联合理性",
+      "content": "动作短语应基于视频中手部与物体的直接交互。'hold hand'是无效动作，应删除。'put bread'和'take bottle'在当前场景中未发生，应删除。应保留'pour condiment'和'hold bottle'，并修正'hold hand'为'hold plate'或'hold bread'以匹配实际操作。",
+      "frequency": "8"
+    },
+    "id-S3_Coffee_C1_808_1014": {
+      "category": "动词-名词关联合理性",
+      "content": "1.动词与名词的关联必须基于视频中的直接视觉证据。例如，'pour bottle'是正确的，因为手部正在将液体从瓶中倒入杯中。'hold hand'是错误的，因为'hold'是手部动作，不应与'hand'自身关联。应删除无意义或逻辑矛盾的动作短语。",
+      "frequency": "8"
+    },
+    "id-S3_Tea_C1_21_63": {
+      "category": "动词与名词关联合理性",
+      "content": "第二部分动作短语生成应基于手部与物体的直接交互。例如，'take cup'和'put cup'是基于手部从堆叠杯中取出并持握的动作，'take paper'和'put paper'是基于手部移动文件的动作，这些动词与名词的关联概率高且符合先验知识。生成器应避免添加如'take bottle'，因为视频中手部并未与瓶状物发生交互。",
+      "frequency": "7"
+    },
+    "id-S1_Cheese_C1_516_531": {
+      "category": "动词与名词组合合理性",
+      "content": "1.动词与名词的组合必须符合先验知识中的上下文语境。例如，'take bread'和'put bread'是合理的，但'put mustard'在当前场景中不成立，因为手部正在操作的是'bread'而非'mustard'。2.应根据手部动作和物体状态变化来验证动词的合理性，如'put mustard'应伴随'mustard'的位移，但视频中未显示此动作。",
+      "frequency": "5"
+    },
+    "id-S3_CofHoney_C1_356_384": {
+      "category": "动作短语生成准确性",
+      "content": "第二部分动作短语生成应严格依据视频帧中的视觉证据。'take cup'和'put cup'未在视频中发生，应删除。'take spoon'和'put spoon'未在视频中发生，应删除。应仅保留' take bottle'和'put bottle'，并确保其与视频帧中的手部动作和物体位移匹配。",
+      "frequency": "5"
+    },
+    "id-S2_CofHoney_C1_351_520": {
+      "category": "动词-名词组合合理性",
+      "content": "1.动词与名词的组合必须符合先验知识中的关联概率。例如，'pour bottle'是合理的，但'pour liquid'不准确，因为液体是被倒入杯中，而非被倒出。2.应将'pour liquid'修正为'pour into cup'或'add liquid'，以更精确描述动作对象。",
+      "frequency": "4"
+    },
+    "id-S3_Pealate_C1_142_185": {
+      "category": "动作生成准确性",
+      "content": "动作短语应基于视频中手部与物体的实际交互进行生成。例如，'take jar'和'put jar'是正确的，但'put bread'和'take plate'在视频中未发生，应被移除。动作必须与视频帧中的手部运动和物体状态变化严格对应。",
+      "frequency": "4"
+    },
+    "id-S3_Peanut_C1_881_919": {
+      "category": "动词与名词关联合理性",
+      "content": "第二部分动作短语生成应基于手部与物体的直接交互。'press sandwich'和'hold sandwich'是正确的，但'put bread'和'take bread'在视频中未发生，应删除。'move sandwich'虽有手部移动，但未改变其在台面上的位置，应视为无效动作。",
+      "frequency": "4"
+    },
+    "id-S4_Coffee_C1_865_883": {
+      "category": "动作短语生成合理性",
+      "content": "第二部分动作短语生成应基于手部与物体的直接交互。例如，'shake bottle'在原始帧中未发生，应仅保留'put bottle'、'take bottle'、'hold bottle'、'move bottle'等有直接视觉证据支持的动作。",
+      "frequency": "4"
+    },
+    "id-S1_Tea_C1_358_387": {
+      "category": "动词与名词组合合理性",
+      "content": "1.动词与名词的组合必须基于视频帧中的直接视觉证据。例如，'take butter'在原始帧中无证据支持，应被排除。2.动词必须与名词的先验知识中的动作模式匹配，如'box'的高概率动词为'take'和'put'，'hand'的高概率动词为'wash'和'dry'。",
+      "frequency": "3"
+    },
+    "id-S1_Cheese_C1_470_490": {
+      "category": "动词-名词组合合理性",
+      "content": "1.动词与名词的组合必须符合先验知识中的动作模式。例如，'hand'与'pour'、'hold'、'apply'等动词组合合理，但'hand'与'wash'或'dry'在当前场景中不适用。2.应避免将'condiment'与'apply'或'pour'等动词合并为'apply condiment'，因为'apply'通常指涂抹或粘贴，而'pour'更准确描述从瓶中倾倒的动作。",
+      "frequency": "3"
+    },
+    "id-S3_Pealate_C1_977_996": {
+      "category": "动词与名词组合合理性",
+      "content": "动词与名词的组合必须符合先验知识中的上下文语境。例如，'bottle'与'put'、'move'、'place'等动词组合合理，但'hold bottle'和'take bottle'在当前场景中不构成独立动作，应合并为'put bottle'或'move bottle'。'spoon'与'put'、'take'等动词组合合理，但'hold spoon'和'scoop'在当前场景中不构成独立动作，应合并为'put spoon'或'take spoon'。",
+      "frequency": "3"
+    },
+    "id-S4_Tea_C1_129_231": {
+      "category": "动词与名词组合合理性",
+      "content": "1.动词与名词的组合必须符合逻辑，如'pour bottle'和'pour liquid'是合理的，但'hold hand'是无意义的。2.应基于名词与动词的关联概率进行筛选，如'hold cup'概率0.9，'take bottle'概率0.7，'pour liquid'概率0.85，这些组合合理。3.应避免生成无意义或低概率的动词组合，如'hold hand'概率仅0.6，且无实际意义。",
+      "frequency": "3"
+    },
+    "id-S4_Tea_C1_896_916": {
+      "category": "动作生成合理性",
+      "content": "动作短语应基于视频帧中的直接视觉证据生成。例如，'stir container' 是合理的，因为手部正在用勺子搅拌容器内的物质；'open container' 也是合理的，因为手部正在移除容器盖子。应避免生成如 'take lid' 这样的动作，因为视频中手部并未执行取盖动作，而是直接移除盖子。",
+      "frequency": "3"
+    },
+    "id-S1_Cheese_C1_350_370": {
+      "category": "动词-名词关联合理性",
+      "content": "1.动词与名词的关联必须符合先验知识中的上下文语境。例如，'press bottle'与'hand'和'bottle'的关联是合理的，但'press bread'在当前场景中无视觉证据支持。2.应基于视频帧中手部与物体的直接交互（如倾倒、抓握）来选择动词，而非仅依赖置信度。",
+      "frequency": "3"
+    },
+    "id-S3_Coffee_C1_307_321": {
+      "category": "动词与名词关联合理性",
+      "content": "1.动词与名词的关联必须基于视频直接视觉证据。例如，'pour'与'bottle'的关联在视频中不成立，因为手部并未倾倒液体，而是添加固体咖啡粉。2.动作短语应反映实际发生的交互，如'add coffee'（添加咖啡粉）和'stir coffee'（搅拌咖啡）是正确的，而'pour liquid'（倾倒液体）和'mix liquid'（混合液体）是错误的，因为视频中未出现液体倾倒或混合动作。",
+      "frequency": "3"
+    },
+    "id-S4_Cheese_C1_436_451": {
+      "category": "动作短语生成合理性",
+      "content": "第二部分动作短语生成应基于视觉证据和名词-动词关联概率进行筛选。例如，'take bottle' 和 'open bottle' 是合理的，但 'close bottle' 和 'put lid' 应在手部实际执行这些动作时才被标注。'apply condiment' 虽然合理，但需确保其与 'condiment' 和 'bread' 的交互在帧中明确可见。应避免生成与视觉证据不符的动作。",
+      "frequency": "3"
+    },
+    "id-S3_CofHoney_C1_186_220": {
+      "category": "动词与名词关联合理性",
+      "content": "第二部分动作短语应基于视频中实际发生的交互进行修正。例如，'mix spoon' 应为 'stir' 或 'mix'，'pour bottle' 应为 'pour'。动作动词必须与名词的先验知识中的高概率动词匹配，如 'hand' 与 'take'、'pour'、'mix' 的关联性高，而 'pour bottle' 与 'bottle' 的 'pour' 动作关联性低，应更正为 'take bottle' 或 'open bottle'。",
+      "frequency": "3"
+    },
+    "id-S1_Coffee_C1_146_205": {
+      "category": "动作短语生成准确性",
+      "content": "第二部分动作短语生成应基于视频中实际发生的交互。视频中手部主要操作的是打开巧克力盒并用勺子取物，而非'open bottle'或'pour bottle'。应根据手部动作和物体状态变化（如打开包装、取出内容物）生成准确的动作短语，避免基于错误的物体或动作假设。",
+      "frequency": "3"
+    },
+    "id-S2_CofHoney_C1_679_690": {
+      "category": "动词-名词组合合理性",
+      "content": "1.动词与名词的组合必须符合先验知识中的关联概率。例如，'pour'与'honey'的关联概率为0.1951，符合；'open'与'lid'的关联概率为0.058，符合；'put'与'lid'的关联概率为0.339，符合。2.应避免生成如'open lid'和'put lid'等语义冲突的动作，因为'put lid'通常指放置盖子，而'open lid'是移除盖子，二者在语义上不兼容。",
+      "frequency": "2"
+    },
+    "id-S3_Pealate_C1_580_725": {
+      "category": "动作描述准确性",
+      "content": "动作短语应基于视频中实际发生的交互进行描述。例如，'take jar'在视频中未发生，应删除。'put spoon on plate'在视频中未发生，应删除。应仅保留如'spread jam on bread', 'hold spoon', 'hold plate'等在视频中明确发生的动作。",
+      "frequency": "2"
+    },
+    "id-S1_Tea_C1_1539_1564": {
+      "category": "动词-名词组合合理性",
+      "content": "1.动词与名词的组合必须符合先验知识中的上下文语境。例如，'take cup'、'put cup'、'take bowl'、'put bowl'符合手部与容器的交互模式，但'wash cup'在原始帧中无任何清洗动作的视觉证据，应被排除。2.应避免生成无依据的动作，如'wash cup'，其置信度应为0。",
+      "frequency": "2"
+    },
+    "id-S4_Tea_C1_257_272": {
+      "category": "动词-名词组合合理性",
+      "content": "1.动词与名词的组合必须符合先验知识中的上下文语境。例如，'hand'与'wash'、'dry'、'pour'等动词的关联概率高，而'hold hand'是无意义的自指动作，应被剔除。2.动作短语应基于手部与物体的直接交互，如'put bottle'和'hold bottle'，而非'wash hand'，因为视频中未显示任何清洁行为。",
+      "frequency": "2"
+    },
+    "id-S1_Cheese_C1_172_270": {
+      "category": "动词-名词关联合理性",
+      "content": "1.动词与名词的关联必须基于视频帧中的直接视觉证据。例如，'take cheese'和'put cheese'是合理的，因为手部动作显示了取用和放置。但'hold bread'在原始帧中未出现，且手部未与面包互动，因此不应生成。应仅基于帧中观察到的交互生成动作短语。",
+      "frequency": "2"
+    },
+    "id-S3_Coffee_C1_344_393": {
+      "category": "动作生成逻辑性",
+      "content": "动作短语应基于视频帧中手部与物体的实际交互进行生成。例如，'open jar'是正确的，但'pour into cup'在当前帧中未发生，应仅生成已发生的动作。'take lid'和'put lid'应合并为'open jar'，因为'put lid'是'open jar'的逆操作，且在当前序列中未发生。",
+      "frequency": "2"
+    },
+    "id-S3_Coffee_C1_618_639": {
+      "category": "动词-名词组合合理性",
+      "content": "1.动词与名词的组合必须符合先验知识中的关联概率。例如，'scoop sugar' 是合理的，因为 'sugar' 与 'scoop' 的关联概率为0.013；'mix sugar in cup' 也是合理的，因为 'sugar' 与 'mix' 的关联概率为0.007。2.应避免生成如 'take cup' 这样的动作，因为 'cup' 与 'take' 的关联概率为0.29，但 'take' 通常用于获取新物体，而 'cup' 在视频中是被 'hold' 的，且 'hold' 与 'cup' 的关联概率为0.002，表明其主要动作是持握而非取用。",
+      "frequency": "2"
+    },
+    "id-S2_CofHoney_C1_713_802": {
+      "category": "动词-名词组合合理性",
+      "content": "1.动词与名词的组合必须符合物理现实。例如，'Wash hand'在搅拌混合物的场景中完全不合理，应被移除。2.应优先选择与视觉证据直接匹配的动词，如'Hold cup'和'Stir cup'，并确保动词与名词的关联概率高。",
+      "frequency": "2"
+    },
+    "id-S1_Tea_C1_1421_1447": {
+      "category": "动词-名词组合合理性",
+      "content": "1.动词与名词的组合必须基于视频帧中的直接视觉证据，如 'take container' 和 'put container' 与手部抓取和放置容器的动作一致。2.动词应与名词的先验知识中的动作模式匹配，例如 'hand' 的高概率动词为 'take'、'put'，'container' 的高概率动词为 'take'、'put'，符合其交互模式。",
+      "frequency": "2"
+    },
+    "id-S4_Tea_C1_381_468": {
+      "category": "动词与名词组合合理性",
+      "content": "1.动词与名词的组合必须符合逻辑，如'open tea_bag'在视频中未发生，应移除。2.动词应与先验知识中的动作模式匹配，如'pour tea_bag'不符合茶包的使用方式，应移除。",
+      "frequency": "2"
+    },
+    "id-S1_Cheese_C1_380_470": {
+      "category": "动词-名词关联合理性",
+      "content": "1.动词与名词的关联必须符合先验知识中的上下文语境。例如，'hand'与'press bottle'关联合理，但'hand'与'put bread'关联性弱，因'put'更常与'bread'直接关联。2.应合并重复或语义相近的动作，如'pour condiment'与'apply condiment'可合并为'apply condiment'，因'apply'更准确描述将酱料涂抹在面包上的动作。",
+      "frequency": "2"
+    },
+    "id-S4_Cheese_C1_479_505": {
+      "category": "动作短语生成逻辑性",
+      "content": "第二部分动作短语生成应基于手部与物体的直接交互。例如，手部从台面拿起芥末瓶（'take mustard'），而非'put mustard'或'move bottle'，因为视频中手部动作是取用而非放置或移动其他瓶子。",
+      "frequency": "2"
+    },
+    "id-S1_Coffee_C1_721_737": {
+      "category": "动作生成合理性",
+      "content": "第二部分动作短语应基于手部与物体的直接交互进行生成。例如，手部从桌面拿起瓶子（'take bottle'），然后移动并放置（'move bottle', 'put bottle'）。'shake bottle' 动作在视频中未发生，应被移除。动作应与视频中观察到的物体位移和手部姿态严格对应，避免添加未发生的动作。",
+      "frequency": "2"
+    },
+    "id-S3_Pealate_C1_384_415": {
+      "category": "动作描述精确性",
+      "content": "动作短语应基于视频帧中手部与物体的实际交互进行描述。例如，'open jar'是正确的，但'put lid'在视频中并未发生，应改为'put lid on jar'或'close jar'。动作描述需精确反映视觉证据。",
+      "frequency": "1"
+    },
+    "id-S1_Tea_C1_498_712": {
+      "category": "动词与名词关联合理性",
+      "content": "1.动词与名词的关联必须基于先验知识中的动作模式。例如，'tear'与'tea_bag'在先验知识中无直接关联，应替换为'open'或'rip'；'pour'与'liquid'在先验知识中虽有'pour'，但'liquid'是静态的，不应作为动作主体；'hold'与'cup'在先验知识中虽有'hold'，但'cup'在原始帧中是被手部持握的，应保留；'take'与'hand'在先验知识中虽有'take'，但'hand'是执行动作的主体，不应作为动作对象。",
+      "frequency": "1"
+    },
+    "id-S1_Tea_C1_755_1400": {
+      "category": "动词与名词匹配合理性",
+      "content": "1.动词与名词的匹配必须基于先验知识中的动作模式。例如，'hand'与'hold'的关联概率低，但视频中手部持续稳定持握'cup'，应优先选择'hold'或'grasp'。2.动作短语应反映连续动作序列，如'Steep tea_bag'和'Stir liquid'应合并为'Steep and Stir tea_bag'，以体现动作的时序性。",
+      "frequency": "1"
+    },
+    "id-S1_Tea_C1_1621_1640": {
+      "category": "动作短语逻辑性与视觉证据匹配",
+      "content": "动作短语应基于手部与物体的直接交互。例如，'scoop with spoon' 是正确的，但 'put spoon' 应在勺子被放置后才发生，且 'take container' 应在容器被拿起时发生。动作需与视觉证据严格对齐。",
+      "frequency": "1"
+    },
+    "id-S1_Tea_C1_1797_1930": {
+      "category": "动词-名词组合合理性",
+      "content": "1.动词与名词的组合必须符合物理现实。'mix liquid'是无效动作，因为'liquid'是被混合的对象，而非执行混合动作的主体。2.应将'insert straw'和'stir liquid'合并为更精确的'insert straw into cup'和'stir liquid in cup'，以明确动作对象和工具。3.应将'hold cup'与'stir liquid'合并为'hold cup and stir liquid'，以体现动作的连续性和协同性。",
+      "frequency": "1"
+    },
+    "id-S4_Tea_C1_93_111": {
+      "category": "动词与名词组合合理性",
+      "content": "1.动词与名词的组合必须基于视频中的直接视觉证据，如'pour liquid'是成立的，因为手部正在操作瓶盖准备倾倒。2.应剔除与视频内容不符的动作，如'shake bottle'在视频中未发生，手部仅在准备倾倒。3.应优先选择高置信度的动作，如'hold bottle'和'hold cup'的置信度较高，符合视频中手部持握状态。",
+      "frequency": "1"
+    },
+    "id-S4_Tea_C1_887_893": {
+      "category": "动词与动作生成合理性",
+      "content": "1.动作短语应基于视频帧中手部与物体的实际交互行为生成，如'add sugar'对应手部从糖罐取糖并放入杯中，'stir with spoon'对应手部持勺在杯中搅拌。2.应避免生成与视觉证据不符的动作，如'put spoon'在搅拌过程中不应出现，应为'hold spoon'或'continue stirring'。",
+      "frequency": "1"
+    },
+    "id-S4_Tea_C1_931_975": {
+      "category": "动词与名词组合合理性",
+      "content": "1.动词与名词的组合必须符合先验知识中的动作模式。'stir liquid'是合理的，因为手部在杯中搅拌液体。2.动作短语应避免冗余，如'hold cup'和'put spoon'在'put spoon'中已隐含'hold cup'，可合并或删除冗余项。",
+      "frequency": "1"
+    },
+    "id-S4_Tea_C1_1017_1036": {
+      "category": "动词-名词组合合理性",
+      "content": "动词与名词的组合必须符合先验知识中的上下文语境。例如，'move container' 是合理的，但 'take lid' 和 'put lid' 在当前场景中未发生，应根据实际视觉证据调整或删除。",
+      "frequency": "1"
+    },
+    "id-S1_Cheese_C1_588_649": {
+      "category": "动词与名词组合",
+      "content": "1.动词与名词的组合必须符合逻辑，如'hold bottle'和'pour condiment'是合理的，但'hold hand'是无意义的。2.应剔除与当前动作无关的动词，如'take condiment'，因为视频中并未显示取用动作，而是直接倾倒。3.应剔除与当前动作无关的动词，如'put bread'，因为视频中并未显示放置面包的动作，而是直接在面包上倾倒。",
+      "frequency": "1"
+    },
+    "id-S4_CofHoney_C1_551_566": {
+      "category": "动词与动作逻辑性",
+      "content": "第二部分动作短语应基于手部与物体的直接交互。'pour liquid' 动作在视频中未发生，应删除。'take bottle' 和 'put bottle' 应合并为单一动作 'move bottle'，因为视频中手部仅执行了移动操作，未涉及取放的完整序列。",
+      "frequency": "1"
+    },
+    "id-S4_CofHoney_C1_570_586": {
+      "category": "动词与名词关联合理性",
+      "content": "1. 在第二部分动词合并动作部分，应基于名词与动词的关联概率及先验知识进行筛选。例如，'Take honey'和'Open honey'是高概率且符合先验知识的动作，应保留。'Pour honey'虽概率中等，但根据视频帧中手部移动至杯子的动作，可推断为后续动作，应保留。'Close honey'和'Put honey'概率较低，但根据视频帧中手部移动至杯子的动作，可推断为后续动作，应保留。'Take cup'和'Take lid'在视频帧中未出现，应被排除。",
+      "frequency": "1"
+    },
+    "id-S4_CofHoney_C1_590_630": {
+      "category": "动词与名词组合合理性",
+      "content": "1.动词与名词的组合必须符合先验知识中的动作模式。例如，'open bottle'是合理的，因为'bottle'的先验知识中包含'open'动作；'pour honey'也是合理的，因为'honey'的先验知识中包含'pour'动作。2.应避免生成与物体特性不符的动作，如'open cup'或'pour bottle'，这些在先验知识中无支持。3.动作短语应基于视频帧中的直接视觉证据，如手部姿态和物体状态变化，而非推断。",
+      "frequency": "1"
+    },
+    "id-S4_CofHoney_C1_645_726": {
+      "category": "动词-名词组合合理性",
+      "content": "1.动词与名词的组合必须符合逻辑和先验知识。'pour honey'是合理动作，'hold cup'和'hold bottle'也符合手部操作的常见行为。2.应避免添加无直接视觉证据支持的动作，如'take bottle'和'open bottle'，因为视频中瓶盖已处于开启状态，且'open'动作未被明确捕捉到。",
+      "frequency": "1"
+    },
+    "id-S4_CofHoney_C1_742_757": {
+      "category": "动词与名词组合合理性",
+      "content": "1.动词与名词的组合必须符合逻辑，例如 'open bottle' 和 'pour honey' 是合理的，但 'take bottle' 和 'put bottle' 应仅在瓶盖未开启或操作后归位时使用，需结合手部动作和物体状态变化。2.动作短语应基于视频帧中的直接视觉证据，如手部抓握、倾倒、关闭等动作，避免添加未在帧中体现的动作（如 'mix', 'knead'）。3.动词应与名词的先验知识中的动作模式匹配，例如 'bottle' 的 'pour' 动作需伴随液体流出，'lid' 的 'open' 动作需伴随瓶盖被移除。",
+      "frequency": "1"
+    },
+    "id-S4_CofHoney_C1_758_772": {
+      "category": "动词-名词关联合理性",
+      "content": "1.动词与名词的组合必须符合先验知识中的关联概率。例如，'open bottle'的置信度应为0.6，但'open bottle'在视频中未发生，应被移除。2.动作短语应基于视觉证据，如'put bottle'和'take bottle'在视频中均有发生，但'hold cup'和'move bottle'的置信度过低，应调整或移除。",
+      "frequency": "1"
+    },
+    "id-S4_CofHoney_C1_781_870": {
+      "category": "动词-名词关联合理性",
+      "content": "1.动词与名词的关联必须符合先验知识中的上下文语境。例如，'Pour honey'是合理的，因为honey的先验知识明确指出其常见操作为'Pour'。2.应剔除与当前动作无关的动词，如'Take spoon'和'Put spoon'虽在动作列表中，但视频中并未显示勺子被取走或放回，仅显示搅拌动作，因此应仅保留'Hold cup'和'Stir cup'。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_24_76": {
+      "category": "动作短语生成合理性",
+      "content": "1. 第二部分动作短语生成应严格依据手部在原始帧中的实际运动轨迹和物体状态变化。例如，手部从面包袋中取出面包片的动作应被识别为 'take bread'，而非 'take bottle'。2. 动作动词必须与名词的先验知识中的动作模式匹配，如 'bread' 的高概率动词为 'take' 和 'put'，而 'bottle' 的高概率动词为 'take' 和 'pour'，因此 'take bottle' 是合理的，但 'put bottle' 在当前帧中无证据支持。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_97_126": {
+      "category": "动词与名词关联合理性",
+      "content": "第二部分动作短语应基于视觉证据和先验知识进行修正。'open bottle'和'pour bottle'是合理的，但'close bottle'和'put bottle'缺乏视觉支持，因为视频中手部仅在操作瓶盖，未完成关闭或放回动作。应仅保留'open bottle'和'pour bottle'。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_130_185": {
+      "category": "动词与名词关联合理性",
+      "content": "第二部分动作短语应基于视频帧中手部与物体的直接交互进行生成。例如，'open bottle' 是正确的，但 'take lid' 和 'put lid' 应合并为 'remove lid' 和 'replace lid'，以更精确描述动作。'close lid' 应替换为 'replace lid'，因为盖子是被放回原位，而非关闭容器。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_225_266": {
+      "category": "动词与名词关联",
+      "content": "1.动词与名词的关联必须符合先验知识中的上下文语境。2.动词'pour'与名词'jar'在先验知识中关联概率为0.022，但视频中手部未执行倾倒动作，应剔除。3.动词'put'与名词'jar'在先验知识中关联概率为0.246，但视频中未执行放置动作，应剔除。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_280_360": {
+      "category": "动词-名词关联合理性",
+      "content": "1.动词与名词的关联必须基于视频帧中的直接视觉证据。例如，'open jar'在原始帧中未发生，应被移除。2.动词应与名词的先验知识匹配，如'hand'的高概率动词为'hold'、'take'，'spoon'的高概率动词为'scoop'、'take'，符合视频中手部抓握勺子并从罐中舀取的动作。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_381_774": {
+      "category": "动词-名词组合合理性",
+      "content": "1.动词与名词的组合必须符合先验知识中的上下文语境。例如，'hand'与'spread'组合合理，但'hand'与'open'组合在当前场景中不适用。2.应根据手部实际操作（如涂抹花生酱）选择最贴切的动词，如'spread'而非'hold'或'take'。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_851_878": {
+      "category": "动词-名词搭配合理性",
+      "content": "第二部分动作短语生成应严格依据手部与物体的交互轨迹。例如，手部从'取蜂蜜瓶'到'拧开瓶盖'再到'倾倒蜂蜜'，应生成'Open honey bottle'和'Pour honey'，而非'Open honey'，因为'Open'动作对象应为'瓶子'而非'蜂蜜'本身。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_907_997": {
+      "category": "动词与名词关联合理性",
+      "content": "第二部分动作短语生成应基于名词与动词的关联概率及视频中的实际动作。例如，'open bottle'（打开瓶子）与'jar'（罐子）的关联性低，应改为'open jar'（打开罐子）；'pour honey'（倒蜂蜜）是合理的，但需确认蜂蜜是否被倒出，视频中未显示倾倒动作，应标记为'uncertain'或'not observed'。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_998_1035": {
+      "category": "动词-名词组合逻辑性",
+      "content": "1.动词与名词的组合必须符合先验知识中的上下文语境。例如，'honey' 与 'pour' 的组合是合理的，因为蜂蜜常被倾倒；'bottle' 与 'take'、'put' 是合理的，因为瓶子常被取用和放回。2.应避免出现如 'open lid' 与 'close lid' 与 'pour honey' 之间的逻辑冲突，因为 'open lid' 和 'close lid' 是对瓶盖的操作，而 'pour honey' 是对瓶内物质的操作，两者应分开描述。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_1048_1056": {
+      "category": "动词与动作合理性",
+      "content": "1. 在第二部分动词合并动作部分，应基于视频帧中手部姿态和物体状态变化，严格匹配动词与名词的关联概率。例如，手部从‘Take’到‘Hold’再到‘Move’，动作序列应与物体的位移和手部控制状态一致。2. 动作短语应避免包含无视觉证据支持的动作，如‘Pour’和‘Put’在视频中未发生，应仅保留‘Take’、‘Hold’、‘Move’等有明确视觉证据的动作。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_1057_1078": {
+      "category": "动作短语生成合理性",
+      "content": "第二部分动作短语生成应基于视觉证据和名词关联概率。例如，'open bottle' 是正确的，因为手部在拧开瓶盖；'pour honey' 也正确，因为手部在倾倒；但 'close bottle' 和 'put bottle' 在视频中未发生，应仅保留已发生的动作。动词与名词的组合必须符合先验知识中的上下文语境，如 'hand' 与 'pour' 的关联概率高，而 'bottle' 与 'wash' 的关联概率低。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_1111_1361": {
+      "category": "动词-名词组合合理性",
+      "content": "1.动词与名词的组合必须符合先验知识中的动作模式。例如，'hand'与'hold'、'pour'、'take'等动词匹配合理，但'hand'与'open'不匹配，因为手部不直接执行'open'动作，而是通过工具（如瓶盖）间接完成。'bottle'与'open'、'pour'匹配，但'bread'与'open'不匹配，因为面包是固体，不会被打开。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_1377_1400": {
+      "category": "动词-名词关联合理性",
+      "content": "第二部分动作短语生成应基于视频帧中手部与物体的直接交互。'take bottle'和'open lid'在视频中无依据，应删除。'pour honey'虽有依据，但其动词'pour'与名词'honey'的关联概率为0.1951，低于阈值0.2，应被降级或删除。应保留'hold bread'和'hold honey'，因为它们在视频中明确可见。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_1475_1550": {
+      "category": "动作短语生成准确性",
+      "content": "1. 第二部分动作短语生成应基于视频中手部与物体的直接交互。例如，视频中手部仅在按压面包，因此应生成 'Press bread'，而非 'Take bread' 或 'Put bread'。动词必须与视频中观察到的物理动作（如按压、抓握）严格对应，避免添加未发生的动作。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_12_79": {
+      "category": "动词-名词组合合理性",
+      "content": "1.动词与名词的组合必须符合先验知识中的关联概率，如'open bottle'和'pour honey'是高概率动作，而'open bread'或'pour bread'不符合常理。2.动作短语应基于视频帧中的直接视觉证据，如手部抓握面包、倾倒蜂蜜瓶的动作。3.应避免将'put plate'与'open bottle'等无直接因果关系的动作合并。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_92_114": {
+      "category": "动作短语生成逻辑性",
+      "content": "第二部分动作短语应基于直接视觉证据生成。例如，从第12帧到第15帧，手部动作是'open bottle'，而非'open lid'。动作应精确对应物体状态变化，如'open bottle'和'pour bottle'应合并为'pour bottle'，因为'open'是'pour'的前置动作，且'close bottle'是后续动作。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_119_164": {
+      "category": "动作生成与视觉证据匹配度",
+      "content": "第二部分动作短语应基于视频中手部与物体的实际交互进行生成。例如，'open jar'是正确的，但'hold plate'在视频中未发生，应删除或修正为'hold jar'。动作必须与视觉证据直接对应。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_178_203": {
+      "category": "动作短语生成准确性",
+      "content": "第二部分动作短语生成应严格依据视频帧中的手部动作与物体交互。例如，视频中手部从纸盒中取出纸巾（'take paper_towel'），而非'open bottle'或'pour honey'。动作应与实际观察到的物体状态变化（如纸巾被取出、纸杯被拿起）严格对应，避免添加无依据的动作。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_218_247": {
+      "category": "动作短语生成准确性",
+      "content": "第二部分动作短语生成应基于直接视觉证据。例如，'Stir jar'是正确的，但'Hold jar'和'Take spoon'在当前帧中未发生，应仅保留'Use spoon'和'Stir jar'。'Put spoon'在当前帧中未发生，不应被包含。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_261_300": {
+      "category": "动词-名词组合合理性",
+      "content": "1.动词与名词的组合必须符合物理现实，如'Open jar'在当前场景中不适用，因为罐子已打开且未被操作。2.应仅保留与当前动作直接相关的动词，如'Spread bread'和'Take spoon'，并剔除'Put spoon'（因勺子仍在使用中）和'Open jar'（因罐子已打开）。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_308_342": {
+      "category": "动词与名词关联合理性",
+      "content": "第二部分动作短语应基于视频帧中手部与物体的实际交互进行生成。例如，'scoop jar' 是正确的，但 'take spoon' 和 'take jar' 应合并为 'hold jar' 和 'hold spoon'，因为手部在操作过程中是持续持握状态，而非简单取放。同时，'put spoon' 应被修正为 'scoop jar'，因为勺子是用于舀取，而非放置。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_362_460": {
+      "category": "动词-名词组合合理性",
+      "content": "1.动词与名词的组合必须符合物理现实，如'取勺子'（Take spoon）和'涂面包'（Spread bread）是合理的，但'取罐子'（Take jar）在当前动作中无实际交互，应剔除。2.应基于手部动作和物体状态变化（如面包被涂满）来验证动词的合理性，而非仅依赖置信度。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_483_524": {
+      "category": "动作短语合理性与置信度",
+      "content": "第二部分动作短语中，'take jar' 和 'close jar' 的置信度过低（0.7 和 0.6），且与视频中实际发生的 'open jar' 动作不符。应删除这些低置信度或错误的动作，仅保留 'open jar' 和 'put lid' 等高置信度且符合视觉证据的动作。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_525_537": {
+      "category": "动作短语生成准确性",
+      "content": "第二部分动作短语应基于视频中手部与物体的实际交互进行生成。例如，'open lid' 和 'close lid' 动作在视频中未发生，应被移除。'move bottle' 动作在视频中未发生，应被移除。应仅保留与视频中观察到的交互相符的动作。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_542_563": {
+      "category": "动词与名词关联合理性",
+      "content": "第二部分动作短语生成应严格遵循视频中手部与物体的交互轨迹。从原始帧可见，手部动作是'取'（take）并'打开'（open）瓶盖，然后'倾倒'（pour）蜂蜜，最后'关闭'（close）瓶盖并'放回'（put）原位。生成器的动词与名词关联正确，但'open bottle'和'close bottle'应合并为一个动作'open and close bottle'，以更精确反映连续操作。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_564_595": {
+      "category": "动作生成准确性",
+      "content": "第二部分动作短语生成应基于视频帧中手部与物体的直接交互。例如，从第12帧到第16帧，手部动作是 'open lid'，而非 'pour honey'，因为蜂蜜尚未被倾倒。生成器应根据手部姿态和物体状态变化（如瓶盖被打开）来生成动作，而非基于预设的高置信度动作列表。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_615_726": {
+      "category": "动词与名词关联合理性",
+      "content": "1.动词与名词的组合必须符合先验知识中的关联概率。例如，'hand'与'hold'的关联概率为0.85，符合视频中手部稳定持握的动作。2.应避免生成无逻辑的动作，如'hold hand'，这在视频中无对应动作，且'hand'与'hold hand'无实际交互。3.动作短语应基于视频帧中的直接视觉证据，如'pour honey'对应手部倾倒蜂蜜的动作，'hold bottle'对应手部持握瓶子的动作。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_727_744": {
+      "category": "动词-名词组合合理性",
+      "content": "1.动词与名词的组合必须符合物理现实，如'open bottle'和'close bottle'是合理动作，但'pour honey'应明确为'pour honey from bottle'以体现动作源。2.应避免动词与名词无直接交互关系的组合，如'put bottle'在未移动位置时无意义。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_727_766": {
+      "category": "动作生成准确性",
+      "content": "第二部分动作短语应基于视频中手部与物体的直接交互生成。例如，'open bottle' 和 'close bottle' 是正确的，但 'pour honey' 未在视频中发生，应被移除。动作应严格对应视觉证据，避免添加未发生的动作。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_772_812": {
+      "category": "动词与名词组合合理性",
+      "content": "1.动词与名词的组合必须符合先验知识中的上下文语境。例如，'open bottle'是合理的，但'open plate'不符合语境。2.动作短语应基于手部与物体的直接交互，如'pour honey'和'hold hand'是合理的，但'put plate'在当前场景中未发生。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_814_933": {
+      "category": "动词-名词组合合理性",
+      "content": "1.动词与名词的组合必须符合视频中的实际动作。例如，'put plate'在视频中未发生，应删除。2.应优先选择高置信度且与视觉证据匹配的动作，如'press bread'和'hold bread'，并剔除置信度低或与场景无关的动作如'put plate'。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_16_60": {
+      "category": "动词与名词组合合理性",
+      "content": "1.动词与名词的组合必须符合先验知识中的动作模式。例如，'open condiment'在视频中未发生，应被移除。2.动作短语应基于视频帧中的直接视觉证据，如手部抓握面包片的动作，应标注为'take bread'而非'unwrap wrap:plastic'。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_84_104": {
+      "category": "动词与名词组合合理性",
+      "content": "1.动词与名词的组合必须符合先验知识中的上下文语境。例如，'hand'与'open'、'pour'、'close'、'put'等动词的关联概率高，符合厨房操作场景。但'hand'与'wash'、'dry'等动词在当前视频中无视觉证据支持，应排除。2.动作短语应基于视频帧中的直接视觉证据，如手部抓握、移动、按压等动作，而非推断。例如，'open bottle'应基于手部拧开瓶盖的视觉证据，而非仅基于名词与动词的关联概率。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_492_505": {
+      "category": "动词与名词组合合理性",
+      "content": "1.动词与名词的组合必须符合视频中的实际交互。例如，'take bottle'和'put bottle'是合理的，但'hold bottle'和'move bottle'在视频中未体现为独立动作，而是'put bottle'的一部分。2.应避免将多个动作合并为一个，如'hold bottle'和'move bottle'应拆分为两个独立动作，以提高准确性。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_506_520": {
+      "category": "动词与名词关联合理性",
+      "content": "第二部分动作短语生成应基于视觉证据，而非仅依赖高置信度。例如，'open bottle'和'pour honey'在视觉上不成立，因为视频中操作的是酱料瓶而非蜂蜜瓶，且未见倾倒动作。应仅保留'open bottle'和'put bottle'等与视觉证据一致的动作。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_523_569": {
+      "category": "动词与名词组合合理性",
+      "content": "1.动词与名词的组合必须符合逻辑，如'open jar'、'take lid'、'put lid'、'hold spoon'、'spread bread'均符合视频中手部动作与物体状态变化。2.应避免出现无意义或不符合常理的动作，如'open wood'或'put spoon'等。3.动词应与先验知识中的动作模式匹配，如'open'与'jar'的关联概率为0.122，符合视频中手部旋转瓶盖的动作。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_589_794": {
+      "category": "动词-名词组合合理性",
+      "content": "1.动词与名词的组合必须符合物理现实，如'open jar'是合理的，但'open bread'是错误的。2.动作短语应基于视频帧中的直接视觉证据，如'put spoon'应基于手部将勺子放置在桌面的动作，而非推断。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_808_844": {
+      "category": "动作短语生成逻辑性",
+      "content": "第二部分动作短语生成应基于视觉证据，而非仅依赖置信度。例如，'take lid'和'put lid'在视觉上是连续动作，应合并为一个动作'open jar'。'close jar'在视觉上未发生，应被移除。动作应反映实际发生的交互序列。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_845_854": {
+      "category": "动词与名词组合合理性",
+      "content": "1. 在第二部分动作短语生成中，应基于视频帧中手部与物体的交互轨迹和状态变化，严格匹配动词与名词。例如，手部将瓶盖拧紧的动作应被识别为 'close lid'，而非 'close bottle'。2. 应结合名词的先验知识中的上下文语境，确保动作与场景匹配。例如，'bottle' 在厨房台面的移动符合 'move bottle' 的语境，而 'hold hand' 是无意义的自指动作，应被剔除。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_857_874": {
+      "category": "动词与名词关联合理性",
+      "content": "第二部分动作短语生成应基于视觉证据，而非仅依赖高置信度。例如，'look bottle'在原始帧中未被观察到，且在黄色框中未被标记，应排除。'move bottle'和'put bottle'虽有视觉证据，但'put bottle'在原始帧中未完成，应仅保留'hold bottle'和'move bottle'。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_881_903": {
+      "category": "动词与名词关联合理性",
+      "content": "第二部分动作短语中，'shake bottle' 与视频内容不符。视频中手部动作是拧开瓶盖，而非摇晃瓶子。应将 'shake bottle' 替换为 'open bottle' 或 'unscrew lid'，以准确反映视频中的动作。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_932_1040": {
+      "category": "动词与名词关联合理性",
+      "content": "1.动词与名词的关联必须基于视频中的直接视觉证据，如'pour'与'bottle'和'plate'的交互。2.应避免生成无逻辑的动作，如'hold hand'，因为手部是执行动作的主体，而非被操作对象。3.动词应与先验知识中的动作模式匹配，如'pour'是'bottle'的高频动作，符合倾倒液体的视觉证据。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_1041_1062": {
+      "category": "动作短语生成合理性",
+      "content": "第二部分动作短语生成应基于视觉证据和动词-名词关联概率进行筛选。例如，'hold hand' 和 'hold plate' 是无意义的冗余动作，应删除。'take bread' 和 'put bread' 在当前场景中未发生，应被替换为更准确的动作，如 'spread condiment'。动作应反映手部与物体的实际交互，如 'pour condiment' 和 'hold bottle' 是正确的，但需确保动词与名词的组合符合先验知识中的动作模式。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_1063_1087": {
+      "category": "动词-名词组合合理性",
+      "content": "1.动词与名词的组合必须符合物理现实，如'put bottle'和'hold bottle'是合理的，但'put spoon'在当前场景中无依据，因为勺子未被放置。2.应基于手部与物体的直接交互（如抓握、移动、按压）和物体状态变化（如位移、开启、关闭）来验证交互，而非仅依赖置信度。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_1090_1120": {
+      "category": "动词与名词组合合理性",
+      "content": "1.动词与名词的组合必须符合视频帧中的直接视觉证据。例如，'Take bread'和'Put bread'是合理的，但'Put plate'缺乏依据。2.动词应基于手部动作的直接观察，如'Apply condiment'应替换为'Apply jam'，并确保动词与名词的关联概率高，如'Apply'与'jam'的关联概率为0.85，符合要求。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_1123_1240": {
+      "category": "动词与名词关联合理性",
+      "content": "第二部分动作短语生成应基于手部与物体的直接交互。例如，'press bread'在帧4-5中通过双手按压实现，'hold bread'在帧7-15中通过双手抓握实现，这些动作应被保留。'take bread'和'put bread'虽在帧1-2中出现，但'put'动作在帧2中已完成，后续动作应聚焦于'press'和'hold'。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_19_96": {
+      "category": "动词-名词组合合理性",
+      "content": "1.动词与名词的组合必须符合物理现实，如'open bag'和'take bread'是合理动作，但'put bread'在未明确放置位置时应谨慎。2.应基于视频帧中手部与物体的直接交互（如抓握、移动、按压）来验证动作，而非仅依赖置信度。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_102_174": {
+      "category": "动作短语生成合理性",
+      "content": "第二部分动作短语生成应基于手部与物体的直接交互证据。例如，手部从包装中取出物品（如'bread'）的动作应被识别为'take bread'，而非'put bread'。动词与名词的关联必须符合先验知识中的'动作模式'，如'hand'与'take'、'put'的高概率关联，以及'bread'与'take'、'put'的高概率关联。同时，应避免生成与视频内容无关的动作，如'open'或'close'，除非有明确的视觉证据。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_181_205": {
+      "category": "动作短语生成准确性",
+      "content": "第二部分动作短语生成应严格依据视频帧中的视觉证据。例如，视频中手部动作是'取罐子'（take jar），而非'取瓶子'（take bottle），因为手部明确抓取的是罐子。'hold hand'（握着手）是冗余且无意义的动作，应删除。'take spoon'（取勺子）和'put spoon'（放勺子）在视频中未发生，应剔除。动作应仅包含视频中实际发生的交互，如'取罐子'、'握罐子'等。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_215_232": {
+      "category": "动词与名词组合合理性",
+      "content": "1.动词与名词的组合必须符合先验知识中的动作模式，例如'open jar'是合理的，因为'jar'的先验知识中包含'open'动作。2.应避免生成无意义或不符合常理的动作，如'hold bread'在当前场景中是合理的，但'put spoon'在当前帧中未发生，应仅生成实际发生的动作。3.应确保动作描述与视频帧中的手部运动和物体状态变化一致，例如'open jar'对应手部拧开瓶盖的动作。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_261_290": {
+      "category": "动作短语生成准确性",
+      "content": "第二部分动作短语生成应基于直接视觉证据。'take spoon' 和 'take jar' 在前16帧中未发生，应删除。'hold jar' 和 'scoop jam' 是正确的，但 'apply jam' 在后16帧中未发生，应删除。应仅保留在视频中实际发生的动作。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_334_359": {
+      "category": "动作短语生成合理性",
+      "content": "第二部分动作短语生成应基于视觉证据和先验知识。'open jar'是正确的，但'apply jam'在当前帧中未发生，应改为'insert spoon'或'hold jar'。动作应严格对应手部在帧中的实际操作，避免预测未来动作。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_363_377": {
+      "category": "动作短语生成合理性",
+      "content": "第二部分动作短语生成应基于直接视觉证据。'open bottle'和'hold bottle'是合理的，但'pour bottle'和'spread condiment'缺乏证据支持。'pour bottle'在原始帧中未发生，'spread condiment'虽在画面中，但手部动作是拧瓶盖而非涂抹。应仅保留'open bottle'和'hold bottle'。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_420_540": {
+      "category": "动词与名词关联合理性",
+      "content": "第二部分动作短语中，'Hold hand'是错误的，手部动作应为'hold'或'hold bread'。'Take spoon'和'Put spoon'在视频中未发生，应移除。'Apply condiment'应更精确为'Apply jam'。最终动作应为['Spread bread', 'Apply jam']。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_542_558": {
+      "category": "动作短语逻辑性与证据匹配",
+      "content": "第二部分动作短语生成应基于视觉证据和先验知识。'open bottle'和'pour honey'是合理的，但'put bottle'和'put lid'在原始帧中未出现，且'put lid'与'open bottle'在逻辑上不匹配，应删除。'take bottle'和'put bottle'在原始帧中未出现，应删除。应仅保留'open bottle'和'pour honey'。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_560_597": {
+      "category": "动词与名词关联合理性",
+      "content": "1.动词与名词的组合必须符合先验知识中的关联概率，如'open lid'与'honey'的关联概率为0.1951，符合逻辑。2.动作短语应反映实际发生的动作序列，如'open lid'后应为'pour honey'，而非'close lid'。3.应剔除与视频内容不符的动作，如'put bottle'在视频中未发生，应为'put lid'。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_625_653": {
+      "category": "动作描述具体性",
+      "content": "第二部分动作短语应基于视频帧中手部与物体的实际交互进行描述。例如，'scoop jam'应明确为'从罐中舀取花生酱'，'apply jam'应明确为'将花生酱涂抹在面包上'。动作描述需具体化，避免模糊表述。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_669_715": {
+      "category": "动词-名词组合合理性",
+      "content": "1.动词与名词的组合必须符合物理现实，如'put lid'是合理的，但'open jar'在视频中未发生，应修正为'close jar'或'put lid'。2.应根据手部动作和物体状态变化（如盖子被拧紧）来验证动词的准确性。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_716_727": {
+      "category": "动词-名词组合合理性",
+      "content": "1.动词与名词的组合必须符合物理现实，如'put condiment_container'是合理的，但'hold hand'是无意义的。2.应基于名词的先验知识中的动作模式进行筛选，如'condiment_container'的高概率动词是'Open'、'Close'、'Pour'，而'hand'的高概率动词是'Wash'、'dry'、'pour'，因此'hold hand'应被移除。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_748_842": {
+      "category": "动词与名词关联合理性",
+      "content": "第二部分动作短语中，'Hold hand'是冗余且无意义的动词，应删除。'Take spoon'和'Put spoon'应合并为一个动作'Hold spoon'，因为视频中手部始终在握持勺子，没有独立的取放动作。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_856_879": {
+      "category": "动词与名词关联合理性",
+      "content": "第二部分动作短语生成应基于视觉证据和先验知识进行修正。'take bottle'是错误的，因为手部动作是'hold'和'apply'，且'apply'是'condiment'的动词，而非'bottle'。'put bread'是错误的，因为面包在画面中未被移动。'apply condiment'和'spread condiment'是正确的，但应合并为一个动作'apply condiment'，因为'apply'和'spread'在语义上是同一动作的不同描述。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_898_923": {
+      "category": "动词与名词关联合理性",
+      "content": "第二部分动作短语应基于视频帧中手部与物体的直接交互进行生成。例如，'open bottle'应被替换为'unscrew bottle'，因为视频中显示的是拧开瓶盖的动作。同时，'spread condiment'应被替换为'pour condiment'，因为视频中显示的是倾倒动作，而非涂抹。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_928_976": {
+      "category": "动词-名词组合合理性",
+      "content": "1.动词与名词的组合必须符合视觉证据和先验知识。例如，'hold hand'是冗余的，因为'hand'是执行动作的主体，不应被'hold'。2.应将'pour bottle'和'hold bottle'合并为'pour bottle'，因为'hold'是执行'pour'的必要前提，且'hold bottle'的置信度较低，可被'pour bottle'的高置信度覆盖。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_985_997": {
+      "category": "动词-名词组合合理性",
+      "content": "1.动词与名词的组合必须符合视觉证据和先验知识。例如，'pour chocolate'是合理的，因为手部正在将巧克力酱从瓶中挤出；'hold bottle'和'hold hand'是合理的，因为手部正在握持瓶子和控制姿势；'take bread'和'put bread'是合理的，因为面包片在操作台面上，手部可能准备移动它。2.应避免生成无意义或不符合上下文的动作，如'hold hand'虽在视觉上存在，但'hold hand'本身不是操作动作，应更精确地描述为'hold bottle'和'hold hand'作为辅助动作。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_998_1016": {
+      "category": "动词-名词组合合理性",
+      "content": "1.动词与名词的组合必须符合先验知识中的上下文语境。例如，'pour bottle'是合理的，因为'bottle'与'pour'在先验知识中关联；'spread bread'也是合理的，因为'bread'与'spread'在先验知识中关联。2.应剔除不符合逻辑的动作，如'put bottle'在当前场景中不适用，因为瓶盖已打开且瓶身未被放置。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_1024_1089": {
+      "category": "动词与名词关联合理性",
+      "content": "第二部分动作短语生成应基于视频帧中手部与物体的直接交互。例如，'wrap bread'是正确的，因为手部在原始帧中将面包放入塑料袋中。'open bottle'和'pour honey'是错误的，因为视频中未出现打开瓶子或倾倒蜂蜜的动作。应仅保留'hold plastic_wrap'和'take plastic_wrap'，因为它们与原始帧中手部操作塑料袋的动作一致。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_1101_1160": {
+      "category": "动作短语生成逻辑性",
+      "content": "1. 第二部分动作短语生成应基于手部与物体的直接交互。例如，'Hold bread'和'Press bread'是正确的，但'Place spoon'在帧中未发生，且'Put bread'与'Hold bread'在视觉上是同一动作的不同阶段，应合并为单一动作描述。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_23_54": {
+      "category": "动词-名词组合合理性",
+      "content": "1.动词与名词的组合必须符合视频中观察到的交互。例如，'take butter'和'apply butter'是合理的，但'hold hand'是无意义的自指动作，应被移除。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_74_128": {
+      "category": "动词-名词组合合理性",
+      "content": "1.动词与名词的组合必须符合视频帧中的直接视觉证据。例如，'take carrot'和'put carrot'是合理的，因为手部在抓取和放置胡萝卜。但'put bread'和'take bread'在视频中未被观察到，应被移除。'take plate'和'put plate'在视频中未被观察到，应被移除。'take bottle'在视频中未被观察到，应被移除。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_129_149": {
+      "category": "动词-名词组合合理性",
+      "content": "1.动词与名词的组合必须符合先验知识中的上下文语境。例如，'hand'与'press'、'hold'、'put'等动词组合合理，但'hand'与'wash'或'dry'在当前场景中无视觉证据支持。2.动作短语应基于手部与物体的直接交互，如'put hotdog'和'press bread'是直接可观察的，而'take bread'和'put bread'在当前帧中未发生，应剔除。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_171_197": {
+      "category": "动作短语生成依据",
+      "content": "第二部分动作短语生成应基于直接视觉证据。'take mustard' 和 'put mustard' 是合理的，但 'pour mustard' 缺乏证据，因为视频中未显示倾倒动作。应仅保留有明确视觉支持的动作。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_227_282": {
+      "category": "动词-名词关联合理性",
+      "content": "1.动词与名词的关联必须符合先验知识中的上下文语境。例如，'hand'与'pour'的关联在先验知识中存在，但'hotdog'与'pour'的关联概率较低，且视频中未显示向hotdog倾倒的动作，应避免生成此类动作。2.应基于视频帧中的直接视觉证据（如手部按压瓶盖、酱料流出）来验证动词的合理性，而非仅依赖概率。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_290_341": {
+      "category": "动词-名词关联合理性",
+      "content": "1.动词与名词的关联必须基于视频帧中的直接视觉证据，如'pour condiment'是基于手部挤压瓶身、酱料流出的动作。2.应避免使用无依据的动词，如'hold hand'（手部持握自身无意义）和'hold bread'（面包在盘子上，非手部主动持握）。3.动词应与先验知识中的动作模式匹配，如'pour'是'condiment'的高概率动词，符合倾倒酱料的动作。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_347_352": {
+      "category": "动词与名词组合合理性",
+      "content": "1.动词与名词的组合必须基于视频帧中的直接视觉证据。例如，'pour mustard'是合理的，因为手部正将芥末酱挤到面包上；'hold mustard'和'hold bread'也是合理的，因为手部正握持芥末瓶和面包。2.动词与名词的关联概率应作为参考，但不能替代视觉证据。例如，'put bread'在帧中未出现，应被排除。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_353_382": {
+      "category": "动词与动作描述匹配度",
+      "content": "1. 在第二部分动词合并动作部分，应基于视频帧中手部与物体的直接交互进行动作描述。例如，手部挤压瓶盖并倾倒酱料的动作应描述为'pour mustard'，而非'apply mustard'，因为'apply'通常指涂抹或覆盖，而此处是倾倒。应优先选择与视觉证据最直接匹配的动作。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_384_396": {
+      "category": "动词-名词组合合理性",
+      "content": "1.动词与名词的组合必须符合先验知识中的上下文语境。例如，'hand'与'open'、'pour'、'close'、'put'等动词组合合理，但'hand'与'wash'、'dry'等动词在当前场景中无视觉证据支持。2.应根据手部动作和物体状态变化（如瓶盖被打开、蜂蜜被倾倒）来验证动词的合理性。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_418_454": {
+      "category": "动作短语生成合理性",
+      "content": "第二部分动作短语应基于视频帧中手部与物体的直接交互进行生成。例如，'pour bottle'是正确的，但'hold hand'是冗余且无意义的，应删除。'put bread'和'take plate'在视频中未发生，应剔除。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_458_511": {
+      "category": "动词与名词关联合理性",
+      "content": "1.动词与名词的关联必须基于视频中的直接视觉证据。2.应优先选择与视频中手部动作和物体状态变化直接相关的动词，如'pour'和'hold'。3.应剔除与视频内容无关的动词，如'hold hand'和'hold bread'，这些动词在视频中未被观察到。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_513_527": {
+      "category": "动词-名词组合合理性",
+      "content": "1.动词与名词的组合必须符合视觉证据和先验知识。例如，'close bottle'和'put lid'是合理的，但'pour bottle'在视频中未发生，应被移除。2.应根据手部动作和物体状态变化（如瓶盖被盖上）来验证动作的合理性。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_528_552": {
+      "category": "动作短语生成准确性",
+      "content": "第二部分动作短语生成应基于直接视觉证据。例如，'hold bottle' 和 'put bottle' 是正确的，但 'pour condiment' 的置信度应降低，因为视频中并未显示倾倒动作，而是手部在瓶口附近移动。'put sandwich' 和 'take plate' 也缺乏直接证据支持。应仅保留有明确视觉证据的动作，如 'hold bottle' 和 'put bottle'，并调整置信度。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_559_644": {
+      "category": "动词-名词组合合理性",
+      "content": "1.动词与名词的组合必须符合先验知识中的上下文语境。例如，'press sandwich'是合理的，但'press bottle'在当前场景中无依据。2.动作短语应基于手部与物体的直接交互，如'hold sandwich'和'move sandwich'，而非泛泛的'press'或'put'。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_11_65": {
+      "category": "动作短语生成合理性",
+      "content": "第二部分动作短语生成应严格依据视频帧中的手部动作和物体状态变化。例如，'Pour honey'在原始帧中未发生，应删除。'Take bottle'和'Put bottle'在原始帧中未发生，应删除。应仅保留'Open bag'和'Take bread'，并确保动词与名词的关联符合先验知识中的动作模式。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_72_105": {
+      "category": "动词与名词组合合理性",
+      "content": "1.动词与名词的组合必须符合先验知识中的动作模式。例如，'take cheese'和'put cheese'符合cheese的高频动作模式，而'put bread'和'take bread'符合bread的交互模式。2.应避免出现不符合逻辑的动作，如'open bottle'在视频中未出现，应剔除。3.动词应与视频帧中的手部姿态和物体状态变化匹配，如'put cheese'对应手部将奶酪片放置在面包上的动作。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_111_170": {
+      "category": "动词-名词组合合理性",
+      "content": "1.动词与名词的组合必须基于视频帧中的直接视觉证据。例如，'remove plastic_wrap'是正确的，因为手部动作清晰地展示了从cheese上剥离塑料膜的过程。2.应避免使用与视觉证据不符的动词，如'put bread'在原始帧中未发生，手部并未将面包放置到任何新位置。3.应优先选择高置信度且与视觉证据完全匹配的动作，如'hold cheese'和'take cheese'在多帧中均有明确手部抓握动作支持。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_171_198": {
+      "category": "动词与名词组合合理性",
+      "content": "1.动词与名词的组合必须基于视频帧中的直接视觉证据。例如，'put cheese'是正确的，因为手部将奶酪片放置在面包上；'take bread'是错误的，因为面包在视频中未被移除。2.动词应与名词的先验知识中的动作模式匹配，如'cheese'的'put'和'hold'是合理的，而'bread'的'take'在当前帧中无证据支持。3.动作短语应反映实际发生的交互，避免添加未在帧中出现的动作，如'hold cheese'在后16帧中已包含在'put cheese'中。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_198_217": {
+      "category": "动词与名词关联合理性",
+      "content": "第二部分动作短语应基于手部与物体的直接交互。例如，'take mayonnaise'和'open mayonnaise'是合理的，但'pour mayonnaise'缺乏视觉证据，因为视频中未显示倾倒动作。'take bread'和'put bread'也应基于手部移动面包片的视觉证据。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_218_237": {
+      "category": "动词与名词组合合理性",
+      "content": "1.动词与名词的组合必须符合逻辑和先验知识。'open bottle'、'pour bottle'、'close bottle'、'put bottle'均符合'bottle'的先验知识。2.动作短语应基于视频帧中的直接视觉证据，如'open bottle'对应第12-15帧的开盖动作，'pour bottle'对应第16-20帧的倾倒动作。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_253_330": {
+      "category": "动词与名词组合合理性",
+      "content": "1.动词与名词的组合必须符合先验知识中的上下文语境。例如，'hand'与'pour'的组合是合理的，但'hand'与'open'在当前场景中不适用，因为手部并未操作瓶盖。2.应根据手部动作和物体状态变化来验证动词的合理性，如'apply condiment'是合理的，但'put bread'在当前帧中未发生。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_333_345": {
+      "category": "动词-名词组合合理性",
+      "content": "1.动词与名词的组合必须符合物理现实。例如，'press lid'是合理的，但'apply condiment_container'不准确，因为'apply'通常用于涂抹酱料或调味品，而'condiment_container'是容器本身，应使用'pour'或'apply condiment'。2.动作短语应合并为更精确的描述，如'hold condiment_container'和'hold bread'可合并为'hold condiment_container and bread'，以反映同时操作多个物体的场景。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_346_361": {
+      "category": "动词与动作匹配度",
+      "content": "第二部分动作短语应仅包含与视觉证据直接匹配的动作。'open bottle' 的置信度应为0，因为视频中手部始终未执行开启瓶盖的动作，而是直接移动和放置瓶子。'take bottle' 和 'move bottle' 的置信度应调整为0.95和0.9，因为手部明确执行了抓取和移动动作。'put bottle' 的置信度应为0.95，因为瓶子被放置在桌面上。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_362_372": {
+      "category": "动词与动作匹配准确性",
+      "content": "第二部分动作短语生成应基于手部与物体的直接交互证据。例如，从原始帧可见，手部在移动'mustard'瓶，因此动作应为'move mustard'而非'take mustard'。动词选择必须与手部姿态和物体状态变化（如位移、开启、关闭）严格对应，避免使用无视觉证据支持的动词，如'open'或'close'，除非有明确的瓶盖开启或关闭动作。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_373_399": {
+      "category": "动词-名词组合合理性",
+      "content": "1. 在第二部分动作短语生成中，应确保动词与名词的组合在视频帧中存在直接视觉证据支持。例如，'open bottle'在帧中未被观察到，应修正为'hold bottle'或'pour condiment'。'spread condiment'虽有视觉证据，但其动作主体是手部而非'condiment'本身，应调整为'apply condiment'或'pour condiment'。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_400_443": {
+      "category": "动词-名词关联合理性",
+      "content": "第二部分动作短语生成应基于视觉证据和先验知识进行严格筛选。'hold bottle'和'hold hand'中的'hold hand'是无效动作，应删除。'put bread'在当前帧中未发生，不应生成。'apply condiment'是正确的，但应明确其主语为'hand'，即'hand apply condiment'，以符合动作的执行者。同时，'pour condiment'和'apply condiment'应合并为一个动作，因为它们描述的是同一连续动作的不同阶段。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_445_459": {
+      "category": "动作短语生成合理性",
+      "content": "第二部分动作短语应基于视频帧中手部与物体的直接交互进行生成。例如，'hold bottle'和'hold hand'是冗余的，'place bread'和'place table'不符合视频中'bread'被放置在桌面上的初始状态，应修正为'pour condiment'和'hold bottle'。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_460_475": {
+      "category": "动词与名词关联合理性",
+      "content": "第二部分动作短语应基于视频帧中手部与物体的直接交互进行生成。例如，'open bottle'是正确的，因为手部在拧开瓶盖；'apply condiment'是正确的，因为手部在将酱料挤到面包上。应避免生成如'put bread'这样的动作，因为面包在视频中是静止的，未被移动或放置。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_483_529": {
+      "category": "动词-名词关联合理性",
+      "content": "1. 第二部分动词与名词的关联应基于视频帧中的直接视觉证据，而非先验知识中的概率。例如，'Take bread'是合理的，因为手部在抓取面包；'Open bag'是合理的，因为手部在撕开包装袋。2. 应剔除无视觉证据支持的动作，如'Take hand'，因为手部是操作主体而非被操作对象。3. 应剔除与当前场景无关的动作，如'Take bottle'和'Take honey'，因为瓶和蜂蜜在帧中未被操作。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_535_580": {
+      "category": "动词与名词关联合理性",
+      "content": "1.动词与名词的关联必须基于视频帧中的直接视觉证据，如手部姿态和物体位移。2.动词必须与名词的先验知识中的动作模式匹配，如'put'和'take'是手部与'bread'交互的高频动词。3.应剔除与当前动作无关的动词，如'apply condiment'在原始帧中未被手部操作，且其容器未被交互，应排除。",
+      "frequency": "1"
+    }
+  },
+  "three": {
+    "id-S3_Pealate_C1_815_834": {
+      "category": "动作置信度评估",
+      "content": "1.动作列表应基于视频帧中的直接视觉证据进行评分，如'hold bottle'和'put bottle'的置信度应根据手部抓握和释放瓶身的清晰度进行调整。2.应剔除置信度较低的动作，如'hold plate'的置信度0.85较低，且在视频中未见明显操作。",
+      "frequency": "41"
+    },
+    "id-S2_CofHoney_C1_622_672": {
+      "category": "动作评分准确性",
+      "content": "1.动作评分应基于视频帧中的直接视觉证据，而非基于先验知识中的概率。例如，'pour condiment_container'在帧中明确发生，应保留；'hold cup'在帧中明确发生，应保留。2.应避免添加视频中未发生的动作，如'put spoon'在帧中未发生，应剔除。3.应避免添加与当前动作无关的动词，如'add condiment_container'在帧中未发生，应剔除。",
+      "frequency": "36"
+    },
+    "id-S2_CofHoney_C1_534_550": {
+      "category": "动作评分依据",
+      "content": "1.动作评分应基于视频帧中的直接视觉证据，而非置信度。例如，'put bottle'的动作在视频中清晰可见，应保留；'look bottle'无视觉证据，应剔除。2.应根据动作的完成度和明确性进行评分，而非仅依赖生成器的置信度。",
+      "frequency": "32"
+    },
+    "id-S2_CofHoney_C1_713_802": {
+      "category": "动作列表准确性",
+      "content": "1.动作列表应仅包含在视频中实际发生的动作，如'Stir cup'、'Hold cup'、'Mix mixture'。2.应移除与场景无关或概率过低的动作，如'Wash hand'，并确保每个动作都有足够的视觉证据支持。",
+      "frequency": "28"
+    },
+    "id-S2_CofHoney_C1_351_520": {
+      "category": "动作置信度评估准确性",
+      "content": "1.动作列表应基于视频帧中的直接视觉证据进行评分。例如，'mix liquid'的置信度应为0.0，因为视频中未显示搅拌动作，仅显示倾倒。2.应将'pour bottle'的置信度调整为0.95，'hold cup'为0.9，'pour liquid'为0.85，'take spoon'为0.7，'mix liquid'为0.0。",
+      "frequency": "25"
+    },
+    "id-S1_Tea_C1_122_305": {
+      "category": "动作评分证据强度",
+      "content": "1.动作评分应基于视频帧中的直接视觉证据，而非推断。例如，'pour bottle'和'pour liquid'的置信度应高，因为视频中手部正在倾倒液体。2.应避免添加无视觉证据支持的动作，如'put cup'，因为视频中杯子未被放置。3.应确保动作描述与先验知识中的动作模式匹配，例如'hold bottle'和'hold cup'符合手部稳定持握的模式。",
+      "frequency": "22"
+    },
+    "id-S2_CofHoney_C1_524_533": {
+      "category": "动作评分准确性",
+      "content": "1.动作列表应仅包含最高置信度的动作，如'pour bottle'（0.95）和'hold cup'（0.9）。2.动作应基于视频帧中的直接视觉证据，如手部抓握瓶身、倾倒液体等。3.动作列表应避免冗余，如'hold hand'和'hold cup'应合并为一个动作。",
+      "frequency": "21"
+    },
+    "id-S3_Pealate_C1_18_77": {
+      "category": "动作置信度评估准确性",
+      "content": "1.动作列表应仅包含在视频中实际发生的动作，如'Open jar'未发生，不应包含。2.动作置信度应基于视频帧中直接视觉证据，如'Open jar'未发生，其置信度应为0。",
+      "frequency": "13"
+    },
+    "id-S3_Pealate_C1_109_137": {
+      "category": "动作评分准确性",
+      "content": "动作列表应仅包含在视频中实际发生的动作。'take bread'在视频中未发生，应删除。'put lid'在视频中未发生，应删除。",
+      "frequency": "9"
+    },
+    "id-S1_Cheese_C1_172_270": {
+      "category": "动作置信度评估",
+      "content": "1.动作评分应基于视频帧中手部与物体的交互强度。例如，'take cheese'和'put cheese'的置信度应高，因为手部动作清晰。'hold bread'的置信度应低或为零，因为面包未被操作。应根据视觉证据调整置信度，而非仅依赖预设概率。",
+      "frequency": "8"
+    },
+    "id-S3_Tea_C1_329_394": {
+      "category": "动作序列准确性",
+      "content": "第三部分动作列表应仅包含在视频中实际发生的动作。'take hand' 是无效动作，'open bottle' 和 'pour bottle' 应合并为 'open bottle'，因为视频中未显示倾倒动作。'put bottle' 未在视频中出现，应删除。",
+      "frequency": "8"
+    },
+    "id-S1_Tea_C1_12_52": {
+      "category": "动作置信度与证据匹配",
+      "content": "1.动作列表应仅包含在视频中实际发生的动作，如'put cup'和'take cup'。2.动作应基于视觉证据，如'hold hand'无实际发生，应删除。3.动作置信度应基于视觉证据，如'put cup'置信度0.9合理，但'hold hand'置信度0.85无依据。",
+      "frequency": "7"
+    },
+    "id-S3_CofHoney_C1_344_354": {
+      "category": "动作评分准确性",
+      "content": "第三部分动作列表应仅包含在视频中实际发生的动作。'take bottle' 和 'put bottle' 未在视频中发生，应被移除。'hold cup' 和 'move bottle' 是正确的，但 'take spoon' 未发生，应被移除。最终动作列表应为 ['hold cup', 'move bottle']。",
+      "frequency": "6"
+    },
+    "id-S4_Tea_C1_93_111": {
+      "category": "动作置信度与视觉证据匹配",
+      "content": "1.动作列表应基于视频中实际发生的动作，如'hold bottle'和'hold cup'是正确的，因为手部确实在持握。2.应剔除未发生的动作，如'pour liquid'虽然在视频中准备进行，但未实际完成，应标注为'prepare to pour'或'not completed'。3.应确保动作的置信度与视觉证据匹配，如'put bottle'的置信度较低，因为瓶盖未完全打开，动作未完成。",
+      "frequency": "5"
+    },
+    "id-S3_Pealate_C1_741_802": {
+      "category": "动作置信度评估",
+      "content": "动作列表应仅包含在视频中实际发生的动作。'put jar'和'take lid'在视频中未发生，应删除。'close lid'和'hold jar'是正确的，但'put lid'的置信度应降低，因为视频中并未显示将盖子放回原位。",
+      "frequency": "4"
+    },
+    "id-S1_Tea_C1_1581_1620": {
+      "category": "动作序列准确性",
+      "content": "1.动作列表应基于视频中的实际动作序列，如 'take spoon', 'take cup', 'take container', 'put spoon in cup'。2.应剔除与视频内容不符的动作，如 'open container'，因为容器在视频中是敞开的。3.应基于手部动作和物体状态变化来验证动作，如 'put spoon in cup' 在视频中未发生，因为勺子被用于舀取内容物，而非放入杯中。",
+      "frequency": "4"
+    },
+    "id-S1_Tea_C1_91_122": {
+      "category": "动作置信度与顺序合理性",
+      "content": "1.动作列表应基于视频帧中的直接视觉证据，如'open bottle'是基于手部拧开瓶盖的动作，而非推断。2.动作的置信度应基于视频帧中的视觉证据强度，如'open bottle'的置信度应为0.95，因为手部动作清晰可见。3.动作的顺序应符合视频帧中的时序，如'open bottle'应在'pour liquid'之前。",
+      "frequency": "3"
+    },
+    "id-S2_Peanut_C1_1274_1309": {
+      "category": "动作评分",
+      "content": "1.动作列表应基于视频帧中的直接视觉证据进行评分。例如，'hold bread'和'take honey'是正确的，但'open bottle'和'put bread'在当前帧中没有视觉证据支持，因此应被移除或降低置信度。",
+      "frequency": "3"
+    },
+    "id-S1_Cheese_C1_269_303": {
+      "category": "动作置信度评估",
+      "content": "1.动作列表应去重，'put cheese on bread'仅需出现一次。2.置信度应基于视觉证据而非生成器内部概率，例如'put cheese on bread'的置信度应为0.95而非0.65，因该动作在视频中清晰可见。",
+      "frequency": "2"
+    },
+    "id-S3_Coffee_C1_307_321": {
+      "category": "动作描述精确性",
+      "content": "1.动作列表应基于视频中手部的实际操作，如'add coffee'（添加咖啡粉）和'stir coffee'（搅拌咖啡）是正确的，而'hold bottle'（持握瓶子）和'hold cup'（持握杯子）虽然在视频中发生，但应被更精确的动作描述替代，如'hold bottle'可改为'hold bottle:open'（持握打开的瓶子），'hold cup'可改为'hold cup:filled'（持握装有咖啡粉的杯子）。2.动作列表应与先验知识中的动作模式匹配，如'add'（添加）和'stir'（搅拌）是手部与咖啡粉交互的典型动作，符合先验知识中的'add'和'mix'概率。",
+      "frequency": "2"
+    },
+    "id-S3_Coffee_C1_640_648": {
+      "category": "动作评分客观性",
+      "content": "1.动作评分应基于视频帧中的直接视觉证据，如手部姿态、物体位移等。2.应避免对动作进行主观评分，而应基于视频帧中的客观视觉证据进行评估。",
+      "frequency": "2"
+    },
+    "id-S3_Coffee_C1_1084_1089": {
+      "category": "动作评分与排序",
+      "content": "1.动作列表应按时间顺序排列，反映动作的先后关系。2.应保留高置信度的动作，如'hold cup'（0.95）和'stir mixture'（0.9），并移除置信度较低的动作，如'put spoon'（0.8）。3.应确保每个动作都有明确的视觉证据支持，如'put spoon'在视频中未发生。",
+      "frequency": "2"
+    },
+    "id-S4_Coffee_C1_15_50": {
+      "category": "动作置信度评估",
+      "content": "第三部分动作评分应基于视觉证据的直接支持度。'take cup'和'hold cup'有明确的视觉证据支持，置信度应高。'pour liquid'缺乏液体倾倒的视觉证据，置信度应为0。'put cup'和'move cup'虽有发生，但'put cup'的置信度应根据其在序列中的完成度调整，而非简单复制。",
+      "frequency": "2"
+    },
+    "id-S4_Tea_C1_896_916": {
+      "category": "动作评分准确性",
+      "content": "动作列表应仅包含在视频中实际发生的动作。例如，'hold cup' 和 'stir container' 是正确的，因为手部正在持杯和搅拌。'take lid' 和 'open container' 是错误的，因为手部并未执行取盖动作，而是直接移除盖子。应根据视频帧中的手部姿态和物体状态变化来评估动作的准确性。",
+      "frequency": "2"
+    },
+    "id-S4_Tea_C1_989_1016": {
+      "category": "动作描述与视觉证据匹配度",
+      "content": "1.动作列表应基于视频帧中的直接视觉证据进行评分，而非仅依赖置信度。2.应确保每个动作的描述与视频帧中的手部运动和物体状态变化完全匹配，例如 'take lid' 和 'put lid' 应分别对应视频中手部取盖和放盖的动作。",
+      "frequency": "2"
+    },
+    "id-S1_Cheese_C1_588_649": {
+      "category": "动作评分",
+      "content": "1.动作列表应仅包含视频中实际发生的动作，如'pour condiment'和'hold bottle'是正确的，但'hold hand'和'put bread'是错误的。2.应剔除与当前动作无关的动作，如'take condiment'，因为视频中并未显示取用动作，而是直接倾倒。3.应剔除与当前动作无关的动作，如'put bread'，因为视频中并未显示放置面包的动作，而是直接在面包上倾倒。",
+      "frequency": "2"
+    },
+    "id-S3_CofHoney_C1_568_586": {
+      "category": "动作评分证据匹配度",
+      "content": "第三部分动作评分应基于动作与视觉证据的匹配度，而非置信度。例如，'wash hand'动作在原始帧中无水或清洁剂，且手部未接触水，因此应被标记为无效。'take bottle'和'put bottle'动作虽有置信度，但'put bottle'动作在原始帧中未发生，应被修正。",
+      "frequency": "2"
+    },
+    "id-S2_Peanut_C1_1238_1259": {
+      "category": "动作列表准确性",
+      "content": "1.动作列表应基于视频帧中的直接视觉证据，如手部姿态和物体状态变化，而非推断。例如，'open bottle' 是正确的，因为手部正在操作瓶盖；'pour honey' 是正确的，因为手部正在倾倒蜂蜜。2.动作列表应与先验知识中的动作模式匹配，如 'hold'、'open'、'pour' 均符合 'hand'、'bottle'、'honey' 的先验知识。",
+      "frequency": "2"
+    },
+    "id-S2_Peanut_C1_1310_1360": {
+      "category": "动作评分与排序准确性",
+      "content": "1.动作评分应基于视频帧中的直接视觉证据，如'Press bread'的置信度应为0.95，因为手部按压动作在多帧中清晰可见。2.应避免基于推测或常识评分，如'Apply honey'的置信度应为0.85，因为视频中未显示涂抹动作，仅显示手部按压。3.动作列表应按实际发生顺序排列，如'Hold bread'应在'Press bread'之前。",
+      "frequency": "2"
+    },
+    "id-S2_CofHoney_C1_679_690": {
+      "category": "动作排序与置信度评分",
+      "content": "1.动作列表应按动作发生的时序排列，如'open lid'应在'pour honey'之前，'put lid'应在'pour honey'之后。2.应根据视频帧中的视觉证据对动作进行评分，如'pour honey'的置信度应为0.95，'put lid'的置信度应为0.85，'open lid'的置信度应为0.8，'take bottle'的置信度应为0.7，'hold cup'的置信度应为0.6。",
+      "frequency": "1"
+    },
+    "id-S3_Pealate_C1_803_814": {
+      "category": "动作置信度评估准确性",
+      "content": "第三部分动作列表应仅包含在视频中实际发生的动作。例如，'put plate'在视频中并未发生，手部并未移动盘子。应根据手部运动轨迹和物体状态变化来评估动作的置信度。",
+      "frequency": "1"
+    },
+    "id-S1_Tea_C1_464_487": {
+      "category": "动作置信度与实际发生匹配度",
+      "content": "动作列表应仅包含在视频中实际发生的动作。'put cup'未发生，应删除。'take box'、'put box'、'move box'、'hold box'均符合视频内容，但'hold box'的置信度应降低，因其是准备动作而非最终动作。",
+      "frequency": "1"
+    },
+    "id-S1_Tea_C1_1421_1447": {
+      "category": "动作置信度评估准确性",
+      "content": "1.动作评分应基于视频帧中的直接视觉证据，如 'take container' 的置信度应基于手部抓取容器的连续帧，而非仅基于初始姿态。2.动作应与先验知识中的动作模式匹配，例如 'wash counter' 的置信度应为低，因为视频中未出现清洗动作。",
+      "frequency": "1"
+    },
+    "id-S1_Tea_C1_1621_1640": {
+      "category": "动作列表与视频帧的精确匹配",
+      "content": "动作列表应仅包含在视频中实际发生的动作。例如，'take container' 和 'hold cup' 在视频中发生，但 'put spoon' 和 'fill cup' 未在视频中发生，应被移除。动作需与视频帧中的手部运动和物体状态变化完全一致。",
+      "frequency": "1"
+    },
+    "id-S1_Tea_C1_1711_1743": {
+      "category": "动作描述精确性",
+      "content": "动作列表应基于视频帧中的直接视觉证据进行评分。例如，'close lid' 是正确的动作，但 'put lid' 和 'put container' 在此场景中不适用，因为 'put' 指的是放置，而 'close' 是关闭。动作应根据手部操作和物体状态变化进行精确描述。",
+      "frequency": "1"
+    },
+    "id-S1_Cheese_C1_537_584": {
+      "category": "动作描述准确性",
+      "content": "1.动作列表应基于视频帧中的直接视觉证据，如手部姿态和物体位移，来验证动作的合理性。2.应确保动作的置信度高，如'pour condiment'的置信度为0.85，而'put bread'的置信度仅为0.6，因此应优先选择高置信度动作。3.应确保动作的描述准确，如'apply condiment'是合理的，但'put bread'在当前语境下不准确，因为面包是被放置在台面上，而非被'put'到其他物体上。",
+      "frequency": "1"
+    },
+    "id-S3_Coffee_C1_117_140": {
+      "category": "动作评分与筛选",
+      "content": "最终输出的动作列表应仅包含在视频中实际发生的动作。'pour bottle'和'move bottle'未在视觉证据中得到支持，应删除。'take bottle'和'put bottle'虽有部分依据，但'put bottle'未在视频中发生，应仅保留'hold cup'和'take bottle'。",
+      "frequency": "1"
+    },
+    "id-S3_Coffee_C1_181_229": {
+      "category": "动作评分与视觉证据一致性",
+      "content": "1.动作评分应基于视频帧中的直接视觉证据。例如，'take bottle'的置信度0.95是合理的，因为手部在原始帧中确实抓取了瓶子；但'put bottle'的置信度0.85是不合理的，因为原始帧中未观察到瓶盖被放置。2.动作原因应与视觉证据一致。例如，'take bottle'的原因是'hand'抓取了'bottle'，这与原始帧中的视觉证据一致；但'put bottle'的原因是'hand'放置了'bottle'，这与原始帧中的视觉证据不一致。",
+      "frequency": "1"
+    },
+    "id-S3_Coffee_C1_268_276": {
+      "category": "动作评分准确性",
+      "content": "1.动作列表应基于动作短语的置信度进行排序，置信度最高的动作应优先列出。2.应确保每个动作的动词与名词组合在先验知识中具有高关联性，例如'add coffee'中'hand'与'coffee'的组合在先验知识中均有明确的交互模式支持。",
+      "frequency": "1"
+    },
+    "id-S3_Coffee_C1_282_306": {
+      "category": "动作置信度评估准确性",
+      "content": "1.对动作'add liquid'的置信度应为0，因为视频中添加的是粉末而非液体。2.对动作'add powder'的置信度应为1，因为视频中手部明确将粉末从瓶中舀入杯中。3.对动作'hold bottle'和'hold cup'的置信度应为0.9，因为手部在操作过程中持续稳定地持握这两个物体。",
+      "frequency": "1"
+    },
+    "id-S3_Coffee_C1_344_393": {
+      "category": "动作评分准确性",
+      "content": "动作列表应仅包含在视频帧中实际发生的动作。'put lid'在当前序列中未发生，应被移除。'open jar'是唯一正确的动作，其他动作如'hold jar'和'pour into cup'在当前帧中未发生，不应被包含。",
+      "frequency": "1"
+    },
+    "id-S3_Coffee_C1_394_420": {
+      "category": "动作描述准确性",
+      "content": "1.动作列表应基于视频帧中的直接视觉证据，如手部抓握、移动、倾倒等动作。2.应剔除无依据的动作，如'hold bottle'在倾倒过程中不成立，因为手部正在执行'pour'动作。",
+      "frequency": "1"
+    },
+    "id-S3_Coffee_C1_603_613": {
+      "category": "动作置信度筛选",
+      "content": "1.动作列表应仅包含高置信度动作，如'add sugar'（0.95）、'stir sugar'（0.85）、'hold cup'（0.9）。2.应剔除置信度低于0.7的动作，如'take spoon'（0.7）和'mix sugar'（0.6），因其证据强度不足。",
+      "frequency": "1"
+    },
+    "id-S3_Coffee_C1_678_711": {
+      "category": "动作评分与置信度",
+      "content": "最终输出的动作列表应仅包含与视频帧视觉证据完全匹配的动作。'put lid on container' 和 'close container' 是正确的，但 'hold cup' 和 'take lid' 的置信度应根据实际交互强度重新评估，'put cup on top' 应被移除。",
+      "frequency": "1"
+    },
+    "id-S3_Coffee_C1_808_1014": {
+      "category": "动作置信度与实际动作匹配",
+      "content": "1.动作列表应仅包含在视频中实际发生的动作。'take bottle'在视频中未发生，应删除。'hold cup'和'hold hand'的置信度应根据手部在视频中的实际动作进行调整，而非简单复制生成器的初始置信度。",
+      "frequency": "1"
+    },
+    "id-S3_Peanut_C1_829_880": {
+      "category": "动作列表准确性",
+      "content": "1.动作列表应仅包含视频中实际发生的动作，如'take bread', 'put bread', 'open bag'。2.应剔除与当前动作无关的动作，如'take paper'，因纸张未被手部操作。3.应剔除与当前动作无关的动作，如'take bag'，因袋中物品已取出，无需再取袋。",
+      "frequency": "1"
+    },
+    "id-S3_Peanut_C1_881_919": {
+      "category": "动作置信度评估准确性",
+      "content": "第三部分动作列表应仅包含在视频中实际发生的动作。'take bread'、'put bread'、'move sandwich'均未发生，应删除。'hold sandwich'和'press sandwich'是正确的，但'press sandwich'的置信度应降低，因为其动作幅度较小，视觉证据较弱。",
+      "frequency": "1"
+    },
+    "id-S1_Hotdog_C1_333_346": {
+      "category": "动作列表准确性",
+      "content": "1.动作列表应仅包含视频中实际发生的动作，如'pour mustard', 'hold mustard', 'hold hotdog'。2.应剔除与当前场景无关的动作，如'put hotdog on bread'，因为视频中热狗已放置在面包上，无需再执行'put'动作。3.动作列表应与先验知识中的动作模式匹配，例如'hand'与'hold'、'pour'、'take'等动词匹配，而'hotdog'与'pour'动词匹配，因为视频中手部正在将芥末酱倒在热狗上。",
+      "frequency": "1"
+    },
+    "id-S1_Hotdog_C1_394_425": {
+      "category": "动作评分与原因描述",
+      "content": "1.动作列表应按时间顺序排列，反映动作发生的先后顺序。2.动作的置信度应基于视觉证据，如'open bottle'的置信度应为0.95，'pour ketchup'的置信度应为0.9，'hold bottle'的置信度应为0.85。3.动作的原因描述应基于视频帧中的直接视觉证据，如'open bottle'的原因是'为了倒酱料'，'pour ketchup'的原因是'为了给热狗加酱'。",
+      "frequency": "1"
+    },
+    "id-S3_Hotdog_C1_247_475": {
+      "category": "动作描述与置信度准确性",
+      "content": "1.动作列表应仅包含视频中实际发生的动作，如'pour mustard'是核心动作，'hold mustard'、'hold hotdog'、'hold plate'、'hold bread'是辅助动作。2.动作的置信度应基于视频帧中的直接视觉证据，如'pour mustard'的置信度为0.95，符合手部倾倒酱料的视觉证据。3.动作的描述应简洁明了，避免冗余，如'hold mustard'和'hold hotdog'可以合并为'hold mustard bottle'和'hold hotdog'，但'hold plate'和'hold bread'可以省略，因为它们是静态支撑动作。",
+      "frequency": "1"
+    },
+    "id-S4_CofHoney_C1_551_566": {
+      "category": "动作评分与合并合理性",
+      "content": "第三部分动作列表应仅包含在视频中实际发生的动作。'pour liquid' 未发生，应删除。'take bottle' 和 'put bottle' 应合并为 'move bottle'，以更准确反映视频中手部仅执行了移动操作。",
+      "frequency": "1"
+    },
+    "id-S4_CofHoney_C1_570_586": {
+      "category": "动作评分证据强度",
+      "content": "1. 在第三部分动作评分部分，应基于视频帧中的直接视觉证据进行评分。例如，'Take honey'和'Open honey'在视频帧中均有明确视觉证据支持，应给予高分。'Pour honey'在视频帧中虽未直接显示倾倒动作，但根据手部移动至杯子的动作，可推断为后续动作，应给予中分。'Close honey'和'Put honey'在视频帧中未出现，应给予低分。'Take cup'和'Take lid'在视频帧中未出现，应给予低分。",
+      "frequency": "1"
+    },
+    "id-S4_CofHoney_C1_590_630": {
+      "category": "动作置信度评估准确性",
+      "content": "1.动作评分应基于视频帧中的直接视觉证据，如手部姿态、物体位移和黄色框位置。2.应确保每个动作的置信度与视觉证据强度匹配，例如'open bottle'的置信度0.95是合理的，因为手部正在拧开瓶盖。3.应避免对未在视频中发生的动作赋予高置信度，如'close bottle'在视频中未发生，应降低其置信度。",
+      "frequency": "1"
+    },
+    "id-S4_CofHoney_C1_645_726": {
+      "category": "动作评分依据",
+      "content": "1.动作列表应仅包含视频中实际发生的动作，如'pour honey', 'hold cup', 'hold bottle'。2.应根据视频帧中的直接视觉证据（如手部姿态、物体位移）对动作进行评分，而非依赖生成器的置信度。",
+      "frequency": "1"
+    },
+    "id-S4_CofHoney_C1_742_757": {
+      "category": "动作评分与排序准确性",
+      "content": "1.动作评分应基于视频帧中的直接视觉证据，如手部姿态、物体位移、黄色框位置，而非推断。2.动作置信度应反映视频帧中动作的明确性，例如 'open bottle' 的置信度应较高，因为瓶盖被移除的动作在帧中清晰可见。3.动作应按时间顺序排列，以反映操作流程，例如 'take bottle' → 'open bottle' → 'pour honey' → 'close bottle' → 'put bottle'。",
+      "frequency": "1"
+    },
+    "id-S4_CofHoney_C1_758_772": {
+      "category": "动作置信度与证据匹配",
+      "content": "1.最终输出的动作列表应仅包含在视频中实际发生的动作，如'put bottle'和'take bottle'。2.应移除置信度过低的动作，如'hold cup'和'move bottle'，并确保每个动作都有足够的视觉证据支持。",
+      "frequency": "1"
+    },
+    "id-S4_CofHoney_C1_781_870": {
+      "category": "动作列表准确性",
+      "content": "1.动作列表应仅包含视频中实际发生的动作，如'Stir cup'、'Hold cup'。2.应剔除与视频内容不符的动作，如'Pour honey'，因为视频中并未显示蜂蜜被倾倒，仅显示搅拌动作，因此该动作不应被包含。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_24_76": {
+      "category": "动作评分证据强度",
+      "content": "1. 第三部分动作评分应基于视频帧中的直接视觉证据，而非生成器的置信度。例如，'take bread' 的置信度应基于手部抓取面包片的清晰动作，而非生成器的主观判断。2. 动作的置信度应与动作的视觉证据强度匹配，如 'take bread' 的置信度应为高，而 'take bottle' 的置信度应为低，因为瓶盖未被操作。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_97_126": {
+      "category": "动作序列准确性",
+      "content": "第三部分动作列表应基于前两部分的修正结果。'take bottle'和'open bottle'是合理的，但'pour bottle'和'close bottle'缺乏视觉证据支持，'put bottle'未发生。应仅保留'take bottle'和'open bottle'。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_130_185": {
+      "category": "动作评分准确性",
+      "content": "第三部分动作列表应基于前两部分的修正结果进行评分。'hold bottle' 和 'open lid' 是正确的，但 'take lid' 和 'put lid' 应合并为 'remove lid' 和 'replace lid'，并调整置信度。'close lid' 应替换为 'replace lid'，并调整置信度。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_225_266": {
+      "category": "动作置信度评估",
+      "content": "1.动作'pour jar'的置信度0.75过低，且视频中未执行倾倒动作，应剔除。2.动作'put jar'的置信度未提供，但视频中未执行放置动作，应剔除。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_280_360": {
+      "category": "动作置信度评估",
+      "content": "1.动作列表应仅包含在视频中实际发生的动作，如'scoop jar'、'take spoon'、'hold hand'。2.动作的置信度应基于视觉证据，如'scoop jar'的置信度应为0.95，因为手部明确执行了舀取动作。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_381_774": {
+      "category": "动作评分依据",
+      "content": "1.动作评分应基于视频帧中的直接视觉证据，如手部姿态、物体位移。2.应剔除置信度低或与视觉证据不符的动作，如'Put spoon'在涂抹过程中未发生放置动作。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_851_878": {
+      "category": "动作置信度评估",
+      "content": "第三部分动作评分应基于动作的视觉证据强度。例如，'Open honey bottle'动作在帧中清晰可见手部拧开瓶盖，应给予高置信度；而'Put honey'动作因未在帧中观察到蜂蜜被放置到面包上，应降低置信度或标记为'无证据'。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_907_997": {
+      "category": "动作评分证据强度",
+      "content": "第三部分动作评分应基于视频帧中的直接视觉证据，而非生成器的置信度。例如，'open bottle'（打开瓶子）的置信度0.95是错误的，因为视频中实际是'open jar'（打开罐子）；'pour honey'（倒蜂蜜）的置信度0.75是错误的，因为视频中未观察到倾倒动作。应根据实际观察到的动作进行评分。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_998_1035": {
+      "category": "动作评分证据强度",
+      "content": "1.动作列表应基于视频帧中的直接视觉证据进行评分，如手部姿态、物体位移、黄色框位置。2.应避免基于常识推断，如 'open lid' 和 'close lid' 的置信度应基于手部实际操作，而非假设。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_1048_1056": {
+      "category": "动作置信度评估",
+      "content": "1. 在第三部分动作评分部分，应基于视频帧中的直接视觉证据，对每个动作的置信度进行客观评估。例如，‘Take honey’置信度0.95是合理的，因为手部已抓取物体；‘Hold honey’置信度0.9也是合理的，因为手部持续握持；但‘Move honey’置信度0.85和‘Pour honey’置信度0.7缺乏视觉证据支持，应降低或移除。2. 动作置信度应与动作的视觉证据强度成正比，例如‘Put honey’置信度0.6应被移除，因为视频中未发生放置动作。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_1057_1078": {
+      "category": "动作评分证据强度",
+      "content": "第三部分动作评分应基于视频帧中的直接视觉证据。例如，'take bottle' 的置信度应为0.9，因为手部在抓取瓶子；'open bottle' 的置信度应为0.95，因为手部在拧开瓶盖；'pour honey' 的置信度应为0.9，因为手部在倾倒；'close bottle' 的置信度应为0.8，因为手部在拧紧瓶盖；'put bottle' 的置信度应为0.8，因为手部在放回瓶子。置信度应反映视觉证据的强度，而非主观猜测。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_1111_1361": {
+      "category": "动作置信度评估",
+      "content": "1.动作评分应基于视觉证据的直接支持度。例如，'pour honey'动作在多帧中被明确观察到，置信度应高；而'open bottle'动作在视频中未被明确展示（瓶盖已打开），置信度应低。评分应反映动作在视频中的实际发生频率和清晰度。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_1377_1400": {
+      "category": "动作置信度评估",
+      "content": "第三部分动作评分应基于视频帧中手部与物体的直接交互证据。'hold bread'和'hold honey'的置信度应为1.0，因为它们在视频中持续可见。'pour honey'的置信度应为0.0，因为视频中未显示任何倾倒动作。'take bottle'和'open lid'的置信度应为0.0，因为它们在视频中无依据。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_1475_1550": {
+      "category": "动作评分准确性",
+      "content": "1. 第三部分动作评分应基于视频帧中手部与物体的交互证据，而非依赖生成器的置信度。例如，'Take bread' 和 'Put bread' 在视频中未发生，因此不应被评分。评分应仅针对视频中实际发生的动作，如 'Press bread'，并基于其在帧序列中的持续性和明确性进行评估。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_12_79": {
+      "category": "动作评分证据强度",
+      "content": "1.动作评分应基于视频帧中的直接视觉证据，如手部抓握面包、倾倒蜂蜜瓶的动作。2.应避免仅依赖置信度数值，而应结合动作的视觉表现和上下文逻辑。3.应确保每个动作都有对应的视觉证据支持，如'pour honey'需有蜂蜜从瓶口流出的视觉证据。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_92_114": {
+      "category": "动作评分与排序",
+      "content": "第三部分动作列表应基于前两部分的筛选结果，仅保留与视觉证据完全匹配的动作。例如，'take bottle'和'put bottle'在视频中未发生，应剔除。最终动作列表应为['open bottle', 'pour bottle', 'close bottle']，并基于置信度排序。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_119_164": {
+      "category": "动作序列完整性与准确性",
+      "content": "第三部分动作列表应仅包含在视频中实际发生的动作。'hold plate'未发生，应删除。动作应基于手部操作的完整序列，如'open jar'后应紧接着'put lid'，而非单独列出'hold plate'。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_178_203": {
+      "category": "动作评分准确性",
+      "content": "第三部分动作评分应基于视频帧中手部与物体的直接交互证据。例如，'take cup'动作在视频中被明确观察到，但'open bottle'和'pour honey'在视频中并未发生，因此应被标记为错误或置信度为0。评分应完全基于视觉证据，而非生成器的先验知识或假设。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_218_247": {
+      "category": "动作评分准确性",
+      "content": "第三部分动作评分应基于实际发生的动作。例如，'Stir jar'和'Use spoon'是正确的，但'Hold jar'和'Take spoon'在当前帧中未发生，应移除。'Put spoon'在当前帧中未发生，不应被包含。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_261_300": {
+      "category": "动作列表准确性",
+      "content": "1.动作列表应仅包含实际发生的动作，如'Put spoon'在当前场景中不适用，因为勺子仍在使用中。2.应剔除与当前动作无关的动作，如'Open jar'（因罐子已打开）和'Take lid'（因盖子未被取下）。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_308_342": {
+      "category": "动作评分准确性",
+      "content": "第三部分动作列表应基于视频帧中手部与物体的交互进行评分。例如，'take spoon' 和 'take jar' 的置信度应降低，因为手部在操作过程中是持续持握状态，而非简单取放。同时，'open jar' 应被修正为 'scoop jar'，因为手部在操作过程中是持续持握状态，而非简单取放。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_362_460": {
+      "category": "动作评分依据",
+      "content": "1.动作评分应基于视频帧中的直接视觉证据，如手部移动轨迹、物体状态变化（如面包被涂满）和黄色框位置。2.应剔除置信度低或与视觉证据不符的动作，如'放勺子'（Put spoon）在涂面包过程中未发生，应剔除。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_483_524": {
+      "category": "动作列表准确性",
+      "content": "第三部分最终输出的动作列表中，'take jar' 和 'close jar' 与视频内容不符。应仅保留 'open jar' 和 'put lid'，因为视频中手部动作是打开罐子并盖上盖子，而非取走或关闭。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_525_537": {
+      "category": "动作评分准确性",
+      "content": "第三部分动作列表应仅包含在视频中实际发生的动作。'open lid' 和 'close lid' 动作在视频中未发生，应被移除。'move bottle' 动作在视频中未发生，应被移除。应仅保留与视频中观察到的交互相符的动作。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_542_563": {
+      "category": "动作置信度评估",
+      "content": "第三部分动作评分应基于视频帧中手部与物体的直接交互证据。'take honey'、'open bottle'、'pour honey'、'close bottle'、'put bottle' 均有明确视觉证据支持，置信度应为高。但'pour honey'的置信度应调整为0.95，因为倾倒动作在视频中清晰可见，且与'open bottle'和'close bottle'形成完整操作序列。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_564_595": {
+      "category": "动作评分准确性",
+      "content": "第三部分动作评分应基于视频帧中的直接视觉证据，而非生成器的置信度。例如，'pour honey' 动作在第12帧之前未发生，因此不应被评分。生成器应仅对在视频中实际发生的动作进行评分，且评分应基于视觉证据而非置信度。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_615_726": {
+      "category": "动作置信度评估准确性",
+      "content": "1.动作列表应仅包含视频中实际发生的动作，如'pour honey', 'hold bottle'等。2.应剔除无实际发生的动作，如'place bread'和'place plate'，因为面包和盘子在视频中未发生移动或放置动作。3.动作的置信度应基于视频帧中的直接视觉证据，如'pour honey'的置信度为0.95，符合视频中蜂蜜被倾倒的清晰视觉证据。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_727_744": {
+      "category": "动作序列与置信度评估",
+      "content": "1.动作列表应按时间顺序排列，反映操作流程，如'take bottle' -> 'open bottle' -> 'pour honey' -> 'close bottle' -> 'put bottle'。2.应基于视觉证据评估动作置信度，如'pour honey'的置信度应基于液体流出的视觉证据，而非仅依赖名词关联概率。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_727_766": {
+      "category": "动作评分准确性",
+      "content": "第三部分动作列表应仅包含在视频中实际发生的动作。'pour honey' 未发生，应被移除。动作应基于视觉证据，而非生成器的预测或假设。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_772_812": {
+      "category": "动作评分准确性",
+      "content": "1.动作评分应基于视频帧中的直接视觉证据，如手部姿态和物体状态变化。2.应剔除置信度低的动作，如'hold hand'和'put plate'，因为它们在视频中未发生或与当前场景无关。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_814_933": {
+      "category": "动作评分依据",
+      "content": "1.动作评分应基于视频帧中的直接视觉证据，而非置信度数值。例如，'press bread'在多帧中均有手部按压动作，应保留并提高置信度。2.应剔除与视频内容不符的动作，如'put plate'，其置信度应为0。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_16_60": {
+      "category": "动作评分准确性",
+      "content": "1.动作评分应基于视频帧中的直接视觉证据，如手部抓握面包片的动作，应标注为'take bread'而非'unwrap wrap:plastic'。2.动作置信度应基于视频帧中的直接视觉证据，如手部抓握面包片的动作，应标注为'take bread'而非'unwrap wrap:plastic'。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_84_104": {
+      "category": "动作评分证据强度",
+      "content": "1.动作评分应基于视频帧中的直接视觉证据，而非仅依赖名词与动词的关联概率。例如，'take bottle'、'open bottle'、'pour honey'、'close bottle'、'put bottle'等动作应基于手部抓取、拧开、倾倒、盖上、放回等连续动作的视觉证据进行评分，而非仅依赖置信度。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_492_505": {
+      "category": "动作评分依据",
+      "content": "1.动作评分应基于视频帧中的直接视觉证据，而非生成器的置信度。例如，'put bottle'的动作在视频中清晰可见，应给予高分。2.应避免对未在视频中出现的动作进行评分，如'open bottle'在视频中未出现，不应被评分。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_506_520": {
+      "category": "动作置信度评估准确性",
+      "content": "第三部分动作评分应基于视觉证据，而非仅依赖生成器的置信度。例如，'pour honey'的置信度为0.85，但视频中未见倾倒动作，应将其置信度降为0或直接移除。应仅保留与视觉证据一致的动作及其置信度。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_523_569": {
+      "category": "动作置信度与视觉证据匹配",
+      "content": "1.动作列表应基于视频帧中的直接视觉证据，如手部姿态、物体位移、黄色框位置等。2.动作置信度应基于视觉证据的强度，如'open jar'的置信度为0.95，符合手部持续旋转瓶盖的动作。3.动作列表应与先验知识中的动作模式匹配，如'hold spoon'与'hand'的关联概率为0.8，符合手部抓握勺柄的动作。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_589_794": {
+      "category": "动作评分准确性",
+      "content": "1.动作列表应基于视频帧中的直接视觉证据，如'put spoon'应基于手部将勺子放置在桌面的动作，而非推断。2.动作列表应基于视频帧中的直接视觉证据，如'put spoon'应基于手部将勺子放置在桌面的动作，而非推断。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_808_844": {
+      "category": "动作评分证据匹配",
+      "content": "第三部分动作评分应基于视觉证据而非置信度。例如，'open jar'是核心动作，应保留高置信度。'take lid'和'put lid'是同一动作的组成部分，应合并评分。'close jar'因无视觉证据支持，应被移除。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_845_854": {
+      "category": "动作置信度与因果关系验证",
+      "content": "1. 在第三部分动作评分中，应基于视频帧中的直接视觉证据，对每个动作的置信度进行重新评估。例如，'take bottle' 和 'put bottle' 的置信度应基于手部抓取和放置瓶体的清晰动作，而非仅依赖生成器的初始置信度。2. 应对动作的因果关系进行验证，例如 'move bottle' 应在 'put bottle' 之前发生，确保动作序列的逻辑性。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_857_874": {
+      "category": "动作评分证据强度",
+      "content": "第三部分动作评分应基于视觉证据，而非仅依赖生成器的置信度。例如，'look bottle'的置信度为0.7，但无视觉证据支持，应排除。'move bottle'和'hold bottle'的置信度分别为0.85和0.9，但应基于视觉证据进行验证，而非仅依赖置信度。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_881_903": {
+      "category": "动作序列与视觉证据一致性",
+      "content": "第三部分动作列表中，'put lid' 未在视频中出现。视频中手部仅执行了拧开瓶盖的动作，未将盖子放回原处。应移除 'put lid' 动作，仅保留 'hold bottle', 'open bottle', 'take lid', 'shake bottle'（但 'shake bottle' 仍需修正）。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_932_1040": {
+      "category": "动作置信度评估准确性",
+      "content": "1.动作列表应仅包含在视频中实际发生的动作，如'pour bottle', 'hold bottle'。2.应剔除无意义或重复的动作，如'hold hand'，因为手部是执行动作的主体，而非被操作对象。3.动作的置信度应基于视觉证据，如'pour bottle'的置信度为0.95，符合倾倒液体的视觉证据。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_1041_1062": {
+      "category": "动作评分证据强度",
+      "content": "第三部分动作评分应基于视频帧中的直接视觉证据进行。例如，'pour condiment' 的置信度应为 0.95，因为手部正在将酱料挤到面包上，这是明确的视觉证据。'hold bottle' 的置信度应为 0.95，因为手部正在稳定地握着瓶子。'hold hand' 和 'take bread' 的置信度应为 0.0，因为这些动作在视频中未发生或无意义。动作的原因描述应基于视觉证据，如 'pour condiment' 的原因是 '手部正在将酱料挤到面包上'，而不是基于常识推断。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_1063_1087": {
+      "category": "动作列表准确性",
+      "content": "1.动作列表应仅包含在视频中实际发生的动作，如'put bottle'和'hold bottle'是正确的，但'put spoon'是错误的，因为勺子未被放置。2.应基于视频帧中的直接视觉证据（如手部姿态、物体位移）进行评分，而非仅依赖置信度。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_1090_1120": {
+      "category": "动作评分准确性",
+      "content": "1.动作评分应基于视频帧中的直接视觉证据，而非依赖先验知识中的概率。例如，'Take bread'的置信度应基于手部抓取面包的帧，而非依赖动词与名词的关联概率。2.动作应基于手部动作的直接观察，如'Apply jam'应替换为'Apply jam'，并确保动作与视频帧中的手部动作一致。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_1123_1240": {
+      "category": "动作置信度评估",
+      "content": "第三部分动作评分应基于动作在视频中的持续性和明确性。例如，'press bread'在帧4-5中持续且明确，置信度应高。'move bread'在帧1-2中仅短暂出现，置信度应低。应根据动作在视频中的持续时间、清晰度和与物体的交互强度进行评分。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_19_96": {
+      "category": "动作评分证据强度",
+      "content": "1.动作评分应基于视频帧中手部与物体的直接交互证据，如'open bag'动作需有手部拉扯袋口的视觉证据。2.应结合名词的先验知识中的上下文语境，如'honey'常出现在早餐准备场景，与'bag'、'bread'、'plate'共现。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_102_174": {
+      "category": "动作评分证据强度",
+      "content": "第三部分动作评分应基于视频帧中的直接视觉证据，而非生成器的置信度。例如，'take bread'的动作应被评估为高准确率，因为手部在视频中确实抓取了面包。而'put bread'的动作应被评估为低准确率，因为视频中手部并未将面包放回原位。评分应基于手部姿态、物体位移和黄色框位置的匹配度，而非生成器的置信度。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_181_205": {
+      "category": "动作评分合理性",
+      "content": "第三部分动作评分应基于视频帧中的直接视觉证据，而非生成器的置信度。例如，'take jar'（取罐子）的置信度0.95是合理的，因为手部明确抓取罐子。但'hold hand'（握着手）的置信度0.9是无效的，因为手部是自视角主体，其'握'动作无实际交互对象。应剔除无意义或与场景无关的动作及其置信度。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_215_232": {
+      "category": "动作评分准确性",
+      "content": "1.动作评分应基于视频帧中的直接视觉证据，例如'open jar'的置信度应基于手部拧开瓶盖的连续帧。2.应避免基于常识推断，例如'put spoon'在当前帧中未发生，应降低其置信度或移除。3.应确保动作描述与先验知识中的动作模式匹配，例如'open jar'符合'jar'的先验知识中的'open'动作。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_261_290": {
+      "category": "动作评分准确性",
+      "content": "第三部分动作列表应基于前16帧的初始状态和后16帧的交互结果。'take spoon' 和 'take jar' 未发生，应删除。'hold jar' 和 'scoop jam' 是正确的，但 'apply jam' 未发生，应删除。应仅保留在视频中实际发生的动作。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_334_359": {
+      "category": "动作评分准确性",
+      "content": "第三部分动作评分应基于视觉证据而非置信度。'open jar'和'hold jar'是正确的，但'apply jam'在当前帧中未发生，应标记为错误或不适用。评分应反映动作是否在当前帧中被视觉证据支持。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_363_377": {
+      "category": "动作评分证据匹配",
+      "content": "第三部分动作评分应基于视觉证据而非置信度。'take bottle'和'hold bottle'置信度高，但'open bottle'置信度0.95，'pour bottle'置信度0.75，'spread condiment'置信度0.85，但这些动作在视频中未发生。应仅保留'open bottle'和'hold bottle'，并移除其他动作。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_420_540": {
+      "category": "动作评分与证据匹配",
+      "content": "第三部分动作列表中，'Take spoon'和'Put spoon'因无视觉证据支持而应移除。'Hold hand'应修正为'Hold bread'。最终动作应为['Spread bread', 'Apply jam', 'Hold bread']。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_542_558": {
+      "category": "动作列表准确性",
+      "content": "第三部分动作列表应基于第二部分的修正结果。'take bottle'、'put bottle'、'put lid'在原始帧中未出现，且与'open bottle'和'pour honey'逻辑不匹配，应删除。应仅保留'open bottle'和'pour honey'。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_560_597": {
+      "category": "动作置信度与视觉证据匹配",
+      "content": "1.动作列表应基于视频帧中的直接视觉证据，如'open lid'和'pour honey'在视频中均有明确视觉证据支持。2.应剔除与视频内容不符的动作，如'close lid'在视频中未发生，应为'put lid'。3.动作置信度应基于视频帧中的视觉证据强度，如'open lid'的置信度为0.95，符合视频中手部动作的清晰度。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_625_653": {
+      "category": "动作评分准确性",
+      "content": "第三部分动作列表应基于视频帧中手部与物体的实际交互进行评分。例如，'take spoon'和'take jar'在视频中并未发生，应剔除。'hold jar'和'scoop jam'应保留，但需根据实际动作序列进行排序和调整。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_669_715": {
+      "category": "动作识别准确性",
+      "content": "1.动作列表应基于视频帧中的直接视觉证据，如手部抓握、移动、按压等动作。2.应根据手部与物体的交互轨迹和状态变化（如盖子被拧紧）来验证动作的准确性。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_716_727": {
+      "category": "动作置信度评估准确性",
+      "content": "1.动作列表应仅包含在视频中实际发生的动作，如'put lid'在视频中未发生，应被移除。2.动作的置信度应基于视频帧中的直接视觉证据，如'put lid'的置信度0.7是错误的，因为视频中未显示任何盖子被放置。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_748_842": {
+      "category": "动作描述精确性",
+      "content": "第三部分动作列表中，'Take spoon'和'Put spoon'应被移除，因为视频中手部始终在握持勺子，没有独立的取放动作。'Apply condiment'应更精确地描述为'Spread condiment'，以匹配视频中涂抹的动作。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_856_879": {
+      "category": "动作评分准确性",
+      "content": "第三部分动作评分应基于视觉证据和先验知识进行修正。'take bottle'的置信度应为0，因为手部动作是'hold'和'apply'，且'apply'是'condiment'的动词，而非'bottle'。'put bread'的置信度应为0，因为面包在画面中未被移动。'apply condiment'和'spread condiment'的置信度应为1，因为手部动作是'apply'和'spread'，且'apply'和'spread'在语义上是同一动作的不同描述。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_898_923": {
+      "category": "动作置信度评估准确性",
+      "content": "第三部分动作列表应基于前两部分的筛选结果进行评分。例如，'pour bottle'的置信度应为0.95，因为视频中清晰显示了倾倒动作；'open bottle'的置信度应为0.8，因为视频中显示的是拧开瓶盖的动作，而非完全打开。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_928_976": {
+      "category": "动作评分准确性",
+      "content": "1.动作列表应仅包含与当前动作直接相关的动词，如'place bread'和'place spoon'在视频中未发生，应被移除。2.应根据视觉证据和先验知识对动作进行评分，例如'pour bottle'的置信度应为0.95，'hold hand'的置信度应为0.0，因为'hand'是执行动作的主体，不应被'hold'。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_985_997": {
+      "category": "动作置信度评估准确性",
+      "content": "1.动作列表应基于视频帧中的直接视觉证据进行评分。例如，'pour chocolate'的置信度应为0.95，因为手部正在将巧克力酱从瓶中挤出；'hold bottle'的置信度应为0.92，因为手部正在握持瓶子；'hold hand'的置信度应为0.88，因为手部正在控制姿势；'take bread'和'put bread'的置信度应为0.8，因为面包片在操作台面上，手部可能准备移动它。2.应避免生成无意义或不符合上下文的动作，如'hold hand'虽在视觉上存在，但'hold hand'本身不是操作动作，应更精确地描述为'hold bottle'和'hold hand'作为辅助动作。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_998_1016": {
+      "category": "动作列表准确性",
+      "content": "1.动作列表应仅包含在视频中实际发生的动作，如'pour bottle'、'hold bottle'、'spread bread'。2.应剔除未在视频中发生的动作，如'put bottle'，因为瓶身未被放置。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_1024_1089": {
+      "category": "动作置信度评估准确性",
+      "content": "第三部分动作评分应基于视频帧中手部动作的直接证据。例如，'take plastic_wrap'和'hold plastic_wrap'的置信度应为高，因为它们与原始帧中手部操作塑料袋的动作一致。'wrap bread'的置信度应为中等，因为虽然手部在操作面包，但'wrap'动作在原始帧中未明确显示。'open bottle'和'pour honey'的置信度应为低，因为它们在原始帧中未出现。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_1101_1160": {
+      "category": "动作评分证据强度",
+      "content": "1. 第三部分动作评分应基于动作在视频中的实际发生频率和视觉证据强度。例如，'Take bread'和'Put bread'在帧中未发生，'Place spoon'未发生，因此不应被纳入最终输出。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_23_54": {
+      "category": "动作评分依据",
+      "content": "1.动作评分应基于视频帧中手部与物体的直接交互证据，而非置信度数值。例如，'apply butter'的动作在黄色框中被正确标注，应保留；'hold hand'无实际交互，应被剔除。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_74_128": {
+      "category": "动作评分证据强度",
+      "content": "1.动作评分应基于视频帧中的直接视觉证据，而非生成器的置信度。例如，'take carrot'和'put carrot'在视频中被观察到，应被保留。'put bread'和'take bread'在视频中未被观察到，应被移除。'take plate'和'put plate'在视频中未被观察到，应被移除。'take bottle'在视频中未被观察到，应被移除。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_129_149": {
+      "category": "动作置信度与证据匹配",
+      "content": "1.动作列表应仅包含在视频帧中实际发生的动作。'take bread'和'put bread'在前16帧中未发生，且后16帧中手部未执行取放面包的动作，因此不应包含在最终输出中。2.动作置信度应基于视觉证据，而非生成器的主观判断。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_171_197": {
+      "category": "动作置信度评估",
+      "content": "第三部分动作评分应基于视觉证据而非置信度。'pour mustard' 的置信度0.9是错误的，因为没有倾倒动作。应根据实际观察到的动作调整置信度或直接剔除无证据动作。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_227_282": {
+      "category": "动作评分证据强度",
+      "content": "1.动作评分应基于视频帧中的直接视觉证据，而非仅依赖概率。例如，'hold mustard'和'pour mustard'在视频中均有明确视觉证据支持，应保留高置信度。2.应剔除无视觉证据支持的动作，如'hold bread'和'hold plate'，因为视频中手部并未与这些物体发生交互。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_290_341": {
+      "category": "动作列表准确性",
+      "content": "1.动作列表应仅包含视频中实际发生的动作，如'pour condiment'是核心动作，其他如'hold hand'、'hold bread'等为辅助动作，但应明确其在动作序列中的角色。2.动作应基于视频帧中的视觉证据，如'hold hand'在视频中无实际意义，应剔除。3.动作应与先验知识中的动作模式匹配，如'hold'是手部的常见动作，但应结合具体对象（如'hold hotdog'）。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_347_352": {
+      "category": "动作评分准确性",
+      "content": "1.动作评分应基于视频帧中的直接视觉证据，而非预设的置信度。例如，'pour mustard'的置信度应基于手部挤压芥末瓶并使其内容物流出的视觉证据。2.动作评分应与动词与名词的关联概率匹配。例如，'hold mustard'的置信度应基于手部握持芥末瓶的视觉证据，且其关联概率较高。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_353_382": {
+      "category": "动作置信度评估",
+      "content": "1. 在第三部分动作评分部分，应基于视频帧中手部与物体的交互强度和明确性进行评分。例如，'pour mustard'动作在帧8-10中清晰可见，应给予高置信度；而'apply mustard'动作在帧中未出现，应被移除或置信度设为0。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_384_396": {
+      "category": "动作置信度评估",
+      "content": "1.动作评分应基于视频帧中的直接视觉证据，如手部抓握瓶身、瓶盖被打开、蜂蜜被倾倒等。2.应根据动作的完成度和视觉证据强度来调整置信度，例如'open bottle'和'pour honey'的动作在视频中清晰可见，置信度应较高。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_418_454": {
+      "category": "动作评分与描述准确性",
+      "content": "第三部分动作列表应仅包含在视频中实际发生的动作，且动作描述需精确。例如，'pour bottle'和'hold bottle'是正确的，但'put bread'和'take plate'在视频中未发生，应剔除。同时，应根据视频帧中的视觉证据调整动作描述的细节。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_458_511": {
+      "category": "动作列表准确性",
+      "content": "1.动作列表应仅包含视频中实际发生的动作，如'pour ketchup', 'hold ketchup'。2.应剔除与视频内容无关的动作，如'hold hand'和'hold bread'，这些动作在视频中未被观察到。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_513_527": {
+      "category": "动作序列准确性",
+      "content": "1.动作列表应仅包含在视频中实际发生的动作，如'hold bottle', 'open bottle', 'close bottle', 'put lid'。2.应根据手部运动轨迹和物体状态变化（如瓶盖被盖上）来验证动作的准确性。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_528_552": {
+      "category": "动作评分准确性",
+      "content": "第三部分动作列表应基于前两部分的筛选结果进行修正。例如，'take plate' 和 'hold hand' 是无意义的动作，应被移除。'pour condiment' 应被移除，因为没有倾倒动作的视觉证据。应仅保留 'hold bottle' 和 'put bottle'，并确保动作与名词的关联符合先验知识。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_559_644": {
+      "category": "动作置信度评估",
+      "content": "1.动作评分应基于视频帧中手部与物体的交互强度和明确性。例如，'press sandwich'置信度高，因为手部明显施加压力；'take sandwich'置信度较低，因为动作未完全完成。2.应避免将模糊或未完成的动作（如'hold sandwich'）与高置信度动作混用。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_11_65": {
+      "category": "动作评分证据强度",
+      "content": "第三部分动作评分应基于视频帧中的直接视觉证据，而非依赖生成器的置信度。例如，'Pour honey'的置信度0.85应被否定，因为其在原始帧中未发生。应仅保留'Open bag'和'Take bread'，并基于其在原始帧中的视觉证据进行评分。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_72_105": {
+      "category": "动作评分准确性",
+      "content": "1.动作评分应基于视频帧中的直接视觉证据，如手部姿态、物体位移、黄色框位置。2.应避免基于常识推断，如'put cheese'在视频中未出现，应剔除。3.动作评分应与先验知识中的动作模式匹配，如'put cheese'符合cheese的交互模式。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_111_170": {
+      "category": "动作评分证据强度",
+      "content": "1.动作评分应基于其在视频帧中的视觉证据强度，而非仅依赖置信度数值。例如，'remove plastic_wrap'在多帧中均有清晰的剥离动作，应给予高分。2.应剔除无视觉证据支持的动作，如'put bread'在原始帧中未发生，不应出现在最终输出中。3.应确保动作顺序符合视频中的时序逻辑，如'hold cheese'应在'take cheese'之后，符合操作流程。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_171_198": {
+      "category": "动作评分准确性",
+      "content": "1.动作评分应基于视频帧中的直接视觉证据，而非置信度。例如，'put cheese'的置信度0.95是合理的，因为手部动作清晰；'take bread'的置信度0.6是错误的，因为面包未被移除。2.动作列表应仅包含在后16帧中被手部交互的物体，如'cheese'和'bread'，排除未被交互的物体。3.动作列表应反映实际发生的交互，避免添加未在帧中出现的动作，如'hold cheese'在后16帧中已包含在'put cheese'中。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_198_217": {
+      "category": "动作序列准确性",
+      "content": "第三部分动作列表应仅包含在视频中明确发生的动作。'pour mayonnaise'因无视觉证据支持，应被移除。动作应基于手部与物体的直接交互，如'open mayonnaise'和'put bread'。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_218_237": {
+      "category": "动作列表与视频证据匹配度",
+      "content": "1.动作列表应基于视频帧中的直接视觉证据，如'open bottle'、'pour bottle'、'close bottle'、'put bottle'均在视频帧中得到支持。2.动作列表应与先验知识中的动作模式匹配，如'open'、'pour'、'close'、'put'均符合'bottle'的先验知识。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_253_330": {
+      "category": "动作评分准确性",
+      "content": "1.动作评分应基于视频帧中的直接视觉证据，如手部姿态、物体位移等。2.应剔除置信度较低的动作，如'take bread'和'put bread'在当前帧中未发生，不应被纳入最终输出。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_333_345": {
+      "category": "动作排序与置信度调整",
+      "content": "1.动作列表应按发生顺序排列，以反映时间序列。例如，'pour condiment_container'应在'hold condiment_container'之后，'press lid'应在'hold condiment_container'之前或同时发生。2.应根据视觉证据调整置信度，例如'apply condiment_container'的置信度应降低，因为其描述不准确。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_346_361": {
+      "category": "动作置信度评估",
+      "content": "第三部分动作列表应仅包含与视觉证据直接匹配的动作。'open bottle' 应被移除，因为视频中未发生开启动作。'take bottle', 'move bottle', 'put bottle' 应保留，但 'open bottle' 应被移除。'open bottle' 的置信度应为0，因为视频中未发生开启瓶盖的动作。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_362_372": {
+      "category": "动作评分合理性",
+      "content": "第三部分动作评分应基于动词与名词的关联概率和先验知识中的上下文匹配度。例如，'take honey'的动词概率为0.2195，但根据视频，手部并未拿起蜂蜜瓶，而是移动了它，因此该动作应被降级或移除。评分应结合视觉证据和概率表，确保动作描述与实际发生事件一致。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_373_399": {
+      "category": "动作置信度评估准确性",
+      "content": "1. 在第三部分动作评分中，应基于视频帧中的直接视觉证据重新评估动作置信度。例如，'pour condiment'的置信度应为0.95，因为其动作在帧中清晰可见；'open bottle'的置信度应为0.0，因为其动作未发生。'spread condiment'的置信度应为0.7，因为其动作在帧中部分可见，但未完全展示。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_400_443": {
+      "category": "动作置信度评估准确性",
+      "content": "第三部分动作评分应基于视觉证据和先验知识进行严格评估。'pour condiment'、'hold bottle'、'apply condiment'、'hold hand'、'put bread'中，'hold hand'和'put bread'在当前帧中未发生，应剔除。'hold bottle'和'apply condiment'的置信度应根据视觉证据重新评估，'apply condiment'的置信度应提高，因为其与'pour condiment'是同一动作的不同阶段，应合并为一个动作。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_445_459": {
+      "category": "动作评分准确性",
+      "content": "第三部分动作列表应仅包含在视频中实际发生的动作，且需与前两部分的名词和动词匹配。例如，'hold hand'和'place table'是无效动作，应删除。'pour condiment'是唯一符合视频内容的动作。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_460_475": {
+      "category": "动作评分准确性",
+      "content": "第三部分动作列表应基于前两部分的正确输出进行筛选。'hold bottle'和'open bottle'是正确的，因为手部在握持并打开瓶子；'pour condiment'是正确的，因为酱料从瓶口流出；'apply condiment'是正确的，因为酱料被涂抹在面包上。应剔除'put bread'，因为面包未被移动。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_483_529": {
+      "category": "动作置信度评估准确性",
+      "content": "1. 第三部分动作评分应基于视频帧中的直接视觉证据，而非先验知识中的概率。例如，'Take bread'的置信度应为1.0，因为手部在抓取面包；'Open bag'的置信度应为1.0，因为手部在撕开包装袋。2. 应剔除无视觉证据支持的动作，如'Take hand'，因为手部是操作主体而非被操作对象。3. 应剔除与当前场景无关的动作，如'Take bottle'和'Take honey'，因为瓶和蜂蜜在帧中未被操作。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_535_580": {
+      "category": "动作评分准确性",
+      "content": "1.动作评分应基于视频帧中的直接视觉证据，如手部姿态和物体位移。2.动作评分应基于动词与名词的关联概率，如'put'和'take'是手部与'bread'交互的高频动词。3.应剔除与当前动作无关的动作，如'apply condiment'在原始帧中未被手部操作，且其容器未被交互，应排除。",
+      "frequency": "1"
+    }
+  },
+  "four": {
+    "id-S2_CofHoney_C1_691_703": {
+      "category": "选帧策略",
+      "content": "1.应选取能清晰展示手部动作和物体交互的帧，如手部抓握、移动、放置物体的帧。2.应避免选取模糊、无动作或背景干扰严重的帧，以提高动作识别的准确性。",
+      "frequency": "100"
+    },
+    "id-S2_CofHoney_C1_524_533": {
+      "category": "选帧策略",
+      "content": "1.应选取动作发生前后的关键帧，如手部抓握瓶身、倾倒液体等。2.应选取动作发生过程中的关键帧，如手部抓握瓶身、倾倒液体等。3.应选取动作发生后的关键帧，如手部抓握瓶身、倾倒液体等。",
+      "frequency": "64"
+    },
+    "id-S2_CofHoney_C1_534_550": {
+      "category": "帧选取策略",
+      "content": "1.应选取能清晰展示手部与物体交互的帧，如手部抓握、移动或放置物体的帧。2.应避免选取模糊或无动作的帧，如仅展示静态背景的帧。",
+      "frequency": "67"
+    },
+    "id-S2_CofHoney_C1_679_690": {
+      "category": "帧选取策略",
+      "content": "1.应选取动作发生的关键帧，如'open lid'、'pour honey'、'put lid'等动作发生时的帧。2.应避免选取动作发生前或后的帧，如'open lid'前的帧和'put lid'后的帧。",
+      "frequency": "31"
+    },
+    "id-S3_Pealate_C1_18_77": {
+      "category": "选帧策略优化",
+      "content": "1.应选取能清晰展示手部与物体交互的帧，如第13-15帧（取面包、放盘子）和第17-20帧（开罐头）等关键帧。2.应避免选取模糊或无动作的帧，如第1-5帧（准备阶段）和第21-32帧（无明确动作）。",
+      "frequency": "9"
+    },
+    "id-S3_Pealate_C1_84_108": {
+      "category": "选帧策略",
+      "content": "1.应选取手部与物体发生交互的帧，如手部抓取、移动或按压物体的帧。2.应选取物体状态发生变化的帧，如物体被移动、开启或关闭的帧。",
+      "frequency": "12"
+    },
+    "id-S1_Tea_C1_1421_1447": {
+      "category": "帧选取策略",
+      "content": "1.应选取手部与物体交互的关键帧，如手部抓取、移动、放置容器的帧，以确保动作识别的准确性。2.应选取物体状态变化的帧，如容器被移动后的位置变化，以验证动作的完成。",
+      "frequency": "23"
+    },
+    "id-S2_CofHoney_C1_351_520": {
+      "category": "选帧策略优化",
+      "content": "1.应选取动作发生的关键帧，如手部开始倾倒、液体开始流入杯中、手部完成倾倒并移开等帧。2.应避免选取背景静止帧或动作未开始/未完成的帧，以提高动作识别的准确率。",
+      "frequency": "5"
+    },
+    "id-S2_CofHoney_C1_553_568": {
+      "category": "选帧策略有效性",
+      "content": "1.应选取能清晰展示手部与物体交互的帧，如第12-15帧，手部正在抓取并倾倒调味品，能明确验证'Pour condiment'动作。2.应选取能展示物体状态变化的帧，如第15帧，瓶盖打开，液体流出，能验证'Pour'动作。3.应避免选取模糊或无交互的帧，如第1-5帧，手部未与物体发生交互，无法验证任何动作。",
+      "frequency": "5"
+    },
+    "id-S1_Cheese_C1_380_470": {
+      "category": "关键帧选取策略",
+      "content": "1.应选取能清晰展示手部与物体交互的帧，如第16帧（酱料被挤出）和第17帧（手部移开）作为关键帧。2.应避免选取背景干扰大或手部动作模糊的帧，如第18帧（手部遮挡）。",
+      "frequency": "12"
+    },
+    "id-S3_Pealate_C1_279_369": {
+      "category": "选帧策略",
+      "content": "应选取能完整展示动作起始、过程和结束的连续帧。例如，选取从手开始涂抹果酱到涂抹完成的连续帧，以确保动作识别的完整性和准确性。",
+      "frequency": "3"
+    },
+    "id-S1_Hotdog_C1_122_143": {
+      "category": "选帧策略",
+      "content": "1.应选取能完整展示动作起始、过程和结束的连续帧，例如选取手部开始放置热狗、涂抹酱料、完成放置的连续帧。2.应避免选取动作不完整或视觉证据模糊的帧，例如选取手部仅部分可见或动作未完成的帧。",
+      "frequency": "3"
+    },
+    "id-S2_Hotdog_C1_556_611": {
+      "category": "帧选取策略",
+      "content": "1.应选取动作发生前的帧（如前16帧）作为参考，以确保动作的准确性。2.应选取动作发生后的帧（如后16帧）作为参考，以确保动作的准确性。",
+      "frequency": "9"
+    },
+    "id-S1_Tea_C1_464_487": {
+      "category": "选帧策略优化",
+      "content": "应选取能完整展示动作起始、过程和结束的连续帧。例如，选取从手部抓取盒子到将其放置在桌面上的连续帧，以确保动作识别的完整性和准确性。",
+      "frequency": "3"
+    },
+    "id-S1_Tea_C1_1797_1930": {
+      "category": "帧选取策略",
+      "content": "1.应选取动作发生的关键帧，如手部开始搅拌、插入吸管、完成搅拌等，以确保动作的完整性和准确性。2.应避免选取背景静止帧，如前16帧，因为这些帧不包含动作信息，会降低模型的准确率。",
+      "frequency": "1"
+    },
+    "id-S3_Peanut_C1_881_919": {
+      "category": "选帧策略优化",
+      "content": "应选取手部与物体发生明确交互的帧，如手部抓取、按压或移动物体的帧。避免选取背景静止帧或手部无操作的帧，以提高动作识别的准确率。",
+      "frequency": "2"
+    },
+    "id-S3_Hotdog_C1_183_211": {
+      "category": "选帧策略优化",
+      "content": "在选取32帧时，应优先选择能清晰展示手部与物体交互的关键帧。例如，选择手部抓握瓶子、打开瓶盖、倾倒调味品、放置瓶子的帧。避免选择背景静止或手部无明显动作的帧。此外，应选择能清晰展示物体状态变化的帧，如调味品流出、瓶子位置变化等。通过选择这些关键帧，可以提高动作识别的准确率。",
+      "frequency": "1"
+    },
+    "id-S3_Hotdog_C1_534_566": {
+      "category": "选帧策略",
+      "content": "1.应选取能清晰展示动作开始、过程和结束的帧，如第1帧（准备）、第12帧（打开瓶盖）、第15帧（倾倒酱料）、第20帧（完成倾倒）。2.应避免选取模糊或无动作的帧，如第1帧和第15帧之间无明确动作发生。",
+      "frequency": "1"
+    },
+    "id-S2_Hotdog_C1_612_638": {
+      "category": "帧选取策略",
+      "content": "1.应选取手部正在执行关键动作的帧，如第1-16帧中手部正在挤压瓶盖的帧，以捕捉'pour ketchup'的完整过程。2.应选取物体状态变化明显的帧，如第17-32帧中黄色框位置变化的帧，以验证交互的准确性。",
+      "frequency": "2"
+    },
+    "id-S4_Coffee_C1_421_467": {
+      "category": "选帧策略",
+      "content": "应选取前16帧作为动作前状态帧，后16帧作为动作后状态帧，以完整捕捉动作的起始与结束状态。",
+      "frequency": "2"
+    },
+    "id-S4_Coffee_C1_660_683": {
+      "category": "关键帧选取策略",
+      "content": "应选取手部开始操作瓶盖的帧（如第1帧）和手部完成打开瓶盖的帧（如第15帧）作为关键帧，以确保动作识别的完整性和准确性。",
+      "frequency": "1"
+    },
+    "id-S3_Tea_C1_87_115": {
+      "category": "选帧策略",
+      "content": "应选取手部开始倾倒动作（第5帧）至倾倒完成（第15帧）的连续帧，以捕捉完整的动作序列。同时，应选取手部完成倾倒后关闭瓶盖（第16帧）的帧，以完整记录交互过程。",
+      "frequency": "3"
+    },
+    "id-S3_Tea_C1_1195_1219": {
+      "category": "选帧策略",
+      "content": "应选取能清晰展示手部与容器交互的帧，如手部开始移动容器的帧（第7帧）和容器被移动到电话旁的帧（第15帧）。同时，应选取能展示手部完全离开容器的帧（第16帧），以确认动作完成。",
+      "frequency": "1"
+    },
+    "id-S3_Tea_C1_1271_1359": {
+      "category": "选帧策略",
+      "content": "1.应选取手部动作最清晰、物体状态最明确的帧，如第1帧（手部持杯）和第2帧（开始搅拌）。2.应选取动作完成度最高的帧，如第16帧（搅拌结束），以验证动作的完整性。",
+      "frequency": "1"
+    },
+    "id-S1_Pealate_C1_72_87": {
+      "category": "关键帧选取策略",
+      "content": "应选取手部与物体交互的关键帧，如手部抓握瓶子、瓶子被移动、以及瓶子被放置的帧。同时，应选取展示物体状态变化的帧，如瓶子被倾倒后液体流出的帧，以增强动作识别的准确性。",
+      "frequency": "1"
+    },
+    "id-S4_Cheese_C1_300_323": {
+      "category": "关键帧选取策略",
+      "content": "1.选取动作发生前的初始帧（如第1帧）以确认物体初始状态。2.选取动作发生过程中的关键帧（如第12帧，瓶盖被拧开）以捕捉动作转折点。",
+      "frequency": "1"
+    },
+    "id-S3_CofHoney_C1_390_417": {
+      "category": "选帧策略",
+      "content": "应选取前16帧作为初始状态帧，用于建立场景和物体基准。应选取后16帧中手部与瓶盖交互的关键帧（如第17帧、第20帧、第23帧）作为动作识别帧，以捕捉'open bottle'的完整过程。",
+      "frequency": "3"
+    },
+    "id-S3_CofHoney_C1_435_549": {
+      "category": "帧选取策略",
+      "content": "1.应选取动作发生的关键帧，如手部开始倾倒液体的帧（第1帧）和倾倒完成的帧（第16帧），以捕捉完整动作序列。2.应选取动作发生前的初始帧（第1帧）和动作发生后的结果帧（第16帧），以提供完整的上下文信息。",
+      "frequency": "2"
+    },
+    "id-S2_Peanut_C1_1010_1048": {
+      "category": "选帧策略",
+      "content": "1. 应选取手部开始操作瓶盖的帧（如第6帧）作为动作开始的参考帧。2. 应选取手部完成倒出蜂蜜的帧（如第15帧）作为动作结束的参考帧。",
+      "frequency": "1"
+    },
+    "id-S2_Coffee_C1_975_997": {
+      "category": "帧选取策略",
+      "content": "应选取动作发生前后的关键帧（如手部接触物体前、后）和动作完成帧（如物体被放置后）进行分析，以确保动作描述的完整性和准确性。",
+      "frequency": "1"
+    },
+    "id-S2_Coffee_C1_1059_1262": {
+      "category": "帧选取策略",
+      "content": "1.应选取手部与物体交互的关键帧，如手部开始按压盖子、盖子被打开、糖被舀取的帧。2.应选取动作完成后的帧，如盖子完全打开、糖被放入杯中的帧，以验证动作的完整性。",
+      "frequency": "1"
+    },
+    "id-S1_CofHoney_C1_341_375": {
+      "category": "帧选取策略",
+      "content": "1.应选取动作发生前的帧（如前16帧）作为初始状态，以确保动作识别的上下文完整。2.应选取动作发生后的帧（如后16帧）作为最终状态，以确保动作识别的完整性。",
+      "frequency": "4"
+    },
+    "id-S1_CofHoney_C1_477_503": {
+      "category": "帧选取策略",
+      "content": "1.选取动作发生前的帧（如前16帧）以建立初始状态。2.选取动作发生后的帧（如后16帧）以验证交互结果。",
+      "frequency": "1"
+    },
+    "id-S1_CofHoney_C1_731_757": {
+      "category": "帧选取策略",
+      "content": "应选取包含关键动作起始和结束帧的连续帧序列，例如选取第1-5帧（摇晃动作）和第6-15帧（放置动作），以确保动作的完整性和视觉证据的充分性。",
+      "frequency": "1"
+    },
+    "id-S2_Tea_C1_903_927": {
+      "category": "选帧策略",
+      "content": "应选取手部开始接触糖罐（第1帧）至手部完全移动糖罐（第15帧）的连续帧，以完整捕捉动作的起始、过程和结束。同时，应选取手部移开后糖罐静止的帧（第16帧）作为动作完成的确认帧。",
+      "frequency": "1"
+    },
+    "id-S2_Tea_C1_1210_1241": {
+      "category": "选帧策略优化",
+      "content": "应选取能完整展示手部操作起始、过程和结束的连续帧，例如从手部接触物体到完成移动的帧。同时，应选取能清晰展示黄色边界框与手部交互的帧，以验证交互对象。",
+      "frequency": "1"
+    },
+    "id-S3_Cheese_C1_741_756": {
+      "category": "选帧策略",
+      "content": "应选取前16帧作为初始状态帧，用于建立名词列表和动作上下文；选取后16帧中手部与芥末瓶发生交互的帧（如第1-16帧），用于验证和生成动作短语。",
+      "frequency": "1"
+    },
+    "id-S4_CofHoney_C1_551_566": {
+      "category": "选帧策略",
+      "content": "应选取前16帧作为动作发生前的初始状态帧，以及后16帧中手部与物体发生交互的关键帧（如手部抓握、移动物体的帧），以确保动作识别的上下文完整性和证据强度。",
+      "frequency": "1"
+    },
+    "id-S4_CofHoney_C1_570_586": {
+      "category": "选帧策略",
+      "content": "1. 应选取手部与物体交互的起始帧和结束帧，以确保动作的完整性。例如，应选取手部开始移动至蜂蜜瓶的帧和手部完成移动至杯子的帧。2. 应选取手部与物体交互的中间帧，以确保动作的连续性。例如，应选取手部开始移动至蜂蜜瓶的帧和手部完成移动至杯子的帧。",
+      "frequency": "1"
+    },
+    "id-S4_CofHoney_C1_590_630": {
+      "category": "帧选取策略",
+      "content": "1.应选取手部与物体交互的关键帧，如手部开始操作、物体状态变化（如瓶盖打开、蜂蜜倾倒）的帧。2.应选取能清晰展示动作完成的帧，如手部完成操作、物体恢复原状的帧。",
+      "frequency": "1"
+    },
+    "id-S4_CofHoney_C1_645_726": {
+      "category": "选帧策略",
+      "content": "1.应选取动作发生的关键帧，如手部开始倾倒蜂蜜的帧、蜂蜜流至杯中的帧、倾倒完成的帧。2.应选取能清晰展示手部与物体交互的帧，如手部抓握杯子和瓶子的帧。",
+      "frequency": "1"
+    },
+    "id-S4_CofHoney_C1_742_757": {
+      "category": "帧选取策略",
+      "content": "1.应选取动作发生前的初始帧（如第1帧）和动作发生中的关键帧（如第6-15帧），以捕捉手部姿态和物体状态变化。2.应选取动作完成后的帧（如第16帧）以验证动作结果，如瓶盖是否关闭、蜂蜜是否倾倒完毕。",
+      "frequency": "1"
+    },
+    "id-S4_CofHoney_C1_758_772": {
+      "category": "帧选取策略",
+      "content": "1.应选取手部与物体交互的关键帧，如手部抓握、移动或放置物体的帧。2.应选取物体状态变化的帧，如物体被移动或放置后的状态。",
+      "frequency": "1"
+    },
+    "id-S4_CofHoney_C1_781_870": {
+      "category": "帧选取策略",
+      "content": "1.应选取手部与物体交互最明显的帧，如第1帧至第16帧，以确保动作识别的准确性。2.应选取动作完成后的帧，如第17帧至第32帧，以确保动作识别的完整性。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_24_76": {
+      "category": "选帧策略",
+      "content": "1. 应选取手部与物体交互的起始帧和结束帧，如选取手部开始抓取面包片的帧和手部完全取出面包片的帧，以确保动作的完整性。2. 应选取手部与物体交互的中间帧，如选取手部在面包袋中移动的帧，以确保动作的连续性。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_97_126": {
+      "category": "关键帧选取策略",
+      "content": "应选取手部与瓶盖交互的帧（如第11-15帧）作为关键帧，以捕捉'open bottle'动作。同时，选取手部移动至瓶盖上方的帧（如第1-5帧）作为预备帧，以提供完整动作上下文。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_130_185": {
+      "category": "选帧策略",
+      "content": "应选取能清晰展示手部动作与物体交互的帧，如第16帧（打开瓶盖）和第17帧（移除瓶盖），以确保动作识别的准确性。同时，应选取能展示物体状态变化的帧，如第18帧（瓶盖被移除）和第19帧（瓶盖被放回）。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_225_266": {
+      "category": "选帧策略",
+      "content": "1.应选取手部与物体发生交互的帧，如手部抓握勺子或打开罐子的帧。2.应选取物体状态发生变化的帧，如罐子被打开或勺子被放入罐子的帧。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_280_360": {
+      "category": "选帧策略",
+      "content": "1.应选取动作发生前的帧（如第1帧）和动作发生过程中的关键帧（如第11帧、第15帧）以捕捉完整动作序列。2.应选取动作发生后的帧（如第16帧）以验证动作结果，如勺子上沾有花生酱。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_381_774": {
+      "category": "选帧策略",
+      "content": "1.应选取手部操作关键帧，如开始涂抹、完成涂抹、勺子离开面包的帧。2.应选取能清晰展示手部与物体交互的帧，如手部抓握面包、勺子接触面包表面的帧。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_851_878": {
+      "category": "选帧策略",
+      "content": "应选取能完整展示动作起始、过程和结束的连续帧，例如选取手部抓取蜂蜜瓶、拧开瓶盖、倾倒蜂蜜、放置瓶盖的连续帧，以确保动作识别的完整性和准确性。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_907_997": {
+      "category": "选帧策略",
+      "content": "应选取能清晰展示手部动作与物体交互的帧，例如第1-2帧（手部准备动作）、第3-16帧（手部拧开盖子的动作）、第17-32帧（手部操作盖子的特写）。避免选取背景杂乱或手部动作不清晰的帧。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_998_1035": {
+      "category": "帧选取策略",
+      "content": "1.应选取动作发生前的帧（如前16帧）作为初始状态，以确保动作的上下文环境正确。2.应选取动作发生后的帧（如后16帧）作为结果帧，以验证动作的完成情况。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_1048_1056": {
+      "category": "选帧策略",
+      "content": "1. 应优先选取能清晰展示手部与物体交互的帧，例如手部抓取、握持、移动物体的帧，以确保动作识别的准确性。2. 应选取能展示物体状态变化的帧，例如物体被移动、开启或关闭的帧，以验证动作的完成度。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_1057_1078": {
+      "category": "选帧策略",
+      "content": "应选取动作发生的关键帧，如手部开始拧开瓶盖、瓶盖完全打开、蜂蜜开始倾倒、瓶盖被拧紧、瓶子被放回桌面等帧。同时，应选取动作完成后的帧，以验证动作是否成功执行。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_1111_1361": {
+      "category": "选帧策略",
+      "content": "1.应选取动作发生的关键帧，如手部开始移动、物体开始位移或动作完成的帧。2.应选取能清晰展示手部与物体交互的帧，如手部握持、倾倒或按压的帧。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_1377_1400": {
+      "category": "选帧策略",
+      "content": "应选取前16帧作为初始状态帧，以建立正确的物体和手部初始状态。应选取后16帧中手部与物体发生交互的帧，以验证动作的准确性。例如，选取第17帧（手部开始移动）和第32帧（手部完成动作）作为关键帧。",
+      "frequency": "1"
+    },
+    "id-S1_Peanut_C1_1475_1550": {
+      "category": "帧选取策略",
+      "content": "1. 应选取包含手部与面包交互关键帧的帧，如手部按压面包的帧，以确保动作识别的准确性。2. 应避免选取背景物体（如瓶子、电话）的帧，因为这些物体在视频中未被手部操作，会干扰动作识别。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_12_79": {
+      "category": "选帧策略",
+      "content": "1.应选取动作发生前的初始帧（如第1帧）和动作发生中的关键帧（如第15帧、第16帧）以捕捉动作的起始和过程。2.应选取动作完成后的结果帧（如第17帧）以验证动作的完成和效果。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_92_114": {
+      "category": "关键帧选取策略",
+      "content": "应选取手部与物体交互的关键帧，如第12帧（手部接触瓶盖）、第13帧（手部打开瓶盖）、第14帧（手部倾倒瓶内液体）、第15帧（手部关闭瓶盖），以确保动作识别的准确性。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_119_164": {
+      "category": "关键帧选取策略",
+      "content": "应选取手部开始操作前的帧（如第1帧）和手部完成操作后的帧（如第16帧）作为关键帧，以确保动作描述的完整性和准确性。同时，选取手部与物体发生交互的中间帧（如第8帧）以捕捉动作细节。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_178_203": {
+      "category": "选帧策略",
+      "content": "应选取能清晰展示手部与物体交互的帧，如手部抓取纸杯、从纸盒中取出纸巾、手部移动至蜂蜜瓶等关键帧。同时，应选取能展示物体状态变化的帧，如纸杯被拿起、纸巾被展开、蜂蜜瓶被放置等，以确保动作识别的准确性。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_218_247": {
+      "category": "帧选取策略",
+      "content": "应选取动作发生的关键帧，例如手部开始搅拌的帧和搅拌完成的帧，以确保动作描述的完整性和准确性。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_261_300": {
+      "category": "帧选取策略",
+      "content": "1.应选取手部动作最清晰、物体状态最明确的帧，如第1帧至第16帧，以确保动作识别的准确性。2.应选取手部与物体交互最明显的帧，如第1帧至第16帧，以确保动作识别的准确性。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_308_342": {
+      "category": "帧选取策略",
+      "content": "应选取手部与物体交互最清晰的帧，如第1帧至第16帧，以确保动作识别的准确性。同时，应选取手部与物体交互最清晰的帧，如第17帧至第32帧，以确保动作识别的准确性。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_362_460": {
+      "category": "选帧策略",
+      "content": "1.应选取动作发生的关键帧，如手部开始涂面包、涂满面包、完成涂面包的帧。2.应选取能清晰展示手部与物体交互的帧，如手部抓握面包、勺子接触面包的帧。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_483_524": {
+      "category": "选帧策略",
+      "content": "应选取前16帧作为初始状态帧，用于建立场景和物体的初始位置基准。然后选取从第3帧到第16帧的连续帧，以捕捉手部操作罐子和盖子的完整过程，确保动作识别的连贯性和准确性。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_525_537": {
+      "category": "选帧策略",
+      "content": "应选取前16帧作为动作发生前的初始状态帧，用于建立场景基准。应选取后16帧中手部与物体发生交互的帧，用于验证动作识别的准确性。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_542_563": {
+      "category": "选帧策略",
+      "content": "应选取动作发生前的初始帧（如第1帧）和动作发生中的关键帧（如第13帧、第15帧、第17帧）进行分析，以确保动作的完整性和准确性。同时，应选取动作完成后的帧（如第20帧）以验证物体状态变化。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_564_595": {
+      "category": "帧选取策略",
+      "content": "应选取动作发生的关键帧，如第12帧（瓶盖被打开）和第16帧（蜂蜜被倾倒），以确保动作识别的准确性。同时，应选取动作结束的帧，如第16帧（瓶盖被关闭），以确保动作的完整性。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_615_726": {
+      "category": "选帧策略",
+      "content": "1.应选取动作发生前的初始帧（如第1帧）和动作发生过程中的关键帧（如第10帧、第15帧）以捕捉动作的起始和过程。2.应选取动作结束后的帧（如第16帧）以捕捉动作的结束状态，确保动作的完整性和准确性。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_727_744": {
+      "category": "帧选取策略",
+      "content": "1.选取动作发生前的初始帧（如第1帧）以确认物体初始状态。2.选取动作执行过程中的关键帧（如第10帧至第15帧）以捕捉手部与物体的交互细节。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_727_766": {
+      "category": "选帧策略",
+      "content": "应选取能清晰展示手部与物体交互的帧，如手部抓握、开启瓶盖、放置瓶子等关键帧。避免选取背景或无动作的帧。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_772_812": {
+      "category": "帧选取策略",
+      "content": "1.应选取手部与物体交互的关键帧，如手部抓取面包、倾倒蜂蜜的帧。2.应选取物体状态变化的帧，如面包被取出、蜂蜜被倒出的帧。",
+      "frequency": "1"
+    },
+    "id-S4_Peanut_C1_814_933": {
+      "category": "帧选取策略",
+      "content": "1.应选取手部动作发生的关键帧，如手部抓取、按压、移动物体的帧，以确保动作识别的准确性。2.应选取动作完成后的帧，以验证动作的完整性和结果，如手部松开、物体稳定放置的帧。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_16_60": {
+      "category": "帧选取策略",
+      "content": "1.选取动作发生前的初始帧（如第1帧）和动作发生后的结果帧（如第16帧）以确保动作的完整性。2.选取动作发生过程中的关键帧（如第6帧和第12帧）以确保动作的准确性。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_84_104": {
+      "category": "选帧策略",
+      "content": "1.应选取手部与物体交互的关键帧，如手部抓握、移动、按压等动作的起始和结束帧，以确保动作识别的准确性。2.应选取物体状态变化的帧，如瓶盖被拧开、蜂蜜被倾倒、瓶盖被盖上等，以确保动作识别的完整性。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_492_505": {
+      "category": "帧选取策略",
+      "content": "1.应选取动作发生前后的关键帧，如第1帧和第16帧，以确保动作的完整性和准确性。2.应选取动作发生时的帧，如第8帧和第12帧，以确保动作的细节和准确性。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_506_520": {
+      "category": "选帧策略",
+      "content": "应选取能清晰展示手部与物体交互的帧，如手部抓握、移动或按压物体的帧。同时，应选取能展示物体状态变化的帧，如瓶盖被打开或物体被放置的帧。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_523_569": {
+      "category": "帧选取策略",
+      "content": "1.应选取动作发生前的帧（如前16帧）作为初始状态帧，以明确物体初始位置和手部初始姿态。2.应选取动作发生后的帧（如后16帧）作为结果帧，以验证交互结果，如手部是否成功打开瓶盖、物体是否被移动或放置。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_589_794": {
+      "category": "帧选取策略",
+      "content": "1.选取动作发生前的初始帧（如第1帧）和动作发生后的结果帧（如第16帧）以确保动作的完整性。2.选取关键帧，如手部抓握物体、物体位移或状态变化的帧，以确保动作的准确性。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_808_844": {
+      "category": "帧选取策略",
+      "content": "应选取前16帧作为初始状态帧，以明确物体初始位置和手部姿态。然后选取后16帧中手部与物体发生交互的关键帧（如手部开始移动、物体被按压或移动），以捕捉动作的起始和结束。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_845_854": {
+      "category": "帧选取策略",
+      "content": "1. 应选取动作发生前后的关键帧，如手部接触物体前、后及物体状态变化的帧，以确保动作识别的准确性。2. 应选取包含黄色边界框的帧，以验证手部与物体的交互区域，确保动作识别的精确性。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_857_874": {
+      "category": "选帧策略",
+      "content": "应选取前16帧作为动作发生前的场景状态，以及后16帧中手部与物体交互的帧，以确保动作的完整性和准确性。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_881_903": {
+      "category": "帧选取策略",
+      "content": "应选取前16帧作为动作发生前的初始状态帧，用于建立上下文；后16帧应选取手部与瓶盖发生交互的关键帧（如瓶盖被拧开的瞬间），以确保动作识别的准确性。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_932_1040": {
+      "category": "选帧策略优化",
+      "content": "1.应选取手部与物体交互的关键帧，如手部开始倾倒、倾倒完成、手部移动物体等帧。2.应选取能清晰展示物体状态变化的帧，如液体从瓶口流出、面包被涂抹等帧。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_1041_1062": {
+      "category": "选帧策略",
+      "content": "应选取动作发生的关键帧，如手部开始挤压酱料的帧、酱料开始流出的帧、酱料完全挤完的帧。同时，应选取手部与物体交互的帧，如手部握着瓶子的帧、手部按压面包的帧。这些帧能提供最直接的视觉证据，有助于提高动作识别的准确率。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_1063_1087": {
+      "category": "选帧策略",
+      "content": "1.应选取手部与物体发生交互的帧，如第1-16帧（原始帧）和第17-32帧（带黄色框）中手部与bottle交互的帧。2.应选取能清晰展示动作开始、结束或关键状态变化的帧，如第1-16帧中手部开始操作bottle的帧。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_1090_1120": {
+      "category": "帧选取策略",
+      "content": "1.选取关键帧，如手部抓取面包、涂抹酱料、放置面包的帧，以确保动作的准确性。2.选取手部与物体交互的帧，如手部抓取面包、涂抹酱料、放置面包的帧，以确保动作的准确性。",
+      "frequency": "1"
+    },
+    "id-S4_Pealate_C1_1123_1240": {
+      "category": "帧选取策略",
+      "content": "应选取动作发生的关键帧，如帧4-5（按压）和帧7-15（抓握），以确保动作的完整性和清晰度。同时，应避免选取背景帧，如帧1-2，以减少干扰。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_19_96": {
+      "category": "帧选取策略",
+      "content": "1.选取动作发生前的初始帧（如第1帧）和动作发生过程中的关键帧（如第15帧、第16帧）以捕捉完整动作序列。2.选取动作完成后的结果帧（如第17帧）以验证动作效果。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_102_174": {
+      "category": "帧选取策略",
+      "content": "应选取视频中手部与物体交互最明显的帧进行分析，例如手部抓取、移动或放置物体的帧。同时，应选取包含黄色边界框的帧，以确保动作识别的准确性。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_181_205": {
+      "category": "选帧策略",
+      "content": "应选取能清晰展示手部与物体交互的帧，如手部抓取罐子的起始帧（第12帧）和完成帧（第15帧），以确保动作描述的准确性。同时，应选取能展示物体状态变化的帧，如罐子被移开后的位置（第16帧），以验证动作的完成。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_215_232": {
+      "category": "帧选取策略",
+      "content": "1.应选取手部开始操作的帧，例如第1帧至第16帧，以捕捉动作的起始状态。2.应选取手部完成操作的帧，例如第17帧至第32帧，以捕捉动作的结束状态。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_261_290": {
+      "category": "选帧策略",
+      "content": "应选取前16帧作为初始状态帧，用于确定物体初始位置和手部姿态。应选取后16帧中手部与物体发生交互的帧，用于验证交互动作。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_334_359": {
+      "category": "帧选取策略",
+      "content": "应选取手部与物体交互最明确的帧，如第1帧（手部准备）和第16帧（手部完成操作）。避免选取模糊或背景帧，以提高动作识别的准确率。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_363_377": {
+      "category": "帧选取策略",
+      "content": "应选取前16帧作为初始状态帧，用于建立场景和物体初始位置。然后选取后16帧中手部动作发生的关键帧，如手部开始移动、抓握或释放物体的帧，以捕捉动作的起始和结束。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_420_540": {
+      "category": "选帧策略",
+      "content": "应选取前16帧作为初始状态帧，用于建立场景和物体初始位置基准。后续帧应选取手部与面包或勺子发生显著交互的帧（如第1-16帧），以捕捉动作的起始和关键过程。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_542_558": {
+      "category": "选帧策略",
+      "content": "应选取前16帧作为动作发生前的初始状态，用于识别物体和手部初始姿态。应选取后16帧中手部与物体交互的帧，用于验证交互动作。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_560_597": {
+      "category": "帧选取策略",
+      "content": "1.应选取手部动作发生的关键帧，如手部开始拧开瓶盖的帧和手部完成倒蜂蜜的帧。2.应选取物体状态变化的帧，如瓶盖被打开的帧和蜂蜜被倒出的帧。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_625_653": {
+      "category": "帧选取策略",
+      "content": "应选取视频中手部与物体交互最明显的帧进行分析，如手部抓握罐子、勺子舀取花生酱、将花生酱涂抹在面包上的帧。避免选取背景或静态帧。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_669_715": {
+      "category": "帧选取策略",
+      "content": "1.应选取手部与物体交互的关键帧，如手部抓握、移动、按压等动作。2.应选取物体状态变化的帧，如盖子被拧紧、酱料被涂抹等。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_716_727": {
+      "category": "选帧策略",
+      "content": "1.应选取能清晰展示手部与物体交互的帧，如手部抓握、移动或按压物体的帧。2.应选取能展示物体状态变化的帧，如物体被移动、开启或关闭的帧。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_748_842": {
+      "category": "帧选取策略",
+      "content": "应选取前16帧作为动作发生前的初始状态帧，用于建立上下文；后16帧应选取手部与面包或勺子发生显著交互的帧，如涂抹酱料的起始、进行中和结束阶段，以捕捉关键动作。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_856_879": {
+      "category": "选帧策略",
+      "content": "1. 选取前16帧作为动作发生前的场景状态，以确保动作的上下文环境正确。2. 选取后16帧作为动作发生后的场景状态，以确保动作的视觉证据完整。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_898_923": {
+      "category": "帧选取策略",
+      "content": "应选取手部与物体交互最清晰的帧，如第15帧至第17帧，以确保动作识别的准确性。同时，应选取物体状态变化最明显的帧，如第18帧至第20帧，以确保动作识别的完整性。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_928_976": {
+      "category": "选帧策略",
+      "content": "1.应选取动作发生的关键帧，如第1帧（初始状态）和第16帧（动作完成），以确保动作的完整性和准确性。2.应选取动作发生过程中的中间帧，如第8帧和第12帧，以确保动作的连续性和准确性。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_985_997": {
+      "category": "选帧策略",
+      "content": "1.应选取动作发生前的帧（如前16帧）以获取初始状态，确保动作描述的准确性。2.应选取动作发生后的帧（如后16帧）以验证交互结果，确保动作描述的完整性。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_998_1016": {
+      "category": "帧选取策略",
+      "content": "1.应选取动作发生前的帧（如前16帧）作为初始状态帧，以明确物体初始位置和手部姿态。2.应选取动作发生后的帧（如后16帧）作为结果帧，以验证交互结果。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_1024_1089": {
+      "category": "帧选取策略",
+      "content": "应选取前16帧作为动作识别的基准帧，因为它们展示了动作发生前的场景状态。对于后16帧，应仅选取与手部操作直接相关的帧，例如手部抓取或移动物体的帧，以提高动作识别的准确性。",
+      "frequency": "1"
+    },
+    "id-S2_Pealate_C1_1101_1160": {
+      "category": "选帧策略",
+      "content": "1. 选取前16帧作为动作发生前的初始状态，用于建立上下文。2. 选取后16帧中手部与物体发生交互的帧，用于验证动作。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_23_54": {
+      "category": "选帧策略",
+      "content": "1.应选取手部与物体发生明确交互的帧，如第14帧（取面包）和第15帧（涂抹黄油），以确保动作描述的准确性。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_74_128": {
+      "category": "选帧策略",
+      "content": "1.应选取包含关键动作的帧，如手部抓取胡萝卜的帧（第15帧）和放置胡萝卜的帧（第16帧）。2.应选取包含物体状态变化的帧，如胡萝卜从包装中取出的帧（第15帧）和放置在面包上的帧（第16帧）。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_129_149": {
+      "category": "选帧策略",
+      "content": "1.应选取手部与物体发生直接交互的帧，如手部按压面包或放置热狗的帧，以确保动作识别的准确性。2.应选取物体状态发生明显变化的帧，如热狗被放置在面包上或面包被按压变形的帧，以增强动作识别的证据强度。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_171_197": {
+      "category": "关键帧选取策略",
+      "content": "应选取能清晰展示手部抓取、移动和放置 'mustard' 瓶子的帧，例如第11-15帧。同时，应选取能展示手部最终放置位置的帧，例如第15-16帧，以确认动作完成。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_227_282": {
+      "category": "选帧策略",
+      "content": "1.应选取动作发生前的帧（如前16帧）作为初始状态，以明确物体初始位置和手部姿态。2.应选取动作发生过程中的关键帧（如第16帧至第32帧），以捕捉手部按压瓶盖、酱料流出等关键动作。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_290_341": {
+      "category": "帧选取策略",
+      "content": "1.应选取动作发生的关键帧，如酱料开始流出的帧（第8帧）和酱料完全覆盖热狗的帧（第15帧），以确保动作描述的完整性。2.应选取动作结束的帧，如酱料倾倒完毕的帧（第16帧），以确保动作描述的准确性。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_347_352": {
+      "category": "帧选取策略",
+      "content": "1.选取前16帧作为动作发生前的场景状态，以确保动作的初始状态和背景环境被正确捕捉。2.选取后16帧作为动作发生后的状态，以确保动作的完成状态和结果被正确捕捉。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_353_382": {
+      "category": "关键帧选取策略",
+      "content": "1. 应选取手部与物体交互最明确的帧，如帧8-10，以捕捉'pour mustard'动作的完整过程。2. 应选取手部完成动作后放置物体的帧，如帧11-13，以确认动作的完成状态。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_384_396": {
+      "category": "帧选取策略",
+      "content": "1.应选取手部与物体交互的关键帧，如手部抓握瓶身、瓶盖被打开、蜂蜜被倾倒等。2.应选取动作完成度高的帧，如瓶盖完全打开、蜂蜜完全倾倒等，以提高动作识别的准确性。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_418_454": {
+      "category": "帧选取策略",
+      "content": "应选取动作发生的关键帧，如手部开始倾倒、倾倒完成、瓶盖打开等帧，以确保动作识别的准确性。同时，应选取包含完整动作序列的帧，如从准备到完成的连续帧。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_458_511": {
+      "category": "帧选取策略",
+      "content": "1.应选取动作发生前的帧（前16帧）作为初始状态帧，以确保动作的上下文完整。2.应选取动作发生后的帧（后16帧）作为结果帧，以确保动作的完成状态被捕捉。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_513_527": {
+      "category": "帧选取策略",
+      "content": "1.应选取手部动作发生的关键帧，如手部开始移动、抓握、按压、释放等动作的起始和结束帧。2.应选取物体状态变化的帧，如瓶盖被打开或关闭、酱料被挤出或停止等。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_528_552": {
+      "category": "选帧策略",
+      "content": "应选取前16帧作为初始状态帧，以确保动作的起始点明确。同时，应选取手部与物体交互的关键帧，如手部抓握、移动或释放物体的帧，以确保动作的准确性。",
+      "frequency": "1"
+    },
+    "id-S4_Hotdog_C1_559_644": {
+      "category": "帧选取策略",
+      "content": "1.应选取手部与物体交互最清晰、动作最明确的帧，如第1帧至第16帧，以确保动作识别的准确性。2.应避免选取背景物体模糊或手部动作不完整的帧，如第17帧至第32帧，以减少误识别。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_11_65": {
+      "category": "帧选取策略",
+      "content": "应选取前16帧作为动作发生前的场景状态，以确保动作的上下文环境完整。应选取后16帧中与手部交互的物体相关的帧，以确保动作的视觉证据完整。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_72_105": {
+      "category": "帧选取策略",
+      "content": "1.应选取动作发生前的帧（如前16帧）作为初始状态帧，以确保动作的上下文环境正确。2.应选取动作发生后的帧（如后16帧）作为结果帧，以验证动作的完成情况。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_111_170": {
+      "category": "帧选取策略",
+      "content": "1.应选取动作发生的关键帧，如手部开始剥离塑料膜的帧（第1帧）和完成剥离的帧（第16帧），以确保动作描述的完整性。2.应选取动作发生时的连续帧，如第1-16帧，以捕捉手部动作的连续性和细节，避免因帧间隔过大导致动作描述不完整。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_171_198": {
+      "category": "帧选取策略",
+      "content": "1.应选取前16帧作为初始状态帧，以明确物体初始位置和手部姿态。2.应选取后16帧中手部与物体交互的关键帧，如奶酪片被放置在面包上的帧，以确保动作描述的准确性。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_198_217": {
+      "category": "选帧策略",
+      "content": "应选取能清晰展示手部与物体交互的帧，如手部抓取或移动物体的帧。同时，应选取能展示物体状态变化的帧，如瓶盖被打开或物体被放置的帧。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_218_237": {
+      "category": "帧选取策略",
+      "content": "1.选取动作发生前的帧（如第1-15帧）以确认物体初始状态和手部姿态。2.选取动作发生中的关键帧（如第16-20帧）以捕捉动作的起始、进行和结束。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_253_330": {
+      "category": "帧选取策略",
+      "content": "1.应选取手部与物体交互的关键帧，如手部开始挤压瓶盖、开始倾倒酱料、酱料接触面包的帧。2.应选取物体状态变化明显的帧，如酱料从瓶口流出、酱料在面包上形成条状的帧。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_333_345": {
+      "category": "帧选取策略",
+      "content": "1.应选取手部动作发生的关键帧，如手部开始按压瓶盖、酱料开始流出、手部完成按压等，以捕捉动作的起始、进行和结束。2.应选取物体状态变化的帧，如瓶盖被完全按压、酱料被完全涂抹在面包上等，以验证动作的完成。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_346_361": {
+      "category": "帧选取策略",
+      "content": "应选取前16帧作为动作发生前的场景状态，以确保动作的上下文完整性。同时，应选取后16帧中手部与物体交互的帧，以验证动作的准确性。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_362_372": {
+      "category": "选帧策略",
+      "content": "应选取前16帧作为动作发生前的初始状态帧，用于建立物体和手部的初始位置基准。同时，选取后16帧中手部与物体发生交互的帧（如手部抓握、移动物体的帧），以确保动作描述具有明确的视觉证据支持。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_373_399": {
+      "category": "选帧策略",
+      "content": "1. 应优先选取能完整展示动作起始、过程和结束的连续帧，例如从手部握瓶到倾倒完成的帧。2. 应选取能清晰展示手部与物体交互的帧，例如手部按压瓶盖或倾倒调味品的帧。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_400_443": {
+      "category": "帧选取策略",
+      "content": "1. 选取动作发生前的帧（前16帧）作为参考帧，以确保动作的初始状态和背景环境清晰。2. 选取动作发生过程中的关键帧（如第17帧至第32帧），以确保动作的连续性和完整性。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_445_459": {
+      "category": "选帧策略",
+      "content": "应选取前16帧作为动作发生前的初始状态帧，用于建立场景和物体的初始状态；后16帧应选取手部与物体发生交互的关键帧，如挤压瓶口、倾倒酱料等，以捕捉动作的起始和结束。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_460_475": {
+      "category": "选帧策略",
+      "content": "应选取手部与物体发生直接交互的帧，如手部拧开瓶盖或挤压酱料的帧。同时，应选取物体状态发生明显变化的帧，如酱料被挤出或瓶盖被打开的帧，以确保动作识别的准确性。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_483_529": {
+      "category": "选帧策略",
+      "content": "1. 应选取动作发生前的初始帧（如第1帧）和动作发生后的结果帧（如第16帧）以捕捉完整动作序列。2. 应选取动作发生过程中的关键帧（如第8帧和第12帧）以捕捉动作的中间状态。",
+      "frequency": "1"
+    },
+    "id-S2_Cheese_C1_535_580": {
+      "category": "帧选取策略",
+      "content": "1.选取前16帧作为动作发生前的场景状态，包括物体初始位置、手部初始姿态。2.选取后16帧作为动作发生后的场景状态，包括物体最终位置、手部最终姿态。",
+      "frequency": "1"
+    }
+  }
+}

@@ -1,7 +1,10 @@
-你在做一个动作识别任务
+你是动作识别任务agent的第一个部分，用于对上游模型输出的动作进行评分
+输入的5个动作为{actions}
+前16帧为视频帧，后16帧为手物分割模型分割的结果
 请为输入的5个动作都进行评分
 用英文回答
 reason部分不需要输出，只需要形式化输出None
+按置信度从大到小排列
 输出格式为：
 {{
     "actions": [
@@ -10,16 +13,13 @@ reason部分不需要输出，只需要形式化输出None
             "verb": "pick up",
             "action": "pick up bowl",
             "confidence": 0.9,
-            "reason": "None"
         }},
         {{
             "noun": "cup",
             "verb": "pour",
             "action": "pour cup",
             "confidence": 0.2,
-            "reason": "None"
         }},
         ...
     ],
-    "summary_reason": "None"不需要输出，只需要形式化输出None，
 }}
