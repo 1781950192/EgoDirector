@@ -197,7 +197,7 @@ def combine_actions(frames_urls, selected_nouns, noun_verb, reflect,select_frame
     prompt = template.format(nouns_info=selected_nouns, noun_verb_list=noun_verb,
                             reflect=reflect,select_frame=select_frame)
 
-    messages = prepare_image_messages(frames_urls[:8], prompt)
+    messages = prepare_image_messages(frames_urls, prompt)
     result = qwen3_vl_local(messages, max_new_tokens=512)
     
     return json.loads(result)
@@ -445,7 +445,7 @@ def action_recognition_multi_turn(
         noun_list_str=noun_list_str,
         reflect=utils.get("one", "")
     )
-    messages = prepare_image_messages(frames_urls[:16], step1_prompt)  # content 是 list[dict]，含图片
+    messages = prepare_image_messages(frames_urls, step1_prompt)  # content 是 list[dict]，含图片
 
     print("Step 1: 选择名词...")
     step1_output = qwen3_vl_local(messages, max_new_tokens=1024)
