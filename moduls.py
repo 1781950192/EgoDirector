@@ -82,7 +82,7 @@ def qwen3_vl_local(
 def prepare_image_messages(image_urls: List[str], text_prompt: str) -> List[Dict]:
     """把帧URL列表 + 文字提示 → 标准 messages 格式"""
     content = []
-    for url in image_urls:  # Qwen3 支持最多 32 张图
+    for url in image_urls: 
         content.append({"type": "image", "image": url})
     content.append({"type": "text", "text": text_prompt})
     
