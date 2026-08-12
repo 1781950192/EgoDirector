@@ -252,49 +252,6 @@ def update_verb_noun_json(filename: str, new_entries: List[dict]):
         json.dump(data, f, ensure_ascii=False, indent=2)
 
     print(f"[成功] 已更新 {len(new_entries)} 个名词到 {filename}")
-    
-
-def update_pre_noun_frequencies(selected_noun_keys: List[str], max_size: int = 1000):
-    """
-    更新 pre_noun.json 中选中名词的 frequency，并在总数超过 max_size 时删除最低频项。
-
-    Args:
-        selected_noun_keys (List[str]): 当前选中的名词列表。
-        max_size (int): pre_noun.json 允许的最大条目数，默认为 1000。
-    """
-    file_path = 'context/pre_noun.json'
-
-    # 读取当前数据
-    if not os.path.exists(file_path):
-        print(f"[警告] {file_path} 不存在，跳过频率更新。")
-        return []
-    try:
-        with open(file_path, 'r', encoding='utf-8') as f:
-            pre_noun_list = json.load(f)
-    except:
-        pre_noun_list = []
-    # 构建 key -> item 映射（自动去重，保留最后一个同名项）
-    key_to_item = {item["key"]: item for item in pre_noun_list}
-    # 更新选中名词的频率（仅对已存在的名词）
-    updated_count = 0
-    for noun in selected_noun_keys:
-        if noun in key_to_item:
-            key_to_item[noun]["frequency"] += 1
-            updated_count += 1
-
-    # 转回列表
-    updated_list = list(key_to_item.values())
-
-    # 如果超出最大容量，移除最低频项（可循环删除直到满足条件）
-    while len(updated_list) > max_size:
-        min_item = min(updated_list, key=lambda x: x["frequency"])
-        updated_list.remove(min_item)
-
-    # 写回文件
-    with open(file_path, 'w', encoding='utf-8') as f:
-        json.dump(updated_list, f, ensure_ascii=False, indent=2)
-
-    return updated_list
 
 
 # 主动作识别函数
@@ -318,7 +275,6 @@ def action_recognition(frames_urls: List[str], utils, use_playbook ,max_iteratio
         print(f"挑选名词的时间是{time.time()-start_time:2f}秒")
 
         start_time = time.time()
-        pre_noun = update_pre_noun_frequencies(selected_noun_keys, max_size=1000)
         unknown_noun = [noun for noun in selected_noun_keys if noun not in noun_keys]
         if unknown_noun:
             pre_noun_updates = []
