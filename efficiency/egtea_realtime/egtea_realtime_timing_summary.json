@@ -1,0 +1,45 @@
+{
+  "dataset": "EGTEA",
+  "num_videos": 100,
+  "frame_rate": 24.0,
+  "average_times": {
+    "select_noun": 1.4406,
+    "knowledge_base": 1.3583,
+    "combine_actions": 0.5666,
+    "score_actions": 2.3828,
+    "total_inference": 6.1568,
+    "video_duration": 6.3029,
+    "real_time_factor": 1.5
+  },
+  "std_times": {
+    "select_noun": 0.0799,
+    "knowledge_base": 3.2026,
+    "combine_actions": 0.0385,
+    "score_actions": 0.3946,
+    "total_inference": 3.2508,
+    "video_duration": 5.8311,
+    "real_time_factor": 1.2184
+  },
+  "realtime_analysis": {
+    "realtime_videos": 41,
+    "non_realtime_videos": 59,
+    "realtime_percentage": 41.0,
+    "real_time_factor_range": {
+      "min": 0.142,
+      "max": 7.1715,
+      "median": 1.1262,
+      "q1": 0.8661,
+      "q3": 1.7901
+    },
+    "most_realtime_video": {
+      "video_id": "P09-R02-TurkeySandwich-61500-87000-F001415-F002149",
+      "real_time_factor": 0.142,
+      "video_duration": 30.5833
+    },
+    "least_realtime_video": {
+      "video_id": "P07-R01-PastaSalad-2354135-2355425-F056496-F056534",
+      "real_time_factor": 7.1715,
+      "video_duration": 1.5833
+    }
+  }
+}

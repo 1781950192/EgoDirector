@@ -1,0 +1,45 @@
+{
+  "dataset": "EK100",
+  "num_videos": 100,
+  "frame_rate": 60,
+  "average_times": {
+    "select_noun": 0.7805,
+    "knowledge_base": 0.9827,
+    "combine_actions": 0.5028,
+    "score_actions": 1.8799,
+    "total_inference": 4.1537,
+    "video_duration": 3.2586,
+    "real_time_factor": 2.6215
+  },
+  "std_times": {
+    "select_noun": 0.0496,
+    "knowledge_base": 1.7703,
+    "combine_actions": 0.0317,
+    "score_actions": 0.4262,
+    "total_inference": 1.7678,
+    "video_duration": 3.8347,
+    "real_time_factor": 2.2418
+  },
+  "realtime_analysis": {
+    "realtime_videos": 21,
+    "non_realtime_videos": 79,
+    "realtime_percentage": 21.0,
+    "real_time_factor_range": {
+      "min": 0.1954,
+      "max": 13.7494,
+      "median": 2.1493,
+      "q1": 1.3169,
+      "q3": 3.4038
+    },
+    "most_realtime_video": {
+      "video_id": "P01_11_4",
+      "real_time_factor": 0.1954,
+      "video_duration": 15.07
+    },
+    "least_realtime_video": {
+      "video_id": "P01_11_14",
+      "real_time_factor": 13.7494,
+      "video_duration": 0.79
+    }
+  }
+}

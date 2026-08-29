@@ -1,0 +1,26 @@
+{
+  "dataset": "EK100",
+  "num_videos": 100,
+  "average_times": {
+    "select_noun": 1.7462,
+    "knowledge_base": 1.9388,
+    "combine_actions": 0.9473,
+    "score_actions": 3.6831,
+    "total_inference": 8.3223,
+    "total_video_processing": 8.3223
+  },
+  "std_times": {
+    "select_noun": 0.5628,
+    "knowledge_base": 3.8026,
+    "combine_actions": 0.2793,
+    "score_actions": 1.3492,
+    "total_inference": 4.3953,
+    "total_video_processing": 4.3953
+  },
+  "percentage_of_inference": {
+    "select_noun": 20.98,
+    "knowledge_base": 23.3,
+    "combine_actions": 11.38,
+    "score_actions": 44.26
+  }
+}

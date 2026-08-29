@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Action Recognition Visualization System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}?v=1711444001">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>🎬 Action Recognition Visualization System</h1>
+            <p class="subtitle">Action Recognition Visualization System</p>
+        </header>
+
+        <!-- Control bar -->
+        <div class="control-bar">
+            <button id="initBtn" class="btn btn-primary" onclick="initSystem()">🔄 Initialize System</button>
+            <button id="prevBtn" class="btn" onclick="prevItem()" disabled>⏮ Previous</button>
+            <button id="nextBtn" class="btn" onclick="nextItem()" disabled>Next ⏭</button>
+            <button id="saveBtn" class="btn btn-success" onclick="saveData()">💾 Save Data</button>
+            <div class="dataset-info">
+                <span id="datasetName">Dataset: EK100</span>
+            </div>
+            <div class="progress-info">
+                <span id="progressText">Progress: 0 / 0</span>
+                <span id="statsText" class="stats">Correct: 0 | Incorrect: 0</span>
+            </div>
+        </div>
+
+        <!-- Main content -->
+        <div class="main-content">
+            <!-- Left: image display -->
+            <div class="left-panel">
+                <div class="panel-header">
+                    <h2>📷 Input Frames (32 frames: 16 raw + 16 HOS segmentation)</h2>
+                </div>
+                
+                <!-- Raw frames -->
+                <div class="image-section">
+                    <h3 class="image-section-title">🎬 Raw Frames (RGB Frames)</h3>
+                    <div class="image-grid" id="imageGridOriginal">
+                        <!-- 16 raw image boxes are generated dynamically -->
+                    </div>
+                </div>
+                
+                <!-- HOS segmentation frames -->
+                <div class="image-section">
+                    <h3 class="image-section-title">🔍 HOS Segmentation Frames</h3>
+                    <div class="image-grid" id="imageGridHos">
+                        <!-- 16 HOS image boxes are generated dynamically -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: information and results -->
+            <div class="right-panel">
+                <!-- Video information -->
+                <div class="info-panel">
+                    <h3>📋 Video Information</h3>
+                    <div id="videoInfo" class="info-content">
+                        <p class="placeholder">Please initialize the system first</p>
+                    </div>
+                </div>
+
+                <!-- Ground Truth -->
+                <div class="gt-panel">
+                    <h3>🎯 Ground Truth</h3>
+                    <div id="groundTruth" class="gt-content">
+                        <p class="placeholder">-</p>
+                    </div>
+                </div>
+
+                <!-- Semantic context -->
+                <div class="semantic-context-panel">
+                    <h3>📚 Semantic Context</h3>
+
+                    <div class="semantic-context-box">
+                        <div class="semantic-context-header">
+                            <h4>Noun Semantic Descriptions</h4>
+                        </div>
+                        <div id="semanticContext" class="semantic-context-content">
+                            <p class="placeholder">Click "Run Recognition" to view the semantic context</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Agent results -->
+                <div class="agents-panel">
+                    <h3>🤖 Recognition Pipeline Results</h3>
+
+                    <div class="agent-box">
+                        <div class="agent-header">
+                            <h4>Agent 1 - Noun Selection</h4>
+                        </div>
+                        <div id="agent1Result" class="agent-content">
+                            <p class="placeholder">Click "Run Recognition" to view the results</p>
+                        </div>
+                    </div>
+
+                    <div class="agent-box">
+                        <div class="agent-header">
+                            <h4>Agent 2 - Action Selection</h4>
+                        </div>
+                        <div id="agent2Result" class="agent-content">
+                            <p class="placeholder">Click "Run Recognition" to view the results</p>
+                        </div>
+                    </div>
+
+                    <div class="agent-box">
+                        <div class="agent-header">
+                            <h4>Agent 3 - Action Scoring</h4>
+                        </div>
+                        <div id="agent3Result" class="agent-content">
+                            <p class="placeholder">Click "Run Recognition" to view the results</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Control buttons -->
+                <div class="action-buttons-container">
+                    <h3>🎯 Evaluate the Result</h3>
+                    <div class="action-buttons">
+                        <button id="runBtn" class="btn btn-primary btn-large" onclick="runRecognition()" disabled>
+                            ▶ Run Recognition
+                        </button>
+                        <button id="correctBtn" class="btn btn-success btn-large" onclick="markResult(true)" disabled>
+                            ✓ Correct
+                        </button>
+                        <button id="incorrectBtn" class="btn btn-danger btn-large" onclick="markResult(false)" disabled>
+                            ✗ Incorrect
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Log -->
+                <div class="log-panel">
+                    <h3>📝 Result Log</h3>
+                    <div id="logContent" class="log-content">
+                        <!-- Log entries are added dynamically -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Status bar -->
+        <footer class="footer">
+            <span id="statusBar">Ready</span>
+            <span class="shortcuts">
+                Shortcuts: Enter=Run | Ctrl+C=Correct | Ctrl+X=Incorrect | →=Next | ←=Previous
+            </span>
+        </footer>
+    </div>
+
+    <!-- Loading overlay -->
+    <div id="loadingOverlay" class="loading-overlay" style="display: none;">
+        <div class="loading-spinner"></div>
+        <p id="loadingText">Processing...</p>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}?v=1711443002"></script>
+</body>
+</html>

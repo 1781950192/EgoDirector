@@ -1,0 +1,26 @@
+{
+  "dataset": "EGTEA",
+  "num_videos": 100,
+  "average_times": {
+    "select_noun": 2.159,
+    "knowledge_base": 1.574,
+    "combine_actions": 0.6538,
+    "score_actions": 2.8052,
+    "total_inference": 8.9291,
+    "total_video_processing": 8.9291
+  },
+  "std_times": {
+    "select_noun": 0.5022,
+    "knowledge_base": 3.7364,
+    "combine_actions": 0.1514,
+    "score_actions": 0.7351,
+    "total_inference": 4.2491,
+    "total_video_processing": 4.2491
+  },
+  "percentage_of_inference": {
+    "select_noun": 24.18,
+    "knowledge_base": 17.63,
+    "combine_actions": 7.32,
+    "score_actions": 31.42
+  }
+}

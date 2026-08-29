@@ -1,0 +1,26 @@
+{
+  "dataset": "GTEA",
+  "num_videos": 100,
+  "average_times": {
+    "select_noun": 2.6184,
+    "knowledge_base": 0.0947,
+    "combine_actions": 0.6823,
+    "score_actions": 2.9796,
+    "total_inference": 7.0761,
+    "total_video_processing": 7.0761
+  },
+  "std_times": {
+    "select_noun": 2.1291,
+    "knowledge_base": 0.6664,
+    "combine_actions": 0.1862,
+    "score_actions": 0.7986,
+    "total_inference": 3.5059,
+    "total_video_processing": 3.5059
+  },
+  "percentage_of_inference": {
+    "select_noun": 37.0,
+    "knowledge_base": 1.34,
+    "combine_actions": 9.64,
+    "score_actions": 42.11
+  }
+}

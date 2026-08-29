@@ -1,0 +1,45 @@
+{
+  "dataset": "GTEA",
+  "num_videos": 100,
+  "frame_rate": 15.0,
+  "average_times": {
+    "select_noun": 1.4088,
+    "knowledge_base": 0.0677,
+    "combine_actions": 0.5714,
+    "score_actions": 2.3005,
+    "total_inference": 4.8386,
+    "video_duration": 3.1853,
+    "real_time_factor": 2.9661
+  },
+  "std_times": {
+    "select_noun": 0.0514,
+    "knowledge_base": 0.4764,
+    "combine_actions": 0.0282,
+    "score_actions": 0.4052,
+    "total_inference": 0.6563,
+    "video_duration": 4.8078,
+    "real_time_factor": 2.1205
+  },
+  "realtime_analysis": {
+    "realtime_videos": 15,
+    "non_realtime_videos": 85,
+    "realtime_percentage": 15.0,
+    "real_time_factor_range": {
+      "min": 0.1974,
+      "max": 12.1694,
+      "median": 2.447,
+      "q1": 1.5318,
+      "q3": 3.7355
+    },
+    "most_realtime_video": {
+      "video_id": "S1_Tea_C1_755_1400",
+      "real_time_factor": 0.1974,
+      "video_duration": 43.0
+    },
+    "least_realtime_video": {
+      "video_id": "S4_Tea_C1_887_893",
+      "real_time_factor": 12.1694,
+      "video_duration": 0.4
+    }
+  }
+}
