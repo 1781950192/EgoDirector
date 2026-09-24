@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(sed *)",
+      "Bash(mkdir *)",
+      "Bash(python *)",
+      "Bash(conda *)"
+    ]
+  },
+  "$version": 4
+}
