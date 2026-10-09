@@ -4,11 +4,11 @@
 
 ### Self-Evolving Semantic Context Adaptation for Scalable Open-World Egocentric Activity Recognition
 
-**IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)**
+*Under review at IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)*
 
 Baolong Liu, Guolong Xu, Zihao Wang, Tingting Guo, Yan Tian, Jianfeng Dong, Xi-Ao Ma, Chuanhuang Li
 
-![Venue](https://img.shields.io/badge/IEEE%20TCSVT-Paper-00629B)
+![Venue](https://img.shields.io/badge/Under%20Review-IEEE%20TCSVT-ff8000)
 ![Python](https://img.shields.io/badge/Python-3.11-3776AB)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.x-EE4C2C)
 ![vLLM](https://img.shields.io/badge/Serving-vLLM-6E56CF)
@@ -27,6 +27,10 @@ Baolong Liu, Guolong Xu, Zihao Wang, Tingting Guo, Yan Tian, Jianfeng Dong, Xi-A
 </p>
 
 ---
+
+> 📌 **Status:** This repository is the reference implementation of a manuscript **currently under review** at
+> *IEEE Transactions on Circuits and Systems for Video Technology*. The paper is not yet published; results reported
+> below correspond to the submitted version and may change after revision.
 
 ## 🔥 News
 
@@ -116,7 +120,7 @@ action–object matching).
 
 ## 📊 Results
 
-### Comparison with state of the art (Table I of the paper)
+### Comparison with state of the art
 
 > EgoDirector is evaluated under the **strict L3** fully open-world setting, while all baselines are reported under
 > the **easier L1** setting. Numbers are verbal/noun/action accuracy (%) and WUPS / strict phrase accuracy.
@@ -137,7 +141,7 @@ action–object matching).
 With a single lightweight **8B open-source VLM**, EgoDirector achieves an average **139% relative improvement** over
 prior methods under the L3 setting (e.g. strict phrase accuracy on GTEA Gaze+: **23.45** vs. 9.33).
 
-### Ablation on the key components (Table III)
+### Ablation on the key components
 
 <table>
 <tr><th rowspan="2">Configuration</th><th colspan="5">GTEA Gaze</th><th colspan="5">GTEA Gaze+</th><th colspan="5">EPIC-KITCHENS-100</th></tr>
@@ -148,7 +152,7 @@ prior methods under the L3 setting (e.g. strict phrase accuracy on GTEA Gaze+: *
 <tr><td>+ VCE + Semantic Context Engine (SCE)</td><td><b>27.27</b></td><td><b>55.11</b></td><td><b>41.19</b></td><td><b>64.94</b></td><td><b>14.96</b></td><td><b>33.32</b></td><td><b>49.79</b></td><td><b>41.56</b></td><td><b>58.93</b></td><td><b>23.45</b></td><td><b>30.12</b></td><td><b>38.75</b></td><td><b>34.44</b></td><td><b>55.61</b></td><td><b>16.40</b></td></tr>
 </table>
 
-### Model-agnostic scalability (Table IV, GTEA Gaze+, L3)
+### Model-agnostic scalability (GTEA Gaze+, L3)
 
 <table>
 <tr><th>Backbone</th><th>Obj</th><th>Act</th><th>Acty</th><th>WUPS</th><th>Phrase</th></tr>
@@ -159,7 +163,7 @@ prior methods under the L3 setting (e.g. strict phrase accuracy on GTEA Gaze+: *
 <tr><td>Qwen3-VL-32B-Instruct</td><td><b>35.45</b></td><td><b>51.53</b></td><td><b>43.49</b></td><td><b>59.72</b></td><td><b>24.67</b></td></tr>
 </table>
 
-### Real-time factor (Table VII)
+### Real-time factor
 
 <table>
 <tr><th>Dataset</th><th>Total inference (s)</th><th>Video length (s)</th><th>RTF ↓</th></tr>
@@ -357,7 +361,18 @@ bash start_web.sh        # background daemon
 
 ## 📜 Citation
 
-If you find this work useful, please cite:
+The manuscript is currently **under review**; please cite it as an unpublished manuscript for now:
+
+```bibtex
+@unpublished{liu2026egodirector,
+  title  = {EgoDirector: Self-Evolving Semantic Context Adaptation for Scalable Open-World Egocentric Activity Recognition},
+  author = {Liu, Baolong and Xu, Guolong and Wang, Zihao and Guo, Tingting and Tian, Yan and Dong, Jianfeng and Ma, Xi-Ao and Li, Chuanhuang},
+  note   = {under review at IEEE Transactions on Circuits and Systems for Video Technology},
+  year   = {2026}
+}
+```
+
+Once the paper is published, the entry below will replace the one above:
 
 ```bibtex
 @article{liu2026egodirector,
@@ -365,6 +380,7 @@ If you find this work useful, please cite:
   author  = {Liu, Baolong and Xu, Guolong and Wang, Zihao and Guo, Tingting and Tian, Yan and Dong, Jianfeng and Ma, Xi-Ao and Li, Chuanhuang},
   journal = {IEEE Transactions on Circuits and Systems for Video Technology},
   year    = {2026}
+  % volume, number, pages and DOI will be added upon publication
 }
 ```
 
