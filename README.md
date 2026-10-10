@@ -261,7 +261,7 @@ profiles are already provided in `context_base/`, so **no API key is required** 
 The prompt masks $P_t$ of the Visual Context Engine come from **VISOR-HOS**:
 
 - Code: [epic-kitchens/VISOR-HOS](https://github.com/epic-kitchens/VISOR-HOS)
-- Pre-inferred masks: <https://pan.baidu.com/s/1KEdXH0eo5HX_anZkKUZE7A?pwd=1111> (access code: `1111`)
+- Pre-inferred masks (Baidu Pan): <https://pan.baidu.com/s/1uI6FEtYy6WwyK64K-HiJ3g?pwd=k2qi> (access code: `k2qi`)
 
 Place the extracted masks under `--hos_path` (e.g. `<dataset>_hos/32frames/`). Pre-inferred masks let you skip HOS
 inference entirely.
