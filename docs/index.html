@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EgoDirector — Open-World Egocentric Activity Recognition</title>
+<meta name="description" content="EgoDirector: a tuning-free agentic framework with a Visual Context Engine and a Self-Evolving Semantic Context Engine for scalable open-world egocentric activity recognition.">
+<style>
+  :root{
+    --ink:#14181f; --muted:#5b6472; --line:#e4e7ec; --bg:#ffffff; --soft:#f6f8fb;
+    --accent:#2f5fd0; --accent2:#7c3aed;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    line-height:1.68; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:920px;margin:0 auto;padding:0 22px}
+
+  /* ---------- hero ---------- */
+  header.hero{
+    background:linear-gradient(135deg,#12224a 0%,#2f5fd0 55%,#7c3aed 100%);
+    color:#fff; padding:64px 0 52px; text-align:center;
+  }
+  .eyebrow{
+    display:inline-block; font-size:13px; letter-spacing:.14em; text-transform:uppercase;
+    padding:5px 14px; border:1px solid rgba(255,255,255,.45); border-radius:999px;
+    background:rgba(255,255,255,.10); margin-bottom:20px;
+  }
+  h1.title{
+    margin:6px 0 10px; font-size:clamp(34px,6vw,54px); font-weight:800; letter-spacing:-.5px;
+  }
+  .subtitle{
+    font-size:clamp(16px,2.4vw,21px); font-weight:500; opacity:.96; max-width:760px; margin:0 auto 18px;
+  }
+  .venue{font-size:15px; opacity:.85; margin-bottom:22px}
+  .authors{font-size:16px; opacity:.95; margin-bottom:6px}
+  .affil{font-size:14px; opacity:.72; margin-bottom:26px}
+  .links{display:flex; gap:12px; justify-content:center; flex-wrap:wrap}
+  .btn{
+    display:inline-block; padding:10px 20px; border-radius:8px; font-size:15px; font-weight:600;
+    text-decoration:none; transition:transform .12s ease, box-shadow .12s ease;
+  }
+  .btn:hover{transform:translateY(-2px); box-shadow:0 8px 20px rgba(0,0,0,.22)}
+  .btn-solid{background:#fff; color:#1b2a52}
+  .btn-ghost{background:rgba(255,255,255,.14); color:#fff; border:1px solid rgba(255,255,255,.5)}
+  .btn-dim{background:rgba(255,255,255,.10); color:rgba(255,255,255,.75); border:1px dashed rgba(255,255,255,.45); cursor:default}
+  .btn-dim:hover{transform:none; box-shadow:none}
+
+  /* ---------- sections ---------- */
+  main{padding:14px 0 40px}
+  section{padding:40px 0 8px}
+  h2{
+    font-size:26px; margin:0 0 8px; letter-spacing:-.2px; position:relative; padding-bottom:10px;
+  }
+  h2::after{
+    content:""; position:absolute; left:0; bottom:0; width:56px; height:3px; border-radius:2px;
+    background:linear-gradient(90deg,var(--accent),var(--accent2));
+  }
+  h3{font-size:18px; margin:26px 0 8px}
+  p{margin:12px 0}
+  .lead{font-size:17px; color:#39414f}
+  .muted{color:var(--muted); font-size:15px}
+  .notice{
+    background:#fff8e6; border:1px solid #f2d999; border-left:4px solid #e0a800;
+    padding:12px 16px; border-radius:8px; font-size:15px; margin:20px 0 4px;
+  }
+
+  figure{margin:26px 0}
+  figure img{width:100%; border-radius:10px; border:1px solid var(--line); display:block}
+  figcaption{font-size:14px; color:var(--muted); margin-top:10px; text-align:center}
+
+  /* ---------- cards ---------- */
+  .grid{display:grid; gap:16px; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); margin:20px 0}
+  .card{background:var(--soft); border:1px solid var(--line); border-radius:12px; padding:18px 20px}
+  .card h4{margin:0 0 8px; font-size:16px}
+  .card p{margin:0; font-size:14.5px; color:#4a5364}
+  .tag{
+    display:inline-block; font-size:12px; font-weight:700; letter-spacing:.06em; text-transform:uppercase;
+    color:var(--accent); background:#eaf0ff; border-radius:6px; padding:3px 8px; margin-bottom:8px;
+  }
+
+  .pipeline{
+    background:var(--soft); border:1px solid var(--line); border-radius:12px;
+    padding:18px; text-align:center; font-size:17px; margin:22px 0;
+  }
+  .pipeline code{background:#fff; border:1px solid var(--line); border-radius:6px; padding:2px 8px}
+
+  /* ---------- tables ---------- */
+  .tablewrap{overflow-x:auto; margin:18px 0; border:1px solid var(--line); border-radius:10px}
+  table{border-collapse:collapse; width:100%; font-size:14.5px; min-width:640px}
+  th,td{padding:9px 12px; text-align:center; border-bottom:1px solid var(--line)}
+  thead th{background:var(--soft); font-weight:700; font-size:13.5px; position:sticky; top:0}
+  tbody tr:last-child td{border-bottom:none}
+  tr.ours{background:#eef4ff; font-weight:700}
+  td.left,th.left{text-align:left}
+  caption{caption-side:bottom; font-size:13.5px; color:var(--muted); padding:10px 12px; text-align:left}
+
+  .kpis{display:grid; gap:14px; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); margin:22px 0}
+  .kpi{background:linear-gradient(135deg,#f7faff,#eef2ff); border:1px solid #dfe6f7; border-radius:12px; padding:16px}
+  .kpi b{display:block; font-size:26px; color:var(--accent); line-height:1.25}
+  .kpi span{font-size:14px; color:var(--muted)}
+
+  /* ---------- bibtex ---------- */
+  .bibbox{position:relative; background:#0f1420; border-radius:12px; padding:18px 18px 14px; margin:18px 0}
+  .bibbox pre{
+    margin:0; color:#dbe3f4; font-size:13.5px; overflow-x:auto;
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; line-height:1.6;
+  }
+  .copybtn{
+    position:absolute; top:10px; right:10px; background:#26304a; color:#cfd8ee; border:1px solid #3a4560;
+    font-size:12px; padding:5px 11px; border-radius:6px; cursor:pointer;
+  }
+  .copybtn:hover{background:#33405f}
+
+  footer{border-top:1px solid var(--line); background:var(--soft); padding:26px 0; text-align:center; color:var(--muted); font-size:14px}
+  footer a{color:var(--accent)}
+
+  @media (max-width:600px){
+    header.hero{padding:44px 0 38px}
+    h2{font-size:22px}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Under Review · IEEE TCSVT</span>
+    <h1 class="title">EgoDirector</h1>
+    <p class="subtitle">Self-Evolving Semantic Context Adaptation for Scalable<br>Open-World Egocentric Activity Recognition</p>
+    <p class="authors">Baolong Liu · Guolong Xu · Zihao Wang · Tingting Guo · Yan Tian · Jianfeng Dong · Xi-Ao Ma · Chuanhuang Li</p>
+    <div class="links">
+      <a class="btn btn-ghost" href="https://github.com/1781950192/EgoDirector">Code</a>
+      <a class="btn btn-solid" href="#bibtex">BibTeX</a>
+      <span class="btn btn-dim">Paper&nbsp;(upon acceptance)</span>
+      <span class="btn btn-dim">arXiv&nbsp;(coming soon)</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <p class="notice">
+    This page accompanies a manuscript <b>currently under review</b> at <i>IEEE Transactions on Circuits and Systems
+    for Video Technology</i>. All results correspond to the submitted version and may change after revision.
+  </p>
+
+  <figure>
+    <img src="assets/architecture.png" alt="Overview of the EgoDirector framework">
+    <figcaption>
+      <b>Framework overview.</b> Three collaborative agents — Object Perception (OPA), Action Reasoning (ARA) and
+      Activity Prediction (APA) — are supported by the Visual Context Engine (VCE) and the Self-Evolving Semantic
+      Context Engine (SCE).
+    </figcaption>
+  </figure>
+
+  <section id="abstract">
+    <h2>Abstract</h2>
+    <p class="lead">
+      Open-world egocentric action recognition faces severe perceptual uncertainty and a combinatorial explosion of
+      unseen action–object pairs. Traditional supervised models suffer from static knowledge frozen in parameters,
+      which limits their generalization. We propose <b>EgoDirector</b>, a novel <b>tuning-free agentic framework</b>
+      that reformulates action recognition as collaborative reasoning among specialized agents. EgoDirector is
+      empowered by a <b>Visual Context Engine</b> for robust interaction modeling and a <b>Self-Evolving Semantic
+      Context Engine</b> that dynamically constructs and assimilates knowledge for novel concepts on the fly.
+      Under the strict L3 fully open-world setting, it achieves an average relative improvement of
+      <b>139%</b> over prior methods on GTEA Gaze, GTEA Gaze+ and EPIC-KITCHENS-100 using only lightweight
+      open-source VLMs.
+    </p>
+  </section>
+
+  <section id="method">
+    <h2>Method</h2>
+    <p>
+      EgoDirector decomposes open-world recognition into a progressive, knowledge-guided pipeline:
+    </p>
+    <div class="pipeline">
+      <code>V</code> &nbsp;—<b>OPA</b>→&nbsp; <code>O</code> &nbsp;—<b>ARA</b>→&nbsp; <code>H</code>
+      &nbsp;—<b>APA</b>→&nbsp; <code>A*</code>
+      <div class="muted" style="margin-top:8px">
+        video → interactive objects → action–object hypotheses → ranked activities
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <span class="tag">VCE</span>
+        <h4>Visual Context Engine</h4>
+        <p>Pairs raw frames with hand-object <i>prompt masks</i>; background is suppressed and hands/objects are
+        explicitly labelled, mitigating perceptual uncertainty at a low token cost.</p>
+      </div>
+      <div class="card">
+        <span class="tag">SCE</span>
+        <h4>Self-Evolving Semantic Context Engine</h4>
+        <p>Maintains conceptual action profiles plus an object–action association cache, and evolves on the fly when
+        a novel object is triggered — lifelong adaptation without retraining.</p>
+      </div>
+      <div class="card">
+        <span class="tag">OPA</span>
+        <h4>Object Perception Agent</h4>
+        <p>Interaction-centric filtering, hybrid recognition and evidence-based ranking produce a ranked object set.</p>
+      </div>
+      <div class="card">
+        <span class="tag">ARA</span>
+        <h4>Action Reasoning Agent</h4>
+        <p>Infers the most plausible verb for each object from visual evidence and retrieved semantic priors.</p>
+      </div>
+      <div class="card">
+        <span class="tag">APA</span>
+        <h4>Activity Prediction Agent</h4>
+        <p>Scores hypotheses by visual alignment, semantic plausibility and confidence aggregation, and emits a
+        ranked JSON list.</p>
+      </div>
+    </div>
+
+    <figure>
+      <img src="assets/vce_example.png" alt="Prompt mask produced by the Visual Context Engine">
+      <figcaption>
+        <b>Visual Context Engine.</b> Hands (<code>H</code>) and manipulated objects (<code>O</code>) are explicitly
+        labelled while background regions are suppressed.
+      </figcaption>
+    </figure>
+  </section>
+
+  <section id="results">
+    <h2>Results</h2>
+
+    <div class="kpis">
+      <div class="kpi"><b>+139%</b><span>average relative gain over prior methods (L3)</span></div>
+      <div class="kpi"><b>23.45</b><span>strict phrase accuracy on GTEA Gaze+ (vs. 9.33)</span></div>
+      <div class="kpi"><b>8B</b><span>lightweight open-source VLM, no training</span></div>
+      <div class="kpi"><b>3</b><span>benchmarks: GTEA Gaze, GTEA Gaze+, EK100</span></div>
+    </div>
+
+    <h3>Comparison with state of the art</h3>
+    <p class="muted">
+      EgoDirector is evaluated under the strict <b>L3</b> fully open-world setting, while all baselines are reported
+      under the easier <b>L1</b> setting.
+    </p>
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr>
+            <th class="left">Method</th><th>Publication</th>
+            <th>Object</th><th>Action</th><th>Activity</th><th>WUPS</th><th>Phrase</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="left">KGL</td><td>PRL 2022</td><td>5.12</td><td>8.04</td><td>6.58</td><td>35.83</td><td>0.30</td></tr>
+          <tr><td class="left">EgoVLP-Decomp</td><td>NeurIPS 2022</td><td>10.17</td><td>8.45</td><td>9.31</td><td>40.51</td><td>0.90</td></tr>
+          <tr><td class="left">LaViLa-Decomp</td><td>CVPR 2023</td><td>6.07</td><td>23.07</td><td>14.57</td><td>48.65</td><td>2.10</td></tr>
+          <tr><td class="left">ALGO</td><td>ECCV 2024</td><td>13.07</td><td>17.05</td><td>15.05</td><td>46.89</td><td>1.80</td></tr>
+          <tr><td class="left">ALGO + LaViLa</td><td>ECCV 2024</td><td>17.50</td><td>26.60</td><td>22.05</td><td>49.42</td><td>3.50</td></tr>
+          <tr><td class="left">EgoVLP + ProbRes</td><td>ICCV 2025</td><td>–</td><td>–</td><td>19.12</td><td>49.25</td><td>1.97</td></tr>
+          <tr><td class="left">LaViLa + ProbRes</td><td>ICCV 2025</td><td>–</td><td>–</td><td>33.80</td><td>53.34</td><td>8.98</td></tr>
+          <tr class="ours"><td class="left">EgoDirector (Ours)</td><td>–</td><td>27.27</td><td>55.11</td><td>41.19</td><td>64.94</td><td>14.96</td></tr>
+        </tbody>
+        <caption>Results on <b>GTEA Gaze</b>. Higher is better.</caption>
+      </table>
+    </div>
+
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr><th class="left">Method</th><th>Object</th><th>Action</th><th>Activity</th><th>WUPS</th><th>Phrase</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="left">LaViLa + ProbRes</td><td>–</td><td>–</td><td>31.70</td><td>53.82</td><td>9.33</td></tr>
+          <tr><td class="left">Agent Workflow</td><td>32.07</td><td>12.40</td><td>22.24</td><td>52.47</td><td>6.25</td></tr>
+          <tr><td class="left">+ VCE</td><td>32.51</td><td>18.15</td><td>25.33</td><td>52.49</td><td>8.36</td></tr>
+          <tr class="ours"><td class="left">+ VCE + SCE (full)</td><td>33.32</td><td>49.79</td><td>41.56</td><td>58.93</td><td>23.45</td></tr>
+        </tbody>
+        <caption><b>Ablation</b> on GTEA Gaze+ (L3): every component contributes, the Semantic Context Engine most.</caption>
+      </table>
+    </div>
+
+    <h3>Model-agnostic scalability (GTEA Gaze+, L3)</h3>
+    <div class="tablewrap">
+      <table>
+        <thead>
+          <tr><th class="left">Backbone</th><th>Object</th><th>Action</th><th>Activity</th><th>WUPS</th><th>Phrase</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="left">MiniCPM-V-4.6</td><td>25.90</td><td>38.42</td><td>32.16</td><td>47.76</td><td>15.85</td></tr>
+          <tr><td class="left">InternVL-3.5-8B</td><td>33.72</td><td>45.62</td><td>39.66</td><td>51.93</td><td>21.48</td></tr>
+          <tr><td class="left">Gemma3-12B-it</td><td>17.25</td><td>29.13</td><td>23.19</td><td>44.39</td><td>9.55</td></tr>
+          <tr><td class="left">Qwen3-VL-8B-Instruct <span class="muted">(default)</span></td><td>33.32</td><td>49.79</td><td>41.56</td><td>58.93</td><td>23.45</td></tr>
+          <tr class="ours"><td class="left">Qwen3-VL-32B-Instruct</td><td>35.45</td><td>51.53</td><td>43.49</td><td>59.72</td><td>24.67</td></tr>
+        </tbody>
+        <caption>EgoDirector scales with the backbone: stronger VLMs give stronger results, no tuning required.</caption>
+      </table>
+    </div>
+  </section>
+
+  <section id="code">
+    <h2>Code &amp; Usage</h2>
+    <p>
+      The reference implementation, prompt templates, the initial knowledge base and the efficiency benchmarks are
+      available on GitHub. Everything runs against a local <b>vLLM</b> server; no training is involved.
+    </p>
+    <div class="bibbox">
+      <button class="copybtn" onclick="navigator.clipboard.writeText('git clone https://github.com/1781950192/EgoDirector.git')">copy</button>
+      <pre>git clone https://github.com/1781950192/EgoDirector.git
+conda create -n egodirector python=3.11 -y &amp;&amp; conda activate egodirector
+pip install vllm pandas
+
+vllm serve &lt;model_path&gt; --served-model-name Qwen3-VL-8B-Instruct --port 8000
+
+python main_egtea.py --num_frames 16 --use_hos 0   # GTEA Gaze+
+python egtea_process/trans.py                      # accuracy evaluation</pre>
+    </div>
+    <p class="muted">
+      Supported benchmarks: GTEA Gaze (<code>main_gtea.py</code>), GTEA Gaze+ (<code>main_egtea.py</code>),
+      EPIC-KITCHENS-100 (<code>main_ek100.py</code>).
+    </p>
+  </section>
+
+  <section id="bibtex">
+    <h2>BibTeX</h2>
+    <div class="bibbox">
+      <button class="copybtn" onclick="navigator.clipboard.writeText(document.getElementById('bib').innerText)">copy</button>
+      <pre id="bib">@unpublished{liu2026egodirector,
+  title  = {EgoDirector: Self-Evolving Semantic Context Adaptation for
+            Scalable Open-World Egocentric Activity Recognition},
+  author = {Liu, Baolong and Xu, Guolong and Wang, Zihao and Guo, Tingting
+            and Tian, Yan and Dong, Jianfeng and Ma, Xi-Ao and Li, Chuanhuang},
+  note   = {under review at IEEE Transactions on Circuits and Systems for Video Technology},
+  year   = {2026}
+}</pre>
+    </div>
+    <p class="muted">The BibTeX entry will be updated once the manuscript is accepted.</p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    Built with GitHub Pages ·
+    <a href="https://github.com/1781950192/EgoDirector">Source code</a> ·
+    Last updated: October 2026
+  </div>
+</footer>
+
+</body>
+</html>

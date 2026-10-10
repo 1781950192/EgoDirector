@@ -14,6 +14,8 @@ Baolong Liu, Guolong Xu, Zihao Wang, Tingting Guo, Yan Tian, Jianfeng Dong, Xi-A
 ![vLLM](https://img.shields.io/badge/Serving-vLLM-6E56CF)
 ![Tuning--free](https://img.shields.io/badge/Training-Tuning--free-2E7D32)
 
+[🌐 Project Page](https://1781950192.github.io/EgoDirector/) · [📄 Paper](#-citation) · [🖥️ Code](https://github.com/1781950192/EgoDirector)
+
 </div>
 
 <p align="center">
