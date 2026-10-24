@@ -4,11 +4,11 @@
 
 ### Self-Evolving Semantic Context Adaptation for Scalable Open-World Egocentric Activity Recognition
 
-*Under review at IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)*
+*Under review at Pattern Recognition (PR)*
 
 Baolong Liu, Guolong Xu, Zihao Wang, Tingting Guo, Yan Tian, Jianfeng Dong, Xi-Ao Ma, Chuanhuang Li
 
-![Venue](https://img.shields.io/badge/Under%20Review-IEEE%20TCSVT-ff8000)
+![Venue](https://img.shields.io/badge/Under%20Review-Pattern%20Recognition-ff8000)
 ![Python](https://img.shields.io/badge/Python-3.11-3776AB)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.x-EE4C2C)
 ![vLLM](https://img.shields.io/badge/Serving-vLLM-6E56CF)
@@ -31,7 +31,7 @@ Baolong Liu, Guolong Xu, Zihao Wang, Tingting Guo, Yan Tian, Jianfeng Dong, Xi-A
 ---
 
 > 📌 **Status:** This repository is the reference implementation of a manuscript **currently under review** at
-> *IEEE Transactions on Circuits and Systems for Video Technology*. The paper is not yet published; results reported
+> *Pattern Recognition*. The paper is not yet published; results reported
 > below correspond to the submitted version and may change after revision.
 
 ## 🔥 News
@@ -369,7 +369,7 @@ The manuscript is currently **under review**; please cite it as an unpublished m
 @unpublished{liu2026egodirector,
   title  = {EgoDirector: Self-Evolving Semantic Context Adaptation for Scalable Open-World Egocentric Activity Recognition},
   author = {Liu, Baolong and Xu, Guolong and Wang, Zihao and Guo, Tingting and Tian, Yan and Dong, Jianfeng and Ma, Xi-Ao and Li, Chuanhuang},
-  note   = {under review at IEEE Transactions on Circuits and Systems for Video Technology},
+  note   = {under review at Pattern Recognition},
   year   = {2026}
 }
 ```
@@ -380,7 +380,7 @@ Once the paper is published, the entry below will replace the one above:
 @article{liu2026egodirector,
   title   = {EgoDirector: Self-Evolving Semantic Context Adaptation for Scalable Open-World Egocentric Activity Recognition},
   author  = {Liu, Baolong and Xu, Guolong and Wang, Zihao and Guo, Tingting and Tian, Yan and Dong, Jianfeng and Ma, Xi-Ao and Li, Chuanhuang},
-  journal = {IEEE Transactions on Circuits and Systems for Video Technology},
+  journal = {Pattern Recognition},
   year    = {2026}
   % volume, number, pages and DOI will be added upon publication
 }
